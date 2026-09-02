@@ -1,0 +1,165 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.18.0" xml:lang="en-US">
+  <compounddef id="struct_i2_c___reg_def__t" kind="struct" language="C++" prot="public">
+    <compoundname>I2C_RegDef_t</compoundname>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_i2_c___reg_def__t_1afdae00d55682c65126586e4ae36856cd" prot="public" static="no" mutable="no">
+        <type>_vo uint32_t</type>
+        <definition>_vo uint32_t I2C_RegDef_t::CR1</definition>
+        <argsstring></argsstring>
+        <name>CR1</name>
+        <qualifiedname>I2C_RegDef_t::CR1</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/inc/stm32f401xe.h" line="170" column="18" bodyfile="Drivers/inc/stm32f401xe.h" bodystart="170" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_i2_c___reg_def__t_1abacd7e1390fe2d2d978085b0257c5475" prot="public" static="no" mutable="no">
+        <type>_vo uint32_t</type>
+        <definition>_vo uint32_t I2C_RegDef_t::CR2</definition>
+        <argsstring></argsstring>
+        <name>CR2</name>
+        <qualifiedname>I2C_RegDef_t::CR2</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/inc/stm32f401xe.h" line="171" column="18" bodyfile="Drivers/inc/stm32f401xe.h" bodystart="171" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_i2_c___reg_def__t_1a34fc2aeabf14e36689b62ac4545768ea" prot="public" static="no" mutable="no">
+        <type>_vo uint32_t</type>
+        <definition>_vo uint32_t I2C_RegDef_t::OAR1</definition>
+        <argsstring></argsstring>
+        <name>OAR1</name>
+        <qualifiedname>I2C_RegDef_t::OAR1</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/inc/stm32f401xe.h" line="172" column="18" bodyfile="Drivers/inc/stm32f401xe.h" bodystart="172" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_i2_c___reg_def__t_1ac08e8e5cf8a22d489650eceba65b8dc8" prot="public" static="no" mutable="no">
+        <type>_vo uint32_t</type>
+        <definition>_vo uint32_t I2C_RegDef_t::OAR2</definition>
+        <argsstring></argsstring>
+        <name>OAR2</name>
+        <qualifiedname>I2C_RegDef_t::OAR2</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/inc/stm32f401xe.h" line="173" column="18" bodyfile="Drivers/inc/stm32f401xe.h" bodystart="173" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_i2_c___reg_def__t_1a41f16e2927351ad0a38712fea3a020dc" prot="public" static="no" mutable="no">
+        <type>_vo uint32_t</type>
+        <definition>_vo uint32_t I2C_RegDef_t::DR</definition>
+        <argsstring></argsstring>
+        <name>DR</name>
+        <qualifiedname>I2C_RegDef_t::DR</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/inc/stm32f401xe.h" line="174" column="18" bodyfile="Drivers/inc/stm32f401xe.h" bodystart="174" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_i2_c___reg_def__t_1ab4a86720299f86e8fc4474434ba93699" prot="public" static="no" mutable="no">
+        <type>_vo uint32_t</type>
+        <definition>_vo uint32_t I2C_RegDef_t::SR1</definition>
+        <argsstring></argsstring>
+        <name>SR1</name>
+        <qualifiedname>I2C_RegDef_t::SR1</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/inc/stm32f401xe.h" line="175" column="18" bodyfile="Drivers/inc/stm32f401xe.h" bodystart="175" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_i2_c___reg_def__t_1a6edea84bc8c3bc5148d2189f1efd6c43" prot="public" static="no" mutable="no">
+        <type>_vo uint32_t</type>
+        <definition>_vo uint32_t I2C_RegDef_t::SR2</definition>
+        <argsstring></argsstring>
+        <name>SR2</name>
+        <qualifiedname>I2C_RegDef_t::SR2</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/inc/stm32f401xe.h" line="176" column="18" bodyfile="Drivers/inc/stm32f401xe.h" bodystart="176" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_i2_c___reg_def__t_1ae4385014ebb0cfe98c877d2ad49d0221" prot="public" static="no" mutable="no">
+        <type>_vo uint32_t</type>
+        <definition>_vo uint32_t I2C_RegDef_t::CCR</definition>
+        <argsstring></argsstring>
+        <name>CCR</name>
+        <qualifiedname>I2C_RegDef_t::CCR</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/inc/stm32f401xe.h" line="177" column="18" bodyfile="Drivers/inc/stm32f401xe.h" bodystart="177" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_i2_c___reg_def__t_1a1ba199591f97709c772824fdc500c4a1" prot="public" static="no" mutable="no">
+        <type>_vo uint32_t</type>
+        <definition>_vo uint32_t I2C_RegDef_t::TRISE</definition>
+        <argsstring></argsstring>
+        <name>TRISE</name>
+        <qualifiedname>I2C_RegDef_t::TRISE</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/inc/stm32f401xe.h" line="178" column="18" bodyfile="Drivers/inc/stm32f401xe.h" bodystart="178" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_i2_c___reg_def__t_1a5feed8f3966251b10607d47a4dc0efc0" prot="public" static="no" mutable="no">
+        <type>_vo uint32_t</type>
+        <definition>_vo uint32_t I2C_RegDef_t::FLTR</definition>
+        <argsstring></argsstring>
+        <name>FLTR</name>
+        <qualifiedname>I2C_RegDef_t::FLTR</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/inc/stm32f401xe.h" line="179" column="18" bodyfile="Drivers/inc/stm32f401xe.h" bodystart="179" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Drivers/inc/stm32f401xe.h" line="168" column="1" bodyfile="Drivers/inc/stm32f401xe.h" bodystart="169" bodyend="180"/>
+    <listofallmembers>
+      <member refid="struct_i2_c___reg_def__t_1ae4385014ebb0cfe98c877d2ad49d0221" prot="public" virt="non-virtual"><scope>I2C_RegDef_t</scope><name>CCR</name></member>
+      <member refid="struct_i2_c___reg_def__t_1afdae00d55682c65126586e4ae36856cd" prot="public" virt="non-virtual"><scope>I2C_RegDef_t</scope><name>CR1</name></member>
+      <member refid="struct_i2_c___reg_def__t_1abacd7e1390fe2d2d978085b0257c5475" prot="public" virt="non-virtual"><scope>I2C_RegDef_t</scope><name>CR2</name></member>
+      <member refid="struct_i2_c___reg_def__t_1a41f16e2927351ad0a38712fea3a020dc" prot="public" virt="non-virtual"><scope>I2C_RegDef_t</scope><name>DR</name></member>
+      <member refid="struct_i2_c___reg_def__t_1a5feed8f3966251b10607d47a4dc0efc0" prot="public" virt="non-virtual"><scope>I2C_RegDef_t</scope><name>FLTR</name></member>
+      <member refid="struct_i2_c___reg_def__t_1a34fc2aeabf14e36689b62ac4545768ea" prot="public" virt="non-virtual"><scope>I2C_RegDef_t</scope><name>OAR1</name></member>
+      <member refid="struct_i2_c___reg_def__t_1ac08e8e5cf8a22d489650eceba65b8dc8" prot="public" virt="non-virtual"><scope>I2C_RegDef_t</scope><name>OAR2</name></member>
+      <member refid="struct_i2_c___reg_def__t_1ab4a86720299f86e8fc4474434ba93699" prot="public" virt="non-virtual"><scope>I2C_RegDef_t</scope><name>SR1</name></member>
+      <member refid="struct_i2_c___reg_def__t_1a6edea84bc8c3bc5148d2189f1efd6c43" prot="public" virt="non-virtual"><scope>I2C_RegDef_t</scope><name>SR2</name></member>
+      <member refid="struct_i2_c___reg_def__t_1a1ba199591f97709c772824fdc500c4a1" prot="public" virt="non-virtual"><scope>I2C_RegDef_t</scope><name>TRISE</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

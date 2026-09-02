@@ -1,0 +1,131 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.18.0" xml:lang="en-US">
+  <compounddef id="stm32f401xe__rcc_8h" kind="file" language="C++">
+    <compoundname>stm32f401xe_rcc.h</compoundname>
+    <includes refid="stm32f401xe_8h" local="yes">stm32f401xe.h</includes>
+    <includedby refid="stm32f401xe__rcc_8c" local="yes">Drivers/src/stm32f401xe_rcc.c</includedby>
+    <incdepgraph>
+      <node id="2">
+        <label>stm32f401xe.h</label>
+        <link refid="stm32f401xe_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>stm32f401xe_gpio.h</label>
+        <link refid="stm32f401xe__gpio_8h_source"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>stm32f401xe_i2c.h</label>
+        <link refid="stm32f401xe__i2c_8h_source"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>Drivers/inc/stm32f401xe_rcc.h</label>
+        <link refid="stm32f401xe__rcc_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>stddef.h</label>
+      </node>
+      <node id="4">
+        <label>stdint.h</label>
+      </node>
+    </incdepgraph>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="stm32f401xe__rcc_8h_1a085a3a0940c3993a61618f10816f38cd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint32_t</type>
+        <definition>uint32_t RCC_GetPCLK1Value</definition>
+        <argsstring>(void)</argsstring>
+        <name>RCC_GetPCLK1Value</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/inc/stm32f401xe_rcc.h" line="16" column="10" bodyfile="Drivers/src/stm32f401xe_rcc.c" bodystart="15" bodyend="61" declfile="Drivers/inc/stm32f401xe_rcc.h" declline="16" declcolumn="10"/>
+      </memberdef>
+      <memberdef kind="function" id="stm32f401xe__rcc_8h_1ad7e2b4f75bc4da78507c6f7f5ff32154" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint32_t</type>
+        <definition>uint32_t RCC_GetPCLK2Value</definition>
+        <argsstring>(void)</argsstring>
+        <name>RCC_GetPCLK2Value</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/inc/stm32f401xe_rcc.h" line="21" column="10" bodyfile="Drivers/src/stm32f401xe_rcc.c" bodystart="68" bodyend="104" declfile="Drivers/inc/stm32f401xe_rcc.h" declline="21" declcolumn="10"/>
+      </memberdef>
+      <memberdef kind="function" id="stm32f401xe__rcc_8h_1ad90448e5252ea8b6e9d0063909cb9446" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint32_t</type>
+        <definition>uint32_t RCC_GetPLLOutputClock</definition>
+        <argsstring>(void)</argsstring>
+        <name>RCC_GetPLLOutputClock</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/inc/stm32f401xe_rcc.h" line="26" column="10" bodyfile="Drivers/src/stm32f401xe_rcc.c" bodystart="106" bodyend="110" declfile="Drivers/inc/stm32f401xe_rcc.h" declline="26" declcolumn="10"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>stm32f401xe_rcc.h</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*<sp/><sp/>Created<sp/>on:<sp/>Aug<sp/>17,<sp/>2026</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>Author:<sp/>deepu</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>INC_STM32F401XE_RCC_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>INC_STM32F401XE_RCC_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;stm32f401xe.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/>*<sp/>Returns<sp/>the<sp/>APB1<sp/>peripheral<sp/>clock<sp/>value</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal">uint32_t<sp/>RCC_GetPCLK1Value(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="19"><highlight class="comment"><sp/>*<sp/>Returns<sp/>the<sp/>APB2<sp/>peripheral<sp/>clock<sp/>value</highlight></codeline>
+<codeline lineno="20"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal">uint32_t<sp/>RCC_GetPCLK2Value(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="24"><highlight class="comment"><sp/>*<sp/>Returns<sp/>the<sp/>PLL<sp/>output<sp/>clock<sp/>value</highlight></codeline>
+<codeline lineno="25"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal">uint32_t<sp/>RCC_GetPLLOutputClock(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>INC_STM32F401XE_RCC_H_<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+    </programlisting>
+    <location file="Drivers/inc/stm32f401xe_rcc.h"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,2 @@
+../Examples/usart_test.c:10:6:USART2_GPIOInits	1
+../Examples/usart_test.c:34:5:main	2

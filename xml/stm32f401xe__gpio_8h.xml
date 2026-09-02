@@ -1,0 +1,709 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.18.0" xml:lang="en-US">
+  <compounddef id="stm32f401xe__gpio_8h" kind="file" language="C++">
+    <compoundname>stm32f401xe_gpio.h</compoundname>
+    <includes refid="stm32f401xe_8h" local="yes">stm32f401xe.h</includes>
+    <includedby refid="stm32f401xe_8h" local="yes">Drivers/inc/stm32f401xe.h</includedby>
+    <includedby refid="stm32f401xe__gpio_8c" local="yes">Drivers/src/stm32f401xe_gpio.c</includedby>
+    <incdepgraph>
+      <node id="2">
+        <label>stm32f401xe.h</label>
+        <link refid="stm32f401xe_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="1" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>Drivers/inc/stm32f401xe_gpio.h</label>
+        <link refid="stm32f401xe__gpio_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>stm32f401xe_i2c.h</label>
+        <link refid="stm32f401xe__i2c_8h_source"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>stddef.h</label>
+      </node>
+      <node id="4">
+        <label>stdint.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2">
+        <label>Drivers/inc/stm32f401xe.h</label>
+        <link refid="stm32f401xe_8h_source"/>
+        <childnode refid="1" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>Drivers/inc/stm32f401xe_gpio.h</label>
+        <link refid="stm32f401xe__gpio_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>Drivers/inc/stm32f401xe_i2c.h</label>
+        <link refid="stm32f401xe__i2c_8h_source"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>Drivers/inc/stm32f401xe_rcc.h</label>
+        <link refid="stm32f401xe__rcc_8h_source"/>
+      </node>
+      <node id="5">
+        <label>Drivers/inc/stm32f401xe_usart.h</label>
+        <link refid="stm32f401xe__usart_8h_source"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="struct_g_p_i_o___pin_config__t" prot="public">GPIO_PinConfig_t</innerclass>
+    <innerclass refid="struct_g_p_i_o___handle__t" prot="public">GPIO_Handle_t</innerclass>
+    <sectiondef kind="define">
+      <memberdef kind="define" id="stm32f401xe__gpio_8h_1ac0ee9fb4553170b4219d0126ba6ca828" prot="public" static="no">
+        <name>GPIO_PIN_NO_0</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/inc/stm32f401xe_gpio.h" line="38" column="9" bodyfile="Drivers/inc/stm32f401xe_gpio.h" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="stm32f401xe__gpio_8h_1aacd0b87435e884054f648b28b4e4e151" prot="public" static="no">
+        <name>GPIO_PIN_NO_1</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/inc/stm32f401xe_gpio.h" line="39" column="9" bodyfile="Drivers/inc/stm32f401xe_gpio.h" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="stm32f401xe__gpio_8h_1acab196184351eb1f6ff759394e1e2d8b" prot="public" static="no">
+        <name>GPIO_PIN_NO_2</name>
+        <initializer>2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/inc/stm32f401xe_gpio.h" line="40" column="9" bodyfile="Drivers/inc/stm32f401xe_gpio.h" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="stm32f401xe__gpio_8h_1a987665b32f9bdec495e537a815270eb8" prot="public" static="no">
+        <name>GPIO_PIN_NO_3</name>
+        <initializer>3</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/inc/stm32f401xe_gpio.h" line="41" column="9" bodyfile="Drivers/inc/stm32f401xe_gpio.h" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="stm32f401xe__gpio_8h_1ac588284a8f83d974b1f69754d5e96e5c" prot="public" static="no">
+        <name>GPIO_PIN_NO_4</name>
+        <initializer>4</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/inc/stm32f401xe_gpio.h" line="42" column="9" bodyfile="Drivers/inc/stm32f401xe_gpio.h" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="stm32f401xe__gpio_8h_1a38f92ce939f01b966bf0ade0208f3e84" prot="public" static="no">
+        <name>GPIO_PIN_NO_5</name>
+        <initializer>5</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/inc/stm32f401xe_gpio.h" line="43" column="9" bodyfile="Drivers/inc/stm32f401xe_gpio.h" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="stm32f401xe__gpio_8h_1a3021263fe794e7fad96ebc80a5482d1e" prot="public" static="no">
+        <name>GPIO_PIN_NO_6</name>
+        <initializer>6</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/inc/stm32f401xe_gpio.h" line="44" column="9" bodyfile="Drivers/inc/stm32f401xe_gpio.h" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="stm32f401xe__gpio_8h_1a18c1feeed49ea8414ac86486b7dabdeb" prot="public" static="no">
+        <name>GPIO_PIN_NO_8</name>
+        <initializer>8</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/inc/stm32f401xe_gpio.h" line="45" column="9" bodyfile="Drivers/inc/stm32f401xe_gpio.h" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="stm32f401xe__gpio_8h_1a42fce5552fede9739aa20e9f0110e3c4" prot="public" static="no">
+        <name>GPIO_PIN_NO_9</name>
+        <initializer>9</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/inc/stm32f401xe_gpio.h" line="46" column="9" bodyfile="Drivers/inc/stm32f401xe_gpio.h" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="stm32f401xe__gpio_8h_1aa51e6dbd33d73b48613bcf9ade8e0655" prot="public" static="no">
+        <name>GPIO_PIN_NO_10</name>
+        <initializer>10</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/inc/stm32f401xe_gpio.h" line="47" column="9" bodyfile="Drivers/inc/stm32f401xe_gpio.h" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="stm32f401xe__gpio_8h_1ac08cd56fc2501147e65b9a0a4e7030e3" prot="public" static="no">
+        <name>GPIO_PIN_NO_11</name>
+        <initializer>11</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/inc/stm32f401xe_gpio.h" line="48" column="9" bodyfile="Drivers/inc/stm32f401xe_gpio.h" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="stm32f401xe__gpio_8h_1a20f1f86af0198541476f3c76bc0859bf" prot="public" static="no">
+        <name>GPIO_PIN_NO_12</name>
+        <initializer>12</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/inc/stm32f401xe_gpio.h" line="49" column="9" bodyfile="Drivers/inc/stm32f401xe_gpio.h" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="stm32f401xe__gpio_8h_1a3ae3cbf82c1071b04351c504db8f20b6" prot="public" static="no">
+        <name>GPIO_PIN_NO_13</name>
+        <initializer>13</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/inc/stm32f401xe_gpio.h" line="50" column="9" bodyfile="Drivers/inc/stm32f401xe_gpio.h" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="stm32f401xe__gpio_8h_1a33f7b138fb78b0e06ebd211ce915b9a9" prot="public" static="no">
+        <name>GPIO_PIN_NO_14</name>
+        <initializer>14</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/inc/stm32f401xe_gpio.h" line="51" column="9" bodyfile="Drivers/inc/stm32f401xe_gpio.h" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="stm32f401xe__gpio_8h_1ab386178c3bf34e2d3c7b8c2d6257af92" prot="public" static="no">
+        <name>GPIO_PIN_NO_15</name>
+        <initializer>15</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/inc/stm32f401xe_gpio.h" line="52" column="9" bodyfile="Drivers/inc/stm32f401xe_gpio.h" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="stm32f401xe__gpio_8h_1a995e5bd9af1641f9e20d64803b969ef3" prot="public" static="no">
+        <name>GPIO_MODE_IN</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/inc/stm32f401xe_gpio.h" line="58" column="9" bodyfile="Drivers/inc/stm32f401xe_gpio.h" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="stm32f401xe__gpio_8h_1a8b9e26ba32586932cc345bee5fecb180" prot="public" static="no">
+        <name>GPIO_MODE_OUT</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/inc/stm32f401xe_gpio.h" line="59" column="9" bodyfile="Drivers/inc/stm32f401xe_gpio.h" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="stm32f401xe__gpio_8h_1ac29dc4f97b3363e4faf38a3fa45d9b64" prot="public" static="no">
+        <name>GPIO_MODE_ALFN</name>
+        <initializer>2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/inc/stm32f401xe_gpio.h" line="60" column="9" bodyfile="Drivers/inc/stm32f401xe_gpio.h" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="stm32f401xe__gpio_8h_1a7a04f9ab65ad572ad20791a35009220c" prot="public" static="no">
+        <name>GPIO_MODE_ANALOG</name>
+        <initializer>3</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/inc/stm32f401xe_gpio.h" line="61" column="9" bodyfile="Drivers/inc/stm32f401xe_gpio.h" bodystart="61" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="stm32f401xe__gpio_8h_1aadda8601af0fb9af9a41b3f910199679" prot="public" static="no">
+        <name>GPIO_MODE_IT_FT</name>
+        <initializer>4</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/inc/stm32f401xe_gpio.h" line="63" column="9" bodyfile="Drivers/inc/stm32f401xe_gpio.h" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="stm32f401xe__gpio_8h_1af97a5b7678a3a575277c11739cc1ce0f" prot="public" static="no">
+        <name>GPIO_MODE_IT_RT</name>
+        <initializer>5</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/inc/stm32f401xe_gpio.h" line="64" column="9" bodyfile="Drivers/inc/stm32f401xe_gpio.h" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="stm32f401xe__gpio_8h_1aa1469670a733f79770703fe65753139d" prot="public" static="no">
+        <name>GPIO_MODE_IT_RFT</name>
+        <initializer>6</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/inc/stm32f401xe_gpio.h" line="65" column="9" bodyfile="Drivers/inc/stm32f401xe_gpio.h" bodystart="65" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="stm32f401xe__gpio_8h_1a5510b387afb7ec2117b5d4207889163c" prot="public" static="no">
+        <name>GPIO_SPEED_LOW</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/inc/stm32f401xe_gpio.h" line="69" column="9" bodyfile="Drivers/inc/stm32f401xe_gpio.h" bodystart="69" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="stm32f401xe__gpio_8h_1a44a0eb2335a21858efbbb1557ce8d5e5" prot="public" static="no">
+        <name>GPIO_SPEED_MEDIUM</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/inc/stm32f401xe_gpio.h" line="70" column="9" bodyfile="Drivers/inc/stm32f401xe_gpio.h" bodystart="70" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="stm32f401xe__gpio_8h_1ac1b1830b902c29ae791caa033d14202c" prot="public" static="no">
+        <name>GPIO_SPEED_FAST</name>
+        <initializer>2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/inc/stm32f401xe_gpio.h" line="71" column="9" bodyfile="Drivers/inc/stm32f401xe_gpio.h" bodystart="71" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="stm32f401xe__gpio_8h_1ad693110177bf2e34c5431555c6977e8c" prot="public" static="no">
+        <name>GPIO_SPEED_HIGH</name>
+        <initializer>3</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/inc/stm32f401xe_gpio.h" line="72" column="9" bodyfile="Drivers/inc/stm32f401xe_gpio.h" bodystart="72" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="stm32f401xe__gpio_8h_1a8cfef441d198f1373c38160d6231d907" prot="public" static="no">
+        <name>GPIO_OP_Type_PP</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/inc/stm32f401xe_gpio.h" line="78" column="9" bodyfile="Drivers/inc/stm32f401xe_gpio.h" bodystart="78" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="stm32f401xe__gpio_8h_1ad34b431cd2ab3d0a91017df5ae2a8d6b" prot="public" static="no">
+        <name>GPIO_OP_Type_OD</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/inc/stm32f401xe_gpio.h" line="79" column="9" bodyfile="Drivers/inc/stm32f401xe_gpio.h" bodystart="79" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="stm32f401xe__gpio_8h_1a714441e96f8e8fb8da3233ca6b0bcee2" prot="public" static="no">
+        <name>GPIO_NO_PUPD</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/inc/stm32f401xe_gpio.h" line="84" column="9" bodyfile="Drivers/inc/stm32f401xe_gpio.h" bodystart="84" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="stm32f401xe__gpio_8h_1a49ccf2bf27ede3745ac1fea4507142a7" prot="public" static="no">
+        <name>GPIO_NO_PU</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/inc/stm32f401xe_gpio.h" line="85" column="9" bodyfile="Drivers/inc/stm32f401xe_gpio.h" bodystart="85" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="stm32f401xe__gpio_8h_1a6830e4bd71151d05a1697df8d90ad3db" prot="public" static="no">
+        <name>GPIO_NO_PD</name>
+        <initializer>2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/inc/stm32f401xe_gpio.h" line="86" column="9" bodyfile="Drivers/inc/stm32f401xe_gpio.h" bodystart="86" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="stm32f401xe__gpio_8h_1a214003040f1f142c43080ef8ced72b00" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void GPIO_Init</definition>
+        <argsstring>(GPIO_Handle_t *pGPIOHandle)</argsstring>
+        <name>GPIO_Init</name>
+        <param>
+          <type><ref refid="struct_g_p_i_o___handle__t" kindref="compound">GPIO_Handle_t</ref> *</type>
+          <declname>pGPIOHandle</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/inc/stm32f401xe_gpio.h" line="92" column="6" bodyfile="Drivers/src/stm32f401xe_gpio.c" bodystart="65" bodyend="115" declfile="Drivers/inc/stm32f401xe_gpio.h" declline="92" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="stm32f401xe__gpio_8h_1aa8078ad1f2c37770d4320b770488a3ce" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void GPIO_DeInit</definition>
+        <argsstring>(GPIO_RegDef_t *pGPIOx)</argsstring>
+        <name>GPIO_DeInit</name>
+        <param>
+          <type><ref refid="struct_g_p_i_o___reg_def__t" kindref="compound">GPIO_RegDef_t</ref> *</type>
+          <declname>pGPIOx</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/inc/stm32f401xe_gpio.h" line="93" column="6" bodyfile="Drivers/src/stm32f401xe_gpio.c" bodystart="116" bodyend="144" declfile="Drivers/inc/stm32f401xe_gpio.h" declline="93" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="stm32f401xe__gpio_8h_1a2f38e48d2bdf72a21f73cdc55495537a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void GPIO_PeriClockControl</definition>
+        <argsstring>(GPIO_RegDef_t *pGPIOx, uint8_t EnorDi)</argsstring>
+        <name>GPIO_PeriClockControl</name>
+        <param>
+          <type><ref refid="struct_g_p_i_o___reg_def__t" kindref="compound">GPIO_RegDef_t</ref> *</type>
+          <declname>pGPIOx</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>EnorDi</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/inc/stm32f401xe_gpio.h" line="98" column="6" bodyfile="Drivers/src/stm32f401xe_gpio.c" bodystart="4" bodyend="63" declfile="Drivers/inc/stm32f401xe_gpio.h" declline="98" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="stm32f401xe__gpio_8h_1a70498dd4c12c767e30ec68df25a2ccc5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t GPIO_ReadFromInputPin</definition>
+        <argsstring>(GPIO_RegDef_t *pGPIOx, uint8_t PinNumber)</argsstring>
+        <name>GPIO_ReadFromInputPin</name>
+        <param>
+          <type><ref refid="struct_g_p_i_o___reg_def__t" kindref="compound">GPIO_RegDef_t</ref> *</type>
+          <declname>pGPIOx</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>PinNumber</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/inc/stm32f401xe_gpio.h" line="104" column="10" bodyfile="Drivers/src/stm32f401xe_gpio.c" bodystart="146" bodyend="153" declfile="Drivers/inc/stm32f401xe_gpio.h" declline="104" declcolumn="10"/>
+      </memberdef>
+      <memberdef kind="function" id="stm32f401xe__gpio_8h_1afaeb0c58550a759eca7348b71fad4b97" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void GPIO_WriteToOutPin</definition>
+        <argsstring>(GPIO_RegDef_t *pGPIOx, uint8_t PinNumber, uint8_t value)</argsstring>
+        <name>GPIO_WriteToOutPin</name>
+        <param>
+          <type><ref refid="struct_g_p_i_o___reg_def__t" kindref="compound">GPIO_RegDef_t</ref> *</type>
+          <declname>pGPIOx</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>PinNumber</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/inc/stm32f401xe_gpio.h" line="105" column="6" declfile="Drivers/inc/stm32f401xe_gpio.h" declline="105" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="stm32f401xe__gpio_8h_1ac91034f21aa1ba1726e8c2a62c02b086" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint16_t</type>
+        <definition>uint16_t GPIO_ReadFromInputPort</definition>
+        <argsstring>(GPIO_RegDef_t *pGPIOx)</argsstring>
+        <name>GPIO_ReadFromInputPort</name>
+        <param>
+          <type><ref refid="struct_g_p_i_o___reg_def__t" kindref="compound">GPIO_RegDef_t</ref> *</type>
+          <declname>pGPIOx</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/inc/stm32f401xe_gpio.h" line="106" column="11" bodyfile="Drivers/src/stm32f401xe_gpio.c" bodystart="168" bodyend="175" declfile="Drivers/inc/stm32f401xe_gpio.h" declline="106" declcolumn="11"/>
+      </memberdef>
+      <memberdef kind="function" id="stm32f401xe__gpio_8h_1a790f8d97159b38d2cfcc718266ce0caa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void GPIO_WriteToOutPort</definition>
+        <argsstring>(GPIO_RegDef_t *pGPIOx, uint16_t value)</argsstring>
+        <name>GPIO_WriteToOutPort</name>
+        <param>
+          <type><ref refid="struct_g_p_i_o___reg_def__t" kindref="compound">GPIO_RegDef_t</ref> *</type>
+          <declname>pGPIOx</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/inc/stm32f401xe_gpio.h" line="107" column="6" declfile="Drivers/inc/stm32f401xe_gpio.h" declline="107" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="stm32f401xe__gpio_8h_1a40cb042d7693790aec137e35a353b425" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void GPIO_ToggleOutPin</definition>
+        <argsstring>(GPIO_RegDef_t *pGPIOx, uint8_t PinNumber, uint8_t value)</argsstring>
+        <name>GPIO_ToggleOutPin</name>
+        <param>
+          <type><ref refid="struct_g_p_i_o___reg_def__t" kindref="compound">GPIO_RegDef_t</ref> *</type>
+          <declname>pGPIOx</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>PinNumber</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/inc/stm32f401xe_gpio.h" line="108" column="6" declfile="Drivers/inc/stm32f401xe_gpio.h" declline="108" declcolumn="6"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>stm32f401RE_gpio.h</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*<sp/><sp/>Created<sp/>on:<sp/>Aug<sp/>6,<sp/>2026</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>Author:<sp/>deepu</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>INC_STM32F401RE_GPIO_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>INC_STM32F401RE_GPIO_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/><sp/>&quot;stm32f401xe.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15" refid="struct_g_p_i_o___pin_config__t" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/>GPIO_PinNumber;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Pin<sp/>number(0-15)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/>GPIO_PinMode;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Input/Output/AltFn/Analog<sp/>mode</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/>GPIO_PinSpeed;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Low/Medium/High/Very<sp/>High<sp/>speed</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/>GPIO_PinPuPdControl;<sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Pull-up/Pull-down<sp/>configuration</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/>GPIO_PinOPType;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Push-Pull/Open-Drain</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/>GPIO_AltFunMode;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Alternate<sp/>function<sp/>Mode(0-15)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal">}<sp/><ref refid="struct_g_p_i_o___pin_config__t" kindref="compound">GPIO_PinConfig_t</ref>;</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="26"><highlight class="comment"><sp/>*<sp/>Handle<sp/>structure<sp/>for<sp/>a<sp/>GPIO<sp/>pin</highlight></codeline>
+<codeline lineno="27"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29" refid="struct_g_p_i_o___handle__t" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_g_p_i_o___reg_def__t" kindref="compound">GPIO_RegDef_t</ref><sp/>*pGPIOx;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Pointer<sp/>to<sp/>GPIO<sp/>port<sp/>base<sp/>address</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_g_p_i_o___pin_config__t" kindref="compound">GPIO_PinConfig_t</ref><sp/>GPIO_PinConfig;<sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Pin<sp/>configuration<sp/>settings</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal">}<ref refid="struct_g_p_i_o___handle__t" kindref="compound">GPIO_Handle_t</ref>;;</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="36"><highlight class="comment"><sp/>*<sp/>GPIO_PIN_NUMBERS</highlight></codeline>
+<codeline lineno="37"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>GPIO_PIN_NO_0<sp/><sp/><sp/><sp/><sp/><sp/>0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>GPIO_PIN_NO_1<sp/><sp/><sp/><sp/><sp/><sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>GPIO_PIN_NO_2<sp/><sp/><sp/><sp/><sp/><sp/>2</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>GPIO_PIN_NO_3<sp/><sp/><sp/><sp/><sp/><sp/>3</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>GPIO_PIN_NO_4<sp/><sp/><sp/><sp/><sp/><sp/>4</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>GPIO_PIN_NO_5<sp/><sp/><sp/><sp/><sp/><sp/>5</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>GPIO_PIN_NO_6<sp/><sp/><sp/><sp/><sp/><sp/>6</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>GPIO_PIN_NO_8<sp/><sp/><sp/><sp/><sp/><sp/>8</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>GPIO_PIN_NO_9<sp/><sp/><sp/><sp/><sp/><sp/>9</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>GPIO_PIN_NO_10<sp/><sp/><sp/><sp/><sp/><sp/>10</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>GPIO_PIN_NO_11<sp/><sp/><sp/><sp/><sp/><sp/>11</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>GPIO_PIN_NO_12<sp/><sp/><sp/><sp/><sp/><sp/>12</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>GPIO_PIN_NO_13<sp/><sp/><sp/><sp/><sp/><sp/>13</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>GPIO_PIN_NO_14<sp/><sp/><sp/><sp/><sp/><sp/>14</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>GPIO_PIN_NO_15<sp/><sp/><sp/><sp/><sp/><sp/>15</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="55"><highlight class="comment"><sp/>*<sp/>GPIO_PIN_MODES</highlight></codeline>
+<codeline lineno="56"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>GPIO_MODE_IN<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Input<sp/>mode</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>GPIO_MODE_OUT<sp/><sp/><sp/><sp/><sp/><sp/><sp/>1<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>General<sp/>purpose<sp/>output<sp/>mode</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>GPIO_MODE_ALFN<sp/><sp/><sp/><sp/><sp/><sp/>2<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Alternate<sp/>function<sp/>mode</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>GPIO_MODE_ANALOG<sp/><sp/><sp/><sp/>3<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Analog<sp/>mode</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Interrupt<sp/>modes<sp/>(custom<sp/>values<sp/>&gt;<sp/>3)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>GPIO_MODE_IT_FT<sp/><sp/><sp/><sp/>4<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Input<sp/>with<sp/>falling<sp/>edge<sp/>trigger</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>GPIO_MODE_IT_RT<sp/><sp/><sp/><sp/>5<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Input<sp/>with<sp/>rising<sp/>edge<sp/>trigger</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>GPIO_MODE_IT_RFT<sp/><sp/><sp/>6<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Input<sp/>with<sp/>rising/falling<sp/>edge<sp/>trigger</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="67"><highlight class="comment"><sp/>*GPIO_PIN_SPEED</highlight></codeline>
+<codeline lineno="68"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>GPIO_SPEED_LOW<sp/><sp/><sp/><sp/><sp/><sp/><sp/>0<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Low<sp/>speed</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>GPIO_SPEED_MEDIUM<sp/><sp/><sp/><sp/>1<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Medium<sp/>speed</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>GPIO_SPEED_FAST<sp/><sp/><sp/><sp/><sp/><sp/>2<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>High<sp/>speed</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>GPIO_SPEED_HIGH<sp/><sp/><sp/><sp/><sp/><sp/>3<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Very<sp/>high<sp/>speed</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="75"><highlight class="comment"><sp/>*<sp/>GPIO_PIN_OUTPUT_TYPES</highlight></codeline>
+<codeline lineno="76"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>GPIO_OP_Type_PP<sp/><sp/><sp/><sp/><sp/><sp/>0<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Push-pull</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>GPIO_OP_Type_OD<sp/><sp/><sp/><sp/><sp/><sp/>1<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Open-drain</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="82"><highlight class="comment"><sp/>*<sp/>GPIO<sp/>pin<sp/>pull-up/pull-down<sp/>configuration</highlight></codeline>
+<codeline lineno="83"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>GPIO_NO_PUPD<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>No<sp/>pull-up,<sp/>pull-down</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>GPIO_NO_PU<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>1<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Pull-up</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>GPIO_NO_PD<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>2<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Pull-down</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="89"><highlight class="comment"><sp/>*<sp/>Initialize<sp/>and<sp/>Reset<sp/>GPIO<sp/>Peripherals</highlight></codeline>
+<codeline lineno="90"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>GPIO_Init(<ref refid="struct_g_p_i_o___handle__t" kindref="compound">GPIO_Handle_t</ref><sp/>*pGPIOHandle);</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>GPIO_DeInit(<ref refid="struct_g_p_i_o___reg_def__t" kindref="compound">GPIO_RegDef_t</ref><sp/>*pGPIOx);</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight></codeline>
+<codeline lineno="95"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="96"><highlight class="comment"><sp/>*<sp/>Perpheral<sp/>clk<sp/>setup</highlight></codeline>
+<codeline lineno="97"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="98"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>GPIO_PeriClockControl(<ref refid="struct_g_p_i_o___reg_def__t" kindref="compound">GPIO_RegDef_t</ref><sp/>*pGPIOx,uint8_t<sp/>EnorDi);</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"></highlight></codeline>
+<codeline lineno="100"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="101"><highlight class="comment"><sp/>*<sp/>Data<sp/>Read/Write</highlight></codeline>
+<codeline lineno="102"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="103"><highlight class="normal"></highlight></codeline>
+<codeline lineno="104"><highlight class="normal">uint8_t<sp/><sp/>GPIO_ReadFromInputPin(<ref refid="struct_g_p_i_o___reg_def__t" kindref="compound">GPIO_RegDef_t</ref><sp/>*pGPIOx,uint8_t<sp/>PinNumber);</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>GPIO_WriteToOutPin(<ref refid="struct_g_p_i_o___reg_def__t" kindref="compound">GPIO_RegDef_t</ref><sp/>*pGPIOx,uint8_t<sp/>PinNumber,uint8_t<sp/>value);</highlight></codeline>
+<codeline lineno="106"><highlight class="normal">uint16_t<sp/><sp/>GPIO_ReadFromInputPort(<ref refid="struct_g_p_i_o___reg_def__t" kindref="compound">GPIO_RegDef_t</ref><sp/>*pGPIOx);</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>GPIO_WriteToOutPort(<ref refid="struct_g_p_i_o___reg_def__t" kindref="compound">GPIO_RegDef_t</ref><sp/>*pGPIOx,uint16_t<sp/>value);</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>GPIO_ToggleOutPin(<ref refid="struct_g_p_i_o___reg_def__t" kindref="compound">GPIO_RegDef_t</ref><sp/>*pGPIOx,uint8_t<sp/>PinNumber,uint8_t<sp/>value);</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="110"><highlight class="comment">void<sp/>I2C_MasterSendData(I2C_Handle_t<sp/>*pI2CHandle,uint8_t<sp/>*pTxbuffer,<sp/>uint32_t<sp/>Len,<sp/>uint8_t<sp/>SlaveAddr,uint8_t<sp/>Sr);</highlight></codeline>
+<codeline lineno="111"><highlight class="comment">void<sp/>I2C_MasterReceiveData(I2C_Handle_t<sp/>*pI2CHandle,uint8_t<sp/>*pRxBuffer,<sp/>uint8_t<sp/>Len,<sp/>uint8_t<sp/>SlaveAddr,uint8_t<sp/>Sr);</highlight></codeline>
+<codeline lineno="112"><highlight class="comment">uint8_t<sp/>I2C_MasterSendDataIT(I2C_Handle_t<sp/>*pI2CHandle,uint8_t<sp/>*pTxbuffer,<sp/>uint32_t<sp/>Len,<sp/>uint8_t<sp/>SlaveAddr,uint8_t<sp/>Sr);</highlight></codeline>
+<codeline lineno="113"><highlight class="comment">uint8_t<sp/>I2C_MasterReceiveDataIT(I2C_Handle_t<sp/>*pI2CHandle,uint8_t<sp/>*pRxBuffer,<sp/>uint8_t<sp/>Len,<sp/>uint8_t<sp/>SlaveAddr,uint8_t<sp/>Sr);</highlight></codeline>
+<codeline lineno="114"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="115"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>INC_STM32F401RE_GPIO_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="116"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="Drivers/inc/stm32f401xe_gpio.h"/>
+  </compounddef>
+</doxygen>

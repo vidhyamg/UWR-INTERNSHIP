@@ -1,0 +1,435 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.18.0" xml:lang="en-US">
+  <compounddef id="struct_r_c_c___reg_def__t" kind="struct" language="C++" prot="public">
+    <compoundname>RCC_RegDef_t</compoundname>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_r_c_c___reg_def__t_1a8e04206c479e84a83a1b07794a37cdf6" prot="public" static="no" mutable="no">
+        <type>_vo uint32_t</type>
+        <definition>_vo uint32_t RCC_RegDef_t::CR</definition>
+        <argsstring></argsstring>
+        <name>CR</name>
+        <qualifiedname>RCC_RegDef_t::CR</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/inc/stm32f401xe.h" line="115" column="15" bodyfile="Drivers/inc/stm32f401xe.h" bodystart="115" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_r_c_c___reg_def__t_1a6f72cc6f785d111d69e42b0cc3d76c0e" prot="public" static="no" mutable="no">
+        <type>_vo uint32_t</type>
+        <definition>_vo uint32_t RCC_RegDef_t::PLLCFGR</definition>
+        <argsstring></argsstring>
+        <name>PLLCFGR</name>
+        <qualifiedname>RCC_RegDef_t::PLLCFGR</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/inc/stm32f401xe.h" line="116" column="15" bodyfile="Drivers/inc/stm32f401xe.h" bodystart="116" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_r_c_c___reg_def__t_1a88456ee76a760fadf2fba3aed0edbad7" prot="public" static="no" mutable="no">
+        <type>_vo uint32_t</type>
+        <definition>_vo uint32_t RCC_RegDef_t::CFGR</definition>
+        <argsstring></argsstring>
+        <name>CFGR</name>
+        <qualifiedname>RCC_RegDef_t::CFGR</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/inc/stm32f401xe.h" line="117" column="15" bodyfile="Drivers/inc/stm32f401xe.h" bodystart="117" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_r_c_c___reg_def__t_1ae5a519c02925bc1561d27635b77a2d8b" prot="public" static="no" mutable="no">
+        <type>_vo uint32_t</type>
+        <definition>_vo uint32_t RCC_RegDef_t::CIR</definition>
+        <argsstring></argsstring>
+        <name>CIR</name>
+        <qualifiedname>RCC_RegDef_t::CIR</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/inc/stm32f401xe.h" line="118" column="15" bodyfile="Drivers/inc/stm32f401xe.h" bodystart="118" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_r_c_c___reg_def__t_1a423427640a4d150f7c5e0899e2f0cc7b" prot="public" static="no" mutable="no">
+        <type>_vo uint32_t</type>
+        <definition>_vo uint32_t RCC_RegDef_t::AHB1RSTR</definition>
+        <argsstring></argsstring>
+        <name>AHB1RSTR</name>
+        <qualifiedname>RCC_RegDef_t::AHB1RSTR</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/inc/stm32f401xe.h" line="119" column="15" bodyfile="Drivers/inc/stm32f401xe.h" bodystart="119" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_r_c_c___reg_def__t_1a33e15c4168c8f71a05ccc59cfcb5588e" prot="public" static="no" mutable="no">
+        <type>_vo uint32_t</type>
+        <definition>_vo uint32_t RCC_RegDef_t::AHB2RSTR</definition>
+        <argsstring></argsstring>
+        <name>AHB2RSTR</name>
+        <qualifiedname>RCC_RegDef_t::AHB2RSTR</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/inc/stm32f401xe.h" line="120" column="15" bodyfile="Drivers/inc/stm32f401xe.h" bodystart="120" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_r_c_c___reg_def__t_1a458363fe1175e33fefe45a4e8064ef54" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t RCC_RegDef_t::Reserved0[2]</definition>
+        <argsstring>[2]</argsstring>
+        <name>Reserved0</name>
+        <qualifiedname>RCC_RegDef_t::Reserved0</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/inc/stm32f401xe.h" line="121" column="10" bodyfile="Drivers/inc/stm32f401xe.h" bodystart="121" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_r_c_c___reg_def__t_1a34bf87566c5b51031c11308a0992c379" prot="public" static="no" mutable="no">
+        <type>_vo uint32_t</type>
+        <definition>_vo uint32_t RCC_RegDef_t::APB1RSTR</definition>
+        <argsstring></argsstring>
+        <name>APB1RSTR</name>
+        <qualifiedname>RCC_RegDef_t::APB1RSTR</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/inc/stm32f401xe.h" line="122" column="15" bodyfile="Drivers/inc/stm32f401xe.h" bodystart="122" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_r_c_c___reg_def__t_1a39a40eba5590c563e2bf7a3bf3bddf6e" prot="public" static="no" mutable="no">
+        <type>_vo uint32_t</type>
+        <definition>_vo uint32_t RCC_RegDef_t::APB2RSTR</definition>
+        <argsstring></argsstring>
+        <name>APB2RSTR</name>
+        <qualifiedname>RCC_RegDef_t::APB2RSTR</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/inc/stm32f401xe.h" line="123" column="15" bodyfile="Drivers/inc/stm32f401xe.h" bodystart="123" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_r_c_c___reg_def__t_1a17357a81440e6b84d79c4163524a3039" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t RCC_RegDef_t::Reserved1[2]</definition>
+        <argsstring>[2]</argsstring>
+        <name>Reserved1</name>
+        <qualifiedname>RCC_RegDef_t::Reserved1</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/inc/stm32f401xe.h" line="124" column="10" bodyfile="Drivers/inc/stm32f401xe.h" bodystart="124" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_r_c_c___reg_def__t_1a9c483ff30b39d8404eb0e85cddc818de" prot="public" static="no" mutable="no">
+        <type>_vo uint32_t</type>
+        <definition>_vo uint32_t RCC_RegDef_t::AHB1ENR</definition>
+        <argsstring></argsstring>
+        <name>AHB1ENR</name>
+        <qualifiedname>RCC_RegDef_t::AHB1ENR</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/inc/stm32f401xe.h" line="125" column="15" bodyfile="Drivers/inc/stm32f401xe.h" bodystart="125" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_r_c_c___reg_def__t_1a0ba048feaba9b8af787e5611849939e9" prot="public" static="no" mutable="no">
+        <type>_vo uint32_t</type>
+        <definition>_vo uint32_t RCC_RegDef_t::AHB2ENR</definition>
+        <argsstring></argsstring>
+        <name>AHB2ENR</name>
+        <qualifiedname>RCC_RegDef_t::AHB2ENR</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/inc/stm32f401xe.h" line="126" column="15" bodyfile="Drivers/inc/stm32f401xe.h" bodystart="126" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_r_c_c___reg_def__t_1a6bf441ed6893581c2142586922b6e70d" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t RCC_RegDef_t::Reserved2[2]</definition>
+        <argsstring>[2]</argsstring>
+        <name>Reserved2</name>
+        <qualifiedname>RCC_RegDef_t::Reserved2</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/inc/stm32f401xe.h" line="127" column="10" bodyfile="Drivers/inc/stm32f401xe.h" bodystart="127" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_r_c_c___reg_def__t_1a87de09a5ddd4835a79d353dc40f51ecc" prot="public" static="no" mutable="no">
+        <type>_vo uint32_t</type>
+        <definition>_vo uint32_t RCC_RegDef_t::APB1ENR</definition>
+        <argsstring></argsstring>
+        <name>APB1ENR</name>
+        <qualifiedname>RCC_RegDef_t::APB1ENR</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/inc/stm32f401xe.h" line="128" column="15" bodyfile="Drivers/inc/stm32f401xe.h" bodystart="128" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_r_c_c___reg_def__t_1ac4e3c1460e834020258335261d591193" prot="public" static="no" mutable="no">
+        <type>_vo uint32_t</type>
+        <definition>_vo uint32_t RCC_RegDef_t::APB2ENR</definition>
+        <argsstring></argsstring>
+        <name>APB2ENR</name>
+        <qualifiedname>RCC_RegDef_t::APB2ENR</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/inc/stm32f401xe.h" line="129" column="15" bodyfile="Drivers/inc/stm32f401xe.h" bodystart="129" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_r_c_c___reg_def__t_1a87e8e95320c875a55c19c341529fbbb8" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t RCC_RegDef_t::Reserved3[2]</definition>
+        <argsstring>[2]</argsstring>
+        <name>Reserved3</name>
+        <qualifiedname>RCC_RegDef_t::Reserved3</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/inc/stm32f401xe.h" line="130" column="10" bodyfile="Drivers/inc/stm32f401xe.h" bodystart="130" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_r_c_c___reg_def__t_1ae88b0a26153e13f050c31cbd79224ab7" prot="public" static="no" mutable="no">
+        <type>_vo uint32_t</type>
+        <definition>_vo uint32_t RCC_RegDef_t::AHB1LPENR</definition>
+        <argsstring></argsstring>
+        <name>AHB1LPENR</name>
+        <qualifiedname>RCC_RegDef_t::AHB1LPENR</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/inc/stm32f401xe.h" line="131" column="15" bodyfile="Drivers/inc/stm32f401xe.h" bodystart="131" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_r_c_c___reg_def__t_1a73723d39ed517ba04778e72ce2bad257" prot="public" static="no" mutable="no">
+        <type>_vo uint32_t</type>
+        <definition>_vo uint32_t RCC_RegDef_t::AHB2LPENR</definition>
+        <argsstring></argsstring>
+        <name>AHB2LPENR</name>
+        <qualifiedname>RCC_RegDef_t::AHB2LPENR</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/inc/stm32f401xe.h" line="132" column="15" bodyfile="Drivers/inc/stm32f401xe.h" bodystart="132" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_r_c_c___reg_def__t_1a05eaefec7434e4549da1775bff0374ba" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t RCC_RegDef_t::Reserved4[2]</definition>
+        <argsstring>[2]</argsstring>
+        <name>Reserved4</name>
+        <qualifiedname>RCC_RegDef_t::Reserved4</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/inc/stm32f401xe.h" line="133" column="10" bodyfile="Drivers/inc/stm32f401xe.h" bodystart="133" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_r_c_c___reg_def__t_1a3b513300dc9091561e0b3cbe4c96d249" prot="public" static="no" mutable="no">
+        <type>_vo uint32_t</type>
+        <definition>_vo uint32_t RCC_RegDef_t::APB1LPENR</definition>
+        <argsstring></argsstring>
+        <name>APB1LPENR</name>
+        <qualifiedname>RCC_RegDef_t::APB1LPENR</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/inc/stm32f401xe.h" line="134" column="15" bodyfile="Drivers/inc/stm32f401xe.h" bodystart="134" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_r_c_c___reg_def__t_1a3e1495c214448aa5b51510d189df2057" prot="public" static="no" mutable="no">
+        <type>_vo uint32_t</type>
+        <definition>_vo uint32_t RCC_RegDef_t::APB2LPENR</definition>
+        <argsstring></argsstring>
+        <name>APB2LPENR</name>
+        <qualifiedname>RCC_RegDef_t::APB2LPENR</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/inc/stm32f401xe.h" line="135" column="15" bodyfile="Drivers/inc/stm32f401xe.h" bodystart="135" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_r_c_c___reg_def__t_1a99905827d2abf2fd7644071ffd67c967" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t RCC_RegDef_t::Reserved5[2]</definition>
+        <argsstring>[2]</argsstring>
+        <name>Reserved5</name>
+        <qualifiedname>RCC_RegDef_t::Reserved5</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/inc/stm32f401xe.h" line="136" column="10" bodyfile="Drivers/inc/stm32f401xe.h" bodystart="136" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_r_c_c___reg_def__t_1a862f34badfd1a07ce9ebd6659054244f" prot="public" static="no" mutable="no">
+        <type>_vo uint32_t</type>
+        <definition>_vo uint32_t RCC_RegDef_t::BDCR</definition>
+        <argsstring></argsstring>
+        <name>BDCR</name>
+        <qualifiedname>RCC_RegDef_t::BDCR</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/inc/stm32f401xe.h" line="137" column="15" bodyfile="Drivers/inc/stm32f401xe.h" bodystart="137" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_r_c_c___reg_def__t_1ae9c22e48d4bcb480dd445f6d89554242" prot="public" static="no" mutable="no">
+        <type>_vo uint32_t</type>
+        <definition>_vo uint32_t RCC_RegDef_t::CSR</definition>
+        <argsstring></argsstring>
+        <name>CSR</name>
+        <qualifiedname>RCC_RegDef_t::CSR</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/inc/stm32f401xe.h" line="138" column="15" bodyfile="Drivers/inc/stm32f401xe.h" bodystart="138" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_r_c_c___reg_def__t_1a90c71783cbde3182c41250640204f1a8" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t RCC_RegDef_t::Reserved6[2]</definition>
+        <argsstring>[2]</argsstring>
+        <name>Reserved6</name>
+        <qualifiedname>RCC_RegDef_t::Reserved6</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/inc/stm32f401xe.h" line="139" column="10" bodyfile="Drivers/inc/stm32f401xe.h" bodystart="139" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_r_c_c___reg_def__t_1a4af9e48d5c278e535dbfcbb1d9ce90de" prot="public" static="no" mutable="no">
+        <type>_vo uint32_t</type>
+        <definition>_vo uint32_t RCC_RegDef_t::SSCGR</definition>
+        <argsstring></argsstring>
+        <name>SSCGR</name>
+        <qualifiedname>RCC_RegDef_t::SSCGR</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/inc/stm32f401xe.h" line="140" column="15" bodyfile="Drivers/inc/stm32f401xe.h" bodystart="140" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_r_c_c___reg_def__t_1a155ef4c17869491b78107cfb342943b4" prot="public" static="no" mutable="no">
+        <type>_vo uint32_t</type>
+        <definition>_vo uint32_t RCC_RegDef_t::PLLI2SCFGR</definition>
+        <argsstring></argsstring>
+        <name>PLLI2SCFGR</name>
+        <qualifiedname>RCC_RegDef_t::PLLI2SCFGR</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/inc/stm32f401xe.h" line="141" column="15" bodyfile="Drivers/inc/stm32f401xe.h" bodystart="141" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_r_c_c___reg_def__t_1ad9359370e358c7af5107e29af272f1ea" prot="public" static="no" mutable="no">
+        <type>_vo uint32_t</type>
+        <definition>_vo uint32_t RCC_RegDef_t::DCKCF</definition>
+        <argsstring></argsstring>
+        <name>DCKCF</name>
+        <qualifiedname>RCC_RegDef_t::DCKCF</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/inc/stm32f401xe.h" line="142" column="15" bodyfile="Drivers/inc/stm32f401xe.h" bodystart="142" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Drivers/inc/stm32f401xe.h" line="111" column="1" bodyfile="Drivers/inc/stm32f401xe.h" bodystart="112" bodyend="144"/>
+    <listofallmembers>
+      <member refid="struct_r_c_c___reg_def__t_1a9c483ff30b39d8404eb0e85cddc818de" prot="public" virt="non-virtual"><scope>RCC_RegDef_t</scope><name>AHB1ENR</name></member>
+      <member refid="struct_r_c_c___reg_def__t_1ae88b0a26153e13f050c31cbd79224ab7" prot="public" virt="non-virtual"><scope>RCC_RegDef_t</scope><name>AHB1LPENR</name></member>
+      <member refid="struct_r_c_c___reg_def__t_1a423427640a4d150f7c5e0899e2f0cc7b" prot="public" virt="non-virtual"><scope>RCC_RegDef_t</scope><name>AHB1RSTR</name></member>
+      <member refid="struct_r_c_c___reg_def__t_1a0ba048feaba9b8af787e5611849939e9" prot="public" virt="non-virtual"><scope>RCC_RegDef_t</scope><name>AHB2ENR</name></member>
+      <member refid="struct_r_c_c___reg_def__t_1a73723d39ed517ba04778e72ce2bad257" prot="public" virt="non-virtual"><scope>RCC_RegDef_t</scope><name>AHB2LPENR</name></member>
+      <member refid="struct_r_c_c___reg_def__t_1a33e15c4168c8f71a05ccc59cfcb5588e" prot="public" virt="non-virtual"><scope>RCC_RegDef_t</scope><name>AHB2RSTR</name></member>
+      <member refid="struct_r_c_c___reg_def__t_1a87de09a5ddd4835a79d353dc40f51ecc" prot="public" virt="non-virtual"><scope>RCC_RegDef_t</scope><name>APB1ENR</name></member>
+      <member refid="struct_r_c_c___reg_def__t_1a3b513300dc9091561e0b3cbe4c96d249" prot="public" virt="non-virtual"><scope>RCC_RegDef_t</scope><name>APB1LPENR</name></member>
+      <member refid="struct_r_c_c___reg_def__t_1a34bf87566c5b51031c11308a0992c379" prot="public" virt="non-virtual"><scope>RCC_RegDef_t</scope><name>APB1RSTR</name></member>
+      <member refid="struct_r_c_c___reg_def__t_1ac4e3c1460e834020258335261d591193" prot="public" virt="non-virtual"><scope>RCC_RegDef_t</scope><name>APB2ENR</name></member>
+      <member refid="struct_r_c_c___reg_def__t_1a3e1495c214448aa5b51510d189df2057" prot="public" virt="non-virtual"><scope>RCC_RegDef_t</scope><name>APB2LPENR</name></member>
+      <member refid="struct_r_c_c___reg_def__t_1a39a40eba5590c563e2bf7a3bf3bddf6e" prot="public" virt="non-virtual"><scope>RCC_RegDef_t</scope><name>APB2RSTR</name></member>
+      <member refid="struct_r_c_c___reg_def__t_1a862f34badfd1a07ce9ebd6659054244f" prot="public" virt="non-virtual"><scope>RCC_RegDef_t</scope><name>BDCR</name></member>
+      <member refid="struct_r_c_c___reg_def__t_1a88456ee76a760fadf2fba3aed0edbad7" prot="public" virt="non-virtual"><scope>RCC_RegDef_t</scope><name>CFGR</name></member>
+      <member refid="struct_r_c_c___reg_def__t_1ae5a519c02925bc1561d27635b77a2d8b" prot="public" virt="non-virtual"><scope>RCC_RegDef_t</scope><name>CIR</name></member>
+      <member refid="struct_r_c_c___reg_def__t_1a8e04206c479e84a83a1b07794a37cdf6" prot="public" virt="non-virtual"><scope>RCC_RegDef_t</scope><name>CR</name></member>
+      <member refid="struct_r_c_c___reg_def__t_1ae9c22e48d4bcb480dd445f6d89554242" prot="public" virt="non-virtual"><scope>RCC_RegDef_t</scope><name>CSR</name></member>
+      <member refid="struct_r_c_c___reg_def__t_1ad9359370e358c7af5107e29af272f1ea" prot="public" virt="non-virtual"><scope>RCC_RegDef_t</scope><name>DCKCF</name></member>
+      <member refid="struct_r_c_c___reg_def__t_1a6f72cc6f785d111d69e42b0cc3d76c0e" prot="public" virt="non-virtual"><scope>RCC_RegDef_t</scope><name>PLLCFGR</name></member>
+      <member refid="struct_r_c_c___reg_def__t_1a155ef4c17869491b78107cfb342943b4" prot="public" virt="non-virtual"><scope>RCC_RegDef_t</scope><name>PLLI2SCFGR</name></member>
+      <member refid="struct_r_c_c___reg_def__t_1a458363fe1175e33fefe45a4e8064ef54" prot="public" virt="non-virtual"><scope>RCC_RegDef_t</scope><name>Reserved0</name></member>
+      <member refid="struct_r_c_c___reg_def__t_1a17357a81440e6b84d79c4163524a3039" prot="public" virt="non-virtual"><scope>RCC_RegDef_t</scope><name>Reserved1</name></member>
+      <member refid="struct_r_c_c___reg_def__t_1a6bf441ed6893581c2142586922b6e70d" prot="public" virt="non-virtual"><scope>RCC_RegDef_t</scope><name>Reserved2</name></member>
+      <member refid="struct_r_c_c___reg_def__t_1a87e8e95320c875a55c19c341529fbbb8" prot="public" virt="non-virtual"><scope>RCC_RegDef_t</scope><name>Reserved3</name></member>
+      <member refid="struct_r_c_c___reg_def__t_1a05eaefec7434e4549da1775bff0374ba" prot="public" virt="non-virtual"><scope>RCC_RegDef_t</scope><name>Reserved4</name></member>
+      <member refid="struct_r_c_c___reg_def__t_1a99905827d2abf2fd7644071ffd67c967" prot="public" virt="non-virtual"><scope>RCC_RegDef_t</scope><name>Reserved5</name></member>
+      <member refid="struct_r_c_c___reg_def__t_1a90c71783cbde3182c41250640204f1a8" prot="public" virt="non-virtual"><scope>RCC_RegDef_t</scope><name>Reserved6</name></member>
+      <member refid="struct_r_c_c___reg_def__t_1a4af9e48d5c278e535dbfcbb1d9ce90de" prot="public" virt="non-virtual"><scope>RCC_RegDef_t</scope><name>SSCGR</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

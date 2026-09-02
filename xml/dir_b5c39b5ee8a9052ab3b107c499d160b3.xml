@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.18.0" xml:lang="en-US">
+  <compounddef id="dir_b5c39b5ee8a9052ab3b107c499d160b3" kind="dir">
+    <compoundname>Debug/Drivers/src</compoundname>
+    <innerfile refid="stm32f401xe__gpio_8d">stm32f401xe_gpio.d</innerfile>
+    <innerfile refid="stm32f401xe__i2c_8d">stm32f401xe_i2c.d</innerfile>
+    <innerfile refid="stm32f401xe__rcc_8d">stm32f401xe_rcc.d</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Debug/Drivers/src/"/>
+  </compounddef>
+</doxygen>

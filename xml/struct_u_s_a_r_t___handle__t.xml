@@ -1,0 +1,157 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.18.0" xml:lang="en-US">
+  <compounddef id="struct_u_s_a_r_t___handle__t" kind="struct" language="C++" prot="public">
+    <compoundname>USART_Handle_t</compoundname>
+    <includes refid="stm32f401xe__usart_8h" local="no">stm32f401xe_usart.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_u_s_a_r_t___handle__t_1a92d1eda6b38861b828d2471853adacad" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_u_s_a_r_t___reg_def__t" kindref="compound">USART_RegDef_t</ref> *</type>
+        <definition>USART_RegDef_t* USART_Handle_t::pUSARTx</definition>
+        <argsstring></argsstring>
+        <name>pUSARTx</name>
+        <qualifiedname>USART_Handle_t::pUSARTx</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/inc/stm32f401xe_usart.h" line="37" column="20" bodyfile="Drivers/inc/stm32f401xe_usart.h" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_u_s_a_r_t___handle__t_1a792428d5706f74c592be5fae86bfb3b3" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_u_s_a_r_t___config__t" kindref="compound">USART_Config_t</ref></type>
+        <definition>USART_Config_t USART_Handle_t::USART_Config</definition>
+        <argsstring></argsstring>
+        <name>USART_Config</name>
+        <qualifiedname>USART_Handle_t::USART_Config</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/inc/stm32f401xe_usart.h" line="38" column="20" bodyfile="Drivers/inc/stm32f401xe_usart.h" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_u_s_a_r_t___handle__t_1aeb49a4cedbbf9ea5a5d97f9ad81e75a4" prot="public" static="no" mutable="no">
+        <type>uint8_t *</type>
+        <definition>uint8_t* USART_Handle_t::pTxBuffer</definition>
+        <argsstring></argsstring>
+        <name>pTxBuffer</name>
+        <qualifiedname>USART_Handle_t::pTxBuffer</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/inc/stm32f401xe_usart.h" line="41" column="20" bodyfile="Drivers/inc/stm32f401xe_usart.h" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_u_s_a_r_t___handle__t_1a248a7cd701bde7b353b0290aa91b1369" prot="public" static="no" mutable="no">
+        <type>uint8_t *</type>
+        <definition>uint8_t* USART_Handle_t::pRxBuffer</definition>
+        <argsstring></argsstring>
+        <name>pRxBuffer</name>
+        <qualifiedname>USART_Handle_t::pRxBuffer</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/inc/stm32f401xe_usart.h" line="42" column="20" bodyfile="Drivers/inc/stm32f401xe_usart.h" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_u_s_a_r_t___handle__t_1a396419f1a3cf262404766daf1d32de32" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t USART_Handle_t::TxLen</definition>
+        <argsstring></argsstring>
+        <name>TxLen</name>
+        <qualifiedname>USART_Handle_t::TxLen</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/inc/stm32f401xe_usart.h" line="43" column="20" bodyfile="Drivers/inc/stm32f401xe_usart.h" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_u_s_a_r_t___handle__t_1af48016eeb1e15c7f540e803a267c0733" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t USART_Handle_t::RxLen</definition>
+        <argsstring></argsstring>
+        <name>RxLen</name>
+        <qualifiedname>USART_Handle_t::RxLen</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/inc/stm32f401xe_usart.h" line="44" column="20" bodyfile="Drivers/inc/stm32f401xe_usart.h" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_u_s_a_r_t___handle__t_1ad6767cbc2c38ca59fcf8f3772a3c102a" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t USART_Handle_t::TxBusyState</definition>
+        <argsstring></argsstring>
+        <name>TxBusyState</name>
+        <qualifiedname>USART_Handle_t::TxBusyState</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/inc/stm32f401xe_usart.h" line="45" column="20" bodyfile="Drivers/inc/stm32f401xe_usart.h" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_u_s_a_r_t___handle__t_1a47c4996aef3e23260492e8e9037667c1" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t USART_Handle_t::RxBusyState</definition>
+        <argsstring></argsstring>
+        <name>RxBusyState</name>
+        <qualifiedname>USART_Handle_t::RxBusyState</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/inc/stm32f401xe_usart.h" line="46" column="20" bodyfile="Drivers/inc/stm32f401xe_usart.h" bodystart="46" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Handle structure for USART This structure contains the configuration settings and runtime information for the USART peripheral. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="3">
+        <label>USART_Config_t</label>
+        <link refid="struct_u_s_a_r_t___config__t"/>
+      </node>
+      <node id="1">
+        <label>USART_Handle_t</label>
+        <link refid="struct_u_s_a_r_t___handle__t"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>pUSARTx</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>USART_Config</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>USART_RegDef_t</label>
+        <link refid="struct_u_s_a_r_t___reg_def__t"/>
+      </node>
+    </collaborationgraph>
+    <location file="Drivers/inc/stm32f401xe_usart.h" line="35" column="1" bodyfile="Drivers/inc/stm32f401xe_usart.h" bodystart="36" bodyend="47"/>
+    <listofallmembers>
+      <member refid="struct_u_s_a_r_t___handle__t_1a248a7cd701bde7b353b0290aa91b1369" prot="public" virt="non-virtual"><scope>USART_Handle_t</scope><name>pRxBuffer</name></member>
+      <member refid="struct_u_s_a_r_t___handle__t_1aeb49a4cedbbf9ea5a5d97f9ad81e75a4" prot="public" virt="non-virtual"><scope>USART_Handle_t</scope><name>pTxBuffer</name></member>
+      <member refid="struct_u_s_a_r_t___handle__t_1a92d1eda6b38861b828d2471853adacad" prot="public" virt="non-virtual"><scope>USART_Handle_t</scope><name>pUSARTx</name></member>
+      <member refid="struct_u_s_a_r_t___handle__t_1a47c4996aef3e23260492e8e9037667c1" prot="public" virt="non-virtual"><scope>USART_Handle_t</scope><name>RxBusyState</name></member>
+      <member refid="struct_u_s_a_r_t___handle__t_1af48016eeb1e15c7f540e803a267c0733" prot="public" virt="non-virtual"><scope>USART_Handle_t</scope><name>RxLen</name></member>
+      <member refid="struct_u_s_a_r_t___handle__t_1ad6767cbc2c38ca59fcf8f3772a3c102a" prot="public" virt="non-virtual"><scope>USART_Handle_t</scope><name>TxBusyState</name></member>
+      <member refid="struct_u_s_a_r_t___handle__t_1a396419f1a3cf262404766daf1d32de32" prot="public" virt="non-virtual"><scope>USART_Handle_t</scope><name>TxLen</name></member>
+      <member refid="struct_u_s_a_r_t___handle__t_1a792428d5706f74c592be5fae86bfb3b3" prot="public" virt="non-virtual"><scope>USART_Handle_t</scope><name>USART_Config</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

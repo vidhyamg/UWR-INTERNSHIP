@@ -1,0 +1,105 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.18.0" xml:lang="en-US">
+  <compounddef id="struct_e_x_t_i___reg_def__t" kind="struct" language="C++" prot="public">
+    <compoundname>EXTI_RegDef_t</compoundname>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_e_x_t_i___reg_def__t_1a3c53f287a512cb086c158b2ff66e8931" prot="public" static="no" mutable="no">
+        <type>_vo uint32_t</type>
+        <definition>_vo uint32_t EXTI_RegDef_t::EXTI_IMR</definition>
+        <argsstring></argsstring>
+        <name>EXTI_IMR</name>
+        <qualifiedname>EXTI_RegDef_t::EXTI_IMR</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/inc/stm32f401xe.h" line="204" column="14" bodyfile="Drivers/inc/stm32f401xe.h" bodystart="204" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_e_x_t_i___reg_def__t_1a3d23da21e0a21f9cdf1a9ea3c39fee42" prot="public" static="no" mutable="no">
+        <type>_vo uint32_t</type>
+        <definition>_vo uint32_t EXTI_RegDef_t::EXTI_EMR</definition>
+        <argsstring></argsstring>
+        <name>EXTI_EMR</name>
+        <qualifiedname>EXTI_RegDef_t::EXTI_EMR</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/inc/stm32f401xe.h" line="205" column="14" bodyfile="Drivers/inc/stm32f401xe.h" bodystart="205" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_e_x_t_i___reg_def__t_1a5d5979ad57513ba4c33f1892da37c6b2" prot="public" static="no" mutable="no">
+        <type>_vo uint32_t</type>
+        <definition>_vo uint32_t EXTI_RegDef_t::EXTI_RTSR</definition>
+        <argsstring></argsstring>
+        <name>EXTI_RTSR</name>
+        <qualifiedname>EXTI_RegDef_t::EXTI_RTSR</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/inc/stm32f401xe.h" line="206" column="14" bodyfile="Drivers/inc/stm32f401xe.h" bodystart="206" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_e_x_t_i___reg_def__t_1a0fa0068ff0dac1eac0d27a271e33b0c3" prot="public" static="no" mutable="no">
+        <type>_vo uint32_t</type>
+        <definition>_vo uint32_t EXTI_RegDef_t::EXTI_FTSR</definition>
+        <argsstring></argsstring>
+        <name>EXTI_FTSR</name>
+        <qualifiedname>EXTI_RegDef_t::EXTI_FTSR</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/inc/stm32f401xe.h" line="207" column="14" bodyfile="Drivers/inc/stm32f401xe.h" bodystart="207" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_e_x_t_i___reg_def__t_1a9b9fed474a0c75e06f7670c631203e01" prot="public" static="no" mutable="no">
+        <type>_vo uint32_t</type>
+        <definition>_vo uint32_t EXTI_RegDef_t::MEEXTI_SWIER</definition>
+        <argsstring></argsstring>
+        <name>MEEXTI_SWIER</name>
+        <qualifiedname>EXTI_RegDef_t::MEEXTI_SWIER</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/inc/stm32f401xe.h" line="208" column="14" bodyfile="Drivers/inc/stm32f401xe.h" bodystart="208" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_e_x_t_i___reg_def__t_1ab5f8fc372e635bfcefda6d1ec67bcc9c" prot="public" static="no" mutable="no">
+        <type>_vo uint32_t</type>
+        <definition>_vo uint32_t EXTI_RegDef_t::EXTI_PR</definition>
+        <argsstring></argsstring>
+        <name>EXTI_PR</name>
+        <qualifiedname>EXTI_RegDef_t::EXTI_PR</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/inc/stm32f401xe.h" line="209" column="14" bodyfile="Drivers/inc/stm32f401xe.h" bodystart="209" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Drivers/inc/stm32f401xe.h" line="202" column="1" bodyfile="Drivers/inc/stm32f401xe.h" bodystart="203" bodyend="211"/>
+    <listofallmembers>
+      <member refid="struct_e_x_t_i___reg_def__t_1a3d23da21e0a21f9cdf1a9ea3c39fee42" prot="public" virt="non-virtual"><scope>EXTI_RegDef_t</scope><name>EXTI_EMR</name></member>
+      <member refid="struct_e_x_t_i___reg_def__t_1a0fa0068ff0dac1eac0d27a271e33b0c3" prot="public" virt="non-virtual"><scope>EXTI_RegDef_t</scope><name>EXTI_FTSR</name></member>
+      <member refid="struct_e_x_t_i___reg_def__t_1a3c53f287a512cb086c158b2ff66e8931" prot="public" virt="non-virtual"><scope>EXTI_RegDef_t</scope><name>EXTI_IMR</name></member>
+      <member refid="struct_e_x_t_i___reg_def__t_1ab5f8fc372e635bfcefda6d1ec67bcc9c" prot="public" virt="non-virtual"><scope>EXTI_RegDef_t</scope><name>EXTI_PR</name></member>
+      <member refid="struct_e_x_t_i___reg_def__t_1a5d5979ad57513ba4c33f1892da37c6b2" prot="public" virt="non-virtual"><scope>EXTI_RegDef_t</scope><name>EXTI_RTSR</name></member>
+      <member refid="struct_e_x_t_i___reg_def__t_1a9b9fed474a0c75e06f7670c631203e01" prot="public" virt="non-virtual"><scope>EXTI_RegDef_t</scope><name>MEEXTI_SWIER</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

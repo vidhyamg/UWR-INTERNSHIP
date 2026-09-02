@@ -1,0 +1,150 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.18.0" xml:lang="en-US">
+  <compounddef id="struct_g_p_i_o___reg_def__t" kind="struct" language="C++" prot="public">
+    <compoundname>GPIO_RegDef_t</compoundname>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_g_p_i_o___reg_def__t_1a4aab406272a3f8ca7278b961e7df3c5d" prot="public" static="no" mutable="no">
+        <type>_vo uint32_t</type>
+        <definition>_vo uint32_t GPIO_RegDef_t::MODER</definition>
+        <argsstring></argsstring>
+        <name>MODER</name>
+        <qualifiedname>GPIO_RegDef_t::MODER</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/inc/stm32f401xe.h" line="93" column="14" bodyfile="Drivers/inc/stm32f401xe.h" bodystart="93" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_g_p_i_o___reg_def__t_1af1ed71469df7f5ab108e656f882ae431" prot="public" static="no" mutable="no">
+        <type>_vo uint32_t</type>
+        <definition>_vo uint32_t GPIO_RegDef_t::OTYPER</definition>
+        <argsstring></argsstring>
+        <name>OTYPER</name>
+        <qualifiedname>GPIO_RegDef_t::OTYPER</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/inc/stm32f401xe.h" line="94" column="14" bodyfile="Drivers/inc/stm32f401xe.h" bodystart="94" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_g_p_i_o___reg_def__t_1a4976e47a99f4f55858daa6a5ff9808e1" prot="public" static="no" mutable="no">
+        <type>_vo uint32_t</type>
+        <definition>_vo uint32_t GPIO_RegDef_t::OSPEEDR</definition>
+        <argsstring></argsstring>
+        <name>OSPEEDR</name>
+        <qualifiedname>GPIO_RegDef_t::OSPEEDR</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/inc/stm32f401xe.h" line="95" column="14" bodyfile="Drivers/inc/stm32f401xe.h" bodystart="95" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_g_p_i_o___reg_def__t_1a463776c5786ec9af1c19d297df4a01bc" prot="public" static="no" mutable="no">
+        <type>_vo uint32_t</type>
+        <definition>_vo uint32_t GPIO_RegDef_t::PUPDR</definition>
+        <argsstring></argsstring>
+        <name>PUPDR</name>
+        <qualifiedname>GPIO_RegDef_t::PUPDR</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/inc/stm32f401xe.h" line="96" column="14" bodyfile="Drivers/inc/stm32f401xe.h" bodystart="96" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_g_p_i_o___reg_def__t_1a04a2274faf34a9f4af13ba893dda0969" prot="public" static="no" mutable="no">
+        <type>_vo uint32_t</type>
+        <definition>_vo uint32_t GPIO_RegDef_t::IDR</definition>
+        <argsstring></argsstring>
+        <name>IDR</name>
+        <qualifiedname>GPIO_RegDef_t::IDR</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/inc/stm32f401xe.h" line="97" column="14" bodyfile="Drivers/inc/stm32f401xe.h" bodystart="97" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_g_p_i_o___reg_def__t_1a8aa66373b480d546fa785fddf4be66ea" prot="public" static="no" mutable="no">
+        <type>_vo uint32_t</type>
+        <definition>_vo uint32_t GPIO_RegDef_t::ODR</definition>
+        <argsstring></argsstring>
+        <name>ODR</name>
+        <qualifiedname>GPIO_RegDef_t::ODR</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/inc/stm32f401xe.h" line="98" column="14" bodyfile="Drivers/inc/stm32f401xe.h" bodystart="98" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_g_p_i_o___reg_def__t_1a881097d27959578f66ad7ec8368ea36a" prot="public" static="no" mutable="no">
+        <type>_vo uint32_t</type>
+        <definition>_vo uint32_t GPIO_RegDef_t::BSRR</definition>
+        <argsstring></argsstring>
+        <name>BSRR</name>
+        <qualifiedname>GPIO_RegDef_t::BSRR</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/inc/stm32f401xe.h" line="99" column="14" bodyfile="Drivers/inc/stm32f401xe.h" bodystart="99" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_g_p_i_o___reg_def__t_1a3346bd2beef52b226e112d19fd6ea4ec" prot="public" static="no" mutable="no">
+        <type>_vo uint32_t</type>
+        <definition>_vo uint32_t GPIO_RegDef_t::LCKR</definition>
+        <argsstring></argsstring>
+        <name>LCKR</name>
+        <qualifiedname>GPIO_RegDef_t::LCKR</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/inc/stm32f401xe.h" line="100" column="14" bodyfile="Drivers/inc/stm32f401xe.h" bodystart="100" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_g_p_i_o___reg_def__t_1ab3da475643588ec327f03750ad48cbe5" prot="public" static="no" mutable="no">
+        <type>_vo uint32_t</type>
+        <definition>_vo uint32_t GPIO_RegDef_t::AFR[2]</definition>
+        <argsstring>[2]</argsstring>
+        <name>AFR</name>
+        <qualifiedname>GPIO_RegDef_t::AFR</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/inc/stm32f401xe.h" line="101" column="14" bodyfile="Drivers/inc/stm32f401xe.h" bodystart="101" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Drivers/inc/stm32f401xe.h" line="91" column="1" bodyfile="Drivers/inc/stm32f401xe.h" bodystart="92" bodyend="104"/>
+    <listofallmembers>
+      <member refid="struct_g_p_i_o___reg_def__t_1ab3da475643588ec327f03750ad48cbe5" prot="public" virt="non-virtual"><scope>GPIO_RegDef_t</scope><name>AFR</name></member>
+      <member refid="struct_g_p_i_o___reg_def__t_1a881097d27959578f66ad7ec8368ea36a" prot="public" virt="non-virtual"><scope>GPIO_RegDef_t</scope><name>BSRR</name></member>
+      <member refid="struct_g_p_i_o___reg_def__t_1a04a2274faf34a9f4af13ba893dda0969" prot="public" virt="non-virtual"><scope>GPIO_RegDef_t</scope><name>IDR</name></member>
+      <member refid="struct_g_p_i_o___reg_def__t_1a3346bd2beef52b226e112d19fd6ea4ec" prot="public" virt="non-virtual"><scope>GPIO_RegDef_t</scope><name>LCKR</name></member>
+      <member refid="struct_g_p_i_o___reg_def__t_1a4aab406272a3f8ca7278b961e7df3c5d" prot="public" virt="non-virtual"><scope>GPIO_RegDef_t</scope><name>MODER</name></member>
+      <member refid="struct_g_p_i_o___reg_def__t_1a8aa66373b480d546fa785fddf4be66ea" prot="public" virt="non-virtual"><scope>GPIO_RegDef_t</scope><name>ODR</name></member>
+      <member refid="struct_g_p_i_o___reg_def__t_1a4976e47a99f4f55858daa6a5ff9808e1" prot="public" virt="non-virtual"><scope>GPIO_RegDef_t</scope><name>OSPEEDR</name></member>
+      <member refid="struct_g_p_i_o___reg_def__t_1af1ed71469df7f5ab108e656f882ae431" prot="public" virt="non-virtual"><scope>GPIO_RegDef_t</scope><name>OTYPER</name></member>
+      <member refid="struct_g_p_i_o___reg_def__t_1a463776c5786ec9af1c19d297df4a01bc" prot="public" virt="non-virtual"><scope>GPIO_RegDef_t</scope><name>PUPDR</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

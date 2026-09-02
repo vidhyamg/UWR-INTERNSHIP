@@ -1,0 +1,75 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.18.0" xml:lang="en-US">
+  <compounddef id="struct_i2_c___config__t" kind="struct" language="C++" prot="public">
+    <compoundname>I2C_Config_t</compoundname>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_i2_c___config__t_1a373e1e87afd12879e7a5d960555ed668" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t I2C_Config_t::I2C_SCLSpeed</definition>
+        <argsstring></argsstring>
+        <name>I2C_SCLSpeed</name>
+        <qualifiedname>I2C_Config_t::I2C_SCLSpeed</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/inc/stm32f401xe_i2c.h" line="18" column="10" bodyfile="Drivers/inc/stm32f401xe_i2c.h" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_i2_c___config__t_1a8e42c664b3e86f5cd0b467d46dec47ef" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t I2C_Config_t::I2C_DeviceAddress</definition>
+        <argsstring></argsstring>
+        <name>I2C_DeviceAddress</name>
+        <qualifiedname>I2C_Config_t::I2C_DeviceAddress</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/inc/stm32f401xe_i2c.h" line="19" column="10" bodyfile="Drivers/inc/stm32f401xe_i2c.h" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_i2_c___config__t_1a2cd4ab4d9d126087f2231def1eabf77c" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t I2C_Config_t::I2C_AckControl</definition>
+        <argsstring></argsstring>
+        <name>I2C_AckControl</name>
+        <qualifiedname>I2C_Config_t::I2C_AckControl</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/inc/stm32f401xe_i2c.h" line="20" column="10" bodyfile="Drivers/inc/stm32f401xe_i2c.h" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_i2_c___config__t_1aafeea1a89210e349bbc43e6d9019c89f" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t I2C_Config_t::I2C_FMDutyCycle</definition>
+        <argsstring></argsstring>
+        <name>I2C_FMDutyCycle</name>
+        <qualifiedname>I2C_Config_t::I2C_FMDutyCycle</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/inc/stm32f401xe_i2c.h" line="21" column="10" bodyfile="Drivers/inc/stm32f401xe_i2c.h" bodystart="21" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Drivers/inc/stm32f401xe_i2c.h" line="16" column="1" bodyfile="Drivers/inc/stm32f401xe_i2c.h" bodystart="17" bodyend="23"/>
+    <listofallmembers>
+      <member refid="struct_i2_c___config__t_1a2cd4ab4d9d126087f2231def1eabf77c" prot="public" virt="non-virtual"><scope>I2C_Config_t</scope><name>I2C_AckControl</name></member>
+      <member refid="struct_i2_c___config__t_1a8e42c664b3e86f5cd0b467d46dec47ef" prot="public" virt="non-virtual"><scope>I2C_Config_t</scope><name>I2C_DeviceAddress</name></member>
+      <member refid="struct_i2_c___config__t_1aafeea1a89210e349bbc43e6d9019c89f" prot="public" virt="non-virtual"><scope>I2C_Config_t</scope><name>I2C_FMDutyCycle</name></member>
+      <member refid="struct_i2_c___config__t_1a373e1e87afd12879e7a5d960555ed668" prot="public" virt="non-virtual"><scope>I2C_Config_t</scope><name>I2C_SCLSpeed</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

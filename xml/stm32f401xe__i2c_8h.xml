@@ -1,0 +1,285 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.18.0" xml:lang="en-US">
+  <compounddef id="stm32f401xe__i2c_8h" kind="file" language="C++">
+    <compoundname>stm32f401xe_i2c.h</compoundname>
+    <includes refid="stm32f401xe_8h" local="yes">stm32f401xe.h</includes>
+    <includedby refid="stm32f401xe_8h" local="yes">Drivers/inc/stm32f401xe.h</includedby>
+    <includedby refid="stm32f401xe__i2c_8c" local="yes">Drivers/src/stm32f401xe_i2c.c</includedby>
+    <incdepgraph>
+      <node id="2">
+        <label>stm32f401xe.h</label>
+        <link refid="stm32f401xe_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="1" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>stm32f401xe_gpio.h</label>
+        <link refid="stm32f401xe__gpio_8h_source"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>Drivers/inc/stm32f401xe_i2c.h</label>
+        <link refid="stm32f401xe__i2c_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>stddef.h</label>
+      </node>
+      <node id="4">
+        <label>stdint.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2">
+        <label>Drivers/inc/stm32f401xe.h</label>
+        <link refid="stm32f401xe_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="1" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>Drivers/inc/stm32f401xe_gpio.h</label>
+        <link refid="stm32f401xe__gpio_8h_source"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>Drivers/inc/stm32f401xe_i2c.h</label>
+        <link refid="stm32f401xe__i2c_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>Drivers/inc/stm32f401xe_rcc.h</label>
+        <link refid="stm32f401xe__rcc_8h_source"/>
+      </node>
+      <node id="5">
+        <label>Drivers/inc/stm32f401xe_usart.h</label>
+        <link refid="stm32f401xe__usart_8h_source"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="struct_i2_c___config__t" prot="public">I2C_Config_t</innerclass>
+    <innerclass refid="struct_i2_c___handle__t" prot="public">I2C_Handle_t</innerclass>
+    <sectiondef kind="define">
+      <memberdef kind="define" id="stm32f401xe__i2c_8h_1a5a940df4437466e727061c2c3142d00c" prot="public" static="no">
+        <name>I2C_SCL_SPEED_SM</name>
+        <initializer>100000</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/inc/stm32f401xe_i2c.h" line="35" column="9" bodyfile="Drivers/inc/stm32f401xe_i2c.h" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="stm32f401xe__i2c_8h_1a0c0c08d370da5fc129c22434bdb97481" prot="public" static="no">
+        <name>I2C_SCL_SPEED_FM4K</name>
+        <initializer>400000</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/inc/stm32f401xe_i2c.h" line="36" column="9" bodyfile="Drivers/inc/stm32f401xe_i2c.h" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="stm32f401xe__i2c_8h_1a5441a741ac26cff1c89bc2eac55f0376" prot="public" static="no">
+        <name>I2C_SCL_SPEED_FM2K</name>
+        <initializer>200000</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/inc/stm32f401xe_i2c.h" line="37" column="9" bodyfile="Drivers/inc/stm32f401xe_i2c.h" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="stm32f401xe__i2c_8h_1a10fc5ad18d20e904fd65d00808438d46" prot="public" static="no">
+        <name>I2C_ACK_ENABLE</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/inc/stm32f401xe_i2c.h" line="43" column="9" bodyfile="Drivers/inc/stm32f401xe_i2c.h" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="stm32f401xe__i2c_8h_1a468ef77366cf5396d2d918ef9e4c7d41" prot="public" static="no">
+        <name>I2C_ACK_DISABLE</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/inc/stm32f401xe_i2c.h" line="44" column="9" bodyfile="Drivers/inc/stm32f401xe_i2c.h" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="stm32f401xe__i2c_8h_1a2d9457f7d4d452bb369cd6ded2e5ff77" prot="public" static="no">
+        <name>I2C_FM_DUTY_2</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/inc/stm32f401xe_i2c.h" line="49" column="9" bodyfile="Drivers/inc/stm32f401xe_i2c.h" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="stm32f401xe__i2c_8h_1a46a9e3120a5d0cf59bee8ae61c80c87f" prot="public" static="no">
+        <name>I2C_FM_DUTY_16_9</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/inc/stm32f401xe_i2c.h" line="50" column="9" bodyfile="Drivers/inc/stm32f401xe_i2c.h" bodystart="50" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="stm32f401xe__i2c_8h_1a08267d82acca332799ec1b49be4527bd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void I2C_PeriClockControl</definition>
+        <argsstring>(I2C_RegDef_t *pI2Cx, uint8_t EnorDi)</argsstring>
+        <name>I2C_PeriClockControl</name>
+        <param>
+          <type><ref refid="struct_i2_c___reg_def__t" kindref="compound">I2C_RegDef_t</ref> *</type>
+          <declname>pI2Cx</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>EnorDi</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/inc/stm32f401xe_i2c.h" line="58" column="6" bodyfile="Drivers/src/stm32f401xe_i2c.c" bodystart="12" bodyend="40" declfile="Drivers/inc/stm32f401xe_i2c.h" declline="58" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="stm32f401xe__i2c_8h_1af63c91db39ea9e0317d4f341569f479c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void I2C_Init</definition>
+        <argsstring>(I2C_Handle_t *pI2CHandle)</argsstring>
+        <name>I2C_Init</name>
+        <param>
+          <type><ref refid="struct_i2_c___handle__t" kindref="compound">I2C_Handle_t</ref> *</type>
+          <declname>pI2CHandle</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/inc/stm32f401xe_i2c.h" line="62" column="6" bodyfile="Drivers/src/stm32f401xe_i2c.c" bodystart="45" bodyend="92" declfile="Drivers/inc/stm32f401xe_i2c.h" declline="62" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="stm32f401xe__i2c_8h_1ad7b45b712f04f3c333ed5f6e621e805c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void I2C_DeInit</definition>
+        <argsstring>(I2C_RegDef_t *pI2Cx)</argsstring>
+        <name>I2C_DeInit</name>
+        <param>
+          <type><ref refid="struct_i2_c___reg_def__t" kindref="compound">I2C_RegDef_t</ref> *</type>
+          <declname>pI2Cx</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/inc/stm32f401xe_i2c.h" line="63" column="6" declfile="Drivers/inc/stm32f401xe_i2c.h" declline="63" declcolumn="6"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>stm32f401xe_i2c.h</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*<sp/><sp/>Created<sp/>on:<sp/>Aug<sp/>14,<sp/>2026</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>Author:<sp/>deepu</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>INC_STM32F401XE_I2C_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>INC_STM32F401XE_I2C_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/><sp/>&quot;stm32f401xe.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/>*<sp/>Configuration<sp/>structure<sp/>for<sp/>I2C<sp/>peripheral</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16" refid="struct_i2_c___config__t" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/>I2C_SCLSpeed;</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><sp/>I2C_DeviceAddress;</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><sp/>I2C_AckControl;</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><sp/>I2C_FMDutyCycle;</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal">}<ref refid="struct_i2_c___config__t" kindref="compound">I2C_Config_t</ref>;</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="25"><highlight class="comment"><sp/>*Handle<sp/>structure<sp/>for<sp/>I2C<sp/>peripheral</highlight></codeline>
+<codeline lineno="26"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27" refid="struct_i2_c___handle__t" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_i2_c___reg_def__t" kindref="compound">I2C_RegDef_t</ref><sp/><sp/><sp/><sp/>*pI2Cx;</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_i2_c___config__t" kindref="compound">I2C_Config_t</ref><sp/><sp/><sp/><sp/>I2C_Config;</highlight></codeline>
+<codeline lineno="31"><highlight class="normal">}<ref refid="struct_i2_c___handle__t" kindref="compound">I2C_Handle_t</ref>;</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="33"><highlight class="comment"><sp/>*<sp/>I2C_SCLSpeed</highlight></codeline>
+<codeline lineno="34"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>I2C_SCL_SPEED_SM<sp/><sp/><sp/><sp/>100000</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>I2C_SCL_SPEED_FM4K<sp/><sp/>400000</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>I2C_SCL_SPEED_FM2K<sp/><sp/>200000</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="41"><highlight class="comment"><sp/>*<sp/>I2C_AckControl</highlight></codeline>
+<codeline lineno="42"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>I2C_ACK_ENABLE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>I2C_ACK_DISABLE<sp/><sp/><sp/><sp/><sp/><sp/><sp/>0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="47"><highlight class="comment"><sp/>*<sp/>I2C_FMDutyCycle</highlight></codeline>
+<codeline lineno="48"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>I2C_FM_DUTY_2<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>I2C_FM_DUTY_16_9<sp/><sp/><sp/><sp/><sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="52"><highlight class="comment"><sp/>*<sp/>API<sp/>for<sp/>I2C<sp/>driver</highlight></codeline>
+<codeline lineno="53"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="56"><highlight class="comment"><sp/>*<sp/>Peripheral<sp/>Clock<sp/>setup</highlight></codeline>
+<codeline lineno="57"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>I2C_PeriClockControl(<ref refid="struct_i2_c___reg_def__t" kindref="compound">I2C_RegDef_t</ref><sp/>*pI2Cx,<sp/>uint8_t<sp/>EnorDi);</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="60"><highlight class="comment"><sp/>*<sp/>Init<sp/>and<sp/>De-init</highlight></codeline>
+<codeline lineno="61"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>I2C_Init(<ref refid="struct_i2_c___handle__t" kindref="compound">I2C_Handle_t</ref><sp/>*pI2CHandle);</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>I2C_DeInit(<ref refid="struct_i2_c___reg_def__t" kindref="compound">I2C_RegDef_t</ref><sp/>*pI2Cx);</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>INC_STM32F401XE_I2C_H_<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+    </programlisting>
+    <location file="Drivers/inc/stm32f401xe_i2c.h"/>
+  </compounddef>
+</doxygen>

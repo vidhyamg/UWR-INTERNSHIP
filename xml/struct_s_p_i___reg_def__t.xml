@@ -1,0 +1,150 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.18.0" xml:lang="en-US">
+  <compounddef id="struct_s_p_i___reg_def__t" kind="struct" language="C++" prot="public">
+    <compoundname>SPI_RegDef_t</compoundname>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_s_p_i___reg_def__t_1acd09ee3d0e6b2a27ae9e8318e64e90a4" prot="public" static="no" mutable="no">
+        <type>_vo uint32_t</type>
+        <definition>_vo uint32_t SPI_RegDef_t::CR1</definition>
+        <argsstring></argsstring>
+        <name>CR1</name>
+        <qualifiedname>SPI_RegDef_t::CR1</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/inc/stm32f401xe.h" line="152" column="18" bodyfile="Drivers/inc/stm32f401xe.h" bodystart="152" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_s_p_i___reg_def__t_1a729d93c596afcc220dff945515f9f47e" prot="public" static="no" mutable="no">
+        <type>_vo uint32_t</type>
+        <definition>_vo uint32_t SPI_RegDef_t::CR2</definition>
+        <argsstring></argsstring>
+        <name>CR2</name>
+        <qualifiedname>SPI_RegDef_t::CR2</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/inc/stm32f401xe.h" line="153" column="18" bodyfile="Drivers/inc/stm32f401xe.h" bodystart="153" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_s_p_i___reg_def__t_1a673a7d37aab61d70d4d18854e91340f7" prot="public" static="no" mutable="no">
+        <type>_vo uint32_t</type>
+        <definition>_vo uint32_t SPI_RegDef_t::SR</definition>
+        <argsstring></argsstring>
+        <name>SR</name>
+        <qualifiedname>SPI_RegDef_t::SR</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/inc/stm32f401xe.h" line="154" column="18" bodyfile="Drivers/inc/stm32f401xe.h" bodystart="154" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_s_p_i___reg_def__t_1a596a12f22a8c891c551f660f9cfe4250" prot="public" static="no" mutable="no">
+        <type>_vo uint32_t</type>
+        <definition>_vo uint32_t SPI_RegDef_t::DR</definition>
+        <argsstring></argsstring>
+        <name>DR</name>
+        <qualifiedname>SPI_RegDef_t::DR</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/inc/stm32f401xe.h" line="155" column="18" bodyfile="Drivers/inc/stm32f401xe.h" bodystart="155" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_s_p_i___reg_def__t_1abfb97b5fa1457c70eea28f823c695995" prot="public" static="no" mutable="no">
+        <type>_vo uint32_t</type>
+        <definition>_vo uint32_t SPI_RegDef_t::CRCPR1</definition>
+        <argsstring></argsstring>
+        <name>CRCPR1</name>
+        <qualifiedname>SPI_RegDef_t::CRCPR1</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/inc/stm32f401xe.h" line="156" column="18" bodyfile="Drivers/inc/stm32f401xe.h" bodystart="156" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_s_p_i___reg_def__t_1a77d1c22090f7dc1594df59ae813caf62" prot="public" static="no" mutable="no">
+        <type>_vo uint32_t</type>
+        <definition>_vo uint32_t SPI_RegDef_t::RXCRCR</definition>
+        <argsstring></argsstring>
+        <name>RXCRCR</name>
+        <qualifiedname>SPI_RegDef_t::RXCRCR</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/inc/stm32f401xe.h" line="157" column="18" bodyfile="Drivers/inc/stm32f401xe.h" bodystart="157" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_s_p_i___reg_def__t_1a1fbc4c29d77defb90817c0e32efb283e" prot="public" static="no" mutable="no">
+        <type>_vo uint32_t</type>
+        <definition>_vo uint32_t SPI_RegDef_t::TXCRCR</definition>
+        <argsstring></argsstring>
+        <name>TXCRCR</name>
+        <qualifiedname>SPI_RegDef_t::TXCRCR</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/inc/stm32f401xe.h" line="158" column="18" bodyfile="Drivers/inc/stm32f401xe.h" bodystart="158" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_s_p_i___reg_def__t_1a25084ad5012080f8f20f9667d43e15c2" prot="public" static="no" mutable="no">
+        <type>_vo uint32_t</type>
+        <definition>_vo uint32_t SPI_RegDef_t::I2SCFGR</definition>
+        <argsstring></argsstring>
+        <name>I2SCFGR</name>
+        <qualifiedname>SPI_RegDef_t::I2SCFGR</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/inc/stm32f401xe.h" line="159" column="18" bodyfile="Drivers/inc/stm32f401xe.h" bodystart="159" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_s_p_i___reg_def__t_1a12387fa2c490ee98659f84160b360166" prot="public" static="no" mutable="no">
+        <type>_vo uint32_t</type>
+        <definition>_vo uint32_t SPI_RegDef_t::I2SPR</definition>
+        <argsstring></argsstring>
+        <name>I2SPR</name>
+        <qualifiedname>SPI_RegDef_t::I2SPR</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/inc/stm32f401xe.h" line="160" column="18" bodyfile="Drivers/inc/stm32f401xe.h" bodystart="160" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Drivers/inc/stm32f401xe.h" line="150" column="1" bodyfile="Drivers/inc/stm32f401xe.h" bodystart="151" bodyend="162"/>
+    <listofallmembers>
+      <member refid="struct_s_p_i___reg_def__t_1acd09ee3d0e6b2a27ae9e8318e64e90a4" prot="public" virt="non-virtual"><scope>SPI_RegDef_t</scope><name>CR1</name></member>
+      <member refid="struct_s_p_i___reg_def__t_1a729d93c596afcc220dff945515f9f47e" prot="public" virt="non-virtual"><scope>SPI_RegDef_t</scope><name>CR2</name></member>
+      <member refid="struct_s_p_i___reg_def__t_1abfb97b5fa1457c70eea28f823c695995" prot="public" virt="non-virtual"><scope>SPI_RegDef_t</scope><name>CRCPR1</name></member>
+      <member refid="struct_s_p_i___reg_def__t_1a596a12f22a8c891c551f660f9cfe4250" prot="public" virt="non-virtual"><scope>SPI_RegDef_t</scope><name>DR</name></member>
+      <member refid="struct_s_p_i___reg_def__t_1a25084ad5012080f8f20f9667d43e15c2" prot="public" virt="non-virtual"><scope>SPI_RegDef_t</scope><name>I2SCFGR</name></member>
+      <member refid="struct_s_p_i___reg_def__t_1a12387fa2c490ee98659f84160b360166" prot="public" virt="non-virtual"><scope>SPI_RegDef_t</scope><name>I2SPR</name></member>
+      <member refid="struct_s_p_i___reg_def__t_1a77d1c22090f7dc1594df59ae813caf62" prot="public" virt="non-virtual"><scope>SPI_RegDef_t</scope><name>RXCRCR</name></member>
+      <member refid="struct_s_p_i___reg_def__t_1a673a7d37aab61d70d4d18854e91340f7" prot="public" virt="non-virtual"><scope>SPI_RegDef_t</scope><name>SR</name></member>
+      <member refid="struct_s_p_i___reg_def__t_1a1fbc4c29d77defb90817c0e32efb283e" prot="public" virt="non-virtual"><scope>SPI_RegDef_t</scope><name>TXCRCR</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

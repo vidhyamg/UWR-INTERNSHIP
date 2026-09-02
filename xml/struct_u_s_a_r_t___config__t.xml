@@ -1,0 +1,111 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.18.0" xml:lang="en-US">
+  <compounddef id="struct_u_s_a_r_t___config__t" kind="struct" language="C++" prot="public">
+    <compoundname>USART_Config_t</compoundname>
+    <includes refid="stm32f401xe__usart_8h" local="no">stm32f401xe_usart.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_u_s_a_r_t___config__t_1a84a8921b660a1bc7daf96617cf9bbfe3" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t USART_Config_t::USART_Mode</definition>
+        <argsstring></argsstring>
+        <name>USART_Mode</name>
+        <qualifiedname>USART_Config_t::USART_Mode</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/inc/stm32f401xe_usart.h" line="22" column="14" bodyfile="Drivers/inc/stm32f401xe_usart.h" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_u_s_a_r_t___config__t_1a37e53090e1e7393fe020051f81e9f8bf" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t USART_Config_t::USART_Baud</definition>
+        <argsstring></argsstring>
+        <name>USART_Baud</name>
+        <qualifiedname>USART_Config_t::USART_Baud</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/inc/stm32f401xe_usart.h" line="23" column="14" bodyfile="Drivers/inc/stm32f401xe_usart.h" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_u_s_a_r_t___config__t_1a2858a3fbabec594b1fb18ef37e046bcf" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t USART_Config_t::USART_NoOfStopBits</definition>
+        <argsstring></argsstring>
+        <name>USART_NoOfStopBits</name>
+        <qualifiedname>USART_Config_t::USART_NoOfStopBits</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/inc/stm32f401xe_usart.h" line="24" column="14" bodyfile="Drivers/inc/stm32f401xe_usart.h" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_u_s_a_r_t___config__t_1a33559f7a937eb8c2a6261e263adb1778" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t USART_Config_t::USART_WordLength</definition>
+        <argsstring></argsstring>
+        <name>USART_WordLength</name>
+        <qualifiedname>USART_Config_t::USART_WordLength</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/inc/stm32f401xe_usart.h" line="25" column="14" bodyfile="Drivers/inc/stm32f401xe_usart.h" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_u_s_a_r_t___config__t_1a024bb0198b787c266c5ef4001e6c363e" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t USART_Config_t::USART_ParityControl</definition>
+        <argsstring></argsstring>
+        <name>USART_ParityControl</name>
+        <qualifiedname>USART_Config_t::USART_ParityControl</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/inc/stm32f401xe_usart.h" line="26" column="14" bodyfile="Drivers/inc/stm32f401xe_usart.h" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_u_s_a_r_t___config__t_1a9a793a616f556a7eef1e83ac07bb6e2c" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t USART_Config_t::USART_HWFlowControl</definition>
+        <argsstring></argsstring>
+        <name>USART_HWFlowControl</name>
+        <qualifiedname>USART_Config_t::USART_HWFlowControl</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/inc/stm32f401xe_usart.h" line="27" column="14" bodyfile="Drivers/inc/stm32f401xe_usart.h" bodystart="27" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Configuration structure for USART This structure contains all the parameters required to configure the USART peripheral. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><ref refid="stm32f401xe__usart_8h_source" kindref="compound">stm32f401xe_usart.h</ref></para>
+<para>Created on: Aug 19, 2026 <simplesect kind="version"><para>1.0 </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <location file="Drivers/inc/stm32f401xe_usart.h" line="20" column="1" bodyfile="Drivers/inc/stm32f401xe_usart.h" bodystart="21" bodyend="28"/>
+    <listofallmembers>
+      <member refid="struct_u_s_a_r_t___config__t_1a37e53090e1e7393fe020051f81e9f8bf" prot="public" virt="non-virtual"><scope>USART_Config_t</scope><name>USART_Baud</name></member>
+      <member refid="struct_u_s_a_r_t___config__t_1a9a793a616f556a7eef1e83ac07bb6e2c" prot="public" virt="non-virtual"><scope>USART_Config_t</scope><name>USART_HWFlowControl</name></member>
+      <member refid="struct_u_s_a_r_t___config__t_1a84a8921b660a1bc7daf96617cf9bbfe3" prot="public" virt="non-virtual"><scope>USART_Config_t</scope><name>USART_Mode</name></member>
+      <member refid="struct_u_s_a_r_t___config__t_1a2858a3fbabec594b1fb18ef37e046bcf" prot="public" virt="non-virtual"><scope>USART_Config_t</scope><name>USART_NoOfStopBits</name></member>
+      <member refid="struct_u_s_a_r_t___config__t_1a024bb0198b787c266c5ef4001e6c363e" prot="public" virt="non-virtual"><scope>USART_Config_t</scope><name>USART_ParityControl</name></member>
+      <member refid="struct_u_s_a_r_t___config__t_1a33559f7a937eb8c2a6261e263adb1778" prot="public" virt="non-virtual"><scope>USART_Config_t</scope><name>USART_WordLength</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,120 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.18.0" xml:lang="en-US">
+  <compounddef id="struct_u_s_a_r_t___reg_def__t" kind="struct" language="C++" prot="public">
+    <compoundname>USART_RegDef_t</compoundname>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_u_s_a_r_t___reg_def__t_1a4ea486b44275dc05af6112199334fa04" prot="public" static="no" mutable="no">
+        <type>_vo uint32_t</type>
+        <definition>_vo uint32_t USART_RegDef_t::SR</definition>
+        <argsstring></argsstring>
+        <name>SR</name>
+        <qualifiedname>USART_RegDef_t::SR</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/inc/stm32f401xe.h" line="188" column="14" bodyfile="Drivers/inc/stm32f401xe.h" bodystart="188" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_u_s_a_r_t___reg_def__t_1a6ffa77af11fb47993251586f6f64f670" prot="public" static="no" mutable="no">
+        <type>_vo uint32_t</type>
+        <definition>_vo uint32_t USART_RegDef_t::DR</definition>
+        <argsstring></argsstring>
+        <name>DR</name>
+        <qualifiedname>USART_RegDef_t::DR</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/inc/stm32f401xe.h" line="189" column="14" bodyfile="Drivers/inc/stm32f401xe.h" bodystart="189" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_u_s_a_r_t___reg_def__t_1a3cbbed5dd46c8771df0cf43504e49290" prot="public" static="no" mutable="no">
+        <type>_vo uint32_t</type>
+        <definition>_vo uint32_t USART_RegDef_t::BRR</definition>
+        <argsstring></argsstring>
+        <name>BRR</name>
+        <qualifiedname>USART_RegDef_t::BRR</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/inc/stm32f401xe.h" line="190" column="14" bodyfile="Drivers/inc/stm32f401xe.h" bodystart="190" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_u_s_a_r_t___reg_def__t_1aa1e52e4d168eb7c79d1193a3546146b7" prot="public" static="no" mutable="no">
+        <type>_vo uint32_t</type>
+        <definition>_vo uint32_t USART_RegDef_t::CR1</definition>
+        <argsstring></argsstring>
+        <name>CR1</name>
+        <qualifiedname>USART_RegDef_t::CR1</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/inc/stm32f401xe.h" line="191" column="14" bodyfile="Drivers/inc/stm32f401xe.h" bodystart="191" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_u_s_a_r_t___reg_def__t_1a33445c28ad860fe9ff8770975e18b720" prot="public" static="no" mutable="no">
+        <type>_vo uint32_t</type>
+        <definition>_vo uint32_t USART_RegDef_t::CR2</definition>
+        <argsstring></argsstring>
+        <name>CR2</name>
+        <qualifiedname>USART_RegDef_t::CR2</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/inc/stm32f401xe.h" line="192" column="14" bodyfile="Drivers/inc/stm32f401xe.h" bodystart="192" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_u_s_a_r_t___reg_def__t_1ab4545a542fad68a58d7e0180eb6b2133" prot="public" static="no" mutable="no">
+        <type>_vo uint32_t</type>
+        <definition>_vo uint32_t USART_RegDef_t::CR3</definition>
+        <argsstring></argsstring>
+        <name>CR3</name>
+        <qualifiedname>USART_RegDef_t::CR3</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/inc/stm32f401xe.h" line="193" column="14" bodyfile="Drivers/inc/stm32f401xe.h" bodystart="193" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_u_s_a_r_t___reg_def__t_1aebd1999ef029e10c7bb23b7c95f170e6" prot="public" static="no" mutable="no">
+        <type>_vo uint32_t</type>
+        <definition>_vo uint32_t USART_RegDef_t::GTPR</definition>
+        <argsstring></argsstring>
+        <name>GTPR</name>
+        <qualifiedname>USART_RegDef_t::GTPR</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/inc/stm32f401xe.h" line="194" column="14" bodyfile="Drivers/inc/stm32f401xe.h" bodystart="194" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Drivers/inc/stm32f401xe.h" line="186" column="1" bodyfile="Drivers/inc/stm32f401xe.h" bodystart="187" bodyend="196"/>
+    <listofallmembers>
+      <member refid="struct_u_s_a_r_t___reg_def__t_1a3cbbed5dd46c8771df0cf43504e49290" prot="public" virt="non-virtual"><scope>USART_RegDef_t</scope><name>BRR</name></member>
+      <member refid="struct_u_s_a_r_t___reg_def__t_1aa1e52e4d168eb7c79d1193a3546146b7" prot="public" virt="non-virtual"><scope>USART_RegDef_t</scope><name>CR1</name></member>
+      <member refid="struct_u_s_a_r_t___reg_def__t_1a33445c28ad860fe9ff8770975e18b720" prot="public" virt="non-virtual"><scope>USART_RegDef_t</scope><name>CR2</name></member>
+      <member refid="struct_u_s_a_r_t___reg_def__t_1ab4545a542fad68a58d7e0180eb6b2133" prot="public" virt="non-virtual"><scope>USART_RegDef_t</scope><name>CR3</name></member>
+      <member refid="struct_u_s_a_r_t___reg_def__t_1a6ffa77af11fb47993251586f6f64f670" prot="public" virt="non-virtual"><scope>USART_RegDef_t</scope><name>DR</name></member>
+      <member refid="struct_u_s_a_r_t___reg_def__t_1aebd1999ef029e10c7bb23b7c95f170e6" prot="public" virt="non-virtual"><scope>USART_RegDef_t</scope><name>GTPR</name></member>
+      <member refid="struct_u_s_a_r_t___reg_def__t_1a4ea486b44275dc05af6112199334fa04" prot="public" virt="non-virtual"><scope>USART_RegDef_t</scope><name>SR</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

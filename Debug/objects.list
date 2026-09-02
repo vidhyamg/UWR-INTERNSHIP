@@ -1,0 +1,7 @@
+"./Drivers/src/stm32f401xe_gpio.o"
+"./Drivers/src/stm32f401xe_rcc.o"
+"./Drivers/src/stm32f401xe_usart.o"
+"./Examples/usart_test.o"
+"./Src/syscalls.o"
+"./Src/sysmem.o"
+"./Startup/startup_stm32f401retx.o"

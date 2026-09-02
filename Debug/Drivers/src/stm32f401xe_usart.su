@@ -1,0 +1,8 @@
+../Drivers/src/stm32f401xe_usart.c:31:7:USART_SetBaudRate	40	static
+../Drivers/src/stm32f401xe_usart.c:101:6:USART_Init	24	static
+../Drivers/src/stm32f401xe_usart.c:204:7:USART_PeripheralControl	16	static
+../Drivers/src/stm32f401xe_usart.c:222:7:USART_PeriClockControl	16	static
+../Drivers/src/stm32f401xe_usart.c:258:9:USART_GetFlagStatus	16	static
+../Drivers/src/stm32f401xe_usart.c:275:6:USART_SendData	32	static
+../Drivers/src/stm32f401xe_usart.c:330:7:USART_ReceiveData	32	static
+../Drivers/src/stm32f401xe_usart.c:398:6:USART_ClearFlag	16	static

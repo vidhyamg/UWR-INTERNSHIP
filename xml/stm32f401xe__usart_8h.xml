@@ -1,0 +1,873 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.18.0" xml:lang="en-US">
+  <compounddef id="stm32f401xe__usart_8h" kind="file" language="C++">
+    <compoundname>stm32f401xe_usart.h</compoundname>
+    <includes refid="stm32f401xe_8h" local="yes">stm32f401xe.h</includes>
+    <incdepgraph>
+      <node id="2">
+        <label>stm32f401xe.h</label>
+        <link refid="stm32f401xe_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>stm32f401xe_gpio.h</label>
+        <link refid="stm32f401xe__gpio_8h_source"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>stm32f401xe_i2c.h</label>
+        <link refid="stm32f401xe__i2c_8h_source"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>Drivers/inc/stm32f401xe_usart.h</label>
+        <link refid="stm32f401xe__usart_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>stddef.h</label>
+      </node>
+      <node id="4">
+        <label>stdint.h</label>
+      </node>
+    </incdepgraph>
+    <innerclass refid="struct_u_s_a_r_t___config__t" prot="public">USART_Config_t</innerclass>
+    <innerclass refid="struct_u_s_a_r_t___handle__t" prot="public">USART_Handle_t</innerclass>
+    <sectiondef kind="define">
+      <memberdef kind="define" id="stm32f401xe__usart_8h_1a0303ce72118a71ce5fd070d38af3ca65" prot="public" static="no">
+        <name>USART_MODE_ONLY_TX</name>
+        <initializer>0</initializer>
+        <briefdescription>
+<para>USART Mode(CR1 register-Bits 3-Transmit Enable:2-Receive Enable). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/inc/stm32f401xe_usart.h" line="52" column="9" bodyfile="Drivers/inc/stm32f401xe_usart.h" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="stm32f401xe__usart_8h_1afd533b27aba8ad29a61ec452b3459f3c" prot="public" static="no">
+        <name>USART_MODE_ONLY_RX</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/inc/stm32f401xe_usart.h" line="53" column="9" bodyfile="Drivers/inc/stm32f401xe_usart.h" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="stm32f401xe__usart_8h_1a9d314d0bcf88b329eebbd12e674f468a" prot="public" static="no">
+        <name>USART_MODE_TXRX</name>
+        <initializer>2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/inc/stm32f401xe_usart.h" line="54" column="9" bodyfile="Drivers/inc/stm32f401xe_usart.h" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="stm32f401xe__usart_8h_1a052070f6cd27d6e127afd7248e1c1a4b" prot="public" static="no">
+        <name>USART_STD_BAUD_1200</name>
+        <initializer>1200</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/inc/stm32f401xe_usart.h" line="59" column="9" bodyfile="Drivers/inc/stm32f401xe_usart.h" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="stm32f401xe__usart_8h_1ae4ffd631b77a06362c673babf7735a0b" prot="public" static="no">
+        <name>USART_STD_BAUD_2400</name>
+        <initializer>2400</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/inc/stm32f401xe_usart.h" line="60" column="9" bodyfile="Drivers/inc/stm32f401xe_usart.h" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="stm32f401xe__usart_8h_1ae7d579839e4c1a1ee3e311fa92870cb2" prot="public" static="no">
+        <name>USART_STD_BAUD_9600</name>
+        <initializer>9600</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/inc/stm32f401xe_usart.h" line="61" column="9" bodyfile="Drivers/inc/stm32f401xe_usart.h" bodystart="61" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="stm32f401xe__usart_8h_1a5ef839391f23f7907b477bc35e37775b" prot="public" static="no">
+        <name>USART_STD_BAUD_19200</name>
+        <initializer>19200</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/inc/stm32f401xe_usart.h" line="62" column="9" bodyfile="Drivers/inc/stm32f401xe_usart.h" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="stm32f401xe__usart_8h_1adc4c3e2244c10c5b9bda231f8e5e8793" prot="public" static="no">
+        <name>USART_STD_BAUD_38400</name>
+        <initializer>38400</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/inc/stm32f401xe_usart.h" line="63" column="9" bodyfile="Drivers/inc/stm32f401xe_usart.h" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="stm32f401xe__usart_8h_1a1e2fa0874cd9479b0befb52610c1734d" prot="public" static="no">
+        <name>USART_STD_BAUD_57600</name>
+        <initializer>57600</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/inc/stm32f401xe_usart.h" line="64" column="9" bodyfile="Drivers/inc/stm32f401xe_usart.h" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="stm32f401xe__usart_8h_1a80eae0da33021a3d66a8cfa37dcd6074" prot="public" static="no">
+        <name>USART_STD_BAUD_115200</name>
+        <initializer>115200</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/inc/stm32f401xe_usart.h" line="65" column="9" bodyfile="Drivers/inc/stm32f401xe_usart.h" bodystart="65" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="stm32f401xe__usart_8h_1a0d2b7b99331a26b4c23676a639a02170" prot="public" static="no">
+        <name>USART_STD_BAUD_230400</name>
+        <initializer>230400</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/inc/stm32f401xe_usart.h" line="66" column="9" bodyfile="Drivers/inc/stm32f401xe_usart.h" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="stm32f401xe__usart_8h_1a54573651e80aa55ec62bb6c01f1c35c4" prot="public" static="no">
+        <name>USART_STD_BAUD_460800</name>
+        <initializer>460800</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/inc/stm32f401xe_usart.h" line="67" column="9" bodyfile="Drivers/inc/stm32f401xe_usart.h" bodystart="67" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="stm32f401xe__usart_8h_1ad9b98b1611f6dd5a042f9a092d0dad1c" prot="public" static="no">
+        <name>USART_STD_BAUD_921600</name>
+        <initializer>921600</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/inc/stm32f401xe_usart.h" line="68" column="9" bodyfile="Drivers/inc/stm32f401xe_usart.h" bodystart="68" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="stm32f401xe__usart_8h_1a4569ab183845329a50b5e4e00a7c3b09" prot="public" static="no">
+        <name>USART_PARITY_DISABLE</name>
+        <initializer>0</initializer>
+        <briefdescription>
+<para>Parity Control(CR1 register-Bit 10(Parity Enable):Bit 9(Parity Selection). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/inc/stm32f401xe_usart.h" line="73" column="9" bodyfile="Drivers/inc/stm32f401xe_usart.h" bodystart="73" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="stm32f401xe__usart_8h_1ac071bac034b3fc09565301455e8dc9a8" prot="public" static="no">
+        <name>USART_PARITY_EN_EVEN</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/inc/stm32f401xe_usart.h" line="74" column="9" bodyfile="Drivers/inc/stm32f401xe_usart.h" bodystart="74" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="stm32f401xe__usart_8h_1a227062506b7481c03ea8ef5810efd370" prot="public" static="no">
+        <name>USART_PARITY_EN_ODD</name>
+        <initializer>2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/inc/stm32f401xe_usart.h" line="75" column="9" bodyfile="Drivers/inc/stm32f401xe_usart.h" bodystart="75" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="stm32f401xe__usart_8h_1a8b47f5a727122fcc90691041f6972144" prot="public" static="no">
+        <name>USART_WORDLEN_8BITS</name>
+        <initializer>0</initializer>
+        <briefdescription>
+<para>Word Length(CRI register-Bit 12-Word Length). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/inc/stm32f401xe_usart.h" line="80" column="9" bodyfile="Drivers/inc/stm32f401xe_usart.h" bodystart="80" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="stm32f401xe__usart_8h_1a9bd391ebe305cd1e82527d6d5586dd38" prot="public" static="no">
+        <name>USART_WORDLEN_9BITS</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/inc/stm32f401xe_usart.h" line="81" column="9" bodyfile="Drivers/inc/stm32f401xe_usart.h" bodystart="81" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="stm32f401xe__usart_8h_1a82aae3118e9cd59bb270c028e21c23b4" prot="public" static="no">
+        <name>USART_STOPBITS_1</name>
+        <initializer>0</initializer>
+        <briefdescription>
+<para>Number of Stop Bits(CR2 register-Bits 13:12). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/inc/stm32f401xe_usart.h" line="86" column="9" bodyfile="Drivers/inc/stm32f401xe_usart.h" bodystart="86" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="stm32f401xe__usart_8h_1aa6e5782774150ff935df3fc06d9ec0c4" prot="public" static="no">
+        <name>USART_STOPBITS_0_5</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/inc/stm32f401xe_usart.h" line="87" column="9" bodyfile="Drivers/inc/stm32f401xe_usart.h" bodystart="87" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="stm32f401xe__usart_8h_1af8d022e62f55ceb7b5e03eea336b5c45" prot="public" static="no">
+        <name>USART_STOPBITS_2</name>
+        <initializer>2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/inc/stm32f401xe_usart.h" line="88" column="9" bodyfile="Drivers/inc/stm32f401xe_usart.h" bodystart="88" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="stm32f401xe__usart_8h_1a5b799017a5d9ab7de71a49c625f87532" prot="public" static="no">
+        <name>USART_STOPBITS_1_5</name>
+        <initializer>3</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/inc/stm32f401xe_usart.h" line="89" column="9" bodyfile="Drivers/inc/stm32f401xe_usart.h" bodystart="89" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="stm32f401xe__usart_8h_1a640ba00e2cf03e7a741008265d4ff53e" prot="public" static="no">
+        <name>USART_HW_FLOW_CTRL_NONE</name>
+        <initializer>0</initializer>
+        <briefdescription>
+<para>Hardware Flow Control(CR3 register-Bits 9(CTS Enable):8(RTS Enable)). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/inc/stm32f401xe_usart.h" line="94" column="9" bodyfile="Drivers/inc/stm32f401xe_usart.h" bodystart="94" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="stm32f401xe__usart_8h_1a4f2287dce5feadd18c81ebcb0f3a5d3d" prot="public" static="no">
+        <name>USART_HW_FLOW_CTRL_CTS</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/inc/stm32f401xe_usart.h" line="95" column="9" bodyfile="Drivers/inc/stm32f401xe_usart.h" bodystart="95" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="stm32f401xe__usart_8h_1ae00662abe4a30399a43ee5b5b43cf246" prot="public" static="no">
+        <name>USART_HW_FLOW_CTRL_RTS</name>
+        <initializer>2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/inc/stm32f401xe_usart.h" line="96" column="9" bodyfile="Drivers/inc/stm32f401xe_usart.h" bodystart="96" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="stm32f401xe__usart_8h_1a7b8def65813778ad11de843b3e990a05" prot="public" static="no">
+        <name>USART_HW_FLOW_CTRL_CTS_RTS</name>
+        <initializer>3</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/inc/stm32f401xe_usart.h" line="97" column="9" bodyfile="Drivers/inc/stm32f401xe_usart.h" bodystart="97" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="stm32f401xe__usart_8h_1a7129f13333f2a7218838cc32fe507bfa" prot="public" static="no">
+        <name>USART_FLAG_TXE</name>
+        <initializer>( 1 &lt;&lt; USART_SR_TXE)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/inc/stm32f401xe_usart.h" line="105" column="9" bodyfile="Drivers/inc/stm32f401xe_usart.h" bodystart="105" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="stm32f401xe__usart_8h_1a11d6b70c8f00216b6d8a43790dfdcf2f" prot="public" static="no">
+        <name>USART_FLAG_RXNE</name>
+        <initializer>( 1 &lt;&lt; USART_SR_RXNE)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/inc/stm32f401xe_usart.h" line="106" column="9" bodyfile="Drivers/inc/stm32f401xe_usart.h" bodystart="106" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="stm32f401xe__usart_8h_1ae7b85c9e2cc86af5bbc8b8d8b854410f" prot="public" static="no">
+        <name>USART_FLAG_TC</name>
+        <initializer>( 1 &lt;&lt; USART_SR_TC)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/inc/stm32f401xe_usart.h" line="107" column="9" bodyfile="Drivers/inc/stm32f401xe_usart.h" bodystart="107" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="stm32f401xe__usart_8h_1a220d0d6c2f4affe2499fe7ea7b19c8ac" prot="public" static="no">
+        <name>USART_BUSY_IN_RX</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/inc/stm32f401xe_usart.h" line="113" column="9" bodyfile="Drivers/inc/stm32f401xe_usart.h" bodystart="113" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="stm32f401xe__usart_8h_1a2139632c25eb8dcaa5b79de6fa2bf423" prot="public" static="no">
+        <name>USART_BUSY_IN_TX</name>
+        <initializer>2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/inc/stm32f401xe_usart.h" line="114" column="9" bodyfile="Drivers/inc/stm32f401xe_usart.h" bodystart="114" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="stm32f401xe__usart_8h_1a5ddbfa997d07cf95e21fad632e8e0961" prot="public" static="no">
+        <name>USART_READY</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/inc/stm32f401xe_usart.h" line="115" column="9" bodyfile="Drivers/inc/stm32f401xe_usart.h" bodystart="115" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="stm32f401xe__usart_8h_1ae82899846b808101133e9a14d26f5354" prot="public" static="no">
+        <name>USART_EVENT_TX_CMPLT</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/inc/stm32f401xe_usart.h" line="121" column="10" bodyfile="Drivers/inc/stm32f401xe_usart.h" bodystart="121" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="stm32f401xe__usart_8h_1a1afa7c5d2c57d587df8b6e5d00693613" prot="public" static="no">
+        <name>USART_EVENT_RX_CMPLT</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/inc/stm32f401xe_usart.h" line="122" column="10" bodyfile="Drivers/inc/stm32f401xe_usart.h" bodystart="122" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="stm32f401xe__usart_8h_1a574a5b3fe76dabc45effbbac62aa004e" prot="public" static="no">
+        <name>USART_EVENT_IDLE</name>
+        <initializer>2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/inc/stm32f401xe_usart.h" line="123" column="10" bodyfile="Drivers/inc/stm32f401xe_usart.h" bodystart="123" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="stm32f401xe__usart_8h_1a4783df2ed90e194263932d708c55b13e" prot="public" static="no">
+        <name>USART_EVENT_CTS</name>
+        <initializer>3</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/inc/stm32f401xe_usart.h" line="124" column="10" bodyfile="Drivers/inc/stm32f401xe_usart.h" bodystart="124" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="stm32f401xe__usart_8h_1a37c7f494c13f291e79237f43bc62ceff" prot="public" static="no">
+        <name>USART_EVENT_PE</name>
+        <initializer>4</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/inc/stm32f401xe_usart.h" line="125" column="10" bodyfile="Drivers/inc/stm32f401xe_usart.h" bodystart="125" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="stm32f401xe__usart_8h_1aaa16d45481e6c85d784c63c56a848809" prot="public" static="no">
+        <name>USART_ERR_FE</name>
+        <initializer>5</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/inc/stm32f401xe_usart.h" line="126" column="10" bodyfile="Drivers/inc/stm32f401xe_usart.h" bodystart="126" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="stm32f401xe__usart_8h_1af45eeb98577829f5f4dfe452d5fa67d9" prot="public" static="no">
+        <name>USART_ERR_NE</name>
+        <initializer>6</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/inc/stm32f401xe_usart.h" line="127" column="10" bodyfile="Drivers/inc/stm32f401xe_usart.h" bodystart="127" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="stm32f401xe__usart_8h_1a6e8d3e8f423bd07056be31c7991317e6" prot="public" static="no">
+        <name>USART_ERR_ORE</name>
+        <initializer>7</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/inc/stm32f401xe_usart.h" line="128" column="10" bodyfile="Drivers/inc/stm32f401xe_usart.h" bodystart="128" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="stm32f401xe__usart_8h_1a95763c53bf080c50d4d2150536b9f996" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void USART_PeriClockControl</definition>
+        <argsstring>(USART_RegDef_t *pUSARTx, uint8_t EnOrDi)</argsstring>
+        <name>USART_PeriClockControl</name>
+        <param>
+          <type><ref refid="struct_u_s_a_r_t___reg_def__t" kindref="compound">USART_RegDef_t</ref> *</type>
+          <declname>pUSARTx</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>EnOrDi</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/inc/stm32f401xe_usart.h" line="135" column="6" declfile="Drivers/inc/stm32f401xe_usart.h" declline="135" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="stm32f401xe__usart_8h_1a9f8081684bf9bf4f54f5a54e97a86f90" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void USART_Init</definition>
+        <argsstring>(USART_Handle_t *pUSARTHandle)</argsstring>
+        <name>USART_Init</name>
+        <param>
+          <type><ref refid="struct_u_s_a_r_t___handle__t" kindref="compound">USART_Handle_t</ref> *</type>
+          <declname>pUSARTHandle</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/inc/stm32f401xe_usart.h" line="140" column="6" declfile="Drivers/inc/stm32f401xe_usart.h" declline="140" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="stm32f401xe__usart_8h_1af8004b63126c5814f98d296df0aa56b3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void USART_DeInit</definition>
+        <argsstring>(USART_Handle_t *pUSARTHandle)</argsstring>
+        <name>USART_DeInit</name>
+        <param>
+          <type><ref refid="struct_u_s_a_r_t___handle__t" kindref="compound">USART_Handle_t</ref> *</type>
+          <declname>pUSARTHandle</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/inc/stm32f401xe_usart.h" line="141" column="6" declfile="Drivers/inc/stm32f401xe_usart.h" declline="141" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="stm32f401xe__usart_8h_1ac07c40fd91c832c49bc0aa649b85acfb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void USART_SendData</definition>
+        <argsstring>(USART_Handle_t *pUSARTHandle, uint8_t *pTxBuffer, uint32_t Len)</argsstring>
+        <name>USART_SendData</name>
+        <param>
+          <type><ref refid="struct_u_s_a_r_t___handle__t" kindref="compound">USART_Handle_t</ref> *</type>
+          <declname>pUSARTHandle</declname>
+        </param>
+        <param>
+          <type>uint8_t *</type>
+          <declname>pTxBuffer</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>Len</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/inc/stm32f401xe_usart.h" line="146" column="6" declfile="Drivers/inc/stm32f401xe_usart.h" declline="146" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="stm32f401xe__usart_8h_1aafcc74a54eb7f0a12a36487b452da59c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void USART_ReceiveData</definition>
+        <argsstring>(USART_Handle_t *pUSARTHandle, uint8_t *pRxBuffer, uint32_t Len)</argsstring>
+        <name>USART_ReceiveData</name>
+        <param>
+          <type><ref refid="struct_u_s_a_r_t___handle__t" kindref="compound">USART_Handle_t</ref> *</type>
+          <declname>pUSARTHandle</declname>
+        </param>
+        <param>
+          <type>uint8_t *</type>
+          <declname>pRxBuffer</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>Len</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/inc/stm32f401xe_usart.h" line="147" column="7" declfile="Drivers/inc/stm32f401xe_usart.h" declline="147" declcolumn="7"/>
+      </memberdef>
+      <memberdef kind="function" id="stm32f401xe__usart_8h_1a50fdac2af4a69887bceb1dec2a16ebaf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t USART_SendDataIT</definition>
+        <argsstring>(USART_Handle_t *pUSARTHandle, uint8_t *pTxBuffer, uint32_t Len)</argsstring>
+        <name>USART_SendDataIT</name>
+        <param>
+          <type><ref refid="struct_u_s_a_r_t___handle__t" kindref="compound">USART_Handle_t</ref> *</type>
+          <declname>pUSARTHandle</declname>
+        </param>
+        <param>
+          <type>uint8_t *</type>
+          <declname>pTxBuffer</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>Len</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/inc/stm32f401xe_usart.h" line="148" column="9" declfile="Drivers/inc/stm32f401xe_usart.h" declline="148" declcolumn="9"/>
+      </memberdef>
+      <memberdef kind="function" id="stm32f401xe__usart_8h_1a6c7db552dd2c1f90e8743216a2788b3b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t USART_ReceiveDataIT</definition>
+        <argsstring>(USART_Handle_t *pUSARTHandle, uint8_t *pRxBuffer, uint32_t Len)</argsstring>
+        <name>USART_ReceiveDataIT</name>
+        <param>
+          <type><ref refid="struct_u_s_a_r_t___handle__t" kindref="compound">USART_Handle_t</ref> *</type>
+          <declname>pUSARTHandle</declname>
+        </param>
+        <param>
+          <type>uint8_t *</type>
+          <declname>pRxBuffer</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>Len</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/inc/stm32f401xe_usart.h" line="149" column="9" declfile="Drivers/inc/stm32f401xe_usart.h" declline="149" declcolumn="9"/>
+      </memberdef>
+      <memberdef kind="function" id="stm32f401xe__usart_8h_1aca4307df359080982360f4ba4370d7b4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t USART_GetFlagStatus</definition>
+        <argsstring>(USART_RegDef_t *pUSARTx, uint8_t StatusFlagName)</argsstring>
+        <name>USART_GetFlagStatus</name>
+        <param>
+          <type><ref refid="struct_u_s_a_r_t___reg_def__t" kindref="compound">USART_RegDef_t</ref> *</type>
+          <declname>pUSARTx</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>StatusFlagName</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/inc/stm32f401xe_usart.h" line="155" column="9" declfile="Drivers/inc/stm32f401xe_usart.h" declline="155" declcolumn="9"/>
+      </memberdef>
+      <memberdef kind="function" id="stm32f401xe__usart_8h_1a4ed196b59ec990af5533e0f608e2f559" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void USART_ClearFlag</definition>
+        <argsstring>(USART_RegDef_t *pUSARTx, uint16_t StatusFlagName)</argsstring>
+        <name>USART_ClearFlag</name>
+        <param>
+          <type><ref refid="struct_u_s_a_r_t___reg_def__t" kindref="compound">USART_RegDef_t</ref> *</type>
+          <declname>pUSARTx</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>StatusFlagName</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/inc/stm32f401xe_usart.h" line="156" column="6" declfile="Drivers/inc/stm32f401xe_usart.h" declline="156" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="stm32f401xe__usart_8h_1a65f7987aa8e2c477c82375f13e2af75a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void USART_PeripheralControl</definition>
+        <argsstring>(USART_RegDef_t *pUSARTx, uint8_t EnOrDi)</argsstring>
+        <name>USART_PeripheralControl</name>
+        <param>
+          <type><ref refid="struct_u_s_a_r_t___reg_def__t" kindref="compound">USART_RegDef_t</ref> *</type>
+          <declname>pUSARTx</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>EnOrDi</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/inc/stm32f401xe_usart.h" line="157" column="6" declfile="Drivers/inc/stm32f401xe_usart.h" declline="157" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="stm32f401xe__usart_8h_1aa95f8910a4887083ee310f38dd04e1af" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void USART_SetBaudRate</definition>
+        <argsstring>(USART_RegDef_t *pUSARTx, uint32_t BaudRate)</argsstring>
+        <name>USART_SetBaudRate</name>
+        <param>
+          <type><ref refid="struct_u_s_a_r_t___reg_def__t" kindref="compound">USART_RegDef_t</ref> *</type>
+          <declname>pUSARTx</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>BaudRate</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/inc/stm32f401xe_usart.h" line="158" column="6" declfile="Drivers/inc/stm32f401xe_usart.h" declline="158" declcolumn="6"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>INC_STM32F401XE_USART_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>INC_STM32F401XE_USART_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;stm32f401xe.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20" refid="struct_u_s_a_r_t___config__t" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><sp/>USART_Mode;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>TX<sp/>only,<sp/>RX<sp/>only,<sp/>or<sp/>both</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/>USART_Baud;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Baud<sp/>rate</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><sp/>USART_NoOfStopBits;<sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Stop<sp/>bits:<sp/>1,<sp/>0.5,<sp/>2,<sp/>1.5</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><sp/>USART_WordLength;<sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>8<sp/>or<sp/>9<sp/>bits</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><sp/>USART_ParityControl;<sp/><sp/></highlight><highlight class="comment">//<sp/>None,<sp/>Even,<sp/>Odd</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><sp/>USART_HWFlowControl;<sp/><sp/></highlight><highlight class="comment">//<sp/>None,<sp/>CTS,<sp/>RTS,<sp/>CTS+RTS</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal">}<sp/><ref refid="struct_u_s_a_r_t___config__t" kindref="compound">USART_Config_t</ref>;</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35" refid="struct_u_s_a_r_t___handle__t" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_u_s_a_r_t___reg_def__t" kindref="compound">USART_RegDef_t</ref><sp/>*pUSARTx;<sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Pointer<sp/>to<sp/>USART<sp/>peripheral</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_u_s_a_r_t___config__t" kindref="compound">USART_Config_t</ref><sp/>USART_Config;<sp/></highlight><highlight class="comment">//<sp/>Configuration<sp/>settings</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>For<sp/>interrupt-based<sp/>communication</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*pTxBuffer;<sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>TX<sp/>buffer<sp/>pointer</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*pRxBuffer;<sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>RX<sp/>buffer<sp/>pointer</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/>TxLen;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>TX<sp/>length</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/>RxLen;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>RX<sp/>length</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>TxBusyState;<sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>TX<sp/>state</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>RxBusyState;<sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>RX<sp/>state</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal">}<sp/><ref refid="struct_u_s_a_r_t___handle__t" kindref="compound">USART_Handle_t</ref>;</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>USART_MODE_ONLY_TX<sp/><sp/><sp/><sp/>0<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Transmit<sp/>only</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>USART_MODE_ONLY_RX<sp/><sp/><sp/><sp/>1<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Receive<sp/>only<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>USART_MODE_TXRX<sp/><sp/><sp/><sp/><sp/><sp/><sp/>2<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Transmit<sp/>and<sp/>Receive</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="57"><highlight class="comment"><sp/>*<sp/>@USART_Baud<sp/>-<sp/>Standard<sp/>baud<sp/>rates(BRR<sp/>register<sp/>values:Mantissa(11:8)<sp/>and<sp/>Fraction(3:0))</highlight></codeline>
+<codeline lineno="58"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>USART_STD_BAUD_1200<sp/><sp/><sp/><sp/><sp/>1200<sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Standard<sp/>baud<sp/>rate<sp/>1200</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>USART_STD_BAUD_2400<sp/><sp/><sp/><sp/><sp/>2400<sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Standard<sp/>baud<sp/>rate<sp/>2400</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>USART_STD_BAUD_9600<sp/><sp/><sp/><sp/><sp/>9600<sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Standard<sp/>baud<sp/>rate<sp/>9600</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>USART_STD_BAUD_19200<sp/><sp/><sp/><sp/>19200<sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Standard<sp/>baud<sp/>rate<sp/>19200</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>USART_STD_BAUD_38400<sp/><sp/><sp/><sp/>38400<sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Standard<sp/>baud<sp/>rate<sp/>38400</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>USART_STD_BAUD_57600<sp/><sp/><sp/><sp/>57600<sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Standard<sp/>baud<sp/>rate<sp/>57600</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>USART_STD_BAUD_115200<sp/><sp/><sp/>115200<sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Standard<sp/>baud<sp/>rate<sp/>115200</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>USART_STD_BAUD_230400<sp/><sp/><sp/>230400<sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Standard<sp/>baud<sp/>rate<sp/>230400</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>USART_STD_BAUD_460800<sp/><sp/><sp/>460800<sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Standard<sp/>baud<sp/>rate<sp/>460800</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>USART_STD_BAUD_921600<sp/><sp/><sp/>921600<sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Standard<sp/>baud<sp/>rate<sp/>921600</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>USART_PARITY_DISABLE<sp/><sp/><sp/>0<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Parity<sp/>disabled</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>USART_PARITY_EN_EVEN<sp/><sp/><sp/>1<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Even<sp/>parity</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>USART_PARITY_EN_ODD<sp/><sp/><sp/><sp/>2<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Odd<sp/>parity</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>USART_WORDLEN_8BITS<sp/><sp/><sp/><sp/>0<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>8<sp/>bits<sp/>data<sp/>length(1<sp/>start<sp/>bit,<sp/>8<sp/>data<sp/>bits,<sp/>n<sp/>stop<sp/>bits)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>USART_WORDLEN_9BITS<sp/><sp/><sp/><sp/>1<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>9<sp/>bits<sp/>data<sp/>length(1<sp/>start<sp/>bit,<sp/>9<sp/>data<sp/>bits,<sp/>n<sp/>stop<sp/>bits)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>USART_STOPBITS_1<sp/><sp/><sp/><sp/><sp/><sp/><sp/>0<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>1<sp/>stop<sp/>bit</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>USART_STOPBITS_0_5<sp/><sp/><sp/><sp/><sp/>1<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>0.5<sp/>stop<sp/>bits</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>USART_STOPBITS_2<sp/><sp/><sp/><sp/><sp/><sp/><sp/>2<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>2<sp/>stop<sp/>bits</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>USART_STOPBITS_1_5<sp/><sp/><sp/><sp/><sp/>3<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>1.5<sp/>stop<sp/>bits</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>USART_HW_FLOW_CTRL_NONE<sp/><sp/><sp/><sp/><sp/>0<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>No<sp/>hardware<sp/>flow<sp/>control</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="95"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>USART_HW_FLOW_CTRL_CTS<sp/><sp/><sp/><sp/><sp/><sp/>1<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>CTS<sp/>hardware<sp/>flow<sp/>control</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>USART_HW_FLOW_CTRL_RTS<sp/><sp/><sp/><sp/><sp/><sp/>2<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>RTS<sp/>hardware<sp/>flow<sp/>control</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>USART_HW_FLOW_CTRL_CTS_RTS<sp/><sp/>3<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>CTS<sp/>and<sp/>RTS<sp/>hardware<sp/>flow<sp/>control</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="98"><highlight class="normal"></highlight></codeline>
+<codeline lineno="99"><highlight class="normal"></highlight></codeline>
+<codeline lineno="100"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="101"><highlight class="comment"><sp/>*<sp/>@brief<sp/>USART<sp/>status<sp/>flags(SR<sp/>register-Bits<sp/>7(TXE):5(RXNE):6(TC))</highlight></codeline>
+<codeline lineno="102"><highlight class="comment"><sp/>*<sp/>These<sp/>flags<sp/>are<sp/>used<sp/>to<sp/>check<sp/>the<sp/>status<sp/>of<sp/>the<sp/>USART<sp/>peripheral.</highlight></codeline>
+<codeline lineno="103"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="104"><highlight class="normal"></highlight></codeline>
+<codeline lineno="105"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>USART_FLAG_TXE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(<sp/>1<sp/>&lt;&lt;<sp/>USART_SR_TXE)<sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Transmit<sp/>data<sp/>register<sp/>empty</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="106"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>USART_FLAG_RXNE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(<sp/>1<sp/>&lt;&lt;<sp/>USART_SR_RXNE)<sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Receive<sp/>data<sp/>register<sp/>not<sp/>empty</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="107"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>USART_FLAG_TC<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(<sp/>1<sp/>&lt;&lt;<sp/>USART_SR_TC)<sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Transmission<sp/>complete<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="108"><highlight class="normal"></highlight></codeline>
+<codeline lineno="109"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="110"><highlight class="comment"><sp/>*<sp/>@brief<sp/>USART<sp/>application<sp/>states(TxBusyState<sp/>and<sp/>RxBusyState<sp/>in<sp/>USART_Handle_t<sp/>structure)</highlight></codeline>
+<codeline lineno="111"><highlight class="comment"><sp/>*<sp/>These<sp/>states<sp/>are<sp/>used<sp/>to<sp/>indicate<sp/>the<sp/>current<sp/>state<sp/>of<sp/>the<sp/>USART<sp/>peripheral.</highlight></codeline>
+<codeline lineno="112"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="113"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>USART_BUSY_IN_RX<sp/>1<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>USART<sp/>is<sp/>busy<sp/>receiving<sp/>data</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="114"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>USART_BUSY_IN_TX<sp/>2<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>USART<sp/>is<sp/>busy<sp/>transmitting<sp/>data</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="115"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>USART_READY<sp/>0<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>USART<sp/>is<sp/>ready</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="116"><highlight class="normal"></highlight></codeline>
+<codeline lineno="117"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="118"><highlight class="comment"><sp/>*<sp/>@brief<sp/>USART<sp/>application<sp/>events</highlight></codeline>
+<codeline lineno="119"><highlight class="comment"><sp/>*<sp/>These<sp/>events<sp/>are<sp/>used<sp/>to<sp/>notify<sp/>the<sp/>application<sp/>about<sp/>various<sp/>USART<sp/>events.</highlight></codeline>
+<codeline lineno="120"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="121"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/><sp/><sp/><sp/><sp/>USART_EVENT_TX_CMPLT<sp/><sp/><sp/>0<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Transmission<sp/>complete</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="122"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/><sp/><sp/><sp/><sp/>USART_EVENT_RX_CMPLT<sp/><sp/><sp/>1<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Receive<sp/>complete</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="123"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/><sp/><sp/><sp/><sp/>USART_EVENT_IDLE<sp/><sp/><sp/><sp/><sp/><sp/><sp/>2<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Idle</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="124"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/><sp/><sp/><sp/><sp/>USART_EVENT_CTS<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>3<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>CTS</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="125"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/><sp/><sp/><sp/><sp/>USART_EVENT_PE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>4<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Parity<sp/>error</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="126"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/><sp/><sp/><sp/><sp/>USART_ERR_FE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>5<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Framing<sp/>error</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="127"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/><sp/><sp/><sp/><sp/>USART_ERR_NE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>6<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Noise<sp/>error</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="128"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/><sp/><sp/><sp/><sp/>USART_ERR_ORE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>7<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Overrun<sp/>error</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="129"><highlight class="normal"></highlight></codeline>
+<codeline lineno="130"><highlight class="normal"></highlight><highlight class="comment">/*******************************<sp/>API<sp/>Declarations<sp/>*************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="131"><highlight class="normal"></highlight></codeline>
+<codeline lineno="132"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="133"><highlight class="comment"><sp/>*@brief<sp/>Peripheral<sp/>Clock<sp/>setup</highlight></codeline>
+<codeline lineno="134"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="135"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>USART_PeriClockControl(<ref refid="struct_u_s_a_r_t___reg_def__t" kindref="compound">USART_RegDef_t</ref><sp/>*pUSARTx,<sp/>uint8_t<sp/>EnOrDi);</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"></highlight></codeline>
+<codeline lineno="137"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="138"><highlight class="comment"><sp/>*@brief<sp/>Init<sp/>and<sp/>De-init</highlight></codeline>
+<codeline lineno="139"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="140"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>USART_Init(<ref refid="struct_u_s_a_r_t___handle__t" kindref="compound">USART_Handle_t</ref><sp/>*pUSARTHandle);</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>USART_DeInit(<ref refid="struct_u_s_a_r_t___handle__t" kindref="compound">USART_Handle_t</ref><sp/>*pUSARTHandle);</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"></highlight></codeline>
+<codeline lineno="143"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="144"><highlight class="comment"><sp/>*@brief<sp/>Data<sp/>Send<sp/>and<sp/>Receive</highlight></codeline>
+<codeline lineno="145"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="146"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>USART_SendData(<ref refid="struct_u_s_a_r_t___handle__t" kindref="compound">USART_Handle_t</ref><sp/>*pUSARTHandle,<sp/>uint8_t<sp/>*pTxBuffer,<sp/>uint32_t<sp/>Len);</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/>USART_ReceiveData(<ref refid="struct_u_s_a_r_t___handle__t" kindref="compound">USART_Handle_t</ref><sp/>*pUSARTHandle,uint8_t<sp/>*pRxBuffer,<sp/>uint32_t<sp/>Len);</highlight></codeline>
+<codeline lineno="148"><highlight class="normal">uint8_t<sp/>USART_SendDataIT(<ref refid="struct_u_s_a_r_t___handle__t" kindref="compound">USART_Handle_t</ref><sp/>*pUSARTHandle,uint8_t<sp/>*pTxBuffer,<sp/>uint32_t<sp/>Len);</highlight></codeline>
+<codeline lineno="149"><highlight class="normal">uint8_t<sp/>USART_ReceiveDataIT(<ref refid="struct_u_s_a_r_t___handle__t" kindref="compound">USART_Handle_t</ref><sp/>*pUSARTHandle,uint8_t<sp/>*pRxBuffer,<sp/>uint32_t<sp/>Len);</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"></highlight></codeline>
+<codeline lineno="151"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="152"><highlight class="comment"><sp/>*@brief<sp/>Other<sp/>Peripheral<sp/>Control<sp/>APIs</highlight></codeline>
+<codeline lineno="153"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="154"><highlight class="normal"></highlight></codeline>
+<codeline lineno="155"><highlight class="normal">uint8_t<sp/>USART_GetFlagStatus(<ref refid="struct_u_s_a_r_t___reg_def__t" kindref="compound">USART_RegDef_t</ref><sp/>*pUSARTx,<sp/>uint8_t<sp/>StatusFlagName);</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>USART_ClearFlag(<ref refid="struct_u_s_a_r_t___reg_def__t" kindref="compound">USART_RegDef_t</ref><sp/>*pUSARTx,<sp/>uint16_t<sp/>StatusFlagName);</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>USART_PeripheralControl(<ref refid="struct_u_s_a_r_t___reg_def__t" kindref="compound">USART_RegDef_t</ref><sp/>*pUSARTx,<sp/>uint8_t<sp/>EnOrDi);</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>USART_SetBaudRate(<ref refid="struct_u_s_a_r_t___reg_def__t" kindref="compound">USART_RegDef_t</ref><sp/>*pUSARTx,<sp/>uint32_t<sp/>BaudRate);</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"></highlight></codeline>
+<codeline lineno="160"><highlight class="normal"></highlight></codeline>
+<codeline lineno="161"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>INC_STM32F401XE_USART_H_<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+    </programlisting>
+    <location file="Drivers/inc/stm32f401xe_usart.h"/>
+  </compounddef>
+</doxygen>

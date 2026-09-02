@@ -1,0 +1,127 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.18.0" xml:lang="en-US">
+  <compounddef id="struct_s_y_s_c_f_g___reg_def__t" kind="struct" language="C++" prot="public">
+    <compoundname>SYSCFG_RegDef_t</compoundname>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_s_y_s_c_f_g___reg_def__t_1a3ce81ce859446c1af94ce6e23aa5b106" prot="public" static="no" mutable="no">
+        <type>_vo uint32_t</type>
+        <definition>_vo uint32_t SYSCFG_RegDef_t::MEMRMP</definition>
+        <argsstring></argsstring>
+        <name>MEMRMP</name>
+        <qualifiedname>SYSCFG_RegDef_t::MEMRMP</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>SYSCFG memory remap regiser,offset: 0x00 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/inc/stm32f401xe.h" line="218" column="14" bodyfile="Drivers/inc/stm32f401xe.h" bodystart="218" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_s_y_s_c_f_g___reg_def__t_1a8275e46a2136e02a6dd8c4aa0e4204ac" prot="public" static="no" mutable="no">
+        <type>_vo uint32_t</type>
+        <definition>_vo uint32_t SYSCFG_RegDef_t::PMC</definition>
+        <argsstring></argsstring>
+        <name>PMC</name>
+        <qualifiedname>SYSCFG_RegDef_t::PMC</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>SYSCFG peripheral mode configuration registeer,offset: 0x04 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/inc/stm32f401xe.h" line="219" column="14" bodyfile="Drivers/inc/stm32f401xe.h" bodystart="219" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_s_y_s_c_f_g___reg_def__t_1ac378105b8ce00eea9de397f939c99039" prot="public" static="no" mutable="no">
+        <type>_vo uint32_t</type>
+        <definition>_vo uint32_t SYSCFG_RegDef_t::EXTICR[4]</definition>
+        <argsstring>[4]</argsstring>
+        <name>EXTICR</name>
+        <qualifiedname>SYSCFG_RegDef_t::EXTICR</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>SYSCFG external interrupt configuration,offset: 0x08-0x14 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/inc/stm32f401xe.h" line="220" column="14" bodyfile="Drivers/inc/stm32f401xe.h" bodystart="220" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_s_y_s_c_f_g___reg_def__t_1a5a3a2f2bffca1e5ee74a196b4fa3a847" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t SYSCFG_RegDef_t::RESERVED1[2]</definition>
+        <argsstring>[2]</argsstring>
+        <name>RESERVED1</name>
+        <qualifiedname>SYSCFG_RegDef_t::RESERVED1</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Reserved,offset: 0x18-0x1C </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/inc/stm32f401xe.h" line="221" column="14" bodyfile="Drivers/inc/stm32f401xe.h" bodystart="221" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_s_y_s_c_f_g___reg_def__t_1a61d09c782533863c28609d46ab9c844b" prot="public" static="no" mutable="no">
+        <type>_vo uint32_t</type>
+        <definition>_vo uint32_t SYSCFG_RegDef_t::CMPCR</definition>
+        <argsstring></argsstring>
+        <name>CMPCR</name>
+        <qualifiedname>SYSCFG_RegDef_t::CMPCR</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>SYSCFG compensation cell control register, offset: 0x20 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/inc/stm32f401xe.h" line="222" column="14" bodyfile="Drivers/inc/stm32f401xe.h" bodystart="222" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_s_y_s_c_f_g___reg_def__t_1a7d7b1ed7f057e1df9769429250fd9236" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t SYSCFG_RegDef_t::RESERVED2[2]</definition>
+        <argsstring>[2]</argsstring>
+        <name>RESERVED2</name>
+        <qualifiedname>SYSCFG_RegDef_t::RESERVED2</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Reserved,offset: 0x24-0x28 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/inc/stm32f401xe.h" line="223" column="15" bodyfile="Drivers/inc/stm32f401xe.h" bodystart="223" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_s_y_s_c_f_g___reg_def__t_1a2ab7b3661aba88d32a70d7b5d3f561c5" prot="public" static="no" mutable="no">
+        <type>_vo uint32_t</type>
+        <definition>_vo uint32_t SYSCFG_RegDef_t::CFGR</definition>
+        <argsstring></argsstring>
+        <name>CFGR</name>
+        <qualifiedname>SYSCFG_RegDef_t::CFGR</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>SYSCFG configuration register,offset: 0x2C </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/inc/stm32f401xe.h" line="224" column="14" bodyfile="Drivers/inc/stm32f401xe.h" bodystart="224" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Drivers/inc/stm32f401xe.h" line="216" column="1" bodyfile="Drivers/inc/stm32f401xe.h" bodystart="217" bodyend="226"/>
+    <listofallmembers>
+      <member refid="struct_s_y_s_c_f_g___reg_def__t_1a2ab7b3661aba88d32a70d7b5d3f561c5" prot="public" virt="non-virtual"><scope>SYSCFG_RegDef_t</scope><name>CFGR</name></member>
+      <member refid="struct_s_y_s_c_f_g___reg_def__t_1a61d09c782533863c28609d46ab9c844b" prot="public" virt="non-virtual"><scope>SYSCFG_RegDef_t</scope><name>CMPCR</name></member>
+      <member refid="struct_s_y_s_c_f_g___reg_def__t_1ac378105b8ce00eea9de397f939c99039" prot="public" virt="non-virtual"><scope>SYSCFG_RegDef_t</scope><name>EXTICR</name></member>
+      <member refid="struct_s_y_s_c_f_g___reg_def__t_1a3ce81ce859446c1af94ce6e23aa5b106" prot="public" virt="non-virtual"><scope>SYSCFG_RegDef_t</scope><name>MEMRMP</name></member>
+      <member refid="struct_s_y_s_c_f_g___reg_def__t_1a8275e46a2136e02a6dd8c4aa0e4204ac" prot="public" virt="non-virtual"><scope>SYSCFG_RegDef_t</scope><name>PMC</name></member>
+      <member refid="struct_s_y_s_c_f_g___reg_def__t_1a5a3a2f2bffca1e5ee74a196b4fa3a847" prot="public" virt="non-virtual"><scope>SYSCFG_RegDef_t</scope><name>RESERVED1</name></member>
+      <member refid="struct_s_y_s_c_f_g___reg_def__t_1a7d7b1ed7f057e1df9769429250fd9236" prot="public" virt="non-virtual"><scope>SYSCFG_RegDef_t</scope><name>RESERVED2</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

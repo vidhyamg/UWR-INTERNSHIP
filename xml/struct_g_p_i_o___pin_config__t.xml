@@ -1,0 +1,105 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.18.0" xml:lang="en-US">
+  <compounddef id="struct_g_p_i_o___pin_config__t" kind="struct" language="C++" prot="public">
+    <compoundname>GPIO_PinConfig_t</compoundname>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_g_p_i_o___pin_config__t_1ab6dcbdc918e3e73e03072e6ce06f9a3b" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t GPIO_PinConfig_t::GPIO_PinNumber</definition>
+        <argsstring></argsstring>
+        <name>GPIO_PinNumber</name>
+        <qualifiedname>GPIO_PinConfig_t::GPIO_PinNumber</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/inc/stm32f401xe_gpio.h" line="17" column="10" bodyfile="Drivers/inc/stm32f401xe_gpio.h" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_g_p_i_o___pin_config__t_1accc2db4bbd8b54ecf4985689f54a32ba" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t GPIO_PinConfig_t::GPIO_PinMode</definition>
+        <argsstring></argsstring>
+        <name>GPIO_PinMode</name>
+        <qualifiedname>GPIO_PinConfig_t::GPIO_PinMode</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/inc/stm32f401xe_gpio.h" line="18" column="10" bodyfile="Drivers/inc/stm32f401xe_gpio.h" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_g_p_i_o___pin_config__t_1ace5487c92f06f44a7abc826efc9cdb92" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t GPIO_PinConfig_t::GPIO_PinSpeed</definition>
+        <argsstring></argsstring>
+        <name>GPIO_PinSpeed</name>
+        <qualifiedname>GPIO_PinConfig_t::GPIO_PinSpeed</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/inc/stm32f401xe_gpio.h" line="19" column="10" bodyfile="Drivers/inc/stm32f401xe_gpio.h" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_g_p_i_o___pin_config__t_1a2ae98df6f7d70cdf293c123705651cab" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t GPIO_PinConfig_t::GPIO_PinPuPdControl</definition>
+        <argsstring></argsstring>
+        <name>GPIO_PinPuPdControl</name>
+        <qualifiedname>GPIO_PinConfig_t::GPIO_PinPuPdControl</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/inc/stm32f401xe_gpio.h" line="20" column="10" bodyfile="Drivers/inc/stm32f401xe_gpio.h" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_g_p_i_o___pin_config__t_1ac58158963de5fe2451d8212b9b29fea1" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t GPIO_PinConfig_t::GPIO_PinOPType</definition>
+        <argsstring></argsstring>
+        <name>GPIO_PinOPType</name>
+        <qualifiedname>GPIO_PinConfig_t::GPIO_PinOPType</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/inc/stm32f401xe_gpio.h" line="21" column="10" bodyfile="Drivers/inc/stm32f401xe_gpio.h" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_g_p_i_o___pin_config__t_1abddbe6a9014ae996cb9ceedc0544814f" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t GPIO_PinConfig_t::GPIO_AltFunMode</definition>
+        <argsstring></argsstring>
+        <name>GPIO_AltFunMode</name>
+        <qualifiedname>GPIO_PinConfig_t::GPIO_AltFunMode</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Drivers/inc/stm32f401xe_gpio.h" line="22" column="10" bodyfile="Drivers/inc/stm32f401xe_gpio.h" bodystart="22" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Drivers/inc/stm32f401xe_gpio.h" line="15" column="1" bodyfile="Drivers/inc/stm32f401xe_gpio.h" bodystart="16" bodyend="23"/>
+    <listofallmembers>
+      <member refid="struct_g_p_i_o___pin_config__t_1abddbe6a9014ae996cb9ceedc0544814f" prot="public" virt="non-virtual"><scope>GPIO_PinConfig_t</scope><name>GPIO_AltFunMode</name></member>
+      <member refid="struct_g_p_i_o___pin_config__t_1accc2db4bbd8b54ecf4985689f54a32ba" prot="public" virt="non-virtual"><scope>GPIO_PinConfig_t</scope><name>GPIO_PinMode</name></member>
+      <member refid="struct_g_p_i_o___pin_config__t_1ab6dcbdc918e3e73e03072e6ce06f9a3b" prot="public" virt="non-virtual"><scope>GPIO_PinConfig_t</scope><name>GPIO_PinNumber</name></member>
+      <member refid="struct_g_p_i_o___pin_config__t_1ac58158963de5fe2451d8212b9b29fea1" prot="public" virt="non-virtual"><scope>GPIO_PinConfig_t</scope><name>GPIO_PinOPType</name></member>
+      <member refid="struct_g_p_i_o___pin_config__t_1a2ae98df6f7d70cdf293c123705651cab" prot="public" virt="non-virtual"><scope>GPIO_PinConfig_t</scope><name>GPIO_PinPuPdControl</name></member>
+      <member refid="struct_g_p_i_o___pin_config__t_1ace5487c92f06f44a7abc826efc9cdb92" prot="public" virt="non-virtual"><scope>GPIO_PinConfig_t</scope><name>GPIO_PinSpeed</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>
