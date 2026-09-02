@@ -194,6 +194,27 @@ void USART_Init(USART_Handle_t *pUSARTHandle)
 
 }
 
+/***************************USART Deinit Function***********************/
+
+void USART_DeInit(GPIO_RegDef_t *pSPIx)
+{
+
+
+		        if (pUSARTx == USART1)
+		        {
+		        	USART1_REG_RESET();
+		        }
+		        else  if (pUSARTx == USART2)
+		        {
+		        	USART2_REG_RESET();
+		        }
+		        else  if (pUSARTx == USART6)
+		        {
+		        	USART6_REG_RESET();
+		        }
+
+}
+
 /*****************USART_ENABLE/DISABLE functions *********************************
  * @brief  Enables or disables the specified USART peripheral
  * @param  pUSARTx: Pointer to the USART register structure 
