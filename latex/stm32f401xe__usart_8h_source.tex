@@ -1,0 +1,127 @@
+\doxysection{stm32f401xe\+\_\+usart.\+h}
+\hypertarget{stm32f401xe__usart_8h_source}{}\label{stm32f401xe__usart_8h_source}\index{Drivers/inc/stm32f401xe\_usart.h@{Drivers/inc/stm32f401xe\_usart.h}}
+\doxymbox{\hyperlink{stm32f401xe__usart_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#ifndef\ INC\_STM32F401XE\_USART\_H\_}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#define\ INC\_STM32F401XE\_USART\_H\_}}
+\DoxyCodeLine{00010\ }
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ "{}\doxymbox{\hyperlink{stm32f401xe_8h}{stm32f401xe.h}}"{}}}
+\DoxyCodeLine{00012\ }
+\DoxyCodeLine{00013\ }
+\DoxyCodeLine{00019\ }
+\DoxyCodeLine{00020\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{struct}}
+\DoxyCodeLine{00021\ \{}
+\DoxyCodeLine{00022\ \ \ \ \ uint8\_t\ \ \doxymbox{\hyperlink{struct_u_s_a_r_t___config__t_ab215b9c353c1025926232f784cd5da51}{USART\_Mode}};\ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ TX\ only,\ RX\ only,\ or\ both}}
+\DoxyCodeLine{00023\ \ \ \ \ uint32\_t\ \doxymbox{\hyperlink{struct_u_s_a_r_t___config__t_a662bf4c82d1698328c374e91d65f7902}{USART\_Baud}};\ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Baud\ rate}}
+\DoxyCodeLine{00024\ \ \ \ \ uint8\_t\ \ \doxymbox{\hyperlink{struct_u_s_a_r_t___config__t_a37dd33ca4cdaab232571fa5b52cf502f}{USART\_NoOfStopBits}};\ \ \ \textcolor{comment}{//\ Stop\ bits:\ 1,\ 0.5,\ 2,\ 1.5}}
+\DoxyCodeLine{00025\ \ \ \ \ uint8\_t\ \ \doxymbox{\hyperlink{struct_u_s_a_r_t___config__t_a1e06d25ec1eb9f9550c08aae00d92bbc}{USART\_WordLength}};\ \ \ \ \ \textcolor{comment}{//\ 8\ or\ 9\ bits}}
+\DoxyCodeLine{00026\ \ \ \ \ uint8\_t\ \ \doxymbox{\hyperlink{struct_u_s_a_r_t___config__t_a2753a4ac132be37eac8c28fe4b8698b4}{USART\_ParityControl}};\ \ \textcolor{comment}{//\ None,\ Even,\ Odd}}
+\DoxyCodeLine{00027\ \ \ \ \ uint8\_t\ \ \doxymbox{\hyperlink{struct_u_s_a_r_t___config__t_ac7f6abc7a13eb66e398e14a3c043a75d}{USART\_HWFlowControl}};\ \ \textcolor{comment}{//\ None,\ CTS,\ RTS,\ CTS+RTS}}
+\DoxyCodeLine{00028\ \}\ \doxymbox{\hyperlink{struct_u_s_a_r_t___config__t}{USART\_Config\_t}};}
+\DoxyCodeLine{00029\ }
+\DoxyCodeLine{00035\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{struct}}
+\DoxyCodeLine{00036\ \{}
+\DoxyCodeLine{00037\ \ \ \ \ \doxymbox{\hyperlink{struct_u_s_a_r_t___reg_def__t}{USART\_RegDef\_t}}\ *\doxymbox{\hyperlink{struct_u_s_a_r_t___handle__t_ae1dc601fcd17ba314ce1a7b8dc379420}{pUSARTx}};\ \ \ \ \ \ \textcolor{comment}{//\ Pointer\ to\ USART\ peripheral}}
+\DoxyCodeLine{00038\ \ \ \ \ \doxymbox{\hyperlink{struct_u_s_a_r_t___config__t}{USART\_Config\_t}}\ \doxymbox{\hyperlink{struct_u_s_a_r_t___handle__t_a8f87bf394a5c1e8e3067e0e91450f8aa}{USART\_Config}};\ \textcolor{comment}{//\ Configuration\ settings}}
+\DoxyCodeLine{00039\ }
+\DoxyCodeLine{00040\ \ \ \ \ \textcolor{comment}{//\ For\ interrupt-\/based\ communication}}
+\DoxyCodeLine{00041\ \ \ \ \ uint8\_t\ \ \ \ \ \ \ \ *\doxymbox{\hyperlink{struct_u_s_a_r_t___handle__t_ac07fc756fc2084d9e79d98f590d47a2f}{pTxBuffer}};\ \ \ \ \textcolor{comment}{//\ TX\ buffer\ pointer}}
+\DoxyCodeLine{00042\ \ \ \ \ uint8\_t\ \ \ \ \ \ \ \ *\doxymbox{\hyperlink{struct_u_s_a_r_t___handle__t_a6f1958a20f5b80d5e41150a2f4c7d8a7}{pRxBuffer}};\ \ \ \ \textcolor{comment}{//\ RX\ buffer\ pointer}}
+\DoxyCodeLine{00043\ \ \ \ \ uint32\_t\ \ \ \ \ \ \ \doxymbox{\hyperlink{struct_u_s_a_r_t___handle__t_a57c237de8d2c1323f2879cd1ab8ee41c}{TxLen}};\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ TX\ length}}
+\DoxyCodeLine{00044\ \ \ \ \ uint32\_t\ \ \ \ \ \ \ \doxymbox{\hyperlink{struct_u_s_a_r_t___handle__t_a1b12bbceca8b5af61b5408684ac187d7}{RxLen}};\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ RX\ length}}
+\DoxyCodeLine{00045\ \ \ \ \ uint8\_t\ \ \ \ \ \ \ \ \doxymbox{\hyperlink{struct_u_s_a_r_t___handle__t_a256257bcbd0fd24ab29928fc20898b19}{TxBusyState}};\ \ \ \textcolor{comment}{//\ TX\ state}}
+\DoxyCodeLine{00046\ \ \ \ \ uint8\_t\ \ \ \ \ \ \ \ \doxymbox{\hyperlink{struct_u_s_a_r_t___handle__t_a3cd807707ebf4690576eb7548f5d450c}{RxBusyState}};\ \ \ \textcolor{comment}{//\ RX\ state}}
+\DoxyCodeLine{00047\ \}\ \doxymbox{\hyperlink{struct_u_s_a_r_t___handle__t}{USART\_Handle\_t}};}
+\DoxyCodeLine{00048\ }
+\DoxyCodeLine{00052\ \textcolor{preprocessor}{\#define\ USART\_MODE\_ONLY\_TX\ \ \ \ 0\ \ \ \ \ \ \ \ \ \ }\textcolor{comment}{//\ Transmit\ only}}
+\DoxyCodeLine{00053\ \textcolor{preprocessor}{\#define\ USART\_MODE\_ONLY\_RX\ \ \ \ 1\ \ \ \ \ \ \ \ \ \ }\textcolor{comment}{//\ Receive\ only\ }}
+\DoxyCodeLine{00054\ \textcolor{preprocessor}{\#define\ USART\_MODE\_TXRX\ \ \ \ \ \ \ 2\ \ \ \ \ \ \ \ \ \ }\textcolor{comment}{//\ Transmit\ and\ Receive}}
+\DoxyCodeLine{00055\ }
+\DoxyCodeLine{00056\ \textcolor{comment}{/*}}
+\DoxyCodeLine{00057\ \textcolor{comment}{\ *\ @USART\_Baud\ -\/\ Standard\ baud\ rates(BRR\ register\ values:Mantissa(11:8)\ and\ Fraction(3:0))}}
+\DoxyCodeLine{00058\ \textcolor{comment}{\ */}}
+\DoxyCodeLine{00059\ \textcolor{preprocessor}{\#define\ USART\_STD\_BAUD\_1200\ \ \ \ \ 1200\ \ \ \ \ \ }\textcolor{comment}{//\ Standard\ baud\ rate\ 1200}}
+\DoxyCodeLine{00060\ \textcolor{preprocessor}{\#define\ USART\_STD\_BAUD\_2400\ \ \ \ \ 2400\ \ \ \ \ \ }\textcolor{comment}{//\ Standard\ baud\ rate\ 2400}}
+\DoxyCodeLine{00061\ \textcolor{preprocessor}{\#define\ USART\_STD\_BAUD\_9600\ \ \ \ \ 9600\ \ \ \ \ \ }\textcolor{comment}{//\ Standard\ baud\ rate\ 9600}}
+\DoxyCodeLine{00062\ \textcolor{preprocessor}{\#define\ USART\_STD\_BAUD\_19200\ \ \ \ 19200\ \ \ \ \ }\textcolor{comment}{//\ Standard\ baud\ rate\ 19200}}
+\DoxyCodeLine{00063\ \textcolor{preprocessor}{\#define\ USART\_STD\_BAUD\_38400\ \ \ \ 38400\ \ \ \ \ }\textcolor{comment}{//\ Standard\ baud\ rate\ 38400}}
+\DoxyCodeLine{00064\ \textcolor{preprocessor}{\#define\ USART\_STD\_BAUD\_57600\ \ \ \ 57600\ \ \ \ \ }\textcolor{comment}{//\ Standard\ baud\ rate\ 57600}}
+\DoxyCodeLine{00065\ \textcolor{preprocessor}{\#define\ USART\_STD\_BAUD\_115200\ \ \ 115200\ \ \ \ }\textcolor{comment}{//\ Standard\ baud\ rate\ 115200}}
+\DoxyCodeLine{00066\ \textcolor{preprocessor}{\#define\ USART\_STD\_BAUD\_230400\ \ \ 230400\ \ \ \ }\textcolor{comment}{//\ Standard\ baud\ rate\ 230400}}
+\DoxyCodeLine{00067\ \textcolor{preprocessor}{\#define\ USART\_STD\_BAUD\_460800\ \ \ 460800\ \ \ \ }\textcolor{comment}{//\ Standard\ baud\ rate\ 460800}}
+\DoxyCodeLine{00068\ \textcolor{preprocessor}{\#define\ USART\_STD\_BAUD\_921600\ \ \ 921600\ \ \ \ }\textcolor{comment}{//\ Standard\ baud\ rate\ 921600}}
+\DoxyCodeLine{00069\ }
+\DoxyCodeLine{00073\ \textcolor{preprocessor}{\#define\ USART\_PARITY\_DISABLE\ \ \ 0\ \ \ \ \ \ \ \ \ \ \ }\textcolor{comment}{//\ Parity\ disabled}}
+\DoxyCodeLine{00074\ \textcolor{preprocessor}{\#define\ USART\_PARITY\_EN\_EVEN\ \ \ 1\ \ \ \ \ \ \ \ \ \ \ }\textcolor{comment}{//\ Even\ parity}}
+\DoxyCodeLine{00075\ \textcolor{preprocessor}{\#define\ USART\_PARITY\_EN\_ODD\ \ \ \ 2\ \ \ \ \ \ \ \ \ \ \ }\textcolor{comment}{//\ Odd\ parity}}
+\DoxyCodeLine{00076\ }
+\DoxyCodeLine{00080\ \textcolor{preprocessor}{\#define\ USART\_WORDLEN\_8BITS\ \ \ \ 0\ \ \ \ \ \ \ \ \ \ \ }\textcolor{comment}{//\ 8\ bits\ data\ length(1\ start\ bit,\ 8\ data\ bits,\ n\ stop\ bits)}}
+\DoxyCodeLine{00081\ \textcolor{preprocessor}{\#define\ USART\_WORDLEN\_9BITS\ \ \ \ 1\ \ \ \ \ \ \ \ \ \ \ }\textcolor{comment}{//\ 9\ bits\ data\ length(1\ start\ bit,\ 9\ data\ bits,\ n\ stop\ bits)}}
+\DoxyCodeLine{00082\ }
+\DoxyCodeLine{00086\ \textcolor{preprocessor}{\#define\ USART\_STOPBITS\_1\ \ \ \ \ \ \ 0\ \ \ \ \ \ \ \ \ \ \ }\textcolor{comment}{//\ 1\ stop\ bit}}
+\DoxyCodeLine{00087\ \textcolor{preprocessor}{\#define\ USART\_STOPBITS\_0\_5\ \ \ \ \ 1\ \ \ \ \ \ \ \ \ \ \ }\textcolor{comment}{//\ 0.5\ stop\ bits}}
+\DoxyCodeLine{00088\ \textcolor{preprocessor}{\#define\ USART\_STOPBITS\_2\ \ \ \ \ \ \ 2\ \ \ \ \ \ \ \ \ \ \ }\textcolor{comment}{//\ 2\ stop\ bits}}
+\DoxyCodeLine{00089\ \textcolor{preprocessor}{\#define\ USART\_STOPBITS\_1\_5\ \ \ \ \ 3\ \ \ \ \ \ \ \ \ \ \ }\textcolor{comment}{//\ 1.5\ stop\ bits}}
+\DoxyCodeLine{00090\ }
+\DoxyCodeLine{00094\ \textcolor{preprocessor}{\#define\ USART\_HW\_FLOW\_CTRL\_NONE\ \ \ \ \ 0\ \ \ \ \ \ \ \ \ \ \ }\textcolor{comment}{//\ No\ hardware\ flow\ control}}
+\DoxyCodeLine{00095\ \textcolor{preprocessor}{\#define\ USART\_HW\_FLOW\_CTRL\_CTS\ \ \ \ \ \ 1\ \ \ \ \ \ \ \ \ \ \ }\textcolor{comment}{//\ CTS\ hardware\ flow\ control}}
+\DoxyCodeLine{00096\ \textcolor{preprocessor}{\#define\ USART\_HW\_FLOW\_CTRL\_RTS\ \ \ \ \ \ 2\ \ \ \ \ \ \ \ \ \ \ }\textcolor{comment}{//\ RTS\ hardware\ flow\ control}}
+\DoxyCodeLine{00097\ \textcolor{preprocessor}{\#define\ USART\_HW\_FLOW\_CTRL\_CTS\_RTS\ \ 3\ \ \ \ \ \ \ \ \ \ \ }\textcolor{comment}{//\ CTS\ and\ RTS\ hardware\ flow\ control}}
+\DoxyCodeLine{00098\ }
+\DoxyCodeLine{00099\ \textcolor{comment}{/*}}
+\DoxyCodeLine{00100\ \textcolor{comment}{\ *\ USART\ flags}}
+\DoxyCodeLine{00101\ \textcolor{comment}{\ */}}
+\DoxyCodeLine{00102\ }
+\DoxyCodeLine{00103\ \textcolor{preprocessor}{\#define\ USART\_FLAG\_TXE\ \ \ \ \ \ \ \ \ \ (\ 1\ <<\ USART\_SR\_TXE)}}
+\DoxyCodeLine{00104\ \textcolor{preprocessor}{\#define\ USART\_FLAG\_RXNE\ \ \ \ \ \ \ \ \ (\ 1\ <<\ USART\_SR\_RXNE)}}
+\DoxyCodeLine{00105\ \textcolor{preprocessor}{\#define\ USART\_FLAG\_TC\ \ \ \ \ \ \ \ \ \ \ (\ 1\ <<\ USART\_SR\_TC)}}
+\DoxyCodeLine{00106\ }
+\DoxyCodeLine{00107\ \textcolor{comment}{/*}}
+\DoxyCodeLine{00108\ \textcolor{comment}{\ *\ Application\ states}}
+\DoxyCodeLine{00109\ \textcolor{comment}{\ */}}
+\DoxyCodeLine{00110\ \textcolor{preprocessor}{\#define\ USART\_BUSY\_IN\_RX\ 1}}
+\DoxyCodeLine{00111\ \textcolor{preprocessor}{\#define\ USART\_BUSY\_IN\_TX\ 2}}
+\DoxyCodeLine{00112\ \textcolor{preprocessor}{\#define\ USART\_READY\ 0}}
+\DoxyCodeLine{00113\ }
+\DoxyCodeLine{00114\ }
+\DoxyCodeLine{00115\ \textcolor{preprocessor}{\#define\ \ \ \ \ USART\_EVENT\_TX\_CMPLT\ \ \ 0}}
+\DoxyCodeLine{00116\ \textcolor{preprocessor}{\#define\ \ \ \ \ USART\_EVENT\_RX\_CMPLT\ \ \ 1}}
+\DoxyCodeLine{00117\ \textcolor{preprocessor}{\#define\ \ \ \ \ USART\_EVENT\_IDLE\ \ \ \ \ \ 2}}
+\DoxyCodeLine{00118\ \textcolor{preprocessor}{\#define\ \ \ \ \ USART\_EVENT\_CTS\ \ \ \ \ \ \ 3}}
+\DoxyCodeLine{00119\ \textcolor{preprocessor}{\#define\ \ \ \ \ USART\_EVENT\_PE\ \ \ \ \ \ \ \ 4}}
+\DoxyCodeLine{00120\ \textcolor{preprocessor}{\#define\ \ \ \ \ USART\_ERR\_FE\ \ \ \ \ \ \ \ 5}}
+\DoxyCodeLine{00121\ \textcolor{preprocessor}{\#define\ \ \ \ \ USART\_ERR\_NE\ \ \ \ \ \ \ \ \ 6}}
+\DoxyCodeLine{00122\ \textcolor{preprocessor}{\#define\ \ \ \ \ USART\_ERR\_ORE\ \ \ \ \ \ \ 7}}
+\DoxyCodeLine{00123\ }
+\DoxyCodeLine{00124\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{/*\ INC\_STM32F401XE\_USART\_H\_\ */}\textcolor{preprocessor}{}}
+\DoxyCodeLine{00125\ \textcolor{comment}{/*}}
+\DoxyCodeLine{00126\ \textcolor{comment}{\ *\ Peripheral\ Clock\ setup}}
+\DoxyCodeLine{00127\ \textcolor{comment}{\ */}}
+\DoxyCodeLine{00128\ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{stm32f401xe__usart_8h_a95763c53bf080c50d4d2150536b9f996}{USART\_PeriClockControl}}(\doxymbox{\hyperlink{struct_u_s_a_r_t___reg_def__t}{USART\_RegDef\_t}}\ *pUSARTx,\ uint8\_t\ EnOrDi);}
+\DoxyCodeLine{00129\ }
+\DoxyCodeLine{00130\ \textcolor{comment}{/*}}
+\DoxyCodeLine{00131\ \textcolor{comment}{\ *\ Init\ and\ De-\/init}}
+\DoxyCodeLine{00132\ \textcolor{comment}{\ */}}
+\DoxyCodeLine{00133\ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{stm32f401xe__usart_8h_a9f8081684bf9bf4f54f5a54e97a86f90}{USART\_Init}}(\doxymbox{\hyperlink{struct_u_s_a_r_t___handle__t}{USART\_Handle\_t}}\ *pUSARTHandle);}
+\DoxyCodeLine{00134\ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{stm32f401xe__usart_8h_af8004b63126c5814f98d296df0aa56b3}{USART\_DeInit}}(\doxymbox{\hyperlink{struct_u_s_a_r_t___handle__t}{USART\_Handle\_t}}\ *pUSARTHandle);}
+\DoxyCodeLine{00135\ }
+\DoxyCodeLine{00136\ \textcolor{comment}{/*}}
+\DoxyCodeLine{00137\ \textcolor{comment}{\ *\ Data\ Send\ and\ Receive}}
+\DoxyCodeLine{00138\ \textcolor{comment}{\ */}}
+\DoxyCodeLine{00139\ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{stm32f401xe__usart_8h_ac07c40fd91c832c49bc0aa649b85acfb}{USART\_SendData}}(\doxymbox{\hyperlink{struct_u_s_a_r_t___handle__t}{USART\_Handle\_t}}\ *pUSARTHandle,\ uint8\_t\ *pTxBuffer,\ uint32\_t\ Len);}
+\DoxyCodeLine{00140\ \textcolor{keywordtype}{void}\ \ \doxymbox{\hyperlink{stm32f401xe__usart_8h_aafcc74a54eb7f0a12a36487b452da59c}{USART\_ReceiveData}}(\doxymbox{\hyperlink{struct_u_s_a_r_t___handle__t}{USART\_Handle\_t}}\ *pUSARTHandle,uint8\_t\ *pRxBuffer,\ uint32\_t\ Len);}
+\DoxyCodeLine{00141\ uint8\_t\ \doxymbox{\hyperlink{stm32f401xe__usart_8h_a50fdac2af4a69887bceb1dec2a16ebaf}{USART\_SendDataIT}}(\doxymbox{\hyperlink{struct_u_s_a_r_t___handle__t}{USART\_Handle\_t}}\ *pUSARTHandle,uint8\_t\ *pTxBuffer,\ uint32\_t\ Len);}
+\DoxyCodeLine{00142\ uint8\_t\ \doxymbox{\hyperlink{stm32f401xe__usart_8h_a6c7db552dd2c1f90e8743216a2788b3b}{USART\_ReceiveDataIT}}(\doxymbox{\hyperlink{struct_u_s_a_r_t___handle__t}{USART\_Handle\_t}}\ *pUSARTHandle,uint8\_t\ *pRxBuffer,\ uint32\_t\ Len);}
+\DoxyCodeLine{00143\ }
+\DoxyCodeLine{00144\ \textcolor{comment}{/*}}
+\DoxyCodeLine{00145\ \textcolor{comment}{\ *\ Other\ Peripheral\ Control\ APIs}}
+\DoxyCodeLine{00146\ \textcolor{comment}{\ */}}
+\DoxyCodeLine{00147\ }
+\DoxyCodeLine{00148\ uint8\_t\ \doxymbox{\hyperlink{stm32f401xe__usart_8h_aca4307df359080982360f4ba4370d7b4}{USART\_GetFlagStatus}}(\doxymbox{\hyperlink{struct_u_s_a_r_t___reg_def__t}{USART\_RegDef\_t}}\ *pUSARTx,\ uint8\_t\ StatusFlagName);}
+\DoxyCodeLine{00149\ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{stm32f401xe__usart_8h_a4ed196b59ec990af5533e0f608e2f559}{USART\_ClearFlag}}(\doxymbox{\hyperlink{struct_u_s_a_r_t___reg_def__t}{USART\_RegDef\_t}}\ *pUSARTx,\ uint16\_t\ StatusFlagName);}
+\DoxyCodeLine{00150\ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{stm32f401xe__usart_8h_a65f7987aa8e2c477c82375f13e2af75a}{USART\_PeripheralControl}}(\doxymbox{\hyperlink{struct_u_s_a_r_t___reg_def__t}{USART\_RegDef\_t}}\ *pUSARTx,\ uint8\_t\ EnOrDi);}
+\DoxyCodeLine{00151\ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{stm32f401xe__usart_8h_aa95f8910a4887083ee310f38dd04e1af}{USART\_SetBaudRate}}(\doxymbox{\hyperlink{struct_u_s_a_r_t___reg_def__t}{USART\_RegDef\_t}}\ *pUSARTx,\ uint32\_t\ BaudRate);}
+
+\end{DoxyCode}

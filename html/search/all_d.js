@@ -1,0 +1,24 @@
+var searchData=
+[
+  ['rcc_0',['RCC',['../stm32f401xe_8h.html#a74944438a086975793d26ae48d5882d4',1,'stm32f401xe.h']]],
+  ['rcc_5fbaseaddr_1',['RCC_BASEADDR',['../stm32f401xe_8h.html#a89610f202a9f78bcc85f76c5ba52d009',1,'stm32f401xe.h']]],
+  ['rcc_5fdriver_5fguide_2emd_2',['RCC_Driver_Guide.md',['../_r_c_c___driver___guide_8md.html',1,'']]],
+  ['rcc_5fgetpclk1value_3',['RCC_GetPCLK1Value',['../stm32f401xe__rcc_8h.html#a085a3a0940c3993a61618f10816f38cd',1,'RCC_GetPCLK1Value(void):&#160;stm32f401xe_rcc.c'],['../stm32f401xe__rcc_8c.html#a085a3a0940c3993a61618f10816f38cd',1,'RCC_GetPCLK1Value(void):&#160;stm32f401xe_rcc.c']]],
+  ['rcc_5fgetpclk2value_4',['RCC_GetPCLK2Value',['../stm32f401xe__rcc_8h.html#ad7e2b4f75bc4da78507c6f7f5ff32154',1,'RCC_GetPCLK2Value(void):&#160;stm32f401xe_rcc.c'],['../stm32f401xe__rcc_8c.html#ad7e2b4f75bc4da78507c6f7f5ff32154',1,'RCC_GetPCLK2Value(void):&#160;stm32f401xe_rcc.c']]],
+  ['rcc_5fgetplloutputclock_5',['RCC_GetPLLOutputClock',['../stm32f401xe__rcc_8h.html#ad90448e5252ea8b6e9d0063909cb9446',1,'RCC_GetPLLOutputClock(void):&#160;stm32f401xe_rcc.c'],['../stm32f401xe__rcc_8c.html#a7084da3ca60dc21076b733ff33f3dd6d',1,'RCC_GetPLLOutputClock():&#160;stm32f401xe_rcc.c']]],
+  ['rcc_5fregdef_5ft_6',['RCC_RegDef_t',['../struct_r_c_c___reg_def__t.html',1,'']]],
+  ['reserved0_7',['Reserved0',['../struct_r_c_c___reg_def__t.html#a875278a9e57677f21c759d691a53b075',1,'RCC_RegDef_t']]],
+  ['reserved1_8',['RESERVED1',['../struct_s_y_s_c_f_g___reg_def__t.html#a28d88d9a08aab1adbebea61c42ef901e',1,'SYSCFG_RegDef_t']]],
+  ['reserved1_9',['Reserved1',['../struct_r_c_c___reg_def__t.html#a1c16c256aeadf4de72d36cff2bb0d73c',1,'RCC_RegDef_t']]],
+  ['reserved2_10',['RESERVED2',['../struct_s_y_s_c_f_g___reg_def__t.html#ac84e46d43688bcc569d63b1da667e497',1,'SYSCFG_RegDef_t']]],
+  ['reserved2_11',['Reserved2',['../struct_r_c_c___reg_def__t.html#a9a49f0f5c4bff8a682fd13510c0519f0',1,'RCC_RegDef_t']]],
+  ['reserved3_12',['Reserved3',['../struct_r_c_c___reg_def__t.html#a7210b219e2843b1a612ee4d07f3e8e48',1,'RCC_RegDef_t']]],
+  ['reserved4_13',['Reserved4',['../struct_r_c_c___reg_def__t.html#a0dc2d7795c4c2f7c35419b551d8ae20a',1,'RCC_RegDef_t']]],
+  ['reserved5_14',['Reserved5',['../struct_r_c_c___reg_def__t.html#ac8e61c5035915c87a1b89b73a2b0d4c2',1,'RCC_RegDef_t']]],
+  ['reserved6_15',['Reserved6',['../struct_r_c_c___reg_def__t.html#a96e33cd3154ee07263e202bae50ba198',1,'RCC_RegDef_t']]],
+  ['reset_16',['RESET',['../stm32f401xe_8h.html#ab702106cf3b3e96750b6845ded4e0299',1,'stm32f401xe.h']]],
+  ['rom_5fbaseaddr_17',['ROM_BASEADDR',['../stm32f401xe_8h.html#a548ca9ecc4b62f701800110d155a05dc',1,'stm32f401xe.h']]],
+  ['rxbusystate_18',['RxBusyState',['../struct_u_s_a_r_t___handle__t.html#a3cd807707ebf4690576eb7548f5d450c',1,'USART_Handle_t']]],
+  ['rxcrcr_19',['RXCRCR',['../struct_s_p_i___reg_def__t.html#af8ac45074a0a33413c7e6594663d6487',1,'SPI_RegDef_t']]],
+  ['rxlen_20',['RxLen',['../struct_u_s_a_r_t___handle__t.html#a1b12bbceca8b5af61b5408684ac187d7',1,'USART_Handle_t']]]
+];

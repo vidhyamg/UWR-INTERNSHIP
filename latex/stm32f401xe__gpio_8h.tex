@@ -1,0 +1,338 @@
+\doxysection{Drivers/\+inc/\+stm32f401xe\+\_\+gpio.h File Reference}
+\hypertarget{stm32f401xe__gpio_8h}{}\label{stm32f401xe__gpio_8h}\index{Drivers/inc/stm32f401xe\_gpio.h@{Drivers/inc/stm32f401xe\_gpio.h}}
+{\ttfamily \+\#include "{}stm32f401xe.\+h"{}}\newline
+\doxysubsubsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \doxymbox{\hyperlink{struct_g_p_i_o___pin_config__t}{GPIO\+\_\+\+Pin\+Config\+\_\+t}}
+\item 
+struct \doxymbox{\hyperlink{struct_g_p_i_o___handle__t}{GPIO\+\_\+\+Handle\+\_\+t}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\+\#define \doxymbox{\hyperlink{stm32f401xe__gpio_8h_ac0ee9fb4553170b4219d0126ba6ca828}{GPIO\+\_\+\+PIN\+\_\+\+NO\+\_\+0}}~0
+\item 
+\+\#define \doxymbox{\hyperlink{stm32f401xe__gpio_8h_aacd0b87435e884054f648b28b4e4e151}{GPIO\+\_\+\+PIN\+\_\+\+NO\+\_\+1}}~1
+\item 
+\+\#define \doxymbox{\hyperlink{stm32f401xe__gpio_8h_acab196184351eb1f6ff759394e1e2d8b}{GPIO\+\_\+\+PIN\+\_\+\+NO\+\_\+2}}~2
+\item 
+\+\#define \doxymbox{\hyperlink{stm32f401xe__gpio_8h_a987665b32f9bdec495e537a815270eb8}{GPIO\+\_\+\+PIN\+\_\+\+NO\+\_\+3}}~3
+\item 
+\+\#define \doxymbox{\hyperlink{stm32f401xe__gpio_8h_ac588284a8f83d974b1f69754d5e96e5c}{GPIO\+\_\+\+PIN\+\_\+\+NO\+\_\+4}}~4
+\item 
+\+\#define \doxymbox{\hyperlink{stm32f401xe__gpio_8h_a38f92ce939f01b966bf0ade0208f3e84}{GPIO\+\_\+\+PIN\+\_\+\+NO\+\_\+5}}~5
+\item 
+\+\#define \doxymbox{\hyperlink{stm32f401xe__gpio_8h_a3021263fe794e7fad96ebc80a5482d1e}{GPIO\+\_\+\+PIN\+\_\+\+NO\+\_\+6}}~6
+\item 
+\+\#define \doxymbox{\hyperlink{stm32f401xe__gpio_8h_a18c1feeed49ea8414ac86486b7dabdeb}{GPIO\+\_\+\+PIN\+\_\+\+NO\+\_\+8}}~8
+\item 
+\+\#define \doxymbox{\hyperlink{stm32f401xe__gpio_8h_a42fce5552fede9739aa20e9f0110e3c4}{GPIO\+\_\+\+PIN\+\_\+\+NO\+\_\+9}}~9
+\item 
+\+\#define \doxymbox{\hyperlink{stm32f401xe__gpio_8h_aa51e6dbd33d73b48613bcf9ade8e0655}{GPIO\+\_\+\+PIN\+\_\+\+NO\+\_\+10}}~10
+\item 
+\+\#define \doxymbox{\hyperlink{stm32f401xe__gpio_8h_ac08cd56fc2501147e65b9a0a4e7030e3}{GPIO\+\_\+\+PIN\+\_\+\+NO\+\_\+11}}~11
+\item 
+\+\#define \doxymbox{\hyperlink{stm32f401xe__gpio_8h_a20f1f86af0198541476f3c76bc0859bf}{GPIO\+\_\+\+PIN\+\_\+\+NO\+\_\+12}}~12
+\item 
+\+\#define \doxymbox{\hyperlink{stm32f401xe__gpio_8h_a3ae3cbf82c1071b04351c504db8f20b6}{GPIO\+\_\+\+PIN\+\_\+\+NO\+\_\+13}}~13
+\item 
+\+\#define \doxymbox{\hyperlink{stm32f401xe__gpio_8h_a33f7b138fb78b0e06ebd211ce915b9a9}{GPIO\+\_\+\+PIN\+\_\+\+NO\+\_\+14}}~14
+\item 
+\+\#define \doxymbox{\hyperlink{stm32f401xe__gpio_8h_ab386178c3bf34e2d3c7b8c2d6257af92}{GPIO\+\_\+\+PIN\+\_\+\+NO\+\_\+15}}~15
+\item 
+\+\#define \doxymbox{\hyperlink{stm32f401xe__gpio_8h_a995e5bd9af1641f9e20d64803b969ef3}{GPIO\+\_\+\+MODE\+\_\+\+IN}}~0
+\item 
+\+\#define \doxymbox{\hyperlink{stm32f401xe__gpio_8h_a8b9e26ba32586932cc345bee5fecb180}{GPIO\+\_\+\+MODE\+\_\+\+OUT}}~1
+\item 
+\+\#define \doxymbox{\hyperlink{stm32f401xe__gpio_8h_ac29dc4f97b3363e4faf38a3fa45d9b64}{GPIO\+\_\+\+MODE\+\_\+\+ALFN}}~2
+\item 
+\+\#define \doxymbox{\hyperlink{stm32f401xe__gpio_8h_a7a04f9ab65ad572ad20791a35009220c}{GPIO\+\_\+\+MODE\+\_\+\+ANALOG}}~3
+\item 
+\+\#define \doxymbox{\hyperlink{stm32f401xe__gpio_8h_aadda8601af0fb9af9a41b3f910199679}{GPIO\+\_\+\+MODE\+\_\+\+IT\+\_\+\+FT}}~4
+\item 
+\+\#define \doxymbox{\hyperlink{stm32f401xe__gpio_8h_af97a5b7678a3a575277c11739cc1ce0f}{GPIO\+\_\+\+MODE\+\_\+\+IT\+\_\+\+RT}}~5
+\item 
+\+\#define \doxymbox{\hyperlink{stm32f401xe__gpio_8h_aa1469670a733f79770703fe65753139d}{GPIO\+\_\+\+MODE\+\_\+\+IT\+\_\+\+RFT}}~6
+\item 
+\+\#define \doxymbox{\hyperlink{stm32f401xe__gpio_8h_a5510b387afb7ec2117b5d4207889163c}{GPIO\+\_\+\+SPEED\+\_\+\+LOW}}~0
+\item 
+\+\#define \doxymbox{\hyperlink{stm32f401xe__gpio_8h_a44a0eb2335a21858efbbb1557ce8d5e5}{GPIO\+\_\+\+SPEED\+\_\+\+MEDIUM}}~1
+\item 
+\+\#define \doxymbox{\hyperlink{stm32f401xe__gpio_8h_ac1b1830b902c29ae791caa033d14202c}{GPIO\+\_\+\+SPEED\+\_\+\+FAST}}~2
+\item 
+\+\#define \doxymbox{\hyperlink{stm32f401xe__gpio_8h_ad693110177bf2e34c5431555c6977e8c}{GPIO\+\_\+\+SPEED\+\_\+\+HIGH}}~3
+\item 
+\+\#define \doxymbox{\hyperlink{stm32f401xe__gpio_8h_a8cfef441d198f1373c38160d6231d907}{GPIO\+\_\+\+OP\+\_\+\+Type\+\_\+\+PP}}~0
+\item 
+\+\#define \doxymbox{\hyperlink{stm32f401xe__gpio_8h_ad34b431cd2ab3d0a91017df5ae2a8d6b}{GPIO\+\_\+\+OP\+\_\+\+Type\+\_\+\+OD}}~1
+\item 
+\+\#define \doxymbox{\hyperlink{stm32f401xe__gpio_8h_a714441e96f8e8fb8da3233ca6b0bcee2}{GPIO\+\_\+\+NO\+\_\+\+PUPD}}~0
+\item 
+\+\#define \doxymbox{\hyperlink{stm32f401xe__gpio_8h_a49ccf2bf27ede3745ac1fea4507142a7}{GPIO\+\_\+\+NO\+\_\+\+PU}}~1
+\item 
+\+\#define \doxymbox{\hyperlink{stm32f401xe__gpio_8h_a6830e4bd71151d05a1697df8d90ad3db}{GPIO\+\_\+\+NO\+\_\+\+PD}}~2
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \doxymbox{\hyperlink{stm32f401xe__gpio_8h_a214003040f1f142c43080ef8ced72b00}{GPIO\+\_\+\+Init}} (\doxymbox{\hyperlink{struct_g_p_i_o___handle__t}{GPIO\+\_\+\+Handle\+\_\+t}} \texorpdfstring{$\ast$}{*}p\+GPIOHandle)
+\item 
+void \doxymbox{\hyperlink{stm32f401xe__gpio_8h_aa8078ad1f2c37770d4320b770488a3ce}{GPIO\+\_\+\+De\+Init}} (\doxymbox{\hyperlink{struct_g_p_i_o___reg_def__t}{GPIO\+\_\+\+Reg\+Def\+\_\+t}} \texorpdfstring{$\ast$}{*}p\+GPIOx)
+\item 
+void \doxymbox{\hyperlink{stm32f401xe__gpio_8h_a2f38e48d2bdf72a21f73cdc55495537a}{GPIO\+\_\+\+Peri\+Clock\+Control}} (\doxymbox{\hyperlink{struct_g_p_i_o___reg_def__t}{GPIO\+\_\+\+Reg\+Def\+\_\+t}} \texorpdfstring{$\ast$}{*}p\+GPIOx, uint8\+\_\+t Enor\+Di)
+\item 
+uint8\+\_\+t \doxymbox{\hyperlink{stm32f401xe__gpio_8h_a70498dd4c12c767e30ec68df25a2ccc5}{GPIO\+\_\+\+Read\+From\+Input\+Pin}} (\doxymbox{\hyperlink{struct_g_p_i_o___reg_def__t}{GPIO\+\_\+\+Reg\+Def\+\_\+t}} \texorpdfstring{$\ast$}{*}p\+GPIOx, uint8\+\_\+t Pin\+Number)
+\item 
+void \doxymbox{\hyperlink{stm32f401xe__gpio_8h_afaeb0c58550a759eca7348b71fad4b97}{GPIO\+\_\+\+Write\+To\+Out\+Pin}} (\doxymbox{\hyperlink{struct_g_p_i_o___reg_def__t}{GPIO\+\_\+\+Reg\+Def\+\_\+t}} \texorpdfstring{$\ast$}{*}p\+GPIOx, uint8\+\_\+t Pin\+Number, uint8\+\_\+t value)
+\item 
+uint16\+\_\+t \doxymbox{\hyperlink{stm32f401xe__gpio_8h_ac91034f21aa1ba1726e8c2a62c02b086}{GPIO\+\_\+\+Read\+From\+Input\+Port}} (\doxymbox{\hyperlink{struct_g_p_i_o___reg_def__t}{GPIO\+\_\+\+Reg\+Def\+\_\+t}} \texorpdfstring{$\ast$}{*}p\+GPIOx)
+\item 
+void \doxymbox{\hyperlink{stm32f401xe__gpio_8h_a790f8d97159b38d2cfcc718266ce0caa}{GPIO\+\_\+\+Write\+To\+Out\+Port}} (\doxymbox{\hyperlink{struct_g_p_i_o___reg_def__t}{GPIO\+\_\+\+Reg\+Def\+\_\+t}} \texorpdfstring{$\ast$}{*}p\+GPIOx, uint16\+\_\+t value)
+\item 
+void \doxymbox{\hyperlink{stm32f401xe__gpio_8h_a40cb042d7693790aec137e35a353b425}{GPIO\+\_\+\+Toggle\+Out\+Pin}} (\doxymbox{\hyperlink{struct_g_p_i_o___reg_def__t}{GPIO\+\_\+\+Reg\+Def\+\_\+t}} \texorpdfstring{$\ast$}{*}p\+GPIOx, uint8\+\_\+t Pin\+Number, uint8\+\_\+t value)
+\end{DoxyCompactItemize}
+
+
+\label{stm32f401xe__gpio_8h_doc-define-members}
+\Hypertarget{stm32f401xe__gpio_8h_doc-define-members}
+\doxysubsection{Macro Definition Documentation}
+\Hypertarget{stm32f401xe__gpio_8h_ac29dc4f97b3363e4faf38a3fa45d9b64}\index{stm32f401xe\_gpio.h@{stm32f401xe\_gpio.h}!GPIO\_MODE\_ALFN@{GPIO\_MODE\_ALFN}}
+\index{GPIO\_MODE\_ALFN@{GPIO\_MODE\_ALFN}!stm32f401xe\_gpio.h@{stm32f401xe\_gpio.h}}
+\doxysubsubsection{\texorpdfstring{GPIO\_MODE\_ALFN}{GPIO\_MODE\_ALFN}}
+{\footnotesize\ttfamily \label{stm32f401xe__gpio_8h_ac29dc4f97b3363e4faf38a3fa45d9b64} 
+\+\#define GPIO\+\_\+\+MODE\+\_\+\+ALFN~2}
+
+\Hypertarget{stm32f401xe__gpio_8h_a7a04f9ab65ad572ad20791a35009220c}\index{stm32f401xe\_gpio.h@{stm32f401xe\_gpio.h}!GPIO\_MODE\_ANALOG@{GPIO\_MODE\_ANALOG}}
+\index{GPIO\_MODE\_ANALOG@{GPIO\_MODE\_ANALOG}!stm32f401xe\_gpio.h@{stm32f401xe\_gpio.h}}
+\doxysubsubsection{\texorpdfstring{GPIO\_MODE\_ANALOG}{GPIO\_MODE\_ANALOG}}
+{\footnotesize\ttfamily \label{stm32f401xe__gpio_8h_a7a04f9ab65ad572ad20791a35009220c} 
+\+\#define GPIO\+\_\+\+MODE\+\_\+\+ANALOG~3}
+
+\Hypertarget{stm32f401xe__gpio_8h_a995e5bd9af1641f9e20d64803b969ef3}\index{stm32f401xe\_gpio.h@{stm32f401xe\_gpio.h}!GPIO\_MODE\_IN@{GPIO\_MODE\_IN}}
+\index{GPIO\_MODE\_IN@{GPIO\_MODE\_IN}!stm32f401xe\_gpio.h@{stm32f401xe\_gpio.h}}
+\doxysubsubsection{\texorpdfstring{GPIO\_MODE\_IN}{GPIO\_MODE\_IN}}
+{\footnotesize\ttfamily \label{stm32f401xe__gpio_8h_a995e5bd9af1641f9e20d64803b969ef3} 
+\+\#define GPIO\+\_\+\+MODE\+\_\+\+IN~0}
+
+\Hypertarget{stm32f401xe__gpio_8h_aadda8601af0fb9af9a41b3f910199679}\index{stm32f401xe\_gpio.h@{stm32f401xe\_gpio.h}!GPIO\_MODE\_IT\_FT@{GPIO\_MODE\_IT\_FT}}
+\index{GPIO\_MODE\_IT\_FT@{GPIO\_MODE\_IT\_FT}!stm32f401xe\_gpio.h@{stm32f401xe\_gpio.h}}
+\doxysubsubsection{\texorpdfstring{GPIO\_MODE\_IT\_FT}{GPIO\_MODE\_IT\_FT}}
+{\footnotesize\ttfamily \label{stm32f401xe__gpio_8h_aadda8601af0fb9af9a41b3f910199679} 
+\+\#define GPIO\+\_\+\+MODE\+\_\+\+IT\+\_\+\+FT~4}
+
+\Hypertarget{stm32f401xe__gpio_8h_aa1469670a733f79770703fe65753139d}\index{stm32f401xe\_gpio.h@{stm32f401xe\_gpio.h}!GPIO\_MODE\_IT\_RFT@{GPIO\_MODE\_IT\_RFT}}
+\index{GPIO\_MODE\_IT\_RFT@{GPIO\_MODE\_IT\_RFT}!stm32f401xe\_gpio.h@{stm32f401xe\_gpio.h}}
+\doxysubsubsection{\texorpdfstring{GPIO\_MODE\_IT\_RFT}{GPIO\_MODE\_IT\_RFT}}
+{\footnotesize\ttfamily \label{stm32f401xe__gpio_8h_aa1469670a733f79770703fe65753139d} 
+\+\#define GPIO\+\_\+\+MODE\+\_\+\+IT\+\_\+\+RFT~6}
+
+\Hypertarget{stm32f401xe__gpio_8h_af97a5b7678a3a575277c11739cc1ce0f}\index{stm32f401xe\_gpio.h@{stm32f401xe\_gpio.h}!GPIO\_MODE\_IT\_RT@{GPIO\_MODE\_IT\_RT}}
+\index{GPIO\_MODE\_IT\_RT@{GPIO\_MODE\_IT\_RT}!stm32f401xe\_gpio.h@{stm32f401xe\_gpio.h}}
+\doxysubsubsection{\texorpdfstring{GPIO\_MODE\_IT\_RT}{GPIO\_MODE\_IT\_RT}}
+{\footnotesize\ttfamily \label{stm32f401xe__gpio_8h_af97a5b7678a3a575277c11739cc1ce0f} 
+\+\#define GPIO\+\_\+\+MODE\+\_\+\+IT\+\_\+\+RT~5}
+
+\Hypertarget{stm32f401xe__gpio_8h_a8b9e26ba32586932cc345bee5fecb180}\index{stm32f401xe\_gpio.h@{stm32f401xe\_gpio.h}!GPIO\_MODE\_OUT@{GPIO\_MODE\_OUT}}
+\index{GPIO\_MODE\_OUT@{GPIO\_MODE\_OUT}!stm32f401xe\_gpio.h@{stm32f401xe\_gpio.h}}
+\doxysubsubsection{\texorpdfstring{GPIO\_MODE\_OUT}{GPIO\_MODE\_OUT}}
+{\footnotesize\ttfamily \label{stm32f401xe__gpio_8h_a8b9e26ba32586932cc345bee5fecb180} 
+\+\#define GPIO\+\_\+\+MODE\+\_\+\+OUT~1}
+
+\Hypertarget{stm32f401xe__gpio_8h_a6830e4bd71151d05a1697df8d90ad3db}\index{stm32f401xe\_gpio.h@{stm32f401xe\_gpio.h}!GPIO\_NO\_PD@{GPIO\_NO\_PD}}
+\index{GPIO\_NO\_PD@{GPIO\_NO\_PD}!stm32f401xe\_gpio.h@{stm32f401xe\_gpio.h}}
+\doxysubsubsection{\texorpdfstring{GPIO\_NO\_PD}{GPIO\_NO\_PD}}
+{\footnotesize\ttfamily \label{stm32f401xe__gpio_8h_a6830e4bd71151d05a1697df8d90ad3db} 
+\+\#define GPIO\+\_\+\+NO\+\_\+\+PD~2}
+
+\Hypertarget{stm32f401xe__gpio_8h_a49ccf2bf27ede3745ac1fea4507142a7}\index{stm32f401xe\_gpio.h@{stm32f401xe\_gpio.h}!GPIO\_NO\_PU@{GPIO\_NO\_PU}}
+\index{GPIO\_NO\_PU@{GPIO\_NO\_PU}!stm32f401xe\_gpio.h@{stm32f401xe\_gpio.h}}
+\doxysubsubsection{\texorpdfstring{GPIO\_NO\_PU}{GPIO\_NO\_PU}}
+{\footnotesize\ttfamily \label{stm32f401xe__gpio_8h_a49ccf2bf27ede3745ac1fea4507142a7} 
+\+\#define GPIO\+\_\+\+NO\+\_\+\+PU~1}
+
+\Hypertarget{stm32f401xe__gpio_8h_a714441e96f8e8fb8da3233ca6b0bcee2}\index{stm32f401xe\_gpio.h@{stm32f401xe\_gpio.h}!GPIO\_NO\_PUPD@{GPIO\_NO\_PUPD}}
+\index{GPIO\_NO\_PUPD@{GPIO\_NO\_PUPD}!stm32f401xe\_gpio.h@{stm32f401xe\_gpio.h}}
+\doxysubsubsection{\texorpdfstring{GPIO\_NO\_PUPD}{GPIO\_NO\_PUPD}}
+{\footnotesize\ttfamily \label{stm32f401xe__gpio_8h_a714441e96f8e8fb8da3233ca6b0bcee2} 
+\+\#define GPIO\+\_\+\+NO\+\_\+\+PUPD~0}
+
+\Hypertarget{stm32f401xe__gpio_8h_ad34b431cd2ab3d0a91017df5ae2a8d6b}\index{stm32f401xe\_gpio.h@{stm32f401xe\_gpio.h}!GPIO\_OP\_Type\_OD@{GPIO\_OP\_Type\_OD}}
+\index{GPIO\_OP\_Type\_OD@{GPIO\_OP\_Type\_OD}!stm32f401xe\_gpio.h@{stm32f401xe\_gpio.h}}
+\doxysubsubsection{\texorpdfstring{GPIO\_OP\_Type\_OD}{GPIO\_OP\_Type\_OD}}
+{\footnotesize\ttfamily \label{stm32f401xe__gpio_8h_ad34b431cd2ab3d0a91017df5ae2a8d6b} 
+\+\#define GPIO\+\_\+\+OP\+\_\+\+Type\+\_\+\+OD~1}
+
+\Hypertarget{stm32f401xe__gpio_8h_a8cfef441d198f1373c38160d6231d907}\index{stm32f401xe\_gpio.h@{stm32f401xe\_gpio.h}!GPIO\_OP\_Type\_PP@{GPIO\_OP\_Type\_PP}}
+\index{GPIO\_OP\_Type\_PP@{GPIO\_OP\_Type\_PP}!stm32f401xe\_gpio.h@{stm32f401xe\_gpio.h}}
+\doxysubsubsection{\texorpdfstring{GPIO\_OP\_Type\_PP}{GPIO\_OP\_Type\_PP}}
+{\footnotesize\ttfamily \label{stm32f401xe__gpio_8h_a8cfef441d198f1373c38160d6231d907} 
+\+\#define GPIO\+\_\+\+OP\+\_\+\+Type\+\_\+\+PP~0}
+
+\Hypertarget{stm32f401xe__gpio_8h_ac0ee9fb4553170b4219d0126ba6ca828}\index{stm32f401xe\_gpio.h@{stm32f401xe\_gpio.h}!GPIO\_PIN\_NO\_0@{GPIO\_PIN\_NO\_0}}
+\index{GPIO\_PIN\_NO\_0@{GPIO\_PIN\_NO\_0}!stm32f401xe\_gpio.h@{stm32f401xe\_gpio.h}}
+\doxysubsubsection{\texorpdfstring{GPIO\_PIN\_NO\_0}{GPIO\_PIN\_NO\_0}}
+{\footnotesize\ttfamily \label{stm32f401xe__gpio_8h_ac0ee9fb4553170b4219d0126ba6ca828} 
+\+\#define GPIO\+\_\+\+PIN\+\_\+\+NO\+\_\+0~0}
+
+\Hypertarget{stm32f401xe__gpio_8h_aacd0b87435e884054f648b28b4e4e151}\index{stm32f401xe\_gpio.h@{stm32f401xe\_gpio.h}!GPIO\_PIN\_NO\_1@{GPIO\_PIN\_NO\_1}}
+\index{GPIO\_PIN\_NO\_1@{GPIO\_PIN\_NO\_1}!stm32f401xe\_gpio.h@{stm32f401xe\_gpio.h}}
+\doxysubsubsection{\texorpdfstring{GPIO\_PIN\_NO\_1}{GPIO\_PIN\_NO\_1}}
+{\footnotesize\ttfamily \label{stm32f401xe__gpio_8h_aacd0b87435e884054f648b28b4e4e151} 
+\+\#define GPIO\+\_\+\+PIN\+\_\+\+NO\+\_\+1~1}
+
+\Hypertarget{stm32f401xe__gpio_8h_aa51e6dbd33d73b48613bcf9ade8e0655}\index{stm32f401xe\_gpio.h@{stm32f401xe\_gpio.h}!GPIO\_PIN\_NO\_10@{GPIO\_PIN\_NO\_10}}
+\index{GPIO\_PIN\_NO\_10@{GPIO\_PIN\_NO\_10}!stm32f401xe\_gpio.h@{stm32f401xe\_gpio.h}}
+\doxysubsubsection{\texorpdfstring{GPIO\_PIN\_NO\_10}{GPIO\_PIN\_NO\_10}}
+{\footnotesize\ttfamily \label{stm32f401xe__gpio_8h_aa51e6dbd33d73b48613bcf9ade8e0655} 
+\+\#define GPIO\+\_\+\+PIN\+\_\+\+NO\+\_\+10~10}
+
+\Hypertarget{stm32f401xe__gpio_8h_ac08cd56fc2501147e65b9a0a4e7030e3}\index{stm32f401xe\_gpio.h@{stm32f401xe\_gpio.h}!GPIO\_PIN\_NO\_11@{GPIO\_PIN\_NO\_11}}
+\index{GPIO\_PIN\_NO\_11@{GPIO\_PIN\_NO\_11}!stm32f401xe\_gpio.h@{stm32f401xe\_gpio.h}}
+\doxysubsubsection{\texorpdfstring{GPIO\_PIN\_NO\_11}{GPIO\_PIN\_NO\_11}}
+{\footnotesize\ttfamily \label{stm32f401xe__gpio_8h_ac08cd56fc2501147e65b9a0a4e7030e3} 
+\+\#define GPIO\+\_\+\+PIN\+\_\+\+NO\+\_\+11~11}
+
+\Hypertarget{stm32f401xe__gpio_8h_a20f1f86af0198541476f3c76bc0859bf}\index{stm32f401xe\_gpio.h@{stm32f401xe\_gpio.h}!GPIO\_PIN\_NO\_12@{GPIO\_PIN\_NO\_12}}
+\index{GPIO\_PIN\_NO\_12@{GPIO\_PIN\_NO\_12}!stm32f401xe\_gpio.h@{stm32f401xe\_gpio.h}}
+\doxysubsubsection{\texorpdfstring{GPIO\_PIN\_NO\_12}{GPIO\_PIN\_NO\_12}}
+{\footnotesize\ttfamily \label{stm32f401xe__gpio_8h_a20f1f86af0198541476f3c76bc0859bf} 
+\+\#define GPIO\+\_\+\+PIN\+\_\+\+NO\+\_\+12~12}
+
+\Hypertarget{stm32f401xe__gpio_8h_a3ae3cbf82c1071b04351c504db8f20b6}\index{stm32f401xe\_gpio.h@{stm32f401xe\_gpio.h}!GPIO\_PIN\_NO\_13@{GPIO\_PIN\_NO\_13}}
+\index{GPIO\_PIN\_NO\_13@{GPIO\_PIN\_NO\_13}!stm32f401xe\_gpio.h@{stm32f401xe\_gpio.h}}
+\doxysubsubsection{\texorpdfstring{GPIO\_PIN\_NO\_13}{GPIO\_PIN\_NO\_13}}
+{\footnotesize\ttfamily \label{stm32f401xe__gpio_8h_a3ae3cbf82c1071b04351c504db8f20b6} 
+\+\#define GPIO\+\_\+\+PIN\+\_\+\+NO\+\_\+13~13}
+
+\Hypertarget{stm32f401xe__gpio_8h_a33f7b138fb78b0e06ebd211ce915b9a9}\index{stm32f401xe\_gpio.h@{stm32f401xe\_gpio.h}!GPIO\_PIN\_NO\_14@{GPIO\_PIN\_NO\_14}}
+\index{GPIO\_PIN\_NO\_14@{GPIO\_PIN\_NO\_14}!stm32f401xe\_gpio.h@{stm32f401xe\_gpio.h}}
+\doxysubsubsection{\texorpdfstring{GPIO\_PIN\_NO\_14}{GPIO\_PIN\_NO\_14}}
+{\footnotesize\ttfamily \label{stm32f401xe__gpio_8h_a33f7b138fb78b0e06ebd211ce915b9a9} 
+\+\#define GPIO\+\_\+\+PIN\+\_\+\+NO\+\_\+14~14}
+
+\Hypertarget{stm32f401xe__gpio_8h_ab386178c3bf34e2d3c7b8c2d6257af92}\index{stm32f401xe\_gpio.h@{stm32f401xe\_gpio.h}!GPIO\_PIN\_NO\_15@{GPIO\_PIN\_NO\_15}}
+\index{GPIO\_PIN\_NO\_15@{GPIO\_PIN\_NO\_15}!stm32f401xe\_gpio.h@{stm32f401xe\_gpio.h}}
+\doxysubsubsection{\texorpdfstring{GPIO\_PIN\_NO\_15}{GPIO\_PIN\_NO\_15}}
+{\footnotesize\ttfamily \label{stm32f401xe__gpio_8h_ab386178c3bf34e2d3c7b8c2d6257af92} 
+\+\#define GPIO\+\_\+\+PIN\+\_\+\+NO\+\_\+15~15}
+
+\Hypertarget{stm32f401xe__gpio_8h_acab196184351eb1f6ff759394e1e2d8b}\index{stm32f401xe\_gpio.h@{stm32f401xe\_gpio.h}!GPIO\_PIN\_NO\_2@{GPIO\_PIN\_NO\_2}}
+\index{GPIO\_PIN\_NO\_2@{GPIO\_PIN\_NO\_2}!stm32f401xe\_gpio.h@{stm32f401xe\_gpio.h}}
+\doxysubsubsection{\texorpdfstring{GPIO\_PIN\_NO\_2}{GPIO\_PIN\_NO\_2}}
+{\footnotesize\ttfamily \label{stm32f401xe__gpio_8h_acab196184351eb1f6ff759394e1e2d8b} 
+\+\#define GPIO\+\_\+\+PIN\+\_\+\+NO\+\_\+2~2}
+
+\Hypertarget{stm32f401xe__gpio_8h_a987665b32f9bdec495e537a815270eb8}\index{stm32f401xe\_gpio.h@{stm32f401xe\_gpio.h}!GPIO\_PIN\_NO\_3@{GPIO\_PIN\_NO\_3}}
+\index{GPIO\_PIN\_NO\_3@{GPIO\_PIN\_NO\_3}!stm32f401xe\_gpio.h@{stm32f401xe\_gpio.h}}
+\doxysubsubsection{\texorpdfstring{GPIO\_PIN\_NO\_3}{GPIO\_PIN\_NO\_3}}
+{\footnotesize\ttfamily \label{stm32f401xe__gpio_8h_a987665b32f9bdec495e537a815270eb8} 
+\+\#define GPIO\+\_\+\+PIN\+\_\+\+NO\+\_\+3~3}
+
+\Hypertarget{stm32f401xe__gpio_8h_ac588284a8f83d974b1f69754d5e96e5c}\index{stm32f401xe\_gpio.h@{stm32f401xe\_gpio.h}!GPIO\_PIN\_NO\_4@{GPIO\_PIN\_NO\_4}}
+\index{GPIO\_PIN\_NO\_4@{GPIO\_PIN\_NO\_4}!stm32f401xe\_gpio.h@{stm32f401xe\_gpio.h}}
+\doxysubsubsection{\texorpdfstring{GPIO\_PIN\_NO\_4}{GPIO\_PIN\_NO\_4}}
+{\footnotesize\ttfamily \label{stm32f401xe__gpio_8h_ac588284a8f83d974b1f69754d5e96e5c} 
+\+\#define GPIO\+\_\+\+PIN\+\_\+\+NO\+\_\+4~4}
+
+\Hypertarget{stm32f401xe__gpio_8h_a38f92ce939f01b966bf0ade0208f3e84}\index{stm32f401xe\_gpio.h@{stm32f401xe\_gpio.h}!GPIO\_PIN\_NO\_5@{GPIO\_PIN\_NO\_5}}
+\index{GPIO\_PIN\_NO\_5@{GPIO\_PIN\_NO\_5}!stm32f401xe\_gpio.h@{stm32f401xe\_gpio.h}}
+\doxysubsubsection{\texorpdfstring{GPIO\_PIN\_NO\_5}{GPIO\_PIN\_NO\_5}}
+{\footnotesize\ttfamily \label{stm32f401xe__gpio_8h_a38f92ce939f01b966bf0ade0208f3e84} 
+\+\#define GPIO\+\_\+\+PIN\+\_\+\+NO\+\_\+5~5}
+
+\Hypertarget{stm32f401xe__gpio_8h_a3021263fe794e7fad96ebc80a5482d1e}\index{stm32f401xe\_gpio.h@{stm32f401xe\_gpio.h}!GPIO\_PIN\_NO\_6@{GPIO\_PIN\_NO\_6}}
+\index{GPIO\_PIN\_NO\_6@{GPIO\_PIN\_NO\_6}!stm32f401xe\_gpio.h@{stm32f401xe\_gpio.h}}
+\doxysubsubsection{\texorpdfstring{GPIO\_PIN\_NO\_6}{GPIO\_PIN\_NO\_6}}
+{\footnotesize\ttfamily \label{stm32f401xe__gpio_8h_a3021263fe794e7fad96ebc80a5482d1e} 
+\+\#define GPIO\+\_\+\+PIN\+\_\+\+NO\+\_\+6~6}
+
+\Hypertarget{stm32f401xe__gpio_8h_a18c1feeed49ea8414ac86486b7dabdeb}\index{stm32f401xe\_gpio.h@{stm32f401xe\_gpio.h}!GPIO\_PIN\_NO\_8@{GPIO\_PIN\_NO\_8}}
+\index{GPIO\_PIN\_NO\_8@{GPIO\_PIN\_NO\_8}!stm32f401xe\_gpio.h@{stm32f401xe\_gpio.h}}
+\doxysubsubsection{\texorpdfstring{GPIO\_PIN\_NO\_8}{GPIO\_PIN\_NO\_8}}
+{\footnotesize\ttfamily \label{stm32f401xe__gpio_8h_a18c1feeed49ea8414ac86486b7dabdeb} 
+\+\#define GPIO\+\_\+\+PIN\+\_\+\+NO\+\_\+8~8}
+
+\Hypertarget{stm32f401xe__gpio_8h_a42fce5552fede9739aa20e9f0110e3c4}\index{stm32f401xe\_gpio.h@{stm32f401xe\_gpio.h}!GPIO\_PIN\_NO\_9@{GPIO\_PIN\_NO\_9}}
+\index{GPIO\_PIN\_NO\_9@{GPIO\_PIN\_NO\_9}!stm32f401xe\_gpio.h@{stm32f401xe\_gpio.h}}
+\doxysubsubsection{\texorpdfstring{GPIO\_PIN\_NO\_9}{GPIO\_PIN\_NO\_9}}
+{\footnotesize\ttfamily \label{stm32f401xe__gpio_8h_a42fce5552fede9739aa20e9f0110e3c4} 
+\+\#define GPIO\+\_\+\+PIN\+\_\+\+NO\+\_\+9~9}
+
+\Hypertarget{stm32f401xe__gpio_8h_ac1b1830b902c29ae791caa033d14202c}\index{stm32f401xe\_gpio.h@{stm32f401xe\_gpio.h}!GPIO\_SPEED\_FAST@{GPIO\_SPEED\_FAST}}
+\index{GPIO\_SPEED\_FAST@{GPIO\_SPEED\_FAST}!stm32f401xe\_gpio.h@{stm32f401xe\_gpio.h}}
+\doxysubsubsection{\texorpdfstring{GPIO\_SPEED\_FAST}{GPIO\_SPEED\_FAST}}
+{\footnotesize\ttfamily \label{stm32f401xe__gpio_8h_ac1b1830b902c29ae791caa033d14202c} 
+\+\#define GPIO\+\_\+\+SPEED\+\_\+\+FAST~2}
+
+\Hypertarget{stm32f401xe__gpio_8h_ad693110177bf2e34c5431555c6977e8c}\index{stm32f401xe\_gpio.h@{stm32f401xe\_gpio.h}!GPIO\_SPEED\_HIGH@{GPIO\_SPEED\_HIGH}}
+\index{GPIO\_SPEED\_HIGH@{GPIO\_SPEED\_HIGH}!stm32f401xe\_gpio.h@{stm32f401xe\_gpio.h}}
+\doxysubsubsection{\texorpdfstring{GPIO\_SPEED\_HIGH}{GPIO\_SPEED\_HIGH}}
+{\footnotesize\ttfamily \label{stm32f401xe__gpio_8h_ad693110177bf2e34c5431555c6977e8c} 
+\+\#define GPIO\+\_\+\+SPEED\+\_\+\+HIGH~3}
+
+\Hypertarget{stm32f401xe__gpio_8h_a5510b387afb7ec2117b5d4207889163c}\index{stm32f401xe\_gpio.h@{stm32f401xe\_gpio.h}!GPIO\_SPEED\_LOW@{GPIO\_SPEED\_LOW}}
+\index{GPIO\_SPEED\_LOW@{GPIO\_SPEED\_LOW}!stm32f401xe\_gpio.h@{stm32f401xe\_gpio.h}}
+\doxysubsubsection{\texorpdfstring{GPIO\_SPEED\_LOW}{GPIO\_SPEED\_LOW}}
+{\footnotesize\ttfamily \label{stm32f401xe__gpio_8h_a5510b387afb7ec2117b5d4207889163c} 
+\+\#define GPIO\+\_\+\+SPEED\+\_\+\+LOW~0}
+
+\Hypertarget{stm32f401xe__gpio_8h_a44a0eb2335a21858efbbb1557ce8d5e5}\index{stm32f401xe\_gpio.h@{stm32f401xe\_gpio.h}!GPIO\_SPEED\_MEDIUM@{GPIO\_SPEED\_MEDIUM}}
+\index{GPIO\_SPEED\_MEDIUM@{GPIO\_SPEED\_MEDIUM}!stm32f401xe\_gpio.h@{stm32f401xe\_gpio.h}}
+\doxysubsubsection{\texorpdfstring{GPIO\_SPEED\_MEDIUM}{GPIO\_SPEED\_MEDIUM}}
+{\footnotesize\ttfamily \label{stm32f401xe__gpio_8h_a44a0eb2335a21858efbbb1557ce8d5e5} 
+\+\#define GPIO\+\_\+\+SPEED\+\_\+\+MEDIUM~1}
+
+
+
+\label{stm32f401xe__gpio_8h_doc-func-members}
+\Hypertarget{stm32f401xe__gpio_8h_doc-func-members}
+\doxysubsection{Function Documentation}
+\Hypertarget{stm32f401xe__gpio_8h_aa8078ad1f2c37770d4320b770488a3ce}\index{stm32f401xe\_gpio.h@{stm32f401xe\_gpio.h}!GPIO\_DeInit@{GPIO\_DeInit}}
+\index{GPIO\_DeInit@{GPIO\_DeInit}!stm32f401xe\_gpio.h@{stm32f401xe\_gpio.h}}
+\doxysubsubsection{\texorpdfstring{GPIO\_DeInit()}{GPIO\_DeInit()}}
+{\footnotesize\ttfamily \label{stm32f401xe__gpio_8h_aa8078ad1f2c37770d4320b770488a3ce} 
+void GPIO\+\_\+\+De\+Init (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{struct_g_p_i_o___reg_def__t}{GPIO\+\_\+\+Reg\+Def\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{p\+GPIOx}{}\end{DoxyParamCaption})}
+
+\Hypertarget{stm32f401xe__gpio_8h_a214003040f1f142c43080ef8ced72b00}\index{stm32f401xe\_gpio.h@{stm32f401xe\_gpio.h}!GPIO\_Init@{GPIO\_Init}}
+\index{GPIO\_Init@{GPIO\_Init}!stm32f401xe\_gpio.h@{stm32f401xe\_gpio.h}}
+\doxysubsubsection{\texorpdfstring{GPIO\_Init()}{GPIO\_Init()}}
+{\footnotesize\ttfamily \label{stm32f401xe__gpio_8h_a214003040f1f142c43080ef8ced72b00} 
+void GPIO\+\_\+\+Init (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{struct_g_p_i_o___handle__t}{GPIO\+\_\+\+Handle\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{p\+GPIOHandle}{}\end{DoxyParamCaption})}
+
+\Hypertarget{stm32f401xe__gpio_8h_a2f38e48d2bdf72a21f73cdc55495537a}\index{stm32f401xe\_gpio.h@{stm32f401xe\_gpio.h}!GPIO\_PeriClockControl@{GPIO\_PeriClockControl}}
+\index{GPIO\_PeriClockControl@{GPIO\_PeriClockControl}!stm32f401xe\_gpio.h@{stm32f401xe\_gpio.h}}
+\doxysubsubsection{\texorpdfstring{GPIO\_PeriClockControl()}{GPIO\_PeriClockControl()}}
+{\footnotesize\ttfamily \label{stm32f401xe__gpio_8h_a2f38e48d2bdf72a21f73cdc55495537a} 
+void GPIO\+\_\+\+Peri\+Clock\+Control (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{struct_g_p_i_o___reg_def__t}{GPIO\+\_\+\+Reg\+Def\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{p\+GPIOx}{, }\item[{uint8\+\_\+t}]{Enor\+Di}{}\end{DoxyParamCaption})}
+
+\Hypertarget{stm32f401xe__gpio_8h_a70498dd4c12c767e30ec68df25a2ccc5}\index{stm32f401xe\_gpio.h@{stm32f401xe\_gpio.h}!GPIO\_ReadFromInputPin@{GPIO\_ReadFromInputPin}}
+\index{GPIO\_ReadFromInputPin@{GPIO\_ReadFromInputPin}!stm32f401xe\_gpio.h@{stm32f401xe\_gpio.h}}
+\doxysubsubsection{\texorpdfstring{GPIO\_ReadFromInputPin()}{GPIO\_ReadFromInputPin()}}
+{\footnotesize\ttfamily \label{stm32f401xe__gpio_8h_a70498dd4c12c767e30ec68df25a2ccc5} 
+uint8\+\_\+t GPIO\+\_\+\+Read\+From\+Input\+Pin (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{struct_g_p_i_o___reg_def__t}{GPIO\+\_\+\+Reg\+Def\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{p\+GPIOx}{, }\item[{uint8\+\_\+t}]{Pin\+Number}{}\end{DoxyParamCaption})}
+
+\Hypertarget{stm32f401xe__gpio_8h_ac91034f21aa1ba1726e8c2a62c02b086}\index{stm32f401xe\_gpio.h@{stm32f401xe\_gpio.h}!GPIO\_ReadFromInputPort@{GPIO\_ReadFromInputPort}}
+\index{GPIO\_ReadFromInputPort@{GPIO\_ReadFromInputPort}!stm32f401xe\_gpio.h@{stm32f401xe\_gpio.h}}
+\doxysubsubsection{\texorpdfstring{GPIO\_ReadFromInputPort()}{GPIO\_ReadFromInputPort()}}
+{\footnotesize\ttfamily \label{stm32f401xe__gpio_8h_ac91034f21aa1ba1726e8c2a62c02b086} 
+uint16\+\_\+t GPIO\+\_\+\+Read\+From\+Input\+Port (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{struct_g_p_i_o___reg_def__t}{GPIO\+\_\+\+Reg\+Def\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{p\+GPIOx}{}\end{DoxyParamCaption})}
+
+\Hypertarget{stm32f401xe__gpio_8h_a40cb042d7693790aec137e35a353b425}\index{stm32f401xe\_gpio.h@{stm32f401xe\_gpio.h}!GPIO\_ToggleOutPin@{GPIO\_ToggleOutPin}}
+\index{GPIO\_ToggleOutPin@{GPIO\_ToggleOutPin}!stm32f401xe\_gpio.h@{stm32f401xe\_gpio.h}}
+\doxysubsubsection{\texorpdfstring{GPIO\_ToggleOutPin()}{GPIO\_ToggleOutPin()}}
+{\footnotesize\ttfamily \label{stm32f401xe__gpio_8h_a40cb042d7693790aec137e35a353b425} 
+void GPIO\+\_\+\+Toggle\+Out\+Pin (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{struct_g_p_i_o___reg_def__t}{GPIO\+\_\+\+Reg\+Def\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{p\+GPIOx}{, }\item[{uint8\+\_\+t}]{Pin\+Number}{, }\item[{uint8\+\_\+t}]{value}{}\end{DoxyParamCaption})}
+
+\Hypertarget{stm32f401xe__gpio_8h_afaeb0c58550a759eca7348b71fad4b97}\index{stm32f401xe\_gpio.h@{stm32f401xe\_gpio.h}!GPIO\_WriteToOutPin@{GPIO\_WriteToOutPin}}
+\index{GPIO\_WriteToOutPin@{GPIO\_WriteToOutPin}!stm32f401xe\_gpio.h@{stm32f401xe\_gpio.h}}
+\doxysubsubsection{\texorpdfstring{GPIO\_WriteToOutPin()}{GPIO\_WriteToOutPin()}}
+{\footnotesize\ttfamily \label{stm32f401xe__gpio_8h_afaeb0c58550a759eca7348b71fad4b97} 
+void GPIO\+\_\+\+Write\+To\+Out\+Pin (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{struct_g_p_i_o___reg_def__t}{GPIO\+\_\+\+Reg\+Def\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{p\+GPIOx}{, }\item[{uint8\+\_\+t}]{Pin\+Number}{, }\item[{uint8\+\_\+t}]{value}{}\end{DoxyParamCaption})}
+
+\Hypertarget{stm32f401xe__gpio_8h_a790f8d97159b38d2cfcc718266ce0caa}\index{stm32f401xe\_gpio.h@{stm32f401xe\_gpio.h}!GPIO\_WriteToOutPort@{GPIO\_WriteToOutPort}}
+\index{GPIO\_WriteToOutPort@{GPIO\_WriteToOutPort}!stm32f401xe\_gpio.h@{stm32f401xe\_gpio.h}}
+\doxysubsubsection{\texorpdfstring{GPIO\_WriteToOutPort()}{GPIO\_WriteToOutPort()}}
+{\footnotesize\ttfamily \label{stm32f401xe__gpio_8h_a790f8d97159b38d2cfcc718266ce0caa} 
+void GPIO\+\_\+\+Write\+To\+Out\+Port (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{struct_g_p_i_o___reg_def__t}{GPIO\+\_\+\+Reg\+Def\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{p\+GPIOx}{, }\item[{uint16\+\_\+t}]{value}{}\end{DoxyParamCaption})}
+

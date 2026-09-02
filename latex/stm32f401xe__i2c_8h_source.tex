@@ -1,0 +1,71 @@
+\doxysection{stm32f401xe\+\_\+i2c.\+h}
+\hypertarget{stm32f401xe__i2c_8h_source}{}\label{stm32f401xe__i2c_8h_source}\index{Drivers/inc/stm32f401xe\_i2c.h@{Drivers/inc/stm32f401xe\_i2c.h}}
+\doxymbox{\hyperlink{stm32f401xe__i2c_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{/*}}
+\DoxyCodeLine{00002\ \textcolor{comment}{\ *\ stm32f401xe\_i2c.h}}
+\DoxyCodeLine{00003\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{00004\ \textcolor{comment}{\ *\ \ Created\ on:\ Aug\ 14,\ 2026}}
+\DoxyCodeLine{00005\ \textcolor{comment}{\ *\ \ \ \ \ \ Author:\ deepu}}
+\DoxyCodeLine{00006\ \textcolor{comment}{\ */}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#ifndef\ INC\_STM32F401XE\_I2C\_H\_}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#define\ INC\_STM32F401XE\_I2C\_H\_}}
+\DoxyCodeLine{00010\ }
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ \ "{}\doxymbox{\hyperlink{stm32f401xe_8h}{stm32f401xe.h}}"{}}}
+\DoxyCodeLine{00012\ }
+\DoxyCodeLine{00013\ \textcolor{comment}{/*}}
+\DoxyCodeLine{00014\ \textcolor{comment}{\ *\ Configuration\ structure\ for\ I2C\ peripheral}}
+\DoxyCodeLine{00015\ \textcolor{comment}{\ */}}
+\DoxyCodeLine{00016\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{struct}}
+\DoxyCodeLine{00017\ \{}
+\DoxyCodeLine{00018\ \ \ \ \ uint32\_t\ \doxymbox{\hyperlink{struct_i2_c___config__t_a4081508c6982b2bf037de9b6b50cfd79}{I2C\_SCLSpeed}};}
+\DoxyCodeLine{00019\ \ \ \ \ uint8\_t\ \ \doxymbox{\hyperlink{struct_i2_c___config__t_a5cb52e5e8837f8dce7430316531f345f}{I2C\_DeviceAddress}};}
+\DoxyCodeLine{00020\ \ \ \ \ uint8\_t\ \ \doxymbox{\hyperlink{struct_i2_c___config__t_a1bc4555ccef933345430bce110b175c0}{I2C\_AckControl}};}
+\DoxyCodeLine{00021\ \ \ \ \ uint8\_t\ \ \doxymbox{\hyperlink{struct_i2_c___config__t_a5367d3ec2ecef3fc06deb685a3c9c652}{I2C\_FMDutyCycle}};}
+\DoxyCodeLine{00022\ }
+\DoxyCodeLine{00023\ \}\doxymbox{\hyperlink{struct_i2_c___config__t}{I2C\_Config\_t}};}
+\DoxyCodeLine{00024\ \textcolor{comment}{/*}}
+\DoxyCodeLine{00025\ \textcolor{comment}{\ *Handle\ structure\ for\ I2C\ peripheral}}
+\DoxyCodeLine{00026\ \textcolor{comment}{\ */}}
+\DoxyCodeLine{00027\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{struct}}
+\DoxyCodeLine{00028\ \{}
+\DoxyCodeLine{00029\ \ \ \ \ \doxymbox{\hyperlink{struct_i2_c___reg_def__t}{I2C\_RegDef\_t}}\ \ \ \ *\doxymbox{\hyperlink{struct_i2_c___handle__t_a6f50016e5a337d8465fb5e90db92678e}{pI2Cx}};}
+\DoxyCodeLine{00030\ \ \ \ \ \doxymbox{\hyperlink{struct_i2_c___config__t}{I2C\_Config\_t}}\ \ \ \ \doxymbox{\hyperlink{struct_i2_c___handle__t_a2fd0cda2e9df091748d4f516ee774514}{I2C\_Config}};}
+\DoxyCodeLine{00031\ \}\doxymbox{\hyperlink{struct_i2_c___handle__t}{I2C\_Handle\_t}};}
+\DoxyCodeLine{00032\ \textcolor{comment}{/*}}
+\DoxyCodeLine{00033\ \textcolor{comment}{\ *\ I2C\_SCLSpeed}}
+\DoxyCodeLine{00034\ \textcolor{comment}{\ */}}
+\DoxyCodeLine{00035\ \textcolor{preprocessor}{\#define\ I2C\_SCL\_SPEED\_SM\ \ \ \ 100000}}
+\DoxyCodeLine{00036\ \textcolor{preprocessor}{\#define\ I2C\_SCL\_SPEED\_FM4K\ \ 400000}}
+\DoxyCodeLine{00037\ \textcolor{preprocessor}{\#define\ I2C\_SCL\_SPEED\_FM2K\ \ 200000}}
+\DoxyCodeLine{00038\ }
+\DoxyCodeLine{00039\ }
+\DoxyCodeLine{00040\ \textcolor{comment}{/*}}
+\DoxyCodeLine{00041\ \textcolor{comment}{\ *\ I2C\_AckControl}}
+\DoxyCodeLine{00042\ \textcolor{comment}{\ */}}
+\DoxyCodeLine{00043\ \textcolor{preprocessor}{\#define\ I2C\_ACK\_ENABLE\ \ \ \ \ \ \ \ 1}}
+\DoxyCodeLine{00044\ \textcolor{preprocessor}{\#define\ I2C\_ACK\_DISABLE\ \ \ \ \ \ \ 0}}
+\DoxyCodeLine{00045\ }
+\DoxyCodeLine{00046\ \textcolor{comment}{/*}}
+\DoxyCodeLine{00047\ \textcolor{comment}{\ *\ I2C\_FMDutyCycle}}
+\DoxyCodeLine{00048\ \textcolor{comment}{\ */}}
+\DoxyCodeLine{00049\ \textcolor{preprocessor}{\#define\ I2C\_FM\_DUTY\_2\ \ \ \ \ \ \ \ 0}}
+\DoxyCodeLine{00050\ \textcolor{preprocessor}{\#define\ I2C\_FM\_DUTY\_16\_9\ \ \ \ \ 1}}
+\DoxyCodeLine{00051\ \textcolor{comment}{/*}}
+\DoxyCodeLine{00052\ \textcolor{comment}{\ *\ API\ for\ I2C\ driver}}
+\DoxyCodeLine{00053\ \textcolor{comment}{\ */}}
+\DoxyCodeLine{00054\ }
+\DoxyCodeLine{00055\ \textcolor{comment}{/*}}
+\DoxyCodeLine{00056\ \textcolor{comment}{\ *\ Peripheral\ Clock\ setup}}
+\DoxyCodeLine{00057\ \textcolor{comment}{\ */}}
+\DoxyCodeLine{00058\ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{stm32f401xe__i2c_8h_a08267d82acca332799ec1b49be4527bd}{I2C\_PeriClockControl}}(\doxymbox{\hyperlink{struct_i2_c___reg_def__t}{I2C\_RegDef\_t}}\ *pI2Cx,\ uint8\_t\ EnorDi);}
+\DoxyCodeLine{00059\ \textcolor{comment}{/*}}
+\DoxyCodeLine{00060\ \textcolor{comment}{\ *\ Init\ and\ De-\/init}}
+\DoxyCodeLine{00061\ \textcolor{comment}{\ */}}
+\DoxyCodeLine{00062\ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{stm32f401xe__i2c_8h_af63c91db39ea9e0317d4f341569f479c}{I2C\_Init}}(\doxymbox{\hyperlink{struct_i2_c___handle__t}{I2C\_Handle\_t}}\ *pI2CHandle);}
+\DoxyCodeLine{00063\ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{stm32f401xe__i2c_8h_ad7b45b712f04f3c333ed5f6e621e805c}{I2C\_DeInit}}(\doxymbox{\hyperlink{struct_i2_c___reg_def__t}{I2C\_RegDef\_t}}\ *pI2Cx);}
+\DoxyCodeLine{00064\ }
+\DoxyCodeLine{00065\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{/*\ INC\_STM32F401XE\_I2C\_H\_\ */}\textcolor{preprocessor}{}}
+
+\end{DoxyCode}

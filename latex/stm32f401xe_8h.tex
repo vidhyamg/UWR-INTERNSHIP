@@ -1,0 +1,1478 @@
+\doxysection{Drivers/\+inc/\+stm32f401xe.h File Reference}
+\hypertarget{stm32f401xe_8h}{}\label{stm32f401xe_8h}\index{Drivers/inc/stm32f401xe.h@{Drivers/inc/stm32f401xe.h}}
+{\ttfamily \+\#include $<$stddef.\+h$>$}\newline
+{\ttfamily \+\#include $<$stdint.\+h$>$}\newline
+{\ttfamily \+\#include "{}stm32f401xe\+\_\+gpio.\+h"{}}\newline
+{\ttfamily \+\#include "{}stm32f401xe\+\_\+i2c.\+h"{}}\newline
+\doxysubsubsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \doxymbox{\hyperlink{struct_g_p_i_o___reg_def__t}{GPIO\+\_\+\+Reg\+Def\+\_\+t}}
+\item 
+struct \doxymbox{\hyperlink{struct_r_c_c___reg_def__t}{RCC\+\_\+\+Reg\+Def\+\_\+t}}
+\item 
+struct \doxymbox{\hyperlink{struct_s_p_i___reg_def__t}{SPI\+\_\+\+Reg\+Def\+\_\+t}}
+\item 
+struct \doxymbox{\hyperlink{struct_i2_c___reg_def__t}{I2\+C\+\_\+\+Reg\+Def\+\_\+t}}
+\item 
+struct \doxymbox{\hyperlink{struct_u_s_a_r_t___reg_def__t}{USART\+\_\+\+Reg\+Def\+\_\+t}}
+\item 
+struct \doxymbox{\hyperlink{struct_e_x_t_i___reg_def__t}{EXTI\+\_\+\+Reg\+Def\+\_\+t}}
+\item 
+struct \doxymbox{\hyperlink{struct_s_y_s_c_f_g___reg_def__t}{SYSCFG\+\_\+\+Reg\+Def\+\_\+t}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\+\#define \doxymbox{\hyperlink{stm32f401xe_8h_a8eefceb948a629c4379af89d2b41686a}{STM32\+F401\+RE\+\_\+\+H\_}}
+\item 
+\+\#define \doxymbox{\hyperlink{stm32f401xe_8h_ab691942efdd52e7cf1f6bb92050bcb03}{\+\_\+vo}}~volatile
+\item 
+\+\#define \doxymbox{\hyperlink{stm32f401xe_8h_af6863e7094aca292453684fa2af16686}{FLASH\+\_\+\+BASEADDR}}~0x08000000U
+\item 
+\+\#define \doxymbox{\hyperlink{stm32f401xe_8h_a548ca9ecc4b62f701800110d155a05dc}{ROM\+\_\+\+BASEADDR}}~0x1\+FFF0000U
+\item 
+\+\#define \doxymbox{\hyperlink{stm32f401xe_8h_acce5bcdd78719c9f4a53cfc4ca0f6f42}{SRAM\+\_\+\+BASEADDR}}~0x20000000U
+\item 
+\+\#define \doxymbox{\hyperlink{stm32f401xe_8h_a2ad16e46c0011723c211a374b43ef8db}{PERIPHER\+\_\+\+BASEADDR}}~0x40000000U
+\item 
+\+\#define \doxymbox{\hyperlink{stm32f401xe_8h_aa2862fa9bfc107c83dc034fa75eed6b4}{APB1\+\_\+\+BASEADDR}}~\doxymbox{\hyperlink{stm32f401xe_8h_a2ad16e46c0011723c211a374b43ef8db}{PERIPHER\+\_\+\+BASEADDR}}
+\item 
+\+\#define \doxymbox{\hyperlink{stm32f401xe_8h_ad112f60d214d7991e93e7239ce7ff274}{APB2\+\_\+\+BASEADDR}}~0x40010000U
+\item 
+\+\#define \doxymbox{\hyperlink{stm32f401xe_8h_ac0dd95cd7a26e593e81d864f47a7bc76}{AHB1\+\_\+\+BASEADDR}}~0x40020000U
+\item 
+\+\#define \doxymbox{\hyperlink{stm32f401xe_8h_a8cb6b2b80ddbb84295ad81af3681f4ec}{AHB2\+\_\+\+BASEADDR}}~0x50000000U
+\item 
+\+\#define \doxymbox{\hyperlink{stm32f401xe_8h_a3e615727451fa1abc89e436a7158d4aa}{GPIOA\+\_\+\+BASEADDR}}~(\doxymbox{\hyperlink{stm32f401xe_8h_ac0dd95cd7a26e593e81d864f47a7bc76}{AHB1\+\_\+\+BASEADDR}} + 0\+X0000)
+\item 
+\+\#define \doxymbox{\hyperlink{stm32f401xe_8h_a583cafe206b45c6e3507b0493b96bdf0}{GPIOB\+\_\+\+BASEADDR}}~(\doxymbox{\hyperlink{stm32f401xe_8h_ac0dd95cd7a26e593e81d864f47a7bc76}{AHB1\+\_\+\+BASEADDR}} + 0\+X0400)
+\item 
+\+\#define \doxymbox{\hyperlink{stm32f401xe_8h_a05e89040a5ad3c3e5f5bbd62b434512b}{GPIOC\+\_\+\+BASEADDR}}~(\doxymbox{\hyperlink{stm32f401xe_8h_ac0dd95cd7a26e593e81d864f47a7bc76}{AHB1\+\_\+\+BASEADDR}} + 0\+X0800)
+\item 
+\+\#define \doxymbox{\hyperlink{stm32f401xe_8h_a807336d6c75feb8d0e943d618b5eaf26}{GPIOD\+\_\+\+BASEADDR}}~(\doxymbox{\hyperlink{stm32f401xe_8h_ac0dd95cd7a26e593e81d864f47a7bc76}{AHB1\+\_\+\+BASEADDR}} + 0\+X0\+C00)
+\item 
+\+\#define \doxymbox{\hyperlink{stm32f401xe_8h_ac248e8d8a7113113481c2abb31d7660a}{GPIOE\+\_\+\+BASEADDR}}~(\doxymbox{\hyperlink{stm32f401xe_8h_ac0dd95cd7a26e593e81d864f47a7bc76}{AHB1\+\_\+\+BASEADDR}} + 0\+X1000)
+\item 
+\+\#define \doxymbox{\hyperlink{stm32f401xe_8h_a63f9598aea50d8c995a9037578bb0907}{GPIOH\+\_\+\+BASEADDR}}~(\doxymbox{\hyperlink{stm32f401xe_8h_ac0dd95cd7a26e593e81d864f47a7bc76}{AHB1\+\_\+\+BASEADDR}} + 0\+X1\+C00)
+\item 
+\+\#define \doxymbox{\hyperlink{stm32f401xe_8h_a89610f202a9f78bcc85f76c5ba52d009}{RCC\+\_\+\+BASEADDR}}~(\doxymbox{\hyperlink{stm32f401xe_8h_ac0dd95cd7a26e593e81d864f47a7bc76}{AHB1\+\_\+\+BASEADDR}} + 0\+X3800)
+\item 
+\+\#define \doxymbox{\hyperlink{stm32f401xe_8h_ac92028c6442d66d7d88892a289b27c61}{USB\+\_\+\+BASEADDR}}~\doxymbox{\hyperlink{stm32f401xe_8h_a8cb6b2b80ddbb84295ad81af3681f4ec}{AHB2\+\_\+\+BASEADDR}}
+\item 
+\+\#define \doxymbox{\hyperlink{stm32f401xe_8h_a3c771627a298dfa3d484c834f5b97649}{TIM2\+\_\+\+BASEADDR}}~(\doxymbox{\hyperlink{stm32f401xe_8h_aa2862fa9bfc107c83dc034fa75eed6b4}{APB1\+\_\+\+BASEADDR}} + 0\+X0000)
+\item 
+\+\#define \doxymbox{\hyperlink{stm32f401xe_8h_a9be9b6a7119ff1f51c680d4de3d2595b}{TIM3\+\_\+\+BASEADDR}}~(\doxymbox{\hyperlink{stm32f401xe_8h_aa2862fa9bfc107c83dc034fa75eed6b4}{APB1\+\_\+\+BASEADDR}} + 0\+X0400)
+\item 
+\+\#define \doxymbox{\hyperlink{stm32f401xe_8h_a0ab46f7a0878390457d8bb96c470d1b9}{TIM4\+\_\+\+BASEADDR}}~(\doxymbox{\hyperlink{stm32f401xe_8h_aa2862fa9bfc107c83dc034fa75eed6b4}{APB1\+\_\+\+BASEADDR}} + 0\+X0800)
+\item 
+\+\#define \doxymbox{\hyperlink{stm32f401xe_8h_a2f2fd59ff0b3ef8ec4ec85f751855ed6}{TIM5\+\_\+\+BASEADDR}}~(\doxymbox{\hyperlink{stm32f401xe_8h_aa2862fa9bfc107c83dc034fa75eed6b4}{APB1\+\_\+\+BASEADDR}} + 0\+X0\+C00)
+\item 
+\+\#define \doxymbox{\hyperlink{stm32f401xe_8h_a52fc929735639d70b44dea7885bb01ff}{SPI2\+\_\+\+BASEADDR}}~(\doxymbox{\hyperlink{stm32f401xe_8h_aa2862fa9bfc107c83dc034fa75eed6b4}{APB1\+\_\+\+BASEADDR}} + 0\+X3800)
+\item 
+\+\#define \doxymbox{\hyperlink{stm32f401xe_8h_ada16cf23d6a91088c447de485b616ed8}{SPI3\+\_\+\+BASEADDR}}~(\doxymbox{\hyperlink{stm32f401xe_8h_aa2862fa9bfc107c83dc034fa75eed6b4}{APB1\+\_\+\+BASEADDR}} + 0\+X3\+C00)
+\item 
+\+\#define \doxymbox{\hyperlink{stm32f401xe_8h_a9e2d543dd90e725020d1f4b2ae3a0cdc}{USART2\+\_\+\+BASEADDR}}~(\doxymbox{\hyperlink{stm32f401xe_8h_aa2862fa9bfc107c83dc034fa75eed6b4}{APB1\+\_\+\+BASEADDR}} + 0\+X4400)
+\item 
+\+\#define \doxymbox{\hyperlink{stm32f401xe_8h_a44e7e7597f47b4f3f3229de7c0ff7908}{I2\+C1\+\_\+\+BASEADDR}}~(\doxymbox{\hyperlink{stm32f401xe_8h_aa2862fa9bfc107c83dc034fa75eed6b4}{APB1\+\_\+\+BASEADDR}} + 0\+X5400)
+\item 
+\+\#define \doxymbox{\hyperlink{stm32f401xe_8h_a94025f09df9dc7c9720293778c389e4c}{I2\+C2\+\_\+\+BASEADDR}}~(\doxymbox{\hyperlink{stm32f401xe_8h_aa2862fa9bfc107c83dc034fa75eed6b4}{APB1\+\_\+\+BASEADDR}} + 0\+X5800)
+\item 
+\+\#define \doxymbox{\hyperlink{stm32f401xe_8h_a02b13b7d3f55032e47973e192b94cb53}{I2\+C3\+\_\+\+BASEADDR}}~(\doxymbox{\hyperlink{stm32f401xe_8h_aa2862fa9bfc107c83dc034fa75eed6b4}{APB1\+\_\+\+BASEADDR}} + 0\+X5\+C00)
+\item 
+\+\#define \doxymbox{\hyperlink{stm32f401xe_8h_a15216cf7b501073535d452823d93d50e}{TIM1\+\_\+\+BASEADDR}}~(\doxymbox{\hyperlink{stm32f401xe_8h_ad112f60d214d7991e93e7239ce7ff274}{APB2\+\_\+\+BASEADDR}} + 0\+X0000)
+\item 
+\+\#define \doxymbox{\hyperlink{stm32f401xe_8h_a4ccf21b5f54c80b031bff13956af2018}{USART1\+\_\+\+BASEADDR}}~(\doxymbox{\hyperlink{stm32f401xe_8h_ad112f60d214d7991e93e7239ce7ff274}{APB2\+\_\+\+BASEADDR}} + 0\+X1000)
+\item 
+\+\#define \doxymbox{\hyperlink{stm32f401xe_8h_a849c1342a2b7b4126c4a3b638c903c29}{USART6\+\_\+\+BASEADDR}}~(\doxymbox{\hyperlink{stm32f401xe_8h_ad112f60d214d7991e93e7239ce7ff274}{APB2\+\_\+\+BASEADDR}} + 0\+X1400)
+\item 
+\+\#define \doxymbox{\hyperlink{stm32f401xe_8h_adbe6c878ceab6444c0853b28624a67a6}{ADC\+\_\+\+BASEADDR}}~(\doxymbox{\hyperlink{stm32f401xe_8h_ad112f60d214d7991e93e7239ce7ff274}{APB2\+\_\+\+BASEADDR}} + 0\+X2000)
+\item 
+\+\#define \doxymbox{\hyperlink{stm32f401xe_8h_a64992f19fed3a459eb91f519c06b3427}{SPI1\+\_\+\+BASEADDR}}~(\doxymbox{\hyperlink{stm32f401xe_8h_ad112f60d214d7991e93e7239ce7ff274}{APB2\+\_\+\+BASEADDR}} + 0\+X3000)
+\item 
+\+\#define \doxymbox{\hyperlink{stm32f401xe_8h_a8370319e63d6c3a62ce4f0539ebe2b68}{SPI4\+\_\+\+BASEADDR}}~(\doxymbox{\hyperlink{stm32f401xe_8h_ad112f60d214d7991e93e7239ce7ff274}{APB2\+\_\+\+BASEADDR}} + 0\+X3400)
+\item 
+\+\#define \doxymbox{\hyperlink{stm32f401xe_8h_ad389e516cff9dd84a9b04685b391b8fe}{SYSCFG\+\_\+\+BASEADDR}}~(\doxymbox{\hyperlink{stm32f401xe_8h_ad112f60d214d7991e93e7239ce7ff274}{APB2\+\_\+\+BASEADDR}} + 0\+X3800)
+\item 
+\+\#define \doxymbox{\hyperlink{stm32f401xe_8h_a9ce143f4fc043361dc774d877c672f0d}{EXTI\+\_\+\+BASEADDR}}~(\doxymbox{\hyperlink{stm32f401xe_8h_ad112f60d214d7991e93e7239ce7ff274}{APB2\+\_\+\+BASEADDR}} + 0\+X3\+C00)
+\item 
+\+\#define \doxymbox{\hyperlink{stm32f401xe_8h_a30f114534846e6efe1521f12239d72b8}{TIM9\+\_\+\+BASEADDR}}~(\doxymbox{\hyperlink{stm32f401xe_8h_ad112f60d214d7991e93e7239ce7ff274}{APB2\+\_\+\+BASEADDR}} + 0\+X4000)
+\item 
+\+\#define \doxymbox{\hyperlink{stm32f401xe_8h_a6e2fc569cc5dee0399604eee0c85e520}{TIM10\+\_\+\+BASEADDR}}~(\doxymbox{\hyperlink{stm32f401xe_8h_ad112f60d214d7991e93e7239ce7ff274}{APB2\+\_\+\+BASEADDR}} + 0\+X4400)
+\item 
+\+\#define \doxymbox{\hyperlink{stm32f401xe_8h_a92505df211ea4d69ff2aace047b5da92}{TIM11\+\_\+\+BASEADDR}}~(\doxymbox{\hyperlink{stm32f401xe_8h_ad112f60d214d7991e93e7239ce7ff274}{APB2\+\_\+\+BASEADDR}} + 0\+X4800)
+\item 
+\+\#define \doxymbox{\hyperlink{stm32f401xe_8h_ac485358099728ddae050db37924dd6b7}{GPIOA}}~((\doxymbox{\hyperlink{struct_g_p_i_o___reg_def__t}{GPIO\+\_\+\+Reg\+Def\+\_\+t}}\texorpdfstring{$\ast$}{*}) \doxymbox{\hyperlink{stm32f401xe_8h_a3e615727451fa1abc89e436a7158d4aa}{GPIOA\+\_\+\+BASEADDR}})
+\item 
+\+\#define \doxymbox{\hyperlink{stm32f401xe_8h_a68b66ac73be4c836db878a42e1fea3cd}{GPIOB}}~((\doxymbox{\hyperlink{struct_g_p_i_o___reg_def__t}{GPIO\+\_\+\+Reg\+Def\+\_\+t}}\texorpdfstring{$\ast$}{*}) \doxymbox{\hyperlink{stm32f401xe_8h_a583cafe206b45c6e3507b0493b96bdf0}{GPIOB\+\_\+\+BASEADDR}})
+\item 
+\+\#define \doxymbox{\hyperlink{stm32f401xe_8h_a2dca03332d620196ba943bc2346eaa08}{GPIOC}}~((\doxymbox{\hyperlink{struct_g_p_i_o___reg_def__t}{GPIO\+\_\+\+Reg\+Def\+\_\+t}}\texorpdfstring{$\ast$}{*}) \doxymbox{\hyperlink{stm32f401xe_8h_a05e89040a5ad3c3e5f5bbd62b434512b}{GPIOC\+\_\+\+BASEADDR}})
+\item 
+\+\#define \doxymbox{\hyperlink{stm32f401xe_8h_a7580b1a929ea9df59725ba9c18eba6ac}{GPIOD}}~((\doxymbox{\hyperlink{struct_g_p_i_o___reg_def__t}{GPIO\+\_\+\+Reg\+Def\+\_\+t}}\texorpdfstring{$\ast$}{*}) \doxymbox{\hyperlink{stm32f401xe_8h_a807336d6c75feb8d0e943d618b5eaf26}{GPIOD\+\_\+\+BASEADDR}})
+\item 
+\+\#define \doxymbox{\hyperlink{stm32f401xe_8h_ae04bdb5e8acc47cab1d0532e6b0d0763}{GPIOE}}~((\doxymbox{\hyperlink{struct_g_p_i_o___reg_def__t}{GPIO\+\_\+\+Reg\+Def\+\_\+t}}\texorpdfstring{$\ast$}{*}) \doxymbox{\hyperlink{stm32f401xe_8h_ac248e8d8a7113113481c2abb31d7660a}{GPIOE\+\_\+\+BASEADDR}})
+\item 
+\+\#define \doxymbox{\hyperlink{stm32f401xe_8h_adeacbb43ae86c879945afe98c679b285}{GPIOH}}~((\doxymbox{\hyperlink{struct_g_p_i_o___reg_def__t}{GPIO\+\_\+\+Reg\+Def\+\_\+t}}\texorpdfstring{$\ast$}{*}) \doxymbox{\hyperlink{stm32f401xe_8h_a63f9598aea50d8c995a9037578bb0907}{GPIOH\+\_\+\+BASEADDR}})
+\item 
+\+\#define \doxymbox{\hyperlink{stm32f401xe_8h_a74944438a086975793d26ae48d5882d4}{RCC}}~((\doxymbox{\hyperlink{struct_r_c_c___reg_def__t}{RCC\+\_\+\+Reg\+Def\+\_\+t}}\texorpdfstring{$\ast$}{*}) \doxymbox{\hyperlink{stm32f401xe_8h_a89610f202a9f78bcc85f76c5ba52d009}{RCC\+\_\+\+BASEADDR}})
+\item 
+\+\#define \doxymbox{\hyperlink{stm32f401xe_8h_ad483be344a28ac800be8f03654a9612f}{SPI1}}~((\doxymbox{\hyperlink{struct_s_p_i___reg_def__t}{SPI\+\_\+\+Reg\+Def\+\_\+t}}\texorpdfstring{$\ast$}{*})  \doxymbox{\hyperlink{stm32f401xe_8h_a64992f19fed3a459eb91f519c06b3427}{SPI1\+\_\+\+BASEADDR}})
+\item 
+\+\#define \doxymbox{\hyperlink{stm32f401xe_8h_af2c3d8ce359dcfbb2261e07ed42af72b}{SPI2}}~((\doxymbox{\hyperlink{struct_s_p_i___reg_def__t}{SPI\+\_\+\+Reg\+Def\+\_\+t}}\texorpdfstring{$\ast$}{*})  \doxymbox{\hyperlink{stm32f401xe_8h_a52fc929735639d70b44dea7885bb01ff}{SPI2\+\_\+\+BASEADDR}})
+\item 
+\+\#define \doxymbox{\hyperlink{stm32f401xe_8h_ab2339cbf25502bf562b19208b1b257fc}{SPI3}}~((\doxymbox{\hyperlink{struct_s_p_i___reg_def__t}{SPI\+\_\+\+Reg\+Def\+\_\+t}}\texorpdfstring{$\ast$}{*})  \doxymbox{\hyperlink{stm32f401xe_8h_ada16cf23d6a91088c447de485b616ed8}{SPI3\+\_\+\+BASEADDR}})
+\item 
+\+\#define \doxymbox{\hyperlink{stm32f401xe_8h_a2a2e6edef68cfe1946f39a5033da2301}{SPI4}}~((\doxymbox{\hyperlink{struct_s_p_i___reg_def__t}{SPI\+\_\+\+Reg\+Def\+\_\+t}}\texorpdfstring{$\ast$}{*})  \doxymbox{\hyperlink{stm32f401xe_8h_a8370319e63d6c3a62ce4f0539ebe2b68}{SPI4\+\_\+\+BASEADDR}})
+\item 
+\+\#define \doxymbox{\hyperlink{stm32f401xe_8h_ab45d257574da6fe1f091cc45b7eda6cc}{I2\+C1}}~((\doxymbox{\hyperlink{struct_i2_c___reg_def__t}{I2\+C\+\_\+\+Reg\+Def\+\_\+t}}\texorpdfstring{$\ast$}{*})  \doxymbox{\hyperlink{stm32f401xe_8h_a44e7e7597f47b4f3f3229de7c0ff7908}{I2\+C1\+\_\+\+BASEADDR}})
+\item 
+\+\#define \doxymbox{\hyperlink{stm32f401xe_8h_afa60ac20c1921ef1002083bb3e1f5d16}{I2\+C2}}~((\doxymbox{\hyperlink{struct_i2_c___reg_def__t}{I2\+C\+\_\+\+Reg\+Def\+\_\+t}}\texorpdfstring{$\ast$}{*})  \doxymbox{\hyperlink{stm32f401xe_8h_a94025f09df9dc7c9720293778c389e4c}{I2\+C2\+\_\+\+BASEADDR}})
+\item 
+\+\#define \doxymbox{\hyperlink{stm32f401xe_8h_a1489b37ed2bca9d9c659119590583bda}{I2\+C3}}~((\doxymbox{\hyperlink{struct_i2_c___reg_def__t}{I2\+C\+\_\+\+Reg\+Def\+\_\+t}}\texorpdfstring{$\ast$}{*})  \doxymbox{\hyperlink{stm32f401xe_8h_a02b13b7d3f55032e47973e192b94cb53}{I2\+C3\+\_\+\+BASEADDR}})
+\item 
+\+\#define \doxymbox{\hyperlink{stm32f401xe_8h_a92871691058ff7ccffd7635930cb08da}{USART1}}~((\doxymbox{\hyperlink{struct_u_s_a_r_t___reg_def__t}{USART\+\_\+\+Reg\+Def\+\_\+t}}\texorpdfstring{$\ast$}{*})  \doxymbox{\hyperlink{stm32f401xe_8h_a4ccf21b5f54c80b031bff13956af2018}{USART1\+\_\+\+BASEADDR}})
+\item 
+\+\#define \doxymbox{\hyperlink{stm32f401xe_8h_af114a9eab03ca08a6fb720e511595930}{USART2}}~((\doxymbox{\hyperlink{struct_u_s_a_r_t___reg_def__t}{USART\+\_\+\+Reg\+Def\+\_\+t}}\texorpdfstring{$\ast$}{*})  \doxymbox{\hyperlink{stm32f401xe_8h_a9e2d543dd90e725020d1f4b2ae3a0cdc}{USART2\+\_\+\+BASEADDR}}
+\item 
+\+\#define \doxymbox{\hyperlink{stm32f401xe_8h_a2dab39a19ce3dd05fe360dcbb7b5dc84}{USART6}}~((\doxymbox{\hyperlink{struct_u_s_a_r_t___reg_def__t}{USART\+\_\+\+Reg\+Def\+\_\+t}}\texorpdfstring{$\ast$}{*})  \doxymbox{\hyperlink{stm32f401xe_8h_a849c1342a2b7b4126c4a3b638c903c29}{USART6\+\_\+\+BASEADDR}}
+\item 
+\+\#define \doxymbox{\hyperlink{stm32f401xe_8h_a9189e770cd9b63dadd36683eb9843cac}{EXTI}}~((\doxymbox{\hyperlink{struct_e_x_t_i___reg_def__t}{EXTI\+\_\+\+Reg\+Def\+\_\+t}}\texorpdfstring{$\ast$}{*})\doxymbox{\hyperlink{stm32f401xe_8h_a9ce143f4fc043361dc774d877c672f0d}{EXTI\+\_\+\+BASEADDR}})
+\item 
+\+\#define \doxymbox{\hyperlink{stm32f401xe_8h_a3c833fe1c486cb62250ccbca32899cb8}{SYSCFG}}~((\doxymbox{\hyperlink{struct_s_y_s_c_f_g___reg_def__t}{SYSCFG\+\_\+\+Reg\+Def\+\_\+t}}\texorpdfstring{$\ast$}{*})\doxymbox{\hyperlink{stm32f401xe_8h_ad389e516cff9dd84a9b04685b391b8fe}{SYSCFG\+\_\+\+BASEADDR}})
+\item 
+\+\#define \doxymbox{\hyperlink{stm32f401xe_8h_a17c0eb1a7e7645a5d63d8b7a41fbb19c}{GPIOA\+\_\+\+PCLK\+\_\+\+EN}}()
+\item 
+\+\#define \doxymbox{\hyperlink{stm32f401xe_8h_a1bc2b8b73bb42c4d2cd758a732fbe871}{GPIOB\+\_\+\+PCLK\+\_\+\+EN}}()
+\item 
+\+\#define \doxymbox{\hyperlink{stm32f401xe_8h_ab9e994b2e5e4ada47764117634c64728}{GPIOC\+\_\+\+PCLK\+\_\+\+EN}}()
+\item 
+\+\#define \doxymbox{\hyperlink{stm32f401xe_8h_ac08ecd1bbe57ab59746d6da5b972f493}{GPIOD\+\_\+\+PCLK\+\_\+\+EN}}()
+\item 
+\+\#define \doxymbox{\hyperlink{stm32f401xe_8h_aa93bc85ce9310ae89c709ad615d9bb18}{GPIOE\+\_\+\+PCLK\+\_\+\+EN}}()
+\item 
+\+\#define \doxymbox{\hyperlink{stm32f401xe_8h_a2be7b357e112e2036141678aa6bc3506}{GPIOH\+\_\+\+PCLK\+\_\+\+EN}}()
+\item 
+\+\#define \doxymbox{\hyperlink{stm32f401xe_8h_ae72a543f0dff6747a7b65968b1dcbb28}{SPI1\+\_\+\+PCLK\+\_\+\+EN}}()
+\item 
+\+\#define \doxymbox{\hyperlink{stm32f401xe_8h_a76e0d058783c88190b860bfaecec1d87}{SPI2\+\_\+\+PCLK\+\_\+\+EN}}()
+\item 
+\+\#define \doxymbox{\hyperlink{stm32f401xe_8h_af9dcb6773cab8a79434d8ce7cc900342}{SPI3\+\_\+\+PCLK\+\_\+\+EN}}()
+\item 
+\+\#define \doxymbox{\hyperlink{stm32f401xe_8h_a93b5644ae1f7ff01640d1a77c87ac973}{SPI4\+\_\+\+PCLK\+\_\+\+EN}}()
+\item 
+\+\#define \doxymbox{\hyperlink{stm32f401xe_8h_a38b3719d33b55faf15f9b9b08295b353}{I2\+C1\+\_\+\+PCLK\+\_\+\+EN}}()
+\item 
+\+\#define \doxymbox{\hyperlink{stm32f401xe_8h_abe017af091eb4ddc6eb863f5a4dce79e}{I2\+C2\+\_\+\+PCLK\+\_\+\+EN}}()
+\item 
+\+\#define \doxymbox{\hyperlink{stm32f401xe_8h_a5bc760dcdbeebc5bcf1f36fdb4ff3c62}{I2\+C3\+\_\+\+PCLK\+\_\+\+EN}}()
+\item 
+\+\#define \doxymbox{\hyperlink{stm32f401xe_8h_ac4410a1d3f7d178bc9d962da70092d5d}{USART1\+\_\+\+PCLK\+\_\+\+EN}}()
+\item 
+\+\#define \doxymbox{\hyperlink{stm32f401xe_8h_a46edab80171922a374bd5a264f1f0e14}{USART2\+\_\+\+PCLK\+\_\+\+EN}}()
+\item 
+\+\#define \doxymbox{\hyperlink{stm32f401xe_8h_ab95e3976500c683ba5745f22579994cf}{USART6\+\_\+\+PCLK\+\_\+\+EN}}()
+\item 
+\+\#define \doxymbox{\hyperlink{stm32f401xe_8h_af4132dd5c45ad1cbdb0226b3f0108cf6}{SYSCFG\+\_\+\+PCLK\+\_\+\+EN}}()
+\item 
+\+\#define \doxymbox{\hyperlink{stm32f401xe_8h_a7bd5daf4b7f73ce65ccccc10f3f62c25}{GPIOA\+\_\+\+PCLK\+\_\+\+DI}}()
+\item 
+\+\#define \doxymbox{\hyperlink{stm32f401xe_8h_a0b8beefb50159bf0b57ce00f391b9ffb}{GPIOB\+\_\+\+PCLK\+\_\+\+DI}}()
+\item 
+\+\#define \doxymbox{\hyperlink{stm32f401xe_8h_a786bf409a60ff677716cb03a610bd73e}{GPIOC\+\_\+\+PCLK\+\_\+\+DI}}()
+\item 
+\+\#define \doxymbox{\hyperlink{stm32f401xe_8h_a454d99148231ab9d69d282fa2977794a}{GPIOD\+\_\+\+PCLK\+\_\+\+DI}}()
+\item 
+\+\#define \doxymbox{\hyperlink{stm32f401xe_8h_a978a7db44c8d879d33a615ef3b0ec112}{GPIOE\+\_\+\+PCLK\+\_\+\+DI}}()
+\item 
+\+\#define \doxymbox{\hyperlink{stm32f401xe_8h_a5e62f105900568285d3f1c703048566b}{GPIOH\+\_\+\+PCLK\+\_\+\+DI}}()
+\item 
+\+\#define \doxymbox{\hyperlink{stm32f401xe_8h_a5d981b8f6a68cd77963d57d42693d170}{SPI1\+\_\+\+PCLK\+\_\+\+DI}}()
+\item 
+\+\#define \doxymbox{\hyperlink{stm32f401xe_8h_a8155a469b85817f3e6d37e4ff09f727f}{SPI2\+\_\+\+PCLK\+\_\+\+DI}}()
+\item 
+\+\#define \doxymbox{\hyperlink{stm32f401xe_8h_ad4de3e58530324cb9a9a1c32504b8c26}{SPI3\+\_\+\+PCLK\+\_\+\+DI}}()
+\item 
+\+\#define \doxymbox{\hyperlink{stm32f401xe_8h_a30c26071cf3d08af993808262f790cdf}{SPI4\+\_\+\+PCLK\+\_\+\+DI}}()
+\item 
+\+\#define \doxymbox{\hyperlink{stm32f401xe_8h_aced37391c6600e3a7fdced9eff1af33d}{I2\+C1\+\_\+\+PCLK\+\_\+\+DI}}()
+\item 
+\+\#define \doxymbox{\hyperlink{stm32f401xe_8h_af26def2cfb411c0452a81cc0f07600bc}{I2\+C2\+\_\+\+PCLK\+\_\+\+DI}}()
+\item 
+\+\#define \doxymbox{\hyperlink{stm32f401xe_8h_a244d0f54bfe8be366d938c5bcd64b740}{I2\+C3\+\_\+\+PCLK\+\_\+\+DI}}()
+\item 
+\+\#define \doxymbox{\hyperlink{stm32f401xe_8h_ac73ad50ae751cf615a38b3746789491f}{USART1\+\_\+\+PCLK\+\_\+\+DI}}()
+\item 
+\+\#define \doxymbox{\hyperlink{stm32f401xe_8h_acb4956d8b2b9289454c2b0eadd711e34}{USART2\+\_\+\+PCLK\+\_\+\+DI}}()
+\item 
+\+\#define \doxymbox{\hyperlink{stm32f401xe_8h_a0b34ade86ce39c5af78c1cbbdfb22ece}{USART6\+\_\+\+PCLK\+\_\+\+DI}}()
+\item 
+\+\#define \doxymbox{\hyperlink{stm32f401xe_8h_a11f49b5c109b1eacd48dc52c94acea3e}{SYSCFG\+\_\+\+PCLK\+\_\+\+DI}}()
+\item 
+\+\#define \doxymbox{\hyperlink{stm32f401xe_8h_adc67c9a26e533fd6949e8ee286428574}{GPIOA\+\_\+\+REG\+\_\+\+RESET}}()
+\item 
+\+\#define \doxymbox{\hyperlink{stm32f401xe_8h_a56bd14a304c634ad5bfac7622f0b544a}{GPIOB\+\_\+\+REG\+\_\+\+RESET}}()
+\item 
+\+\#define \doxymbox{\hyperlink{stm32f401xe_8h_a670acbee38ec2144a2ff4741ec07e42a}{GPIOC\+\_\+\+REG\+\_\+\+RESET}}()
+\item 
+\+\#define \doxymbox{\hyperlink{stm32f401xe_8h_a4079b0a5bde67f387ace0a336d9b5c12}{GPIOD\+\_\+\+REG\+\_\+\+RESET}}()
+\item 
+\+\#define \doxymbox{\hyperlink{stm32f401xe_8h_a81f5e66d8d1d6aeae1e7cdf6ab3080d4}{GPIOE\+\_\+\+REG\+\_\+\+RESET}}()
+\item 
+\+\#define \doxymbox{\hyperlink{stm32f401xe_8h_aafc0615682b1b6646ad8c1478356da9d}{GPIOH\+\_\+\+REG\+\_\+\+RESET}}()
+\item 
+\+\#define \doxymbox{\hyperlink{stm32f401xe_8h_a2c722b8f7564ed6f471ca3a9c8a375e4}{I2\+C1\+\_\+\+REG\+\_\+\+RESET}}()
+\item 
+\+\#define \doxymbox{\hyperlink{stm32f401xe_8h_a1059963aabd5ada3aec6c337a3304685}{I2\+C2\+\_\+\+REG\+\_\+\+RESET}}()
+\item 
+\+\#define \doxymbox{\hyperlink{stm32f401xe_8h_a22c31a82c4d41e30844436fba8e4b693}{I2\+C3\+\_\+\+REG\+\_\+\+RESET}}()
+\item 
+\+\#define \doxymbox{\hyperlink{stm32f401xe_8h_a514ad415fb6125ba296793df7d1a468a}{ENABLE}}~1
+\item 
+\+\#define \doxymbox{\hyperlink{stm32f401xe_8h_a99496f7308834e8b220f7894efa0b6ab}{DISABLE}}~1
+\item 
+\+\#define \doxymbox{\hyperlink{stm32f401xe_8h_a59da1d65e87a723efe808dbabb4fc205}{SET}}~\doxymbox{\hyperlink{stm32f401xe_8h_a514ad415fb6125ba296793df7d1a468a}{ENABLE}}
+\item 
+\+\#define \doxymbox{\hyperlink{stm32f401xe_8h_ab702106cf3b3e96750b6845ded4e0299}{RESET}}~\doxymbox{\hyperlink{stm32f401xe_8h_a99496f7308834e8b220f7894efa0b6ab}{DISABLE}}
+\item 
+\+\#define \doxymbox{\hyperlink{stm32f401xe_8h_a91d0fd3e69589389c320fff36dea968d}{GPIO\+\_\+\+PIN\+\_\+\+SET}}~\doxymbox{\hyperlink{stm32f401xe_8h_a59da1d65e87a723efe808dbabb4fc205}{SET}}
+\item 
+\+\#define \doxymbox{\hyperlink{stm32f401xe_8h_a953b0d38414808db79da116842ed3262}{I2\+C\+\_\+\+CR1\+\_\+\+PE}}~0
+\item 
+\+\#define \doxymbox{\hyperlink{stm32f401xe_8h_a4cfee7b020a49bd037fa7cf27c796abc}{I2\+C\+\_\+\+CR1\+\_\+\+SMBUS}}~1
+\item 
+\+\#define \doxymbox{\hyperlink{stm32f401xe_8h_a001198ff898802888edf58f56d5371c9}{I2\+C\+\_\+\+CR1\+\_\+\+SMBTYPE}}~3
+\item 
+\+\#define \doxymbox{\hyperlink{stm32f401xe_8h_a4598185d9092edfbf943464bcbb342ac}{I2\+C\+\_\+\+CR1\+\_\+\+ENARP}}~4
+\item 
+\+\#define \doxymbox{\hyperlink{stm32f401xe_8h_a40d2eb849f9d55e6298035b61e84ca42}{I2\+C\+\_\+\+CR1\+\_\+\+ENPEC}}~5
+\item 
+\+\#define \doxymbox{\hyperlink{stm32f401xe_8h_a1d8c219193b11f8507d7b85831d14912}{I2\+C\+\_\+\+CR1\+\_\+\+ENGC}}~6
+\item 
+\+\#define \doxymbox{\hyperlink{stm32f401xe_8h_a197aaca79f64e832af3a0a0864c2a08c}{I2\+C\+\_\+\+CR1\+\_\+\+NOSTRETCH}}~7
+\item 
+\+\#define \doxymbox{\hyperlink{stm32f401xe_8h_a2ca7f18dd5bc1130dbefae4ff8736143}{I2\+C\+\_\+\+CR1\+\_\+\+START}}~8
+\item 
+\+\#define \doxymbox{\hyperlink{stm32f401xe_8h_ace70293f3dfa24d448b600fc58e45223}{I2\+C\+\_\+\+CR1\+\_\+\+STOP}}~9
+\item 
+\+\#define \doxymbox{\hyperlink{stm32f401xe_8h_af933b105259a4bc46a957576adb8d96d}{I2\+C\+\_\+\+CR1\+\_\+\+ACK}}~10
+\item 
+\+\#define \doxymbox{\hyperlink{stm32f401xe_8h_a34721958229a5983f2e95dfeaa8e55c3}{I2\+C\+\_\+\+CR1\+\_\+\+POS}}~11
+\item 
+\+\#define \doxymbox{\hyperlink{stm32f401xe_8h_ab4d0119253d93a106b5ca704e5020c12}{I2\+C\+\_\+\+CR1\+\_\+\+PEC}}~12
+\item 
+\+\#define \doxymbox{\hyperlink{stm32f401xe_8h_a56729ccf93c5d9f5b5b05002e3a2323c}{I2\+C\+\_\+\+CR1\+\_\+\+ALERT}}~13
+\item 
+\+\#define \doxymbox{\hyperlink{stm32f401xe_8h_a8dc661ef13da02e5bcb943f2003d576d}{I2\+C\+\_\+\+CR1\+\_\+\+SWRST}}~15
+\item 
+\+\#define \doxymbox{\hyperlink{stm32f401xe_8h_a293fbe15ed5fd1fc95915bd6437859e7}{I2\+C\+\_\+\+CR2\+\_\+\+FREQ}}~0
+\item 
+\+\#define \doxymbox{\hyperlink{stm32f401xe_8h_a6f14ae48e4609c2b3645211234cba974}{I2\+C\+\_\+\+CR2\+\_\+\+ITERREN}}~8
+\item 
+\+\#define \doxymbox{\hyperlink{stm32f401xe_8h_a3b1ebaf8173090ec469b055b98e585d2}{I2\+C\+\_\+\+CR2\+\_\+\+ITEVTEN}}~9
+\item 
+\+\#define \doxymbox{\hyperlink{stm32f401xe_8h_a2efbe5d96ed0ce447a45a62e8317a68a}{I2\+C\+\_\+\+CR2\+\_\+\+ITBUFEN}}~10
+\item 
+\+\#define \doxymbox{\hyperlink{stm32f401xe_8h_adb81d5c91486b873bd0bf279a4ffcf69}{I2\+C\+\_\+\+CR2\+\_\+\+DMAEN}}~11
+\item 
+\+\#define \doxymbox{\hyperlink{stm32f401xe_8h_a6a0955008cbabbb6b726ba0b4f8da609}{I2\+C\+\_\+\+CR2\+\_\+\+LAST}}~12
+\item 
+\+\#define \doxymbox{\hyperlink{stm32f401xe_8h_a8b7c20c81f79d17921718412b8fca6d7}{I2\+C\+\_\+\+OAR1\+\_\+\+ADD0}}~0
+\item 
+\+\#define \doxymbox{\hyperlink{stm32f401xe_8h_ab461aebe50d3af4070b2c4249fdd5e9c}{I2\+C\+\_\+\+OAR1\+\_\+\+ADD71}}~1
+\item 
+\+\#define \doxymbox{\hyperlink{stm32f401xe_8h_a9dcf36a908361fc5478347757ab8c1d5}{I2\+C\+\_\+\+OAR1\+\_\+\+ADD98}}~8
+\item 
+\+\#define \doxymbox{\hyperlink{stm32f401xe_8h_a7d8df80cd27313c896e887aae81fa639}{I2\+C\+\_\+\+OAR1\+\_\+\+ADDMODE}}~15
+\item 
+\+\#define \doxymbox{\hyperlink{stm32f401xe_8h_a6935c920da59d755d0cf834548a70ec4}{I2\+C\+\_\+\+SR1\+\_\+\+SB}}~0
+\item 
+\+\#define \doxymbox{\hyperlink{stm32f401xe_8h_a3db361a4d9dd84b187085a11d933b45d}{I2\+C\+\_\+\+SR1\+\_\+\+ADDR}}~1
+\item 
+\+\#define \doxymbox{\hyperlink{stm32f401xe_8h_afb279f85d78cfe5abd3eeb0b40a65ab1}{I2\+C\+\_\+\+SR1\+\_\+\+BTF}}~2
+\item 
+\+\#define \doxymbox{\hyperlink{stm32f401xe_8h_a6faaa55a1e48aa7c1f2b69669901445d}{I2\+C\+\_\+\+SR1\+\_\+\+ADD10}}~3
+\item 
+\+\#define \doxymbox{\hyperlink{stm32f401xe_8h_aafcea4cdbe2f6da31566c897fa893a7c}{I2\+C\+\_\+\+SR1\+\_\+\+STOPF}}~4
+\item 
+\+\#define \doxymbox{\hyperlink{stm32f401xe_8h_af6ebe33c992611bc2e25bbb01c1441a5}{I2\+C\+\_\+\+SR1\+\_\+\+RXNE}}~6
+\item 
+\+\#define \doxymbox{\hyperlink{stm32f401xe_8h_afdc4da49c163910203255e384591b6f7}{I2\+C\+\_\+\+SR1\+\_\+\+TXE}}~7
+\item 
+\+\#define \doxymbox{\hyperlink{stm32f401xe_8h_a1d12990c90ab0757dcfea150ea50b227}{I2\+C\+\_\+\+SR1\+\_\+\+BERR}}~8
+\item 
+\+\#define \doxymbox{\hyperlink{stm32f401xe_8h_acbc52f6ec6172c71d8b026a22c2f69d2}{I2\+C\+\_\+\+SR1\+\_\+\+ARLO}}~9
+\item 
+\+\#define \doxymbox{\hyperlink{stm32f401xe_8h_a62aa2496d4b3955214a16a7bd998fd88}{I2\+C\+\_\+\+SR1\+\_\+\+AF}}~10
+\item 
+\+\#define \doxymbox{\hyperlink{stm32f401xe_8h_ad42d2435d2e64bf710c701c9b17adfb4}{I2\+C\+\_\+\+SR1\+\_\+\+OVR}}~11
+\item 
+\+\#define \doxymbox{\hyperlink{stm32f401xe_8h_a4b2976279024e832e53ad12796a7bb71}{I2\+C\+\_\+\+SR1\+\_\+\+PECERR}}~12
+\item 
+\+\#define \doxymbox{\hyperlink{stm32f401xe_8h_aef3a1e4921d7c509d1b639c67882c4c9}{I2\+C\+\_\+\+SR1\+\_\+\+TIMEOUT}}~14
+\item 
+\+\#define \doxymbox{\hyperlink{stm32f401xe_8h_a8df36c38deb8791d0ac3cb5881298c1c}{I2\+C\+\_\+\+SR1\+\_\+\+SMBALERT}}~15
+\item 
+\+\#define \doxymbox{\hyperlink{stm32f401xe_8h_a75cc361adf0e72e33d6771ebfa17b52d}{I2\+C\+\_\+\+SR2\+\_\+\+MSL}}~0
+\item 
+\+\#define \doxymbox{\hyperlink{stm32f401xe_8h_a3b1e75a82da73ae2873cff1cd27c3179}{I2\+C\+\_\+\+SR2\+\_\+\+BUSY}}~1
+\item 
+\+\#define \doxymbox{\hyperlink{stm32f401xe_8h_a288b20416b42a79e591aa80d9a690fca}{I2\+C\+\_\+\+SR2\+\_\+\+TRA}}~2
+\item 
+\+\#define \doxymbox{\hyperlink{stm32f401xe_8h_af3aeb79cbe04f7ec1e3c2615921c4fab}{I2\+C\+\_\+\+SR2\+\_\+\+GENCALL}}~4
+\item 
+\+\#define \doxymbox{\hyperlink{stm32f401xe_8h_afcf50334903013177a8c6f4e36b8d6fe}{I2\+C\+\_\+\+SR2\+\_\+\+SMBDEFAULT}}~5
+\item 
+\+\#define \doxymbox{\hyperlink{stm32f401xe_8h_aa07cf3e404f9f57e98d1ba3793079c80}{I2\+C\+\_\+\+SR2\+\_\+\+SMBHOST}}~6
+\item 
+\+\#define \doxymbox{\hyperlink{stm32f401xe_8h_a79a6a21835e06d9bc48009f4269b7798}{I2\+C\+\_\+\+SR2\+\_\+\+DUALF}}~7
+\item 
+\+\#define \doxymbox{\hyperlink{stm32f401xe_8h_a5c8cb2bd83dd7dbdcf6ca4bbf4a841de}{I2\+C\+\_\+\+CCR\+\_\+\+CCR}}~0
+\item 
+\+\#define \doxymbox{\hyperlink{stm32f401xe_8h_a851c8a6b598d54c1a805b1632a4078e5}{I2\+C\+\_\+\+CCR\+\_\+\+DUTY}}~14
+\item 
+\+\#define \doxymbox{\hyperlink{stm32f401xe_8h_aea64e5d7eba609ac9a84964bc0bc2def}{I2\+C\+\_\+\+CCR\+\_\+\+FS}}~15
+\end{DoxyCompactItemize}
+
+
+\label{stm32f401xe_8h_doc-define-members}
+\Hypertarget{stm32f401xe_8h_doc-define-members}
+\doxysubsection{Macro Definition Documentation}
+\Hypertarget{stm32f401xe_8h_ab691942efdd52e7cf1f6bb92050bcb03}\index{stm32f401xe.h@{stm32f401xe.h}!\_vo@{\_vo}}
+\index{\_vo@{\_vo}!stm32f401xe.h@{stm32f401xe.h}}
+\doxysubsubsection{\texorpdfstring{\_vo}{\_vo}}
+{\footnotesize\ttfamily \label{stm32f401xe_8h_ab691942efdd52e7cf1f6bb92050bcb03} 
+\+\#define \+\_\+vo~volatile}
+
+\Hypertarget{stm32f401xe_8h_adbe6c878ceab6444c0853b28624a67a6}\index{stm32f401xe.h@{stm32f401xe.h}!ADC\_BASEADDR@{ADC\_BASEADDR}}
+\index{ADC\_BASEADDR@{ADC\_BASEADDR}!stm32f401xe.h@{stm32f401xe.h}}
+\doxysubsubsection{\texorpdfstring{ADC\_BASEADDR}{ADC\_BASEADDR}}
+{\footnotesize\ttfamily \label{stm32f401xe_8h_adbe6c878ceab6444c0853b28624a67a6} 
+\+\#define ADC\+\_\+\+BASEADDR~(\doxymbox{\hyperlink{stm32f401xe_8h_ad112f60d214d7991e93e7239ce7ff274}{APB2\+\_\+\+BASEADDR}} + 0\+X2000)}
+
+\Hypertarget{stm32f401xe_8h_ac0dd95cd7a26e593e81d864f47a7bc76}\index{stm32f401xe.h@{stm32f401xe.h}!AHB1\_BASEADDR@{AHB1\_BASEADDR}}
+\index{AHB1\_BASEADDR@{AHB1\_BASEADDR}!stm32f401xe.h@{stm32f401xe.h}}
+\doxysubsubsection{\texorpdfstring{AHB1\_BASEADDR}{AHB1\_BASEADDR}}
+{\footnotesize\ttfamily \label{stm32f401xe_8h_ac0dd95cd7a26e593e81d864f47a7bc76} 
+\+\#define AHB1\+\_\+\+BASEADDR~0x40020000U}
+
+\Hypertarget{stm32f401xe_8h_a8cb6b2b80ddbb84295ad81af3681f4ec}\index{stm32f401xe.h@{stm32f401xe.h}!AHB2\_BASEADDR@{AHB2\_BASEADDR}}
+\index{AHB2\_BASEADDR@{AHB2\_BASEADDR}!stm32f401xe.h@{stm32f401xe.h}}
+\doxysubsubsection{\texorpdfstring{AHB2\_BASEADDR}{AHB2\_BASEADDR}}
+{\footnotesize\ttfamily \label{stm32f401xe_8h_a8cb6b2b80ddbb84295ad81af3681f4ec} 
+\+\#define AHB2\+\_\+\+BASEADDR~0x50000000U}
+
+\Hypertarget{stm32f401xe_8h_aa2862fa9bfc107c83dc034fa75eed6b4}\index{stm32f401xe.h@{stm32f401xe.h}!APB1\_BASEADDR@{APB1\_BASEADDR}}
+\index{APB1\_BASEADDR@{APB1\_BASEADDR}!stm32f401xe.h@{stm32f401xe.h}}
+\doxysubsubsection{\texorpdfstring{APB1\_BASEADDR}{APB1\_BASEADDR}}
+{\footnotesize\ttfamily \label{stm32f401xe_8h_aa2862fa9bfc107c83dc034fa75eed6b4} 
+\+\#define APB1\+\_\+\+BASEADDR~\doxymbox{\hyperlink{stm32f401xe_8h_a2ad16e46c0011723c211a374b43ef8db}{PERIPHER\+\_\+\+BASEADDR}}}
+
+\Hypertarget{stm32f401xe_8h_ad112f60d214d7991e93e7239ce7ff274}\index{stm32f401xe.h@{stm32f401xe.h}!APB2\_BASEADDR@{APB2\_BASEADDR}}
+\index{APB2\_BASEADDR@{APB2\_BASEADDR}!stm32f401xe.h@{stm32f401xe.h}}
+\doxysubsubsection{\texorpdfstring{APB2\_BASEADDR}{APB2\_BASEADDR}}
+{\footnotesize\ttfamily \label{stm32f401xe_8h_ad112f60d214d7991e93e7239ce7ff274} 
+\+\#define APB2\+\_\+\+BASEADDR~0x40010000U}
+
+\Hypertarget{stm32f401xe_8h_a99496f7308834e8b220f7894efa0b6ab}\index{stm32f401xe.h@{stm32f401xe.h}!DISABLE@{DISABLE}}
+\index{DISABLE@{DISABLE}!stm32f401xe.h@{stm32f401xe.h}}
+\doxysubsubsection{\texorpdfstring{DISABLE}{DISABLE}}
+{\footnotesize\ttfamily \label{stm32f401xe_8h_a99496f7308834e8b220f7894efa0b6ab} 
+\+\#define DISABLE~1}
+
+\Hypertarget{stm32f401xe_8h_a514ad415fb6125ba296793df7d1a468a}\index{stm32f401xe.h@{stm32f401xe.h}!ENABLE@{ENABLE}}
+\index{ENABLE@{ENABLE}!stm32f401xe.h@{stm32f401xe.h}}
+\doxysubsubsection{\texorpdfstring{ENABLE}{ENABLE}}
+{\footnotesize\ttfamily \label{stm32f401xe_8h_a514ad415fb6125ba296793df7d1a468a} 
+\+\#define ENABLE~1}
+
+\Hypertarget{stm32f401xe_8h_a9189e770cd9b63dadd36683eb9843cac}\index{stm32f401xe.h@{stm32f401xe.h}!EXTI@{EXTI}}
+\index{EXTI@{EXTI}!stm32f401xe.h@{stm32f401xe.h}}
+\doxysubsubsection{\texorpdfstring{EXTI}{EXTI}}
+{\footnotesize\ttfamily \label{stm32f401xe_8h_a9189e770cd9b63dadd36683eb9843cac} 
+\+\#define EXTI~((\doxymbox{\hyperlink{struct_e_x_t_i___reg_def__t}{EXTI\+\_\+\+Reg\+Def\+\_\+t}}\texorpdfstring{$\ast$}{*})\doxymbox{\hyperlink{stm32f401xe_8h_a9ce143f4fc043361dc774d877c672f0d}{EXTI\+\_\+\+BASEADDR}})}
+
+\Hypertarget{stm32f401xe_8h_a9ce143f4fc043361dc774d877c672f0d}\index{stm32f401xe.h@{stm32f401xe.h}!EXTI\_BASEADDR@{EXTI\_BASEADDR}}
+\index{EXTI\_BASEADDR@{EXTI\_BASEADDR}!stm32f401xe.h@{stm32f401xe.h}}
+\doxysubsubsection{\texorpdfstring{EXTI\_BASEADDR}{EXTI\_BASEADDR}}
+{\footnotesize\ttfamily \label{stm32f401xe_8h_a9ce143f4fc043361dc774d877c672f0d} 
+\+\#define EXTI\+\_\+\+BASEADDR~(\doxymbox{\hyperlink{stm32f401xe_8h_ad112f60d214d7991e93e7239ce7ff274}{APB2\+\_\+\+BASEADDR}} + 0\+X3\+C00)}
+
+\Hypertarget{stm32f401xe_8h_af6863e7094aca292453684fa2af16686}\index{stm32f401xe.h@{stm32f401xe.h}!FLASH\_BASEADDR@{FLASH\_BASEADDR}}
+\index{FLASH\_BASEADDR@{FLASH\_BASEADDR}!stm32f401xe.h@{stm32f401xe.h}}
+\doxysubsubsection{\texorpdfstring{FLASH\_BASEADDR}{FLASH\_BASEADDR}}
+{\footnotesize\ttfamily \label{stm32f401xe_8h_af6863e7094aca292453684fa2af16686} 
+\+\#define FLASH\+\_\+\+BASEADDR~0x08000000U}
+
+\Hypertarget{stm32f401xe_8h_a91d0fd3e69589389c320fff36dea968d}\index{stm32f401xe.h@{stm32f401xe.h}!GPIO\_PIN\_SET@{GPIO\_PIN\_SET}}
+\index{GPIO\_PIN\_SET@{GPIO\_PIN\_SET}!stm32f401xe.h@{stm32f401xe.h}}
+\doxysubsubsection{\texorpdfstring{GPIO\_PIN\_SET}{GPIO\_PIN\_SET}}
+{\footnotesize\ttfamily \label{stm32f401xe_8h_a91d0fd3e69589389c320fff36dea968d} 
+\+\#define GPIO\+\_\+\+PIN\+\_\+\+SET~\doxymbox{\hyperlink{stm32f401xe_8h_a59da1d65e87a723efe808dbabb4fc205}{SET}}}
+
+\Hypertarget{stm32f401xe_8h_ac485358099728ddae050db37924dd6b7}\index{stm32f401xe.h@{stm32f401xe.h}!GPIOA@{GPIOA}}
+\index{GPIOA@{GPIOA}!stm32f401xe.h@{stm32f401xe.h}}
+\doxysubsubsection{\texorpdfstring{GPIOA}{GPIOA}}
+{\footnotesize\ttfamily \label{stm32f401xe_8h_ac485358099728ddae050db37924dd6b7} 
+\+\#define GPIOA~((\doxymbox{\hyperlink{struct_g_p_i_o___reg_def__t}{GPIO\+\_\+\+Reg\+Def\+\_\+t}}\texorpdfstring{$\ast$}{*}) \doxymbox{\hyperlink{stm32f401xe_8h_a3e615727451fa1abc89e436a7158d4aa}{GPIOA\+\_\+\+BASEADDR}})}
+
+\Hypertarget{stm32f401xe_8h_a3e615727451fa1abc89e436a7158d4aa}\index{stm32f401xe.h@{stm32f401xe.h}!GPIOA\_BASEADDR@{GPIOA\_BASEADDR}}
+\index{GPIOA\_BASEADDR@{GPIOA\_BASEADDR}!stm32f401xe.h@{stm32f401xe.h}}
+\doxysubsubsection{\texorpdfstring{GPIOA\_BASEADDR}{GPIOA\_BASEADDR}}
+{\footnotesize\ttfamily \label{stm32f401xe_8h_a3e615727451fa1abc89e436a7158d4aa} 
+\+\#define GPIOA\+\_\+\+BASEADDR~(\doxymbox{\hyperlink{stm32f401xe_8h_ac0dd95cd7a26e593e81d864f47a7bc76}{AHB1\+\_\+\+BASEADDR}} + 0\+X0000)}
+
+\Hypertarget{stm32f401xe_8h_a7bd5daf4b7f73ce65ccccc10f3f62c25}\index{stm32f401xe.h@{stm32f401xe.h}!GPIOA\_PCLK\_DI@{GPIOA\_PCLK\_DI}}
+\index{GPIOA\_PCLK\_DI@{GPIOA\_PCLK\_DI}!stm32f401xe.h@{stm32f401xe.h}}
+\doxysubsubsection{\texorpdfstring{GPIOA\_PCLK\_DI}{GPIOA\_PCLK\_DI}}
+{\footnotesize\ttfamily \label{stm32f401xe_8h_a7bd5daf4b7f73ce65ccccc10f3f62c25} 
+\+\#define GPIOA\+\_\+\+PCLK\+\_\+\+DI(\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+{\bfseries Value:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{(\doxymbox{\hyperlink{stm32f401xe_8h_a74944438a086975793d26ae48d5882d4}{RCC}}-\/>AHB1ENR\ \&=\ \string~(1\ <<\ 0))}
+
+\end{DoxyCode}
+\Hypertarget{stm32f401xe_8h_a17c0eb1a7e7645a5d63d8b7a41fbb19c}\index{stm32f401xe.h@{stm32f401xe.h}!GPIOA\_PCLK\_EN@{GPIOA\_PCLK\_EN}}
+\index{GPIOA\_PCLK\_EN@{GPIOA\_PCLK\_EN}!stm32f401xe.h@{stm32f401xe.h}}
+\doxysubsubsection{\texorpdfstring{GPIOA\_PCLK\_EN}{GPIOA\_PCLK\_EN}}
+{\footnotesize\ttfamily \label{stm32f401xe_8h_a17c0eb1a7e7645a5d63d8b7a41fbb19c} 
+\+\#define GPIOA\+\_\+\+PCLK\+\_\+\+EN(\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+{\bfseries Value:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{(\doxymbox{\hyperlink{stm32f401xe_8h_a74944438a086975793d26ae48d5882d4}{RCC}}-\/>AHB1ENR\ |=\ (1<<0))}
+
+\end{DoxyCode}
+\Hypertarget{stm32f401xe_8h_adc67c9a26e533fd6949e8ee286428574}\index{stm32f401xe.h@{stm32f401xe.h}!GPIOA\_REG\_RESET@{GPIOA\_REG\_RESET}}
+\index{GPIOA\_REG\_RESET@{GPIOA\_REG\_RESET}!stm32f401xe.h@{stm32f401xe.h}}
+\doxysubsubsection{\texorpdfstring{GPIOA\_REG\_RESET}{GPIOA\_REG\_RESET}}
+{\footnotesize\ttfamily \label{stm32f401xe_8h_adc67c9a26e533fd6949e8ee286428574} 
+\+\#define GPIOA\+\_\+\+REG\+\_\+\+RESET(\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+{\bfseries Value:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keywordflow}{do}\{\ (\doxymbox{\hyperlink{stm32f401xe_8h_a74944438a086975793d26ae48d5882d4}{RCC}}-\/>AHB1RSTR\ |=\ (1\ <<\ 0));\ (\doxymbox{\hyperlink{stm32f401xe_8h_a74944438a086975793d26ae48d5882d4}{RCC}}-\/>AHB1RSTR\ \&=\ \string~(1\ <<\ 0));\ \}\textcolor{keywordflow}{while}(0)}
+
+\end{DoxyCode}
+\Hypertarget{stm32f401xe_8h_a68b66ac73be4c836db878a42e1fea3cd}\index{stm32f401xe.h@{stm32f401xe.h}!GPIOB@{GPIOB}}
+\index{GPIOB@{GPIOB}!stm32f401xe.h@{stm32f401xe.h}}
+\doxysubsubsection{\texorpdfstring{GPIOB}{GPIOB}}
+{\footnotesize\ttfamily \label{stm32f401xe_8h_a68b66ac73be4c836db878a42e1fea3cd} 
+\+\#define GPIOB~((\doxymbox{\hyperlink{struct_g_p_i_o___reg_def__t}{GPIO\+\_\+\+Reg\+Def\+\_\+t}}\texorpdfstring{$\ast$}{*}) \doxymbox{\hyperlink{stm32f401xe_8h_a583cafe206b45c6e3507b0493b96bdf0}{GPIOB\+\_\+\+BASEADDR}})}
+
+\Hypertarget{stm32f401xe_8h_a583cafe206b45c6e3507b0493b96bdf0}\index{stm32f401xe.h@{stm32f401xe.h}!GPIOB\_BASEADDR@{GPIOB\_BASEADDR}}
+\index{GPIOB\_BASEADDR@{GPIOB\_BASEADDR}!stm32f401xe.h@{stm32f401xe.h}}
+\doxysubsubsection{\texorpdfstring{GPIOB\_BASEADDR}{GPIOB\_BASEADDR}}
+{\footnotesize\ttfamily \label{stm32f401xe_8h_a583cafe206b45c6e3507b0493b96bdf0} 
+\+\#define GPIOB\+\_\+\+BASEADDR~(\doxymbox{\hyperlink{stm32f401xe_8h_ac0dd95cd7a26e593e81d864f47a7bc76}{AHB1\+\_\+\+BASEADDR}} + 0\+X0400)}
+
+\Hypertarget{stm32f401xe_8h_a0b8beefb50159bf0b57ce00f391b9ffb}\index{stm32f401xe.h@{stm32f401xe.h}!GPIOB\_PCLK\_DI@{GPIOB\_PCLK\_DI}}
+\index{GPIOB\_PCLK\_DI@{GPIOB\_PCLK\_DI}!stm32f401xe.h@{stm32f401xe.h}}
+\doxysubsubsection{\texorpdfstring{GPIOB\_PCLK\_DI}{GPIOB\_PCLK\_DI}}
+{\footnotesize\ttfamily \label{stm32f401xe_8h_a0b8beefb50159bf0b57ce00f391b9ffb} 
+\+\#define GPIOB\+\_\+\+PCLK\+\_\+\+DI(\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+{\bfseries Value:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{(\doxymbox{\hyperlink{stm32f401xe_8h_a74944438a086975793d26ae48d5882d4}{RCC}}-\/>AHB1ENR\ \&=\ \string~(1\ <<\ 1))}
+
+\end{DoxyCode}
+\Hypertarget{stm32f401xe_8h_a1bc2b8b73bb42c4d2cd758a732fbe871}\index{stm32f401xe.h@{stm32f401xe.h}!GPIOB\_PCLK\_EN@{GPIOB\_PCLK\_EN}}
+\index{GPIOB\_PCLK\_EN@{GPIOB\_PCLK\_EN}!stm32f401xe.h@{stm32f401xe.h}}
+\doxysubsubsection{\texorpdfstring{GPIOB\_PCLK\_EN}{GPIOB\_PCLK\_EN}}
+{\footnotesize\ttfamily \label{stm32f401xe_8h_a1bc2b8b73bb42c4d2cd758a732fbe871} 
+\+\#define GPIOB\+\_\+\+PCLK\+\_\+\+EN(\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+{\bfseries Value:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{(\doxymbox{\hyperlink{stm32f401xe_8h_a74944438a086975793d26ae48d5882d4}{RCC}}-\/>AHB1ENR\ |=\ (1<<1))}
+
+\end{DoxyCode}
+\Hypertarget{stm32f401xe_8h_a56bd14a304c634ad5bfac7622f0b544a}\index{stm32f401xe.h@{stm32f401xe.h}!GPIOB\_REG\_RESET@{GPIOB\_REG\_RESET}}
+\index{GPIOB\_REG\_RESET@{GPIOB\_REG\_RESET}!stm32f401xe.h@{stm32f401xe.h}}
+\doxysubsubsection{\texorpdfstring{GPIOB\_REG\_RESET}{GPIOB\_REG\_RESET}}
+{\footnotesize\ttfamily \label{stm32f401xe_8h_a56bd14a304c634ad5bfac7622f0b544a} 
+\+\#define GPIOB\+\_\+\+REG\+\_\+\+RESET(\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+{\bfseries Value:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keywordflow}{do}\{\ (\doxymbox{\hyperlink{stm32f401xe_8h_a74944438a086975793d26ae48d5882d4}{RCC}}-\/>AHB1RSTR\ |=\ (1\ <<\ 1));\ (\doxymbox{\hyperlink{stm32f401xe_8h_a74944438a086975793d26ae48d5882d4}{RCC}}-\/>AHB1RSTR\ \&=\ \string~(1\ <<\ 1));\ \}\textcolor{keywordflow}{while}(0)}
+
+\end{DoxyCode}
+\Hypertarget{stm32f401xe_8h_a2dca03332d620196ba943bc2346eaa08}\index{stm32f401xe.h@{stm32f401xe.h}!GPIOC@{GPIOC}}
+\index{GPIOC@{GPIOC}!stm32f401xe.h@{stm32f401xe.h}}
+\doxysubsubsection{\texorpdfstring{GPIOC}{GPIOC}}
+{\footnotesize\ttfamily \label{stm32f401xe_8h_a2dca03332d620196ba943bc2346eaa08} 
+\+\#define GPIOC~((\doxymbox{\hyperlink{struct_g_p_i_o___reg_def__t}{GPIO\+\_\+\+Reg\+Def\+\_\+t}}\texorpdfstring{$\ast$}{*}) \doxymbox{\hyperlink{stm32f401xe_8h_a05e89040a5ad3c3e5f5bbd62b434512b}{GPIOC\+\_\+\+BASEADDR}})}
+
+\Hypertarget{stm32f401xe_8h_a05e89040a5ad3c3e5f5bbd62b434512b}\index{stm32f401xe.h@{stm32f401xe.h}!GPIOC\_BASEADDR@{GPIOC\_BASEADDR}}
+\index{GPIOC\_BASEADDR@{GPIOC\_BASEADDR}!stm32f401xe.h@{stm32f401xe.h}}
+\doxysubsubsection{\texorpdfstring{GPIOC\_BASEADDR}{GPIOC\_BASEADDR}}
+{\footnotesize\ttfamily \label{stm32f401xe_8h_a05e89040a5ad3c3e5f5bbd62b434512b} 
+\+\#define GPIOC\+\_\+\+BASEADDR~(\doxymbox{\hyperlink{stm32f401xe_8h_ac0dd95cd7a26e593e81d864f47a7bc76}{AHB1\+\_\+\+BASEADDR}} + 0\+X0800)}
+
+\Hypertarget{stm32f401xe_8h_a786bf409a60ff677716cb03a610bd73e}\index{stm32f401xe.h@{stm32f401xe.h}!GPIOC\_PCLK\_DI@{GPIOC\_PCLK\_DI}}
+\index{GPIOC\_PCLK\_DI@{GPIOC\_PCLK\_DI}!stm32f401xe.h@{stm32f401xe.h}}
+\doxysubsubsection{\texorpdfstring{GPIOC\_PCLK\_DI}{GPIOC\_PCLK\_DI}}
+{\footnotesize\ttfamily \label{stm32f401xe_8h_a786bf409a60ff677716cb03a610bd73e} 
+\+\#define GPIOC\+\_\+\+PCLK\+\_\+\+DI(\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+{\bfseries Value:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{(\doxymbox{\hyperlink{stm32f401xe_8h_a74944438a086975793d26ae48d5882d4}{RCC}}-\/>AHB1ENR\ \&=\ \string~(1\ <<\ 2))}
+
+\end{DoxyCode}
+\Hypertarget{stm32f401xe_8h_ab9e994b2e5e4ada47764117634c64728}\index{stm32f401xe.h@{stm32f401xe.h}!GPIOC\_PCLK\_EN@{GPIOC\_PCLK\_EN}}
+\index{GPIOC\_PCLK\_EN@{GPIOC\_PCLK\_EN}!stm32f401xe.h@{stm32f401xe.h}}
+\doxysubsubsection{\texorpdfstring{GPIOC\_PCLK\_EN}{GPIOC\_PCLK\_EN}}
+{\footnotesize\ttfamily \label{stm32f401xe_8h_ab9e994b2e5e4ada47764117634c64728} 
+\+\#define GPIOC\+\_\+\+PCLK\+\_\+\+EN(\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+{\bfseries Value:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{(\doxymbox{\hyperlink{stm32f401xe_8h_a74944438a086975793d26ae48d5882d4}{RCC}}-\/>AHB1ENR\ |=\ (1<<2))}
+
+\end{DoxyCode}
+\Hypertarget{stm32f401xe_8h_a670acbee38ec2144a2ff4741ec07e42a}\index{stm32f401xe.h@{stm32f401xe.h}!GPIOC\_REG\_RESET@{GPIOC\_REG\_RESET}}
+\index{GPIOC\_REG\_RESET@{GPIOC\_REG\_RESET}!stm32f401xe.h@{stm32f401xe.h}}
+\doxysubsubsection{\texorpdfstring{GPIOC\_REG\_RESET}{GPIOC\_REG\_RESET}}
+{\footnotesize\ttfamily \label{stm32f401xe_8h_a670acbee38ec2144a2ff4741ec07e42a} 
+\+\#define GPIOC\+\_\+\+REG\+\_\+\+RESET(\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+{\bfseries Value:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keywordflow}{do}\{\ (\doxymbox{\hyperlink{stm32f401xe_8h_a74944438a086975793d26ae48d5882d4}{RCC}}-\/>AHB1RSTR\ |=\ (1\ <<\ 2));\ (\doxymbox{\hyperlink{stm32f401xe_8h_a74944438a086975793d26ae48d5882d4}{RCC}}-\/>AHB1RSTR\ \&=\ \string~(1\ <<\ 2));\ \}\textcolor{keywordflow}{while}(0)}
+
+\end{DoxyCode}
+\Hypertarget{stm32f401xe_8h_a7580b1a929ea9df59725ba9c18eba6ac}\index{stm32f401xe.h@{stm32f401xe.h}!GPIOD@{GPIOD}}
+\index{GPIOD@{GPIOD}!stm32f401xe.h@{stm32f401xe.h}}
+\doxysubsubsection{\texorpdfstring{GPIOD}{GPIOD}}
+{\footnotesize\ttfamily \label{stm32f401xe_8h_a7580b1a929ea9df59725ba9c18eba6ac} 
+\+\#define GPIOD~((\doxymbox{\hyperlink{struct_g_p_i_o___reg_def__t}{GPIO\+\_\+\+Reg\+Def\+\_\+t}}\texorpdfstring{$\ast$}{*}) \doxymbox{\hyperlink{stm32f401xe_8h_a807336d6c75feb8d0e943d618b5eaf26}{GPIOD\+\_\+\+BASEADDR}})}
+
+\Hypertarget{stm32f401xe_8h_a807336d6c75feb8d0e943d618b5eaf26}\index{stm32f401xe.h@{stm32f401xe.h}!GPIOD\_BASEADDR@{GPIOD\_BASEADDR}}
+\index{GPIOD\_BASEADDR@{GPIOD\_BASEADDR}!stm32f401xe.h@{stm32f401xe.h}}
+\doxysubsubsection{\texorpdfstring{GPIOD\_BASEADDR}{GPIOD\_BASEADDR}}
+{\footnotesize\ttfamily \label{stm32f401xe_8h_a807336d6c75feb8d0e943d618b5eaf26} 
+\+\#define GPIOD\+\_\+\+BASEADDR~(\doxymbox{\hyperlink{stm32f401xe_8h_ac0dd95cd7a26e593e81d864f47a7bc76}{AHB1\+\_\+\+BASEADDR}} + 0\+X0\+C00)}
+
+\Hypertarget{stm32f401xe_8h_a454d99148231ab9d69d282fa2977794a}\index{stm32f401xe.h@{stm32f401xe.h}!GPIOD\_PCLK\_DI@{GPIOD\_PCLK\_DI}}
+\index{GPIOD\_PCLK\_DI@{GPIOD\_PCLK\_DI}!stm32f401xe.h@{stm32f401xe.h}}
+\doxysubsubsection{\texorpdfstring{GPIOD\_PCLK\_DI}{GPIOD\_PCLK\_DI}}
+{\footnotesize\ttfamily \label{stm32f401xe_8h_a454d99148231ab9d69d282fa2977794a} 
+\+\#define GPIOD\+\_\+\+PCLK\+\_\+\+DI(\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+{\bfseries Value:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{(\doxymbox{\hyperlink{stm32f401xe_8h_a74944438a086975793d26ae48d5882d4}{RCC}}-\/>AHB1ENR\ \&=\ \string~(1\ <<\ 3))}
+
+\end{DoxyCode}
+\Hypertarget{stm32f401xe_8h_ac08ecd1bbe57ab59746d6da5b972f493}\index{stm32f401xe.h@{stm32f401xe.h}!GPIOD\_PCLK\_EN@{GPIOD\_PCLK\_EN}}
+\index{GPIOD\_PCLK\_EN@{GPIOD\_PCLK\_EN}!stm32f401xe.h@{stm32f401xe.h}}
+\doxysubsubsection{\texorpdfstring{GPIOD\_PCLK\_EN}{GPIOD\_PCLK\_EN}}
+{\footnotesize\ttfamily \label{stm32f401xe_8h_ac08ecd1bbe57ab59746d6da5b972f493} 
+\+\#define GPIOD\+\_\+\+PCLK\+\_\+\+EN(\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+{\bfseries Value:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{(\doxymbox{\hyperlink{stm32f401xe_8h_a74944438a086975793d26ae48d5882d4}{RCC}}-\/>AHB1ENR\ |=\ (1<<3))}
+
+\end{DoxyCode}
+\Hypertarget{stm32f401xe_8h_a4079b0a5bde67f387ace0a336d9b5c12}\index{stm32f401xe.h@{stm32f401xe.h}!GPIOD\_REG\_RESET@{GPIOD\_REG\_RESET}}
+\index{GPIOD\_REG\_RESET@{GPIOD\_REG\_RESET}!stm32f401xe.h@{stm32f401xe.h}}
+\doxysubsubsection{\texorpdfstring{GPIOD\_REG\_RESET}{GPIOD\_REG\_RESET}}
+{\footnotesize\ttfamily \label{stm32f401xe_8h_a4079b0a5bde67f387ace0a336d9b5c12} 
+\+\#define GPIOD\+\_\+\+REG\+\_\+\+RESET(\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+{\bfseries Value:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keywordflow}{do}\{\ (\doxymbox{\hyperlink{stm32f401xe_8h_a74944438a086975793d26ae48d5882d4}{RCC}}-\/>AHB1RSTR\ |=\ (1\ <<\ 3));\ (\doxymbox{\hyperlink{stm32f401xe_8h_a74944438a086975793d26ae48d5882d4}{RCC}}-\/>AHB1RSTR\ \&=\ \string~(1\ <<\ 3));\ \}\textcolor{keywordflow}{while}(0)}
+
+\end{DoxyCode}
+\Hypertarget{stm32f401xe_8h_ae04bdb5e8acc47cab1d0532e6b0d0763}\index{stm32f401xe.h@{stm32f401xe.h}!GPIOE@{GPIOE}}
+\index{GPIOE@{GPIOE}!stm32f401xe.h@{stm32f401xe.h}}
+\doxysubsubsection{\texorpdfstring{GPIOE}{GPIOE}}
+{\footnotesize\ttfamily \label{stm32f401xe_8h_ae04bdb5e8acc47cab1d0532e6b0d0763} 
+\+\#define GPIOE~((\doxymbox{\hyperlink{struct_g_p_i_o___reg_def__t}{GPIO\+\_\+\+Reg\+Def\+\_\+t}}\texorpdfstring{$\ast$}{*}) \doxymbox{\hyperlink{stm32f401xe_8h_ac248e8d8a7113113481c2abb31d7660a}{GPIOE\+\_\+\+BASEADDR}})}
+
+\Hypertarget{stm32f401xe_8h_ac248e8d8a7113113481c2abb31d7660a}\index{stm32f401xe.h@{stm32f401xe.h}!GPIOE\_BASEADDR@{GPIOE\_BASEADDR}}
+\index{GPIOE\_BASEADDR@{GPIOE\_BASEADDR}!stm32f401xe.h@{stm32f401xe.h}}
+\doxysubsubsection{\texorpdfstring{GPIOE\_BASEADDR}{GPIOE\_BASEADDR}}
+{\footnotesize\ttfamily \label{stm32f401xe_8h_ac248e8d8a7113113481c2abb31d7660a} 
+\+\#define GPIOE\+\_\+\+BASEADDR~(\doxymbox{\hyperlink{stm32f401xe_8h_ac0dd95cd7a26e593e81d864f47a7bc76}{AHB1\+\_\+\+BASEADDR}} + 0\+X1000)}
+
+\Hypertarget{stm32f401xe_8h_a978a7db44c8d879d33a615ef3b0ec112}\index{stm32f401xe.h@{stm32f401xe.h}!GPIOE\_PCLK\_DI@{GPIOE\_PCLK\_DI}}
+\index{GPIOE\_PCLK\_DI@{GPIOE\_PCLK\_DI}!stm32f401xe.h@{stm32f401xe.h}}
+\doxysubsubsection{\texorpdfstring{GPIOE\_PCLK\_DI}{GPIOE\_PCLK\_DI}}
+{\footnotesize\ttfamily \label{stm32f401xe_8h_a978a7db44c8d879d33a615ef3b0ec112} 
+\+\#define GPIOE\+\_\+\+PCLK\+\_\+\+DI(\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+{\bfseries Value:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{(\doxymbox{\hyperlink{stm32f401xe_8h_a74944438a086975793d26ae48d5882d4}{RCC}}-\/>AHB1ENR\ \&=\ \string~(1\ <<\ 4))}
+
+\end{DoxyCode}
+\Hypertarget{stm32f401xe_8h_aa93bc85ce9310ae89c709ad615d9bb18}\index{stm32f401xe.h@{stm32f401xe.h}!GPIOE\_PCLK\_EN@{GPIOE\_PCLK\_EN}}
+\index{GPIOE\_PCLK\_EN@{GPIOE\_PCLK\_EN}!stm32f401xe.h@{stm32f401xe.h}}
+\doxysubsubsection{\texorpdfstring{GPIOE\_PCLK\_EN}{GPIOE\_PCLK\_EN}}
+{\footnotesize\ttfamily \label{stm32f401xe_8h_aa93bc85ce9310ae89c709ad615d9bb18} 
+\+\#define GPIOE\+\_\+\+PCLK\+\_\+\+EN(\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+{\bfseries Value:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{(\doxymbox{\hyperlink{stm32f401xe_8h_a74944438a086975793d26ae48d5882d4}{RCC}}-\/>AHB1ENR\ |=\ (1<<4))}
+
+\end{DoxyCode}
+\Hypertarget{stm32f401xe_8h_a81f5e66d8d1d6aeae1e7cdf6ab3080d4}\index{stm32f401xe.h@{stm32f401xe.h}!GPIOE\_REG\_RESET@{GPIOE\_REG\_RESET}}
+\index{GPIOE\_REG\_RESET@{GPIOE\_REG\_RESET}!stm32f401xe.h@{stm32f401xe.h}}
+\doxysubsubsection{\texorpdfstring{GPIOE\_REG\_RESET}{GPIOE\_REG\_RESET}}
+{\footnotesize\ttfamily \label{stm32f401xe_8h_a81f5e66d8d1d6aeae1e7cdf6ab3080d4} 
+\+\#define GPIOE\+\_\+\+REG\+\_\+\+RESET(\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+{\bfseries Value:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keywordflow}{do}\{\ (\doxymbox{\hyperlink{stm32f401xe_8h_a74944438a086975793d26ae48d5882d4}{RCC}}-\/>AHB1RSTR\ |=\ (1\ <<\ 4));\ (\doxymbox{\hyperlink{stm32f401xe_8h_a74944438a086975793d26ae48d5882d4}{RCC}}-\/>AHB1RSTR\ \&=\ \string~(1\ <<\ 4));\ \}\textcolor{keywordflow}{while}(0)}
+
+\end{DoxyCode}
+\Hypertarget{stm32f401xe_8h_adeacbb43ae86c879945afe98c679b285}\index{stm32f401xe.h@{stm32f401xe.h}!GPIOH@{GPIOH}}
+\index{GPIOH@{GPIOH}!stm32f401xe.h@{stm32f401xe.h}}
+\doxysubsubsection{\texorpdfstring{GPIOH}{GPIOH}}
+{\footnotesize\ttfamily \label{stm32f401xe_8h_adeacbb43ae86c879945afe98c679b285} 
+\+\#define GPIOH~((\doxymbox{\hyperlink{struct_g_p_i_o___reg_def__t}{GPIO\+\_\+\+Reg\+Def\+\_\+t}}\texorpdfstring{$\ast$}{*}) \doxymbox{\hyperlink{stm32f401xe_8h_a63f9598aea50d8c995a9037578bb0907}{GPIOH\+\_\+\+BASEADDR}})}
+
+\Hypertarget{stm32f401xe_8h_a63f9598aea50d8c995a9037578bb0907}\index{stm32f401xe.h@{stm32f401xe.h}!GPIOH\_BASEADDR@{GPIOH\_BASEADDR}}
+\index{GPIOH\_BASEADDR@{GPIOH\_BASEADDR}!stm32f401xe.h@{stm32f401xe.h}}
+\doxysubsubsection{\texorpdfstring{GPIOH\_BASEADDR}{GPIOH\_BASEADDR}}
+{\footnotesize\ttfamily \label{stm32f401xe_8h_a63f9598aea50d8c995a9037578bb0907} 
+\+\#define GPIOH\+\_\+\+BASEADDR~(\doxymbox{\hyperlink{stm32f401xe_8h_ac0dd95cd7a26e593e81d864f47a7bc76}{AHB1\+\_\+\+BASEADDR}} + 0\+X1\+C00)}
+
+\Hypertarget{stm32f401xe_8h_a5e62f105900568285d3f1c703048566b}\index{stm32f401xe.h@{stm32f401xe.h}!GPIOH\_PCLK\_DI@{GPIOH\_PCLK\_DI}}
+\index{GPIOH\_PCLK\_DI@{GPIOH\_PCLK\_DI}!stm32f401xe.h@{stm32f401xe.h}}
+\doxysubsubsection{\texorpdfstring{GPIOH\_PCLK\_DI}{GPIOH\_PCLK\_DI}}
+{\footnotesize\ttfamily \label{stm32f401xe_8h_a5e62f105900568285d3f1c703048566b} 
+\+\#define GPIOH\+\_\+\+PCLK\+\_\+\+DI(\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+{\bfseries Value:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{(\doxymbox{\hyperlink{stm32f401xe_8h_a74944438a086975793d26ae48d5882d4}{RCC}}-\/>AHB1ENR\ \&=\ \string~(1\ <<\ 7))}
+
+\end{DoxyCode}
+\Hypertarget{stm32f401xe_8h_a2be7b357e112e2036141678aa6bc3506}\index{stm32f401xe.h@{stm32f401xe.h}!GPIOH\_PCLK\_EN@{GPIOH\_PCLK\_EN}}
+\index{GPIOH\_PCLK\_EN@{GPIOH\_PCLK\_EN}!stm32f401xe.h@{stm32f401xe.h}}
+\doxysubsubsection{\texorpdfstring{GPIOH\_PCLK\_EN}{GPIOH\_PCLK\_EN}}
+{\footnotesize\ttfamily \label{stm32f401xe_8h_a2be7b357e112e2036141678aa6bc3506} 
+\+\#define GPIOH\+\_\+\+PCLK\+\_\+\+EN(\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+{\bfseries Value:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{(\doxymbox{\hyperlink{stm32f401xe_8h_a74944438a086975793d26ae48d5882d4}{RCC}}-\/>AHB1ENR\ |=\ (1<<7))}
+
+\end{DoxyCode}
+\Hypertarget{stm32f401xe_8h_aafc0615682b1b6646ad8c1478356da9d}\index{stm32f401xe.h@{stm32f401xe.h}!GPIOH\_REG\_RESET@{GPIOH\_REG\_RESET}}
+\index{GPIOH\_REG\_RESET@{GPIOH\_REG\_RESET}!stm32f401xe.h@{stm32f401xe.h}}
+\doxysubsubsection{\texorpdfstring{GPIOH\_REG\_RESET}{GPIOH\_REG\_RESET}}
+{\footnotesize\ttfamily \label{stm32f401xe_8h_aafc0615682b1b6646ad8c1478356da9d} 
+\+\#define GPIOH\+\_\+\+REG\+\_\+\+RESET(\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+{\bfseries Value:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keywordflow}{do}\{\ (\doxymbox{\hyperlink{stm32f401xe_8h_a74944438a086975793d26ae48d5882d4}{RCC}}-\/>AHB1RSTR\ |=\ (1\ <<\ 7));\ (\doxymbox{\hyperlink{stm32f401xe_8h_a74944438a086975793d26ae48d5882d4}{RCC}}-\/>AHB1RSTR\ \&=\ \string~(1\ <<\ 7));\ \}\textcolor{keywordflow}{while}(0)}
+
+\end{DoxyCode}
+\Hypertarget{stm32f401xe_8h_ab45d257574da6fe1f091cc45b7eda6cc}\index{stm32f401xe.h@{stm32f401xe.h}!I2C1@{I2C1}}
+\index{I2C1@{I2C1}!stm32f401xe.h@{stm32f401xe.h}}
+\doxysubsubsection{\texorpdfstring{I2C1}{I2C1}}
+{\footnotesize\ttfamily \label{stm32f401xe_8h_ab45d257574da6fe1f091cc45b7eda6cc} 
+\+\#define I2\+C1~((\doxymbox{\hyperlink{struct_i2_c___reg_def__t}{I2\+C\+\_\+\+Reg\+Def\+\_\+t}}\texorpdfstring{$\ast$}{*})  \doxymbox{\hyperlink{stm32f401xe_8h_a44e7e7597f47b4f3f3229de7c0ff7908}{I2\+C1\+\_\+\+BASEADDR}})}
+
+\Hypertarget{stm32f401xe_8h_a44e7e7597f47b4f3f3229de7c0ff7908}\index{stm32f401xe.h@{stm32f401xe.h}!I2C1\_BASEADDR@{I2C1\_BASEADDR}}
+\index{I2C1\_BASEADDR@{I2C1\_BASEADDR}!stm32f401xe.h@{stm32f401xe.h}}
+\doxysubsubsection{\texorpdfstring{I2C1\_BASEADDR}{I2C1\_BASEADDR}}
+{\footnotesize\ttfamily \label{stm32f401xe_8h_a44e7e7597f47b4f3f3229de7c0ff7908} 
+\+\#define I2\+C1\+\_\+\+BASEADDR~(\doxymbox{\hyperlink{stm32f401xe_8h_aa2862fa9bfc107c83dc034fa75eed6b4}{APB1\+\_\+\+BASEADDR}} + 0\+X5400)}
+
+\Hypertarget{stm32f401xe_8h_aced37391c6600e3a7fdced9eff1af33d}\index{stm32f401xe.h@{stm32f401xe.h}!I2C1\_PCLK\_DI@{I2C1\_PCLK\_DI}}
+\index{I2C1\_PCLK\_DI@{I2C1\_PCLK\_DI}!stm32f401xe.h@{stm32f401xe.h}}
+\doxysubsubsection{\texorpdfstring{I2C1\_PCLK\_DI}{I2C1\_PCLK\_DI}}
+{\footnotesize\ttfamily \label{stm32f401xe_8h_aced37391c6600e3a7fdced9eff1af33d} 
+\+\#define I2\+C1\+\_\+\+PCLK\+\_\+\+DI(\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+{\bfseries Value:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{(\doxymbox{\hyperlink{stm32f401xe_8h_a74944438a086975793d26ae48d5882d4}{RCC}}-\/>APB1ENR\ \&=\ \string~\ (1\ <<\ 21))}
+
+\end{DoxyCode}
+\Hypertarget{stm32f401xe_8h_a38b3719d33b55faf15f9b9b08295b353}\index{stm32f401xe.h@{stm32f401xe.h}!I2C1\_PCLK\_EN@{I2C1\_PCLK\_EN}}
+\index{I2C1\_PCLK\_EN@{I2C1\_PCLK\_EN}!stm32f401xe.h@{stm32f401xe.h}}
+\doxysubsubsection{\texorpdfstring{I2C1\_PCLK\_EN}{I2C1\_PCLK\_EN}}
+{\footnotesize\ttfamily \label{stm32f401xe_8h_a38b3719d33b55faf15f9b9b08295b353} 
+\+\#define I2\+C1\+\_\+\+PCLK\+\_\+\+EN(\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+{\bfseries Value:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{(\doxymbox{\hyperlink{stm32f401xe_8h_a74944438a086975793d26ae48d5882d4}{RCC}}-\/>APB1ENR\ |=\ (1<<21))}
+
+\end{DoxyCode}
+\Hypertarget{stm32f401xe_8h_a2c722b8f7564ed6f471ca3a9c8a375e4}\index{stm32f401xe.h@{stm32f401xe.h}!I2C1\_REG\_RESET@{I2C1\_REG\_RESET}}
+\index{I2C1\_REG\_RESET@{I2C1\_REG\_RESET}!stm32f401xe.h@{stm32f401xe.h}}
+\doxysubsubsection{\texorpdfstring{I2C1\_REG\_RESET}{I2C1\_REG\_RESET}}
+{\footnotesize\ttfamily \label{stm32f401xe_8h_a2c722b8f7564ed6f471ca3a9c8a375e4} 
+\+\#define I2\+C1\+\_\+\+REG\+\_\+\+RESET(\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+{\bfseries Value:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keywordflow}{do}\{\ (\doxymbox{\hyperlink{stm32f401xe_8h_a74944438a086975793d26ae48d5882d4}{RCC}}-\/>APB1RSTR\ |=\ (1\ <<\ 21));\ (\doxymbox{\hyperlink{stm32f401xe_8h_a74944438a086975793d26ae48d5882d4}{RCC}}-\/>APB1RSTR\ \&=\ \string~(1\ <<\ 21));\ \}\textcolor{keywordflow}{while}(0)}
+
+\end{DoxyCode}
+\Hypertarget{stm32f401xe_8h_afa60ac20c1921ef1002083bb3e1f5d16}\index{stm32f401xe.h@{stm32f401xe.h}!I2C2@{I2C2}}
+\index{I2C2@{I2C2}!stm32f401xe.h@{stm32f401xe.h}}
+\doxysubsubsection{\texorpdfstring{I2C2}{I2C2}}
+{\footnotesize\ttfamily \label{stm32f401xe_8h_afa60ac20c1921ef1002083bb3e1f5d16} 
+\+\#define I2\+C2~((\doxymbox{\hyperlink{struct_i2_c___reg_def__t}{I2\+C\+\_\+\+Reg\+Def\+\_\+t}}\texorpdfstring{$\ast$}{*})  \doxymbox{\hyperlink{stm32f401xe_8h_a94025f09df9dc7c9720293778c389e4c}{I2\+C2\+\_\+\+BASEADDR}})}
+
+\Hypertarget{stm32f401xe_8h_a94025f09df9dc7c9720293778c389e4c}\index{stm32f401xe.h@{stm32f401xe.h}!I2C2\_BASEADDR@{I2C2\_BASEADDR}}
+\index{I2C2\_BASEADDR@{I2C2\_BASEADDR}!stm32f401xe.h@{stm32f401xe.h}}
+\doxysubsubsection{\texorpdfstring{I2C2\_BASEADDR}{I2C2\_BASEADDR}}
+{\footnotesize\ttfamily \label{stm32f401xe_8h_a94025f09df9dc7c9720293778c389e4c} 
+\+\#define I2\+C2\+\_\+\+BASEADDR~(\doxymbox{\hyperlink{stm32f401xe_8h_aa2862fa9bfc107c83dc034fa75eed6b4}{APB1\+\_\+\+BASEADDR}} + 0\+X5800)}
+
+\Hypertarget{stm32f401xe_8h_af26def2cfb411c0452a81cc0f07600bc}\index{stm32f401xe.h@{stm32f401xe.h}!I2C2\_PCLK\_DI@{I2C2\_PCLK\_DI}}
+\index{I2C2\_PCLK\_DI@{I2C2\_PCLK\_DI}!stm32f401xe.h@{stm32f401xe.h}}
+\doxysubsubsection{\texorpdfstring{I2C2\_PCLK\_DI}{I2C2\_PCLK\_DI}}
+{\footnotesize\ttfamily \label{stm32f401xe_8h_af26def2cfb411c0452a81cc0f07600bc} 
+\+\#define I2\+C2\+\_\+\+PCLK\+\_\+\+DI(\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+{\bfseries Value:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{(\doxymbox{\hyperlink{stm32f401xe_8h_a74944438a086975793d26ae48d5882d4}{RCC}}-\/>APB1ENR\ \&=\ \string~\ (1\ <<\ 22))}
+
+\end{DoxyCode}
+\Hypertarget{stm32f401xe_8h_abe017af091eb4ddc6eb863f5a4dce79e}\index{stm32f401xe.h@{stm32f401xe.h}!I2C2\_PCLK\_EN@{I2C2\_PCLK\_EN}}
+\index{I2C2\_PCLK\_EN@{I2C2\_PCLK\_EN}!stm32f401xe.h@{stm32f401xe.h}}
+\doxysubsubsection{\texorpdfstring{I2C2\_PCLK\_EN}{I2C2\_PCLK\_EN}}
+{\footnotesize\ttfamily \label{stm32f401xe_8h_abe017af091eb4ddc6eb863f5a4dce79e} 
+\+\#define I2\+C2\+\_\+\+PCLK\+\_\+\+EN(\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+{\bfseries Value:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{(\doxymbox{\hyperlink{stm32f401xe_8h_a74944438a086975793d26ae48d5882d4}{RCC}}-\/>APB1ENR\ |=\ (1<<22))}
+
+\end{DoxyCode}
+\Hypertarget{stm32f401xe_8h_a1059963aabd5ada3aec6c337a3304685}\index{stm32f401xe.h@{stm32f401xe.h}!I2C2\_REG\_RESET@{I2C2\_REG\_RESET}}
+\index{I2C2\_REG\_RESET@{I2C2\_REG\_RESET}!stm32f401xe.h@{stm32f401xe.h}}
+\doxysubsubsection{\texorpdfstring{I2C2\_REG\_RESET}{I2C2\_REG\_RESET}}
+{\footnotesize\ttfamily \label{stm32f401xe_8h_a1059963aabd5ada3aec6c337a3304685} 
+\+\#define I2\+C2\+\_\+\+REG\+\_\+\+RESET(\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+{\bfseries Value:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keywordflow}{do}\{\ (\doxymbox{\hyperlink{stm32f401xe_8h_a74944438a086975793d26ae48d5882d4}{RCC}}-\/>APB1RSTR\ |=\ (1\ <<\ 22));\ (\doxymbox{\hyperlink{stm32f401xe_8h_a74944438a086975793d26ae48d5882d4}{RCC}}-\/>APB1RSTR\ \&=\ \string~(1\ <<\ 22));\ \}\textcolor{keywordflow}{while}(0)}
+
+\end{DoxyCode}
+\Hypertarget{stm32f401xe_8h_a1489b37ed2bca9d9c659119590583bda}\index{stm32f401xe.h@{stm32f401xe.h}!I2C3@{I2C3}}
+\index{I2C3@{I2C3}!stm32f401xe.h@{stm32f401xe.h}}
+\doxysubsubsection{\texorpdfstring{I2C3}{I2C3}}
+{\footnotesize\ttfamily \label{stm32f401xe_8h_a1489b37ed2bca9d9c659119590583bda} 
+\+\#define I2\+C3~((\doxymbox{\hyperlink{struct_i2_c___reg_def__t}{I2\+C\+\_\+\+Reg\+Def\+\_\+t}}\texorpdfstring{$\ast$}{*})  \doxymbox{\hyperlink{stm32f401xe_8h_a02b13b7d3f55032e47973e192b94cb53}{I2\+C3\+\_\+\+BASEADDR}})}
+
+\Hypertarget{stm32f401xe_8h_a02b13b7d3f55032e47973e192b94cb53}\index{stm32f401xe.h@{stm32f401xe.h}!I2C3\_BASEADDR@{I2C3\_BASEADDR}}
+\index{I2C3\_BASEADDR@{I2C3\_BASEADDR}!stm32f401xe.h@{stm32f401xe.h}}
+\doxysubsubsection{\texorpdfstring{I2C3\_BASEADDR}{I2C3\_BASEADDR}}
+{\footnotesize\ttfamily \label{stm32f401xe_8h_a02b13b7d3f55032e47973e192b94cb53} 
+\+\#define I2\+C3\+\_\+\+BASEADDR~(\doxymbox{\hyperlink{stm32f401xe_8h_aa2862fa9bfc107c83dc034fa75eed6b4}{APB1\+\_\+\+BASEADDR}} + 0\+X5\+C00)}
+
+\Hypertarget{stm32f401xe_8h_a244d0f54bfe8be366d938c5bcd64b740}\index{stm32f401xe.h@{stm32f401xe.h}!I2C3\_PCLK\_DI@{I2C3\_PCLK\_DI}}
+\index{I2C3\_PCLK\_DI@{I2C3\_PCLK\_DI}!stm32f401xe.h@{stm32f401xe.h}}
+\doxysubsubsection{\texorpdfstring{I2C3\_PCLK\_DI}{I2C3\_PCLK\_DI}}
+{\footnotesize\ttfamily \label{stm32f401xe_8h_a244d0f54bfe8be366d938c5bcd64b740} 
+\+\#define I2\+C3\+\_\+\+PCLK\+\_\+\+DI(\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+{\bfseries Value:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{(\doxymbox{\hyperlink{stm32f401xe_8h_a74944438a086975793d26ae48d5882d4}{RCC}}-\/>APB1ENR\ \&=\ \string~\ (1\ <<\ 23))}
+
+\end{DoxyCode}
+\Hypertarget{stm32f401xe_8h_a5bc760dcdbeebc5bcf1f36fdb4ff3c62}\index{stm32f401xe.h@{stm32f401xe.h}!I2C3\_PCLK\_EN@{I2C3\_PCLK\_EN}}
+\index{I2C3\_PCLK\_EN@{I2C3\_PCLK\_EN}!stm32f401xe.h@{stm32f401xe.h}}
+\doxysubsubsection{\texorpdfstring{I2C3\_PCLK\_EN}{I2C3\_PCLK\_EN}}
+{\footnotesize\ttfamily \label{stm32f401xe_8h_a5bc760dcdbeebc5bcf1f36fdb4ff3c62} 
+\+\#define I2\+C3\+\_\+\+PCLK\+\_\+\+EN(\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+{\bfseries Value:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{(\doxymbox{\hyperlink{stm32f401xe_8h_a74944438a086975793d26ae48d5882d4}{RCC}}-\/>APB1ENR\ |=\ (1<<23))}
+
+\end{DoxyCode}
+\Hypertarget{stm32f401xe_8h_a22c31a82c4d41e30844436fba8e4b693}\index{stm32f401xe.h@{stm32f401xe.h}!I2C3\_REG\_RESET@{I2C3\_REG\_RESET}}
+\index{I2C3\_REG\_RESET@{I2C3\_REG\_RESET}!stm32f401xe.h@{stm32f401xe.h}}
+\doxysubsubsection{\texorpdfstring{I2C3\_REG\_RESET}{I2C3\_REG\_RESET}}
+{\footnotesize\ttfamily \label{stm32f401xe_8h_a22c31a82c4d41e30844436fba8e4b693} 
+\+\#define I2\+C3\+\_\+\+REG\+\_\+\+RESET(\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+{\bfseries Value:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keywordflow}{do}\{\ (\doxymbox{\hyperlink{stm32f401xe_8h_a74944438a086975793d26ae48d5882d4}{RCC}}-\/>APB1RSTR\ |=\ (1\ <<\ 23));\ (\doxymbox{\hyperlink{stm32f401xe_8h_a74944438a086975793d26ae48d5882d4}{RCC}}-\/>APB1RSTR\ \&=\ \string~(1\ <<\ 23));\ \}\textcolor{keywordflow}{while}(0)}
+
+\end{DoxyCode}
+\Hypertarget{stm32f401xe_8h_a5c8cb2bd83dd7dbdcf6ca4bbf4a841de}\index{stm32f401xe.h@{stm32f401xe.h}!I2C\_CCR\_CCR@{I2C\_CCR\_CCR}}
+\index{I2C\_CCR\_CCR@{I2C\_CCR\_CCR}!stm32f401xe.h@{stm32f401xe.h}}
+\doxysubsubsection{\texorpdfstring{I2C\_CCR\_CCR}{I2C\_CCR\_CCR}}
+{\footnotesize\ttfamily \label{stm32f401xe_8h_a5c8cb2bd83dd7dbdcf6ca4bbf4a841de} 
+\+\#define I2\+C\+\_\+\+CCR\+\_\+\+CCR~0}
+
+\Hypertarget{stm32f401xe_8h_a851c8a6b598d54c1a805b1632a4078e5}\index{stm32f401xe.h@{stm32f401xe.h}!I2C\_CCR\_DUTY@{I2C\_CCR\_DUTY}}
+\index{I2C\_CCR\_DUTY@{I2C\_CCR\_DUTY}!stm32f401xe.h@{stm32f401xe.h}}
+\doxysubsubsection{\texorpdfstring{I2C\_CCR\_DUTY}{I2C\_CCR\_DUTY}}
+{\footnotesize\ttfamily \label{stm32f401xe_8h_a851c8a6b598d54c1a805b1632a4078e5} 
+\+\#define I2\+C\+\_\+\+CCR\+\_\+\+DUTY~14}
+
+\Hypertarget{stm32f401xe_8h_aea64e5d7eba609ac9a84964bc0bc2def}\index{stm32f401xe.h@{stm32f401xe.h}!I2C\_CCR\_FS@{I2C\_CCR\_FS}}
+\index{I2C\_CCR\_FS@{I2C\_CCR\_FS}!stm32f401xe.h@{stm32f401xe.h}}
+\doxysubsubsection{\texorpdfstring{I2C\_CCR\_FS}{I2C\_CCR\_FS}}
+{\footnotesize\ttfamily \label{stm32f401xe_8h_aea64e5d7eba609ac9a84964bc0bc2def} 
+\+\#define I2\+C\+\_\+\+CCR\+\_\+\+FS~15}
+
+\Hypertarget{stm32f401xe_8h_af933b105259a4bc46a957576adb8d96d}\index{stm32f401xe.h@{stm32f401xe.h}!I2C\_CR1\_ACK@{I2C\_CR1\_ACK}}
+\index{I2C\_CR1\_ACK@{I2C\_CR1\_ACK}!stm32f401xe.h@{stm32f401xe.h}}
+\doxysubsubsection{\texorpdfstring{I2C\_CR1\_ACK}{I2C\_CR1\_ACK}}
+{\footnotesize\ttfamily \label{stm32f401xe_8h_af933b105259a4bc46a957576adb8d96d} 
+\+\#define I2\+C\+\_\+\+CR1\+\_\+\+ACK~10}
+
+\Hypertarget{stm32f401xe_8h_a56729ccf93c5d9f5b5b05002e3a2323c}\index{stm32f401xe.h@{stm32f401xe.h}!I2C\_CR1\_ALERT@{I2C\_CR1\_ALERT}}
+\index{I2C\_CR1\_ALERT@{I2C\_CR1\_ALERT}!stm32f401xe.h@{stm32f401xe.h}}
+\doxysubsubsection{\texorpdfstring{I2C\_CR1\_ALERT}{I2C\_CR1\_ALERT}}
+{\footnotesize\ttfamily \label{stm32f401xe_8h_a56729ccf93c5d9f5b5b05002e3a2323c} 
+\+\#define I2\+C\+\_\+\+CR1\+\_\+\+ALERT~13}
+
+\Hypertarget{stm32f401xe_8h_a4598185d9092edfbf943464bcbb342ac}\index{stm32f401xe.h@{stm32f401xe.h}!I2C\_CR1\_ENARP@{I2C\_CR1\_ENARP}}
+\index{I2C\_CR1\_ENARP@{I2C\_CR1\_ENARP}!stm32f401xe.h@{stm32f401xe.h}}
+\doxysubsubsection{\texorpdfstring{I2C\_CR1\_ENARP}{I2C\_CR1\_ENARP}}
+{\footnotesize\ttfamily \label{stm32f401xe_8h_a4598185d9092edfbf943464bcbb342ac} 
+\+\#define I2\+C\+\_\+\+CR1\+\_\+\+ENARP~4}
+
+\Hypertarget{stm32f401xe_8h_a1d8c219193b11f8507d7b85831d14912}\index{stm32f401xe.h@{stm32f401xe.h}!I2C\_CR1\_ENGC@{I2C\_CR1\_ENGC}}
+\index{I2C\_CR1\_ENGC@{I2C\_CR1\_ENGC}!stm32f401xe.h@{stm32f401xe.h}}
+\doxysubsubsection{\texorpdfstring{I2C\_CR1\_ENGC}{I2C\_CR1\_ENGC}}
+{\footnotesize\ttfamily \label{stm32f401xe_8h_a1d8c219193b11f8507d7b85831d14912} 
+\+\#define I2\+C\+\_\+\+CR1\+\_\+\+ENGC~6}
+
+\Hypertarget{stm32f401xe_8h_a40d2eb849f9d55e6298035b61e84ca42}\index{stm32f401xe.h@{stm32f401xe.h}!I2C\_CR1\_ENPEC@{I2C\_CR1\_ENPEC}}
+\index{I2C\_CR1\_ENPEC@{I2C\_CR1\_ENPEC}!stm32f401xe.h@{stm32f401xe.h}}
+\doxysubsubsection{\texorpdfstring{I2C\_CR1\_ENPEC}{I2C\_CR1\_ENPEC}}
+{\footnotesize\ttfamily \label{stm32f401xe_8h_a40d2eb849f9d55e6298035b61e84ca42} 
+\+\#define I2\+C\+\_\+\+CR1\+\_\+\+ENPEC~5}
+
+\Hypertarget{stm32f401xe_8h_a197aaca79f64e832af3a0a0864c2a08c}\index{stm32f401xe.h@{stm32f401xe.h}!I2C\_CR1\_NOSTRETCH@{I2C\_CR1\_NOSTRETCH}}
+\index{I2C\_CR1\_NOSTRETCH@{I2C\_CR1\_NOSTRETCH}!stm32f401xe.h@{stm32f401xe.h}}
+\doxysubsubsection{\texorpdfstring{I2C\_CR1\_NOSTRETCH}{I2C\_CR1\_NOSTRETCH}}
+{\footnotesize\ttfamily \label{stm32f401xe_8h_a197aaca79f64e832af3a0a0864c2a08c} 
+\+\#define I2\+C\+\_\+\+CR1\+\_\+\+NOSTRETCH~7}
+
+\Hypertarget{stm32f401xe_8h_a953b0d38414808db79da116842ed3262}\index{stm32f401xe.h@{stm32f401xe.h}!I2C\_CR1\_PE@{I2C\_CR1\_PE}}
+\index{I2C\_CR1\_PE@{I2C\_CR1\_PE}!stm32f401xe.h@{stm32f401xe.h}}
+\doxysubsubsection{\texorpdfstring{I2C\_CR1\_PE}{I2C\_CR1\_PE}}
+{\footnotesize\ttfamily \label{stm32f401xe_8h_a953b0d38414808db79da116842ed3262} 
+\+\#define I2\+C\+\_\+\+CR1\+\_\+\+PE~0}
+
+\Hypertarget{stm32f401xe_8h_ab4d0119253d93a106b5ca704e5020c12}\index{stm32f401xe.h@{stm32f401xe.h}!I2C\_CR1\_PEC@{I2C\_CR1\_PEC}}
+\index{I2C\_CR1\_PEC@{I2C\_CR1\_PEC}!stm32f401xe.h@{stm32f401xe.h}}
+\doxysubsubsection{\texorpdfstring{I2C\_CR1\_PEC}{I2C\_CR1\_PEC}}
+{\footnotesize\ttfamily \label{stm32f401xe_8h_ab4d0119253d93a106b5ca704e5020c12} 
+\+\#define I2\+C\+\_\+\+CR1\+\_\+\+PEC~12}
+
+\Hypertarget{stm32f401xe_8h_a34721958229a5983f2e95dfeaa8e55c3}\index{stm32f401xe.h@{stm32f401xe.h}!I2C\_CR1\_POS@{I2C\_CR1\_POS}}
+\index{I2C\_CR1\_POS@{I2C\_CR1\_POS}!stm32f401xe.h@{stm32f401xe.h}}
+\doxysubsubsection{\texorpdfstring{I2C\_CR1\_POS}{I2C\_CR1\_POS}}
+{\footnotesize\ttfamily \label{stm32f401xe_8h_a34721958229a5983f2e95dfeaa8e55c3} 
+\+\#define I2\+C\+\_\+\+CR1\+\_\+\+POS~11}
+
+\Hypertarget{stm32f401xe_8h_a001198ff898802888edf58f56d5371c9}\index{stm32f401xe.h@{stm32f401xe.h}!I2C\_CR1\_SMBTYPE@{I2C\_CR1\_SMBTYPE}}
+\index{I2C\_CR1\_SMBTYPE@{I2C\_CR1\_SMBTYPE}!stm32f401xe.h@{stm32f401xe.h}}
+\doxysubsubsection{\texorpdfstring{I2C\_CR1\_SMBTYPE}{I2C\_CR1\_SMBTYPE}}
+{\footnotesize\ttfamily \label{stm32f401xe_8h_a001198ff898802888edf58f56d5371c9} 
+\+\#define I2\+C\+\_\+\+CR1\+\_\+\+SMBTYPE~3}
+
+\Hypertarget{stm32f401xe_8h_a4cfee7b020a49bd037fa7cf27c796abc}\index{stm32f401xe.h@{stm32f401xe.h}!I2C\_CR1\_SMBUS@{I2C\_CR1\_SMBUS}}
+\index{I2C\_CR1\_SMBUS@{I2C\_CR1\_SMBUS}!stm32f401xe.h@{stm32f401xe.h}}
+\doxysubsubsection{\texorpdfstring{I2C\_CR1\_SMBUS}{I2C\_CR1\_SMBUS}}
+{\footnotesize\ttfamily \label{stm32f401xe_8h_a4cfee7b020a49bd037fa7cf27c796abc} 
+\+\#define I2\+C\+\_\+\+CR1\+\_\+\+SMBUS~1}
+
+\Hypertarget{stm32f401xe_8h_a2ca7f18dd5bc1130dbefae4ff8736143}\index{stm32f401xe.h@{stm32f401xe.h}!I2C\_CR1\_START@{I2C\_CR1\_START}}
+\index{I2C\_CR1\_START@{I2C\_CR1\_START}!stm32f401xe.h@{stm32f401xe.h}}
+\doxysubsubsection{\texorpdfstring{I2C\_CR1\_START}{I2C\_CR1\_START}}
+{\footnotesize\ttfamily \label{stm32f401xe_8h_a2ca7f18dd5bc1130dbefae4ff8736143} 
+\+\#define I2\+C\+\_\+\+CR1\+\_\+\+START~8}
+
+\Hypertarget{stm32f401xe_8h_ace70293f3dfa24d448b600fc58e45223}\index{stm32f401xe.h@{stm32f401xe.h}!I2C\_CR1\_STOP@{I2C\_CR1\_STOP}}
+\index{I2C\_CR1\_STOP@{I2C\_CR1\_STOP}!stm32f401xe.h@{stm32f401xe.h}}
+\doxysubsubsection{\texorpdfstring{I2C\_CR1\_STOP}{I2C\_CR1\_STOP}}
+{\footnotesize\ttfamily \label{stm32f401xe_8h_ace70293f3dfa24d448b600fc58e45223} 
+\+\#define I2\+C\+\_\+\+CR1\+\_\+\+STOP~9}
+
+\Hypertarget{stm32f401xe_8h_a8dc661ef13da02e5bcb943f2003d576d}\index{stm32f401xe.h@{stm32f401xe.h}!I2C\_CR1\_SWRST@{I2C\_CR1\_SWRST}}
+\index{I2C\_CR1\_SWRST@{I2C\_CR1\_SWRST}!stm32f401xe.h@{stm32f401xe.h}}
+\doxysubsubsection{\texorpdfstring{I2C\_CR1\_SWRST}{I2C\_CR1\_SWRST}}
+{\footnotesize\ttfamily \label{stm32f401xe_8h_a8dc661ef13da02e5bcb943f2003d576d} 
+\+\#define I2\+C\+\_\+\+CR1\+\_\+\+SWRST~15}
+
+\Hypertarget{stm32f401xe_8h_adb81d5c91486b873bd0bf279a4ffcf69}\index{stm32f401xe.h@{stm32f401xe.h}!I2C\_CR2\_DMAEN@{I2C\_CR2\_DMAEN}}
+\index{I2C\_CR2\_DMAEN@{I2C\_CR2\_DMAEN}!stm32f401xe.h@{stm32f401xe.h}}
+\doxysubsubsection{\texorpdfstring{I2C\_CR2\_DMAEN}{I2C\_CR2\_DMAEN}}
+{\footnotesize\ttfamily \label{stm32f401xe_8h_adb81d5c91486b873bd0bf279a4ffcf69} 
+\+\#define I2\+C\+\_\+\+CR2\+\_\+\+DMAEN~11}
+
+\Hypertarget{stm32f401xe_8h_a293fbe15ed5fd1fc95915bd6437859e7}\index{stm32f401xe.h@{stm32f401xe.h}!I2C\_CR2\_FREQ@{I2C\_CR2\_FREQ}}
+\index{I2C\_CR2\_FREQ@{I2C\_CR2\_FREQ}!stm32f401xe.h@{stm32f401xe.h}}
+\doxysubsubsection{\texorpdfstring{I2C\_CR2\_FREQ}{I2C\_CR2\_FREQ}}
+{\footnotesize\ttfamily \label{stm32f401xe_8h_a293fbe15ed5fd1fc95915bd6437859e7} 
+\+\#define I2\+C\+\_\+\+CR2\+\_\+\+FREQ~0}
+
+\Hypertarget{stm32f401xe_8h_a2efbe5d96ed0ce447a45a62e8317a68a}\index{stm32f401xe.h@{stm32f401xe.h}!I2C\_CR2\_ITBUFEN@{I2C\_CR2\_ITBUFEN}}
+\index{I2C\_CR2\_ITBUFEN@{I2C\_CR2\_ITBUFEN}!stm32f401xe.h@{stm32f401xe.h}}
+\doxysubsubsection{\texorpdfstring{I2C\_CR2\_ITBUFEN}{I2C\_CR2\_ITBUFEN}}
+{\footnotesize\ttfamily \label{stm32f401xe_8h_a2efbe5d96ed0ce447a45a62e8317a68a} 
+\+\#define I2\+C\+\_\+\+CR2\+\_\+\+ITBUFEN~10}
+
+\Hypertarget{stm32f401xe_8h_a6f14ae48e4609c2b3645211234cba974}\index{stm32f401xe.h@{stm32f401xe.h}!I2C\_CR2\_ITERREN@{I2C\_CR2\_ITERREN}}
+\index{I2C\_CR2\_ITERREN@{I2C\_CR2\_ITERREN}!stm32f401xe.h@{stm32f401xe.h}}
+\doxysubsubsection{\texorpdfstring{I2C\_CR2\_ITERREN}{I2C\_CR2\_ITERREN}}
+{\footnotesize\ttfamily \label{stm32f401xe_8h_a6f14ae48e4609c2b3645211234cba974} 
+\+\#define I2\+C\+\_\+\+CR2\+\_\+\+ITERREN~8}
+
+\Hypertarget{stm32f401xe_8h_a3b1ebaf8173090ec469b055b98e585d2}\index{stm32f401xe.h@{stm32f401xe.h}!I2C\_CR2\_ITEVTEN@{I2C\_CR2\_ITEVTEN}}
+\index{I2C\_CR2\_ITEVTEN@{I2C\_CR2\_ITEVTEN}!stm32f401xe.h@{stm32f401xe.h}}
+\doxysubsubsection{\texorpdfstring{I2C\_CR2\_ITEVTEN}{I2C\_CR2\_ITEVTEN}}
+{\footnotesize\ttfamily \label{stm32f401xe_8h_a3b1ebaf8173090ec469b055b98e585d2} 
+\+\#define I2\+C\+\_\+\+CR2\+\_\+\+ITEVTEN~9}
+
+\Hypertarget{stm32f401xe_8h_a6a0955008cbabbb6b726ba0b4f8da609}\index{stm32f401xe.h@{stm32f401xe.h}!I2C\_CR2\_LAST@{I2C\_CR2\_LAST}}
+\index{I2C\_CR2\_LAST@{I2C\_CR2\_LAST}!stm32f401xe.h@{stm32f401xe.h}}
+\doxysubsubsection{\texorpdfstring{I2C\_CR2\_LAST}{I2C\_CR2\_LAST}}
+{\footnotesize\ttfamily \label{stm32f401xe_8h_a6a0955008cbabbb6b726ba0b4f8da609} 
+\+\#define I2\+C\+\_\+\+CR2\+\_\+\+LAST~12}
+
+\Hypertarget{stm32f401xe_8h_a8b7c20c81f79d17921718412b8fca6d7}\index{stm32f401xe.h@{stm32f401xe.h}!I2C\_OAR1\_ADD0@{I2C\_OAR1\_ADD0}}
+\index{I2C\_OAR1\_ADD0@{I2C\_OAR1\_ADD0}!stm32f401xe.h@{stm32f401xe.h}}
+\doxysubsubsection{\texorpdfstring{I2C\_OAR1\_ADD0}{I2C\_OAR1\_ADD0}}
+{\footnotesize\ttfamily \label{stm32f401xe_8h_a8b7c20c81f79d17921718412b8fca6d7} 
+\+\#define I2\+C\+\_\+\+OAR1\+\_\+\+ADD0~0}
+
+\Hypertarget{stm32f401xe_8h_ab461aebe50d3af4070b2c4249fdd5e9c}\index{stm32f401xe.h@{stm32f401xe.h}!I2C\_OAR1\_ADD71@{I2C\_OAR1\_ADD71}}
+\index{I2C\_OAR1\_ADD71@{I2C\_OAR1\_ADD71}!stm32f401xe.h@{stm32f401xe.h}}
+\doxysubsubsection{\texorpdfstring{I2C\_OAR1\_ADD71}{I2C\_OAR1\_ADD71}}
+{\footnotesize\ttfamily \label{stm32f401xe_8h_ab461aebe50d3af4070b2c4249fdd5e9c} 
+\+\#define I2\+C\+\_\+\+OAR1\+\_\+\+ADD71~1}
+
+\Hypertarget{stm32f401xe_8h_a9dcf36a908361fc5478347757ab8c1d5}\index{stm32f401xe.h@{stm32f401xe.h}!I2C\_OAR1\_ADD98@{I2C\_OAR1\_ADD98}}
+\index{I2C\_OAR1\_ADD98@{I2C\_OAR1\_ADD98}!stm32f401xe.h@{stm32f401xe.h}}
+\doxysubsubsection{\texorpdfstring{I2C\_OAR1\_ADD98}{I2C\_OAR1\_ADD98}}
+{\footnotesize\ttfamily \label{stm32f401xe_8h_a9dcf36a908361fc5478347757ab8c1d5} 
+\+\#define I2\+C\+\_\+\+OAR1\+\_\+\+ADD98~8}
+
+\Hypertarget{stm32f401xe_8h_a7d8df80cd27313c896e887aae81fa639}\index{stm32f401xe.h@{stm32f401xe.h}!I2C\_OAR1\_ADDMODE@{I2C\_OAR1\_ADDMODE}}
+\index{I2C\_OAR1\_ADDMODE@{I2C\_OAR1\_ADDMODE}!stm32f401xe.h@{stm32f401xe.h}}
+\doxysubsubsection{\texorpdfstring{I2C\_OAR1\_ADDMODE}{I2C\_OAR1\_ADDMODE}}
+{\footnotesize\ttfamily \label{stm32f401xe_8h_a7d8df80cd27313c896e887aae81fa639} 
+\+\#define I2\+C\+\_\+\+OAR1\+\_\+\+ADDMODE~15}
+
+\Hypertarget{stm32f401xe_8h_a6faaa55a1e48aa7c1f2b69669901445d}\index{stm32f401xe.h@{stm32f401xe.h}!I2C\_SR1\_ADD10@{I2C\_SR1\_ADD10}}
+\index{I2C\_SR1\_ADD10@{I2C\_SR1\_ADD10}!stm32f401xe.h@{stm32f401xe.h}}
+\doxysubsubsection{\texorpdfstring{I2C\_SR1\_ADD10}{I2C\_SR1\_ADD10}}
+{\footnotesize\ttfamily \label{stm32f401xe_8h_a6faaa55a1e48aa7c1f2b69669901445d} 
+\+\#define I2\+C\+\_\+\+SR1\+\_\+\+ADD10~3}
+
+\Hypertarget{stm32f401xe_8h_a3db361a4d9dd84b187085a11d933b45d}\index{stm32f401xe.h@{stm32f401xe.h}!I2C\_SR1\_ADDR@{I2C\_SR1\_ADDR}}
+\index{I2C\_SR1\_ADDR@{I2C\_SR1\_ADDR}!stm32f401xe.h@{stm32f401xe.h}}
+\doxysubsubsection{\texorpdfstring{I2C\_SR1\_ADDR}{I2C\_SR1\_ADDR}}
+{\footnotesize\ttfamily \label{stm32f401xe_8h_a3db361a4d9dd84b187085a11d933b45d} 
+\+\#define I2\+C\+\_\+\+SR1\+\_\+\+ADDR~1}
+
+\Hypertarget{stm32f401xe_8h_a62aa2496d4b3955214a16a7bd998fd88}\index{stm32f401xe.h@{stm32f401xe.h}!I2C\_SR1\_AF@{I2C\_SR1\_AF}}
+\index{I2C\_SR1\_AF@{I2C\_SR1\_AF}!stm32f401xe.h@{stm32f401xe.h}}
+\doxysubsubsection{\texorpdfstring{I2C\_SR1\_AF}{I2C\_SR1\_AF}}
+{\footnotesize\ttfamily \label{stm32f401xe_8h_a62aa2496d4b3955214a16a7bd998fd88} 
+\+\#define I2\+C\+\_\+\+SR1\+\_\+\+AF~10}
+
+\Hypertarget{stm32f401xe_8h_acbc52f6ec6172c71d8b026a22c2f69d2}\index{stm32f401xe.h@{stm32f401xe.h}!I2C\_SR1\_ARLO@{I2C\_SR1\_ARLO}}
+\index{I2C\_SR1\_ARLO@{I2C\_SR1\_ARLO}!stm32f401xe.h@{stm32f401xe.h}}
+\doxysubsubsection{\texorpdfstring{I2C\_SR1\_ARLO}{I2C\_SR1\_ARLO}}
+{\footnotesize\ttfamily \label{stm32f401xe_8h_acbc52f6ec6172c71d8b026a22c2f69d2} 
+\+\#define I2\+C\+\_\+\+SR1\+\_\+\+ARLO~9}
+
+\Hypertarget{stm32f401xe_8h_a1d12990c90ab0757dcfea150ea50b227}\index{stm32f401xe.h@{stm32f401xe.h}!I2C\_SR1\_BERR@{I2C\_SR1\_BERR}}
+\index{I2C\_SR1\_BERR@{I2C\_SR1\_BERR}!stm32f401xe.h@{stm32f401xe.h}}
+\doxysubsubsection{\texorpdfstring{I2C\_SR1\_BERR}{I2C\_SR1\_BERR}}
+{\footnotesize\ttfamily \label{stm32f401xe_8h_a1d12990c90ab0757dcfea150ea50b227} 
+\+\#define I2\+C\+\_\+\+SR1\+\_\+\+BERR~8}
+
+\Hypertarget{stm32f401xe_8h_afb279f85d78cfe5abd3eeb0b40a65ab1}\index{stm32f401xe.h@{stm32f401xe.h}!I2C\_SR1\_BTF@{I2C\_SR1\_BTF}}
+\index{I2C\_SR1\_BTF@{I2C\_SR1\_BTF}!stm32f401xe.h@{stm32f401xe.h}}
+\doxysubsubsection{\texorpdfstring{I2C\_SR1\_BTF}{I2C\_SR1\_BTF}}
+{\footnotesize\ttfamily \label{stm32f401xe_8h_afb279f85d78cfe5abd3eeb0b40a65ab1} 
+\+\#define I2\+C\+\_\+\+SR1\+\_\+\+BTF~2}
+
+\Hypertarget{stm32f401xe_8h_ad42d2435d2e64bf710c701c9b17adfb4}\index{stm32f401xe.h@{stm32f401xe.h}!I2C\_SR1\_OVR@{I2C\_SR1\_OVR}}
+\index{I2C\_SR1\_OVR@{I2C\_SR1\_OVR}!stm32f401xe.h@{stm32f401xe.h}}
+\doxysubsubsection{\texorpdfstring{I2C\_SR1\_OVR}{I2C\_SR1\_OVR}}
+{\footnotesize\ttfamily \label{stm32f401xe_8h_ad42d2435d2e64bf710c701c9b17adfb4} 
+\+\#define I2\+C\+\_\+\+SR1\+\_\+\+OVR~11}
+
+\Hypertarget{stm32f401xe_8h_a4b2976279024e832e53ad12796a7bb71}\index{stm32f401xe.h@{stm32f401xe.h}!I2C\_SR1\_PECERR@{I2C\_SR1\_PECERR}}
+\index{I2C\_SR1\_PECERR@{I2C\_SR1\_PECERR}!stm32f401xe.h@{stm32f401xe.h}}
+\doxysubsubsection{\texorpdfstring{I2C\_SR1\_PECERR}{I2C\_SR1\_PECERR}}
+{\footnotesize\ttfamily \label{stm32f401xe_8h_a4b2976279024e832e53ad12796a7bb71} 
+\+\#define I2\+C\+\_\+\+SR1\+\_\+\+PECERR~12}
+
+\Hypertarget{stm32f401xe_8h_af6ebe33c992611bc2e25bbb01c1441a5}\index{stm32f401xe.h@{stm32f401xe.h}!I2C\_SR1\_RXNE@{I2C\_SR1\_RXNE}}
+\index{I2C\_SR1\_RXNE@{I2C\_SR1\_RXNE}!stm32f401xe.h@{stm32f401xe.h}}
+\doxysubsubsection{\texorpdfstring{I2C\_SR1\_RXNE}{I2C\_SR1\_RXNE}}
+{\footnotesize\ttfamily \label{stm32f401xe_8h_af6ebe33c992611bc2e25bbb01c1441a5} 
+\+\#define I2\+C\+\_\+\+SR1\+\_\+\+RXNE~6}
+
+\Hypertarget{stm32f401xe_8h_a6935c920da59d755d0cf834548a70ec4}\index{stm32f401xe.h@{stm32f401xe.h}!I2C\_SR1\_SB@{I2C\_SR1\_SB}}
+\index{I2C\_SR1\_SB@{I2C\_SR1\_SB}!stm32f401xe.h@{stm32f401xe.h}}
+\doxysubsubsection{\texorpdfstring{I2C\_SR1\_SB}{I2C\_SR1\_SB}}
+{\footnotesize\ttfamily \label{stm32f401xe_8h_a6935c920da59d755d0cf834548a70ec4} 
+\+\#define I2\+C\+\_\+\+SR1\+\_\+\+SB~0}
+
+\Hypertarget{stm32f401xe_8h_a8df36c38deb8791d0ac3cb5881298c1c}\index{stm32f401xe.h@{stm32f401xe.h}!I2C\_SR1\_SMBALERT@{I2C\_SR1\_SMBALERT}}
+\index{I2C\_SR1\_SMBALERT@{I2C\_SR1\_SMBALERT}!stm32f401xe.h@{stm32f401xe.h}}
+\doxysubsubsection{\texorpdfstring{I2C\_SR1\_SMBALERT}{I2C\_SR1\_SMBALERT}}
+{\footnotesize\ttfamily \label{stm32f401xe_8h_a8df36c38deb8791d0ac3cb5881298c1c} 
+\+\#define I2\+C\+\_\+\+SR1\+\_\+\+SMBALERT~15}
+
+\Hypertarget{stm32f401xe_8h_aafcea4cdbe2f6da31566c897fa893a7c}\index{stm32f401xe.h@{stm32f401xe.h}!I2C\_SR1\_STOPF@{I2C\_SR1\_STOPF}}
+\index{I2C\_SR1\_STOPF@{I2C\_SR1\_STOPF}!stm32f401xe.h@{stm32f401xe.h}}
+\doxysubsubsection{\texorpdfstring{I2C\_SR1\_STOPF}{I2C\_SR1\_STOPF}}
+{\footnotesize\ttfamily \label{stm32f401xe_8h_aafcea4cdbe2f6da31566c897fa893a7c} 
+\+\#define I2\+C\+\_\+\+SR1\+\_\+\+STOPF~4}
+
+\Hypertarget{stm32f401xe_8h_aef3a1e4921d7c509d1b639c67882c4c9}\index{stm32f401xe.h@{stm32f401xe.h}!I2C\_SR1\_TIMEOUT@{I2C\_SR1\_TIMEOUT}}
+\index{I2C\_SR1\_TIMEOUT@{I2C\_SR1\_TIMEOUT}!stm32f401xe.h@{stm32f401xe.h}}
+\doxysubsubsection{\texorpdfstring{I2C\_SR1\_TIMEOUT}{I2C\_SR1\_TIMEOUT}}
+{\footnotesize\ttfamily \label{stm32f401xe_8h_aef3a1e4921d7c509d1b639c67882c4c9} 
+\+\#define I2\+C\+\_\+\+SR1\+\_\+\+TIMEOUT~14}
+
+\Hypertarget{stm32f401xe_8h_afdc4da49c163910203255e384591b6f7}\index{stm32f401xe.h@{stm32f401xe.h}!I2C\_SR1\_TXE@{I2C\_SR1\_TXE}}
+\index{I2C\_SR1\_TXE@{I2C\_SR1\_TXE}!stm32f401xe.h@{stm32f401xe.h}}
+\doxysubsubsection{\texorpdfstring{I2C\_SR1\_TXE}{I2C\_SR1\_TXE}}
+{\footnotesize\ttfamily \label{stm32f401xe_8h_afdc4da49c163910203255e384591b6f7} 
+\+\#define I2\+C\+\_\+\+SR1\+\_\+\+TXE~7}
+
+\Hypertarget{stm32f401xe_8h_a3b1e75a82da73ae2873cff1cd27c3179}\index{stm32f401xe.h@{stm32f401xe.h}!I2C\_SR2\_BUSY@{I2C\_SR2\_BUSY}}
+\index{I2C\_SR2\_BUSY@{I2C\_SR2\_BUSY}!stm32f401xe.h@{stm32f401xe.h}}
+\doxysubsubsection{\texorpdfstring{I2C\_SR2\_BUSY}{I2C\_SR2\_BUSY}}
+{\footnotesize\ttfamily \label{stm32f401xe_8h_a3b1e75a82da73ae2873cff1cd27c3179} 
+\+\#define I2\+C\+\_\+\+SR2\+\_\+\+BUSY~1}
+
+\Hypertarget{stm32f401xe_8h_a79a6a21835e06d9bc48009f4269b7798}\index{stm32f401xe.h@{stm32f401xe.h}!I2C\_SR2\_DUALF@{I2C\_SR2\_DUALF}}
+\index{I2C\_SR2\_DUALF@{I2C\_SR2\_DUALF}!stm32f401xe.h@{stm32f401xe.h}}
+\doxysubsubsection{\texorpdfstring{I2C\_SR2\_DUALF}{I2C\_SR2\_DUALF}}
+{\footnotesize\ttfamily \label{stm32f401xe_8h_a79a6a21835e06d9bc48009f4269b7798} 
+\+\#define I2\+C\+\_\+\+SR2\+\_\+\+DUALF~7}
+
+\Hypertarget{stm32f401xe_8h_af3aeb79cbe04f7ec1e3c2615921c4fab}\index{stm32f401xe.h@{stm32f401xe.h}!I2C\_SR2\_GENCALL@{I2C\_SR2\_GENCALL}}
+\index{I2C\_SR2\_GENCALL@{I2C\_SR2\_GENCALL}!stm32f401xe.h@{stm32f401xe.h}}
+\doxysubsubsection{\texorpdfstring{I2C\_SR2\_GENCALL}{I2C\_SR2\_GENCALL}}
+{\footnotesize\ttfamily \label{stm32f401xe_8h_af3aeb79cbe04f7ec1e3c2615921c4fab} 
+\+\#define I2\+C\+\_\+\+SR2\+\_\+\+GENCALL~4}
+
+\Hypertarget{stm32f401xe_8h_a75cc361adf0e72e33d6771ebfa17b52d}\index{stm32f401xe.h@{stm32f401xe.h}!I2C\_SR2\_MSL@{I2C\_SR2\_MSL}}
+\index{I2C\_SR2\_MSL@{I2C\_SR2\_MSL}!stm32f401xe.h@{stm32f401xe.h}}
+\doxysubsubsection{\texorpdfstring{I2C\_SR2\_MSL}{I2C\_SR2\_MSL}}
+{\footnotesize\ttfamily \label{stm32f401xe_8h_a75cc361adf0e72e33d6771ebfa17b52d} 
+\+\#define I2\+C\+\_\+\+SR2\+\_\+\+MSL~0}
+
+\Hypertarget{stm32f401xe_8h_afcf50334903013177a8c6f4e36b8d6fe}\index{stm32f401xe.h@{stm32f401xe.h}!I2C\_SR2\_SMBDEFAULT@{I2C\_SR2\_SMBDEFAULT}}
+\index{I2C\_SR2\_SMBDEFAULT@{I2C\_SR2\_SMBDEFAULT}!stm32f401xe.h@{stm32f401xe.h}}
+\doxysubsubsection{\texorpdfstring{I2C\_SR2\_SMBDEFAULT}{I2C\_SR2\_SMBDEFAULT}}
+{\footnotesize\ttfamily \label{stm32f401xe_8h_afcf50334903013177a8c6f4e36b8d6fe} 
+\+\#define I2\+C\+\_\+\+SR2\+\_\+\+SMBDEFAULT~5}
+
+\Hypertarget{stm32f401xe_8h_aa07cf3e404f9f57e98d1ba3793079c80}\index{stm32f401xe.h@{stm32f401xe.h}!I2C\_SR2\_SMBHOST@{I2C\_SR2\_SMBHOST}}
+\index{I2C\_SR2\_SMBHOST@{I2C\_SR2\_SMBHOST}!stm32f401xe.h@{stm32f401xe.h}}
+\doxysubsubsection{\texorpdfstring{I2C\_SR2\_SMBHOST}{I2C\_SR2\_SMBHOST}}
+{\footnotesize\ttfamily \label{stm32f401xe_8h_aa07cf3e404f9f57e98d1ba3793079c80} 
+\+\#define I2\+C\+\_\+\+SR2\+\_\+\+SMBHOST~6}
+
+\Hypertarget{stm32f401xe_8h_a288b20416b42a79e591aa80d9a690fca}\index{stm32f401xe.h@{stm32f401xe.h}!I2C\_SR2\_TRA@{I2C\_SR2\_TRA}}
+\index{I2C\_SR2\_TRA@{I2C\_SR2\_TRA}!stm32f401xe.h@{stm32f401xe.h}}
+\doxysubsubsection{\texorpdfstring{I2C\_SR2\_TRA}{I2C\_SR2\_TRA}}
+{\footnotesize\ttfamily \label{stm32f401xe_8h_a288b20416b42a79e591aa80d9a690fca} 
+\+\#define I2\+C\+\_\+\+SR2\+\_\+\+TRA~2}
+
+\Hypertarget{stm32f401xe_8h_a2ad16e46c0011723c211a374b43ef8db}\index{stm32f401xe.h@{stm32f401xe.h}!PERIPHER\_BASEADDR@{PERIPHER\_BASEADDR}}
+\index{PERIPHER\_BASEADDR@{PERIPHER\_BASEADDR}!stm32f401xe.h@{stm32f401xe.h}}
+\doxysubsubsection{\texorpdfstring{PERIPHER\_BASEADDR}{PERIPHER\_BASEADDR}}
+{\footnotesize\ttfamily \label{stm32f401xe_8h_a2ad16e46c0011723c211a374b43ef8db} 
+\+\#define PERIPHER\+\_\+\+BASEADDR~0x40000000U}
+
+\Hypertarget{stm32f401xe_8h_a74944438a086975793d26ae48d5882d4}\index{stm32f401xe.h@{stm32f401xe.h}!RCC@{RCC}}
+\index{RCC@{RCC}!stm32f401xe.h@{stm32f401xe.h}}
+\doxysubsubsection{\texorpdfstring{RCC}{RCC}}
+{\footnotesize\ttfamily \label{stm32f401xe_8h_a74944438a086975793d26ae48d5882d4} 
+\+\#define RCC~((\doxymbox{\hyperlink{struct_r_c_c___reg_def__t}{RCC\+\_\+\+Reg\+Def\+\_\+t}}\texorpdfstring{$\ast$}{*}) \doxymbox{\hyperlink{stm32f401xe_8h_a89610f202a9f78bcc85f76c5ba52d009}{RCC\+\_\+\+BASEADDR}})}
+
+\Hypertarget{stm32f401xe_8h_a89610f202a9f78bcc85f76c5ba52d009}\index{stm32f401xe.h@{stm32f401xe.h}!RCC\_BASEADDR@{RCC\_BASEADDR}}
+\index{RCC\_BASEADDR@{RCC\_BASEADDR}!stm32f401xe.h@{stm32f401xe.h}}
+\doxysubsubsection{\texorpdfstring{RCC\_BASEADDR}{RCC\_BASEADDR}}
+{\footnotesize\ttfamily \label{stm32f401xe_8h_a89610f202a9f78bcc85f76c5ba52d009} 
+\+\#define RCC\+\_\+\+BASEADDR~(\doxymbox{\hyperlink{stm32f401xe_8h_ac0dd95cd7a26e593e81d864f47a7bc76}{AHB1\+\_\+\+BASEADDR}} + 0\+X3800)}
+
+\Hypertarget{stm32f401xe_8h_ab702106cf3b3e96750b6845ded4e0299}\index{stm32f401xe.h@{stm32f401xe.h}!RESET@{RESET}}
+\index{RESET@{RESET}!stm32f401xe.h@{stm32f401xe.h}}
+\doxysubsubsection{\texorpdfstring{RESET}{RESET}}
+{\footnotesize\ttfamily \label{stm32f401xe_8h_ab702106cf3b3e96750b6845ded4e0299} 
+\+\#define RESET~\doxymbox{\hyperlink{stm32f401xe_8h_a99496f7308834e8b220f7894efa0b6ab}{DISABLE}}}
+
+\Hypertarget{stm32f401xe_8h_a548ca9ecc4b62f701800110d155a05dc}\index{stm32f401xe.h@{stm32f401xe.h}!ROM\_BASEADDR@{ROM\_BASEADDR}}
+\index{ROM\_BASEADDR@{ROM\_BASEADDR}!stm32f401xe.h@{stm32f401xe.h}}
+\doxysubsubsection{\texorpdfstring{ROM\_BASEADDR}{ROM\_BASEADDR}}
+{\footnotesize\ttfamily \label{stm32f401xe_8h_a548ca9ecc4b62f701800110d155a05dc} 
+\+\#define ROM\+\_\+\+BASEADDR~0x1\+FFF0000U}
+
+\Hypertarget{stm32f401xe_8h_a59da1d65e87a723efe808dbabb4fc205}\index{stm32f401xe.h@{stm32f401xe.h}!SET@{SET}}
+\index{SET@{SET}!stm32f401xe.h@{stm32f401xe.h}}
+\doxysubsubsection{\texorpdfstring{SET}{SET}}
+{\footnotesize\ttfamily \label{stm32f401xe_8h_a59da1d65e87a723efe808dbabb4fc205} 
+\+\#define SET~\doxymbox{\hyperlink{stm32f401xe_8h_a514ad415fb6125ba296793df7d1a468a}{ENABLE}}}
+
+\Hypertarget{stm32f401xe_8h_ad483be344a28ac800be8f03654a9612f}\index{stm32f401xe.h@{stm32f401xe.h}!SPI1@{SPI1}}
+\index{SPI1@{SPI1}!stm32f401xe.h@{stm32f401xe.h}}
+\doxysubsubsection{\texorpdfstring{SPI1}{SPI1}}
+{\footnotesize\ttfamily \label{stm32f401xe_8h_ad483be344a28ac800be8f03654a9612f} 
+\+\#define SPI1~((\doxymbox{\hyperlink{struct_s_p_i___reg_def__t}{SPI\+\_\+\+Reg\+Def\+\_\+t}}\texorpdfstring{$\ast$}{*})  \doxymbox{\hyperlink{stm32f401xe_8h_a64992f19fed3a459eb91f519c06b3427}{SPI1\+\_\+\+BASEADDR}})}
+
+\Hypertarget{stm32f401xe_8h_a64992f19fed3a459eb91f519c06b3427}\index{stm32f401xe.h@{stm32f401xe.h}!SPI1\_BASEADDR@{SPI1\_BASEADDR}}
+\index{SPI1\_BASEADDR@{SPI1\_BASEADDR}!stm32f401xe.h@{stm32f401xe.h}}
+\doxysubsubsection{\texorpdfstring{SPI1\_BASEADDR}{SPI1\_BASEADDR}}
+{\footnotesize\ttfamily \label{stm32f401xe_8h_a64992f19fed3a459eb91f519c06b3427} 
+\+\#define SPI1\+\_\+\+BASEADDR~(\doxymbox{\hyperlink{stm32f401xe_8h_ad112f60d214d7991e93e7239ce7ff274}{APB2\+\_\+\+BASEADDR}} + 0\+X3000)}
+
+\Hypertarget{stm32f401xe_8h_a5d981b8f6a68cd77963d57d42693d170}\index{stm32f401xe.h@{stm32f401xe.h}!SPI1\_PCLK\_DI@{SPI1\_PCLK\_DI}}
+\index{SPI1\_PCLK\_DI@{SPI1\_PCLK\_DI}!stm32f401xe.h@{stm32f401xe.h}}
+\doxysubsubsection{\texorpdfstring{SPI1\_PCLK\_DI}{SPI1\_PCLK\_DI}}
+{\footnotesize\ttfamily \label{stm32f401xe_8h_a5d981b8f6a68cd77963d57d42693d170} 
+\+\#define SPI1\+\_\+\+PCLK\+\_\+\+DI(\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+{\bfseries Value:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{(\doxymbox{\hyperlink{stm32f401xe_8h_a74944438a086975793d26ae48d5882d4}{RCC}}-\/>APB2ENR\ \&=\ \string~(1\ <<\ 12))}
+
+\end{DoxyCode}
+\Hypertarget{stm32f401xe_8h_ae72a543f0dff6747a7b65968b1dcbb28}\index{stm32f401xe.h@{stm32f401xe.h}!SPI1\_PCLK\_EN@{SPI1\_PCLK\_EN}}
+\index{SPI1\_PCLK\_EN@{SPI1\_PCLK\_EN}!stm32f401xe.h@{stm32f401xe.h}}
+\doxysubsubsection{\texorpdfstring{SPI1\_PCLK\_EN}{SPI1\_PCLK\_EN}}
+{\footnotesize\ttfamily \label{stm32f401xe_8h_ae72a543f0dff6747a7b65968b1dcbb28} 
+\+\#define SPI1\+\_\+\+PCLK\+\_\+\+EN(\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+{\bfseries Value:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{(\doxymbox{\hyperlink{stm32f401xe_8h_a74944438a086975793d26ae48d5882d4}{RCC}}-\/>APB2ENR\ |=\ (1<<12))}
+
+\end{DoxyCode}
+\Hypertarget{stm32f401xe_8h_af2c3d8ce359dcfbb2261e07ed42af72b}\index{stm32f401xe.h@{stm32f401xe.h}!SPI2@{SPI2}}
+\index{SPI2@{SPI2}!stm32f401xe.h@{stm32f401xe.h}}
+\doxysubsubsection{\texorpdfstring{SPI2}{SPI2}}
+{\footnotesize\ttfamily \label{stm32f401xe_8h_af2c3d8ce359dcfbb2261e07ed42af72b} 
+\+\#define SPI2~((\doxymbox{\hyperlink{struct_s_p_i___reg_def__t}{SPI\+\_\+\+Reg\+Def\+\_\+t}}\texorpdfstring{$\ast$}{*})  \doxymbox{\hyperlink{stm32f401xe_8h_a52fc929735639d70b44dea7885bb01ff}{SPI2\+\_\+\+BASEADDR}})}
+
+\Hypertarget{stm32f401xe_8h_a52fc929735639d70b44dea7885bb01ff}\index{stm32f401xe.h@{stm32f401xe.h}!SPI2\_BASEADDR@{SPI2\_BASEADDR}}
+\index{SPI2\_BASEADDR@{SPI2\_BASEADDR}!stm32f401xe.h@{stm32f401xe.h}}
+\doxysubsubsection{\texorpdfstring{SPI2\_BASEADDR}{SPI2\_BASEADDR}}
+{\footnotesize\ttfamily \label{stm32f401xe_8h_a52fc929735639d70b44dea7885bb01ff} 
+\+\#define SPI2\+\_\+\+BASEADDR~(\doxymbox{\hyperlink{stm32f401xe_8h_aa2862fa9bfc107c83dc034fa75eed6b4}{APB1\+\_\+\+BASEADDR}} + 0\+X3800)}
+
+\Hypertarget{stm32f401xe_8h_a8155a469b85817f3e6d37e4ff09f727f}\index{stm32f401xe.h@{stm32f401xe.h}!SPI2\_PCLK\_DI@{SPI2\_PCLK\_DI}}
+\index{SPI2\_PCLK\_DI@{SPI2\_PCLK\_DI}!stm32f401xe.h@{stm32f401xe.h}}
+\doxysubsubsection{\texorpdfstring{SPI2\_PCLK\_DI}{SPI2\_PCLK\_DI}}
+{\footnotesize\ttfamily \label{stm32f401xe_8h_a8155a469b85817f3e6d37e4ff09f727f} 
+\+\#define SPI2\+\_\+\+PCLK\+\_\+\+DI(\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+{\bfseries Value:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{(\doxymbox{\hyperlink{stm32f401xe_8h_a74944438a086975793d26ae48d5882d4}{RCC}}-\/>APB1ENR\ \&=\ \string~(1\ <<\ 14))}
+
+\end{DoxyCode}
+\Hypertarget{stm32f401xe_8h_a76e0d058783c88190b860bfaecec1d87}\index{stm32f401xe.h@{stm32f401xe.h}!SPI2\_PCLK\_EN@{SPI2\_PCLK\_EN}}
+\index{SPI2\_PCLK\_EN@{SPI2\_PCLK\_EN}!stm32f401xe.h@{stm32f401xe.h}}
+\doxysubsubsection{\texorpdfstring{SPI2\_PCLK\_EN}{SPI2\_PCLK\_EN}}
+{\footnotesize\ttfamily \label{stm32f401xe_8h_a76e0d058783c88190b860bfaecec1d87} 
+\+\#define SPI2\+\_\+\+PCLK\+\_\+\+EN(\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+{\bfseries Value:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{(\doxymbox{\hyperlink{stm32f401xe_8h_a74944438a086975793d26ae48d5882d4}{RCC}}-\/>APB1ENR\ |=\ (1<<14))}
+
+\end{DoxyCode}
+\Hypertarget{stm32f401xe_8h_ab2339cbf25502bf562b19208b1b257fc}\index{stm32f401xe.h@{stm32f401xe.h}!SPI3@{SPI3}}
+\index{SPI3@{SPI3}!stm32f401xe.h@{stm32f401xe.h}}
+\doxysubsubsection{\texorpdfstring{SPI3}{SPI3}}
+{\footnotesize\ttfamily \label{stm32f401xe_8h_ab2339cbf25502bf562b19208b1b257fc} 
+\+\#define SPI3~((\doxymbox{\hyperlink{struct_s_p_i___reg_def__t}{SPI\+\_\+\+Reg\+Def\+\_\+t}}\texorpdfstring{$\ast$}{*})  \doxymbox{\hyperlink{stm32f401xe_8h_ada16cf23d6a91088c447de485b616ed8}{SPI3\+\_\+\+BASEADDR}})}
+
+\Hypertarget{stm32f401xe_8h_ada16cf23d6a91088c447de485b616ed8}\index{stm32f401xe.h@{stm32f401xe.h}!SPI3\_BASEADDR@{SPI3\_BASEADDR}}
+\index{SPI3\_BASEADDR@{SPI3\_BASEADDR}!stm32f401xe.h@{stm32f401xe.h}}
+\doxysubsubsection{\texorpdfstring{SPI3\_BASEADDR}{SPI3\_BASEADDR}}
+{\footnotesize\ttfamily \label{stm32f401xe_8h_ada16cf23d6a91088c447de485b616ed8} 
+\+\#define SPI3\+\_\+\+BASEADDR~(\doxymbox{\hyperlink{stm32f401xe_8h_aa2862fa9bfc107c83dc034fa75eed6b4}{APB1\+\_\+\+BASEADDR}} + 0\+X3\+C00)}
+
+\Hypertarget{stm32f401xe_8h_ad4de3e58530324cb9a9a1c32504b8c26}\index{stm32f401xe.h@{stm32f401xe.h}!SPI3\_PCLK\_DI@{SPI3\_PCLK\_DI}}
+\index{SPI3\_PCLK\_DI@{SPI3\_PCLK\_DI}!stm32f401xe.h@{stm32f401xe.h}}
+\doxysubsubsection{\texorpdfstring{SPI3\_PCLK\_DI}{SPI3\_PCLK\_DI}}
+{\footnotesize\ttfamily \label{stm32f401xe_8h_ad4de3e58530324cb9a9a1c32504b8c26} 
+\+\#define SPI3\+\_\+\+PCLK\+\_\+\+DI(\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+{\bfseries Value:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{(\doxymbox{\hyperlink{stm32f401xe_8h_a74944438a086975793d26ae48d5882d4}{RCC}}-\/>APB1ENR\ \&=\ \string~(1\ <<\ 15))}
+
+\end{DoxyCode}
+\Hypertarget{stm32f401xe_8h_af9dcb6773cab8a79434d8ce7cc900342}\index{stm32f401xe.h@{stm32f401xe.h}!SPI3\_PCLK\_EN@{SPI3\_PCLK\_EN}}
+\index{SPI3\_PCLK\_EN@{SPI3\_PCLK\_EN}!stm32f401xe.h@{stm32f401xe.h}}
+\doxysubsubsection{\texorpdfstring{SPI3\_PCLK\_EN}{SPI3\_PCLK\_EN}}
+{\footnotesize\ttfamily \label{stm32f401xe_8h_af9dcb6773cab8a79434d8ce7cc900342} 
+\+\#define SPI3\+\_\+\+PCLK\+\_\+\+EN(\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+{\bfseries Value:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{(\doxymbox{\hyperlink{stm32f401xe_8h_a74944438a086975793d26ae48d5882d4}{RCC}}-\/>APB1ENR\ |=\ (1<<15))}
+
+\end{DoxyCode}
+\Hypertarget{stm32f401xe_8h_a2a2e6edef68cfe1946f39a5033da2301}\index{stm32f401xe.h@{stm32f401xe.h}!SPI4@{SPI4}}
+\index{SPI4@{SPI4}!stm32f401xe.h@{stm32f401xe.h}}
+\doxysubsubsection{\texorpdfstring{SPI4}{SPI4}}
+{\footnotesize\ttfamily \label{stm32f401xe_8h_a2a2e6edef68cfe1946f39a5033da2301} 
+\+\#define SPI4~((\doxymbox{\hyperlink{struct_s_p_i___reg_def__t}{SPI\+\_\+\+Reg\+Def\+\_\+t}}\texorpdfstring{$\ast$}{*})  \doxymbox{\hyperlink{stm32f401xe_8h_a8370319e63d6c3a62ce4f0539ebe2b68}{SPI4\+\_\+\+BASEADDR}})}
+
+\Hypertarget{stm32f401xe_8h_a8370319e63d6c3a62ce4f0539ebe2b68}\index{stm32f401xe.h@{stm32f401xe.h}!SPI4\_BASEADDR@{SPI4\_BASEADDR}}
+\index{SPI4\_BASEADDR@{SPI4\_BASEADDR}!stm32f401xe.h@{stm32f401xe.h}}
+\doxysubsubsection{\texorpdfstring{SPI4\_BASEADDR}{SPI4\_BASEADDR}}
+{\footnotesize\ttfamily \label{stm32f401xe_8h_a8370319e63d6c3a62ce4f0539ebe2b68} 
+\+\#define SPI4\+\_\+\+BASEADDR~(\doxymbox{\hyperlink{stm32f401xe_8h_ad112f60d214d7991e93e7239ce7ff274}{APB2\+\_\+\+BASEADDR}} + 0\+X3400)}
+
+\Hypertarget{stm32f401xe_8h_a30c26071cf3d08af993808262f790cdf}\index{stm32f401xe.h@{stm32f401xe.h}!SPI4\_PCLK\_DI@{SPI4\_PCLK\_DI}}
+\index{SPI4\_PCLK\_DI@{SPI4\_PCLK\_DI}!stm32f401xe.h@{stm32f401xe.h}}
+\doxysubsubsection{\texorpdfstring{SPI4\_PCLK\_DI}{SPI4\_PCLK\_DI}}
+{\footnotesize\ttfamily \label{stm32f401xe_8h_a30c26071cf3d08af993808262f790cdf} 
+\+\#define SPI4\+\_\+\+PCLK\+\_\+\+DI(\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+{\bfseries Value:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{(\doxymbox{\hyperlink{stm32f401xe_8h_a74944438a086975793d26ae48d5882d4}{RCC}}-\/>APB2ENR\ \&=\ \string~\ (1\ <<\ 13))}
+
+\end{DoxyCode}
+\Hypertarget{stm32f401xe_8h_a93b5644ae1f7ff01640d1a77c87ac973}\index{stm32f401xe.h@{stm32f401xe.h}!SPI4\_PCLK\_EN@{SPI4\_PCLK\_EN}}
+\index{SPI4\_PCLK\_EN@{SPI4\_PCLK\_EN}!stm32f401xe.h@{stm32f401xe.h}}
+\doxysubsubsection{\texorpdfstring{SPI4\_PCLK\_EN}{SPI4\_PCLK\_EN}}
+{\footnotesize\ttfamily \label{stm32f401xe_8h_a93b5644ae1f7ff01640d1a77c87ac973} 
+\+\#define SPI4\+\_\+\+PCLK\+\_\+\+EN(\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+{\bfseries Value:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{(\doxymbox{\hyperlink{stm32f401xe_8h_a74944438a086975793d26ae48d5882d4}{RCC}}-\/>APB2ENR\ |=\ (1<<13))}
+
+\end{DoxyCode}
+\Hypertarget{stm32f401xe_8h_acce5bcdd78719c9f4a53cfc4ca0f6f42}\index{stm32f401xe.h@{stm32f401xe.h}!SRAM\_BASEADDR@{SRAM\_BASEADDR}}
+\index{SRAM\_BASEADDR@{SRAM\_BASEADDR}!stm32f401xe.h@{stm32f401xe.h}}
+\doxysubsubsection{\texorpdfstring{SRAM\_BASEADDR}{SRAM\_BASEADDR}}
+{\footnotesize\ttfamily \label{stm32f401xe_8h_acce5bcdd78719c9f4a53cfc4ca0f6f42} 
+\+\#define SRAM\+\_\+\+BASEADDR~0x20000000U}
+
+\Hypertarget{stm32f401xe_8h_a8eefceb948a629c4379af89d2b41686a}\index{stm32f401xe.h@{stm32f401xe.h}!STM32F401RE\_H\_@{STM32F401RE\_H\_}}
+\index{STM32F401RE\_H\_@{STM32F401RE\_H\_}!stm32f401xe.h@{stm32f401xe.h}}
+\doxysubsubsection{\texorpdfstring{STM32F401RE\_H\_}{STM32F401RE\_H\_}}
+{\footnotesize\ttfamily \label{stm32f401xe_8h_a8eefceb948a629c4379af89d2b41686a} 
+\+\#define STM32\+F401\+RE\+\_\+\+H\_}
+
+\Hypertarget{stm32f401xe_8h_a3c833fe1c486cb62250ccbca32899cb8}\index{stm32f401xe.h@{stm32f401xe.h}!SYSCFG@{SYSCFG}}
+\index{SYSCFG@{SYSCFG}!stm32f401xe.h@{stm32f401xe.h}}
+\doxysubsubsection{\texorpdfstring{SYSCFG}{SYSCFG}}
+{\footnotesize\ttfamily \label{stm32f401xe_8h_a3c833fe1c486cb62250ccbca32899cb8} 
+\+\#define SYSCFG~((\doxymbox{\hyperlink{struct_s_y_s_c_f_g___reg_def__t}{SYSCFG\+\_\+\+Reg\+Def\+\_\+t}}\texorpdfstring{$\ast$}{*})\doxymbox{\hyperlink{stm32f401xe_8h_ad389e516cff9dd84a9b04685b391b8fe}{SYSCFG\+\_\+\+BASEADDR}})}
+
+\Hypertarget{stm32f401xe_8h_ad389e516cff9dd84a9b04685b391b8fe}\index{stm32f401xe.h@{stm32f401xe.h}!SYSCFG\_BASEADDR@{SYSCFG\_BASEADDR}}
+\index{SYSCFG\_BASEADDR@{SYSCFG\_BASEADDR}!stm32f401xe.h@{stm32f401xe.h}}
+\doxysubsubsection{\texorpdfstring{SYSCFG\_BASEADDR}{SYSCFG\_BASEADDR}}
+{\footnotesize\ttfamily \label{stm32f401xe_8h_ad389e516cff9dd84a9b04685b391b8fe} 
+\+\#define SYSCFG\+\_\+\+BASEADDR~(\doxymbox{\hyperlink{stm32f401xe_8h_ad112f60d214d7991e93e7239ce7ff274}{APB2\+\_\+\+BASEADDR}} + 0\+X3800)}
+
+\Hypertarget{stm32f401xe_8h_a11f49b5c109b1eacd48dc52c94acea3e}\index{stm32f401xe.h@{stm32f401xe.h}!SYSCFG\_PCLK\_DI@{SYSCFG\_PCLK\_DI}}
+\index{SYSCFG\_PCLK\_DI@{SYSCFG\_PCLK\_DI}!stm32f401xe.h@{stm32f401xe.h}}
+\doxysubsubsection{\texorpdfstring{SYSCFG\_PCLK\_DI}{SYSCFG\_PCLK\_DI}}
+{\footnotesize\ttfamily \label{stm32f401xe_8h_a11f49b5c109b1eacd48dc52c94acea3e} 
+\+\#define SYSCFG\+\_\+\+PCLK\+\_\+\+DI(\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+{\bfseries Value:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{(\doxymbox{\hyperlink{stm32f401xe_8h_a74944438a086975793d26ae48d5882d4}{RCC}}-\/>APB2ENR\ \&=\ \string~(1\ <<\ 14))}
+
+\end{DoxyCode}
+\Hypertarget{stm32f401xe_8h_af4132dd5c45ad1cbdb0226b3f0108cf6}\index{stm32f401xe.h@{stm32f401xe.h}!SYSCFG\_PCLK\_EN@{SYSCFG\_PCLK\_EN}}
+\index{SYSCFG\_PCLK\_EN@{SYSCFG\_PCLK\_EN}!stm32f401xe.h@{stm32f401xe.h}}
+\doxysubsubsection{\texorpdfstring{SYSCFG\_PCLK\_EN}{SYSCFG\_PCLK\_EN}}
+{\footnotesize\ttfamily \label{stm32f401xe_8h_af4132dd5c45ad1cbdb0226b3f0108cf6} 
+\+\#define SYSCFG\+\_\+\+PCLK\+\_\+\+EN(\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+{\bfseries Value:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{(\doxymbox{\hyperlink{stm32f401xe_8h_a74944438a086975793d26ae48d5882d4}{RCC}}-\/>APB2ENR\ |=\ (1<<14))}
+
+\end{DoxyCode}
+\Hypertarget{stm32f401xe_8h_a6e2fc569cc5dee0399604eee0c85e520}\index{stm32f401xe.h@{stm32f401xe.h}!TIM10\_BASEADDR@{TIM10\_BASEADDR}}
+\index{TIM10\_BASEADDR@{TIM10\_BASEADDR}!stm32f401xe.h@{stm32f401xe.h}}
+\doxysubsubsection{\texorpdfstring{TIM10\_BASEADDR}{TIM10\_BASEADDR}}
+{\footnotesize\ttfamily \label{stm32f401xe_8h_a6e2fc569cc5dee0399604eee0c85e520} 
+\+\#define TIM10\+\_\+\+BASEADDR~(\doxymbox{\hyperlink{stm32f401xe_8h_ad112f60d214d7991e93e7239ce7ff274}{APB2\+\_\+\+BASEADDR}} + 0\+X4400)}
+
+\Hypertarget{stm32f401xe_8h_a92505df211ea4d69ff2aace047b5da92}\index{stm32f401xe.h@{stm32f401xe.h}!TIM11\_BASEADDR@{TIM11\_BASEADDR}}
+\index{TIM11\_BASEADDR@{TIM11\_BASEADDR}!stm32f401xe.h@{stm32f401xe.h}}
+\doxysubsubsection{\texorpdfstring{TIM11\_BASEADDR}{TIM11\_BASEADDR}}
+{\footnotesize\ttfamily \label{stm32f401xe_8h_a92505df211ea4d69ff2aace047b5da92} 
+\+\#define TIM11\+\_\+\+BASEADDR~(\doxymbox{\hyperlink{stm32f401xe_8h_ad112f60d214d7991e93e7239ce7ff274}{APB2\+\_\+\+BASEADDR}} + 0\+X4800)}
+
+\Hypertarget{stm32f401xe_8h_a15216cf7b501073535d452823d93d50e}\index{stm32f401xe.h@{stm32f401xe.h}!TIM1\_BASEADDR@{TIM1\_BASEADDR}}
+\index{TIM1\_BASEADDR@{TIM1\_BASEADDR}!stm32f401xe.h@{stm32f401xe.h}}
+\doxysubsubsection{\texorpdfstring{TIM1\_BASEADDR}{TIM1\_BASEADDR}}
+{\footnotesize\ttfamily \label{stm32f401xe_8h_a15216cf7b501073535d452823d93d50e} 
+\+\#define TIM1\+\_\+\+BASEADDR~(\doxymbox{\hyperlink{stm32f401xe_8h_ad112f60d214d7991e93e7239ce7ff274}{APB2\+\_\+\+BASEADDR}} + 0\+X0000)}
+
+\Hypertarget{stm32f401xe_8h_a3c771627a298dfa3d484c834f5b97649}\index{stm32f401xe.h@{stm32f401xe.h}!TIM2\_BASEADDR@{TIM2\_BASEADDR}}
+\index{TIM2\_BASEADDR@{TIM2\_BASEADDR}!stm32f401xe.h@{stm32f401xe.h}}
+\doxysubsubsection{\texorpdfstring{TIM2\_BASEADDR}{TIM2\_BASEADDR}}
+{\footnotesize\ttfamily \label{stm32f401xe_8h_a3c771627a298dfa3d484c834f5b97649} 
+\+\#define TIM2\+\_\+\+BASEADDR~(\doxymbox{\hyperlink{stm32f401xe_8h_aa2862fa9bfc107c83dc034fa75eed6b4}{APB1\+\_\+\+BASEADDR}} + 0\+X0000)}
+
+\Hypertarget{stm32f401xe_8h_a9be9b6a7119ff1f51c680d4de3d2595b}\index{stm32f401xe.h@{stm32f401xe.h}!TIM3\_BASEADDR@{TIM3\_BASEADDR}}
+\index{TIM3\_BASEADDR@{TIM3\_BASEADDR}!stm32f401xe.h@{stm32f401xe.h}}
+\doxysubsubsection{\texorpdfstring{TIM3\_BASEADDR}{TIM3\_BASEADDR}}
+{\footnotesize\ttfamily \label{stm32f401xe_8h_a9be9b6a7119ff1f51c680d4de3d2595b} 
+\+\#define TIM3\+\_\+\+BASEADDR~(\doxymbox{\hyperlink{stm32f401xe_8h_aa2862fa9bfc107c83dc034fa75eed6b4}{APB1\+\_\+\+BASEADDR}} + 0\+X0400)}
+
+\Hypertarget{stm32f401xe_8h_a0ab46f7a0878390457d8bb96c470d1b9}\index{stm32f401xe.h@{stm32f401xe.h}!TIM4\_BASEADDR@{TIM4\_BASEADDR}}
+\index{TIM4\_BASEADDR@{TIM4\_BASEADDR}!stm32f401xe.h@{stm32f401xe.h}}
+\doxysubsubsection{\texorpdfstring{TIM4\_BASEADDR}{TIM4\_BASEADDR}}
+{\footnotesize\ttfamily \label{stm32f401xe_8h_a0ab46f7a0878390457d8bb96c470d1b9} 
+\+\#define TIM4\+\_\+\+BASEADDR~(\doxymbox{\hyperlink{stm32f401xe_8h_aa2862fa9bfc107c83dc034fa75eed6b4}{APB1\+\_\+\+BASEADDR}} + 0\+X0800)}
+
+\Hypertarget{stm32f401xe_8h_a2f2fd59ff0b3ef8ec4ec85f751855ed6}\index{stm32f401xe.h@{stm32f401xe.h}!TIM5\_BASEADDR@{TIM5\_BASEADDR}}
+\index{TIM5\_BASEADDR@{TIM5\_BASEADDR}!stm32f401xe.h@{stm32f401xe.h}}
+\doxysubsubsection{\texorpdfstring{TIM5\_BASEADDR}{TIM5\_BASEADDR}}
+{\footnotesize\ttfamily \label{stm32f401xe_8h_a2f2fd59ff0b3ef8ec4ec85f751855ed6} 
+\+\#define TIM5\+\_\+\+BASEADDR~(\doxymbox{\hyperlink{stm32f401xe_8h_aa2862fa9bfc107c83dc034fa75eed6b4}{APB1\+\_\+\+BASEADDR}} + 0\+X0\+C00)}
+
+\Hypertarget{stm32f401xe_8h_a30f114534846e6efe1521f12239d72b8}\index{stm32f401xe.h@{stm32f401xe.h}!TIM9\_BASEADDR@{TIM9\_BASEADDR}}
+\index{TIM9\_BASEADDR@{TIM9\_BASEADDR}!stm32f401xe.h@{stm32f401xe.h}}
+\doxysubsubsection{\texorpdfstring{TIM9\_BASEADDR}{TIM9\_BASEADDR}}
+{\footnotesize\ttfamily \label{stm32f401xe_8h_a30f114534846e6efe1521f12239d72b8} 
+\+\#define TIM9\+\_\+\+BASEADDR~(\doxymbox{\hyperlink{stm32f401xe_8h_ad112f60d214d7991e93e7239ce7ff274}{APB2\+\_\+\+BASEADDR}} + 0\+X4000)}
+
+\Hypertarget{stm32f401xe_8h_a92871691058ff7ccffd7635930cb08da}\index{stm32f401xe.h@{stm32f401xe.h}!USART1@{USART1}}
+\index{USART1@{USART1}!stm32f401xe.h@{stm32f401xe.h}}
+\doxysubsubsection{\texorpdfstring{USART1}{USART1}}
+{\footnotesize\ttfamily \label{stm32f401xe_8h_a92871691058ff7ccffd7635930cb08da} 
+\+\#define USART1~((\doxymbox{\hyperlink{struct_u_s_a_r_t___reg_def__t}{USART\+\_\+\+Reg\+Def\+\_\+t}}\texorpdfstring{$\ast$}{*})  \doxymbox{\hyperlink{stm32f401xe_8h_a4ccf21b5f54c80b031bff13956af2018}{USART1\+\_\+\+BASEADDR}})}
+
+\Hypertarget{stm32f401xe_8h_a4ccf21b5f54c80b031bff13956af2018}\index{stm32f401xe.h@{stm32f401xe.h}!USART1\_BASEADDR@{USART1\_BASEADDR}}
+\index{USART1\_BASEADDR@{USART1\_BASEADDR}!stm32f401xe.h@{stm32f401xe.h}}
+\doxysubsubsection{\texorpdfstring{USART1\_BASEADDR}{USART1\_BASEADDR}}
+{\footnotesize\ttfamily \label{stm32f401xe_8h_a4ccf21b5f54c80b031bff13956af2018} 
+\+\#define USART1\+\_\+\+BASEADDR~(\doxymbox{\hyperlink{stm32f401xe_8h_ad112f60d214d7991e93e7239ce7ff274}{APB2\+\_\+\+BASEADDR}} + 0\+X1000)}
+
+\Hypertarget{stm32f401xe_8h_ac73ad50ae751cf615a38b3746789491f}\index{stm32f401xe.h@{stm32f401xe.h}!USART1\_PCLK\_DI@{USART1\_PCLK\_DI}}
+\index{USART1\_PCLK\_DI@{USART1\_PCLK\_DI}!stm32f401xe.h@{stm32f401xe.h}}
+\doxysubsubsection{\texorpdfstring{USART1\_PCLK\_DI}{USART1\_PCLK\_DI}}
+{\footnotesize\ttfamily \label{stm32f401xe_8h_ac73ad50ae751cf615a38b3746789491f} 
+\+\#define USART1\+\_\+\+PCLK\+\_\+\+DI(\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+{\bfseries Value:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{(\doxymbox{\hyperlink{stm32f401xe_8h_a74944438a086975793d26ae48d5882d4}{RCC}}-\/>APB2ENR\ \&=\ \string~\ (1\ <<\ 4))}
+
+\end{DoxyCode}
+\Hypertarget{stm32f401xe_8h_ac4410a1d3f7d178bc9d962da70092d5d}\index{stm32f401xe.h@{stm32f401xe.h}!USART1\_PCLK\_EN@{USART1\_PCLK\_EN}}
+\index{USART1\_PCLK\_EN@{USART1\_PCLK\_EN}!stm32f401xe.h@{stm32f401xe.h}}
+\doxysubsubsection{\texorpdfstring{USART1\_PCLK\_EN}{USART1\_PCLK\_EN}}
+{\footnotesize\ttfamily \label{stm32f401xe_8h_ac4410a1d3f7d178bc9d962da70092d5d} 
+\+\#define USART1\+\_\+\+PCLK\+\_\+\+EN(\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+{\bfseries Value:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{(\doxymbox{\hyperlink{stm32f401xe_8h_a74944438a086975793d26ae48d5882d4}{RCC}}-\/>APB2ENR\ |=\ (1<<4))}
+
+\end{DoxyCode}
+\Hypertarget{stm32f401xe_8h_af114a9eab03ca08a6fb720e511595930}\index{stm32f401xe.h@{stm32f401xe.h}!USART2@{USART2}}
+\index{USART2@{USART2}!stm32f401xe.h@{stm32f401xe.h}}
+\doxysubsubsection{\texorpdfstring{USART2}{USART2}}
+{\footnotesize\ttfamily \label{stm32f401xe_8h_af114a9eab03ca08a6fb720e511595930} 
+\+\#define USART2~((\doxymbox{\hyperlink{struct_u_s_a_r_t___reg_def__t}{USART\+\_\+\+Reg\+Def\+\_\+t}}\texorpdfstring{$\ast$}{*})  \doxymbox{\hyperlink{stm32f401xe_8h_a9e2d543dd90e725020d1f4b2ae3a0cdc}{USART2\+\_\+\+BASEADDR}}}
+
+\Hypertarget{stm32f401xe_8h_a9e2d543dd90e725020d1f4b2ae3a0cdc}\index{stm32f401xe.h@{stm32f401xe.h}!USART2\_BASEADDR@{USART2\_BASEADDR}}
+\index{USART2\_BASEADDR@{USART2\_BASEADDR}!stm32f401xe.h@{stm32f401xe.h}}
+\doxysubsubsection{\texorpdfstring{USART2\_BASEADDR}{USART2\_BASEADDR}}
+{\footnotesize\ttfamily \label{stm32f401xe_8h_a9e2d543dd90e725020d1f4b2ae3a0cdc} 
+\+\#define USART2\+\_\+\+BASEADDR~(\doxymbox{\hyperlink{stm32f401xe_8h_aa2862fa9bfc107c83dc034fa75eed6b4}{APB1\+\_\+\+BASEADDR}} + 0\+X4400)}
+
+\Hypertarget{stm32f401xe_8h_acb4956d8b2b9289454c2b0eadd711e34}\index{stm32f401xe.h@{stm32f401xe.h}!USART2\_PCLK\_DI@{USART2\_PCLK\_DI}}
+\index{USART2\_PCLK\_DI@{USART2\_PCLK\_DI}!stm32f401xe.h@{stm32f401xe.h}}
+\doxysubsubsection{\texorpdfstring{USART2\_PCLK\_DI}{USART2\_PCLK\_DI}}
+{\footnotesize\ttfamily \label{stm32f401xe_8h_acb4956d8b2b9289454c2b0eadd711e34} 
+\+\#define USART2\+\_\+\+PCLK\+\_\+\+DI(\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+{\bfseries Value:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{(\doxymbox{\hyperlink{stm32f401xe_8h_a74944438a086975793d26ae48d5882d4}{RCC}}-\/>APB1ENR\ \&=\ \string~\ (1\ <<\ 17))}
+
+\end{DoxyCode}
+\Hypertarget{stm32f401xe_8h_a46edab80171922a374bd5a264f1f0e14}\index{stm32f401xe.h@{stm32f401xe.h}!USART2\_PCLK\_EN@{USART2\_PCLK\_EN}}
+\index{USART2\_PCLK\_EN@{USART2\_PCLK\_EN}!stm32f401xe.h@{stm32f401xe.h}}
+\doxysubsubsection{\texorpdfstring{USART2\_PCLK\_EN}{USART2\_PCLK\_EN}}
+{\footnotesize\ttfamily \label{stm32f401xe_8h_a46edab80171922a374bd5a264f1f0e14} 
+\+\#define USART2\+\_\+\+PCLK\+\_\+\+EN(\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+{\bfseries Value:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{(\doxymbox{\hyperlink{stm32f401xe_8h_a74944438a086975793d26ae48d5882d4}{RCC}}-\/>APB1ENR\ |=\ (1<<17))}
+
+\end{DoxyCode}
+\Hypertarget{stm32f401xe_8h_a2dab39a19ce3dd05fe360dcbb7b5dc84}\index{stm32f401xe.h@{stm32f401xe.h}!USART6@{USART6}}
+\index{USART6@{USART6}!stm32f401xe.h@{stm32f401xe.h}}
+\doxysubsubsection{\texorpdfstring{USART6}{USART6}}
+{\footnotesize\ttfamily \label{stm32f401xe_8h_a2dab39a19ce3dd05fe360dcbb7b5dc84} 
+\+\#define USART6~((\doxymbox{\hyperlink{struct_u_s_a_r_t___reg_def__t}{USART\+\_\+\+Reg\+Def\+\_\+t}}\texorpdfstring{$\ast$}{*})  \doxymbox{\hyperlink{stm32f401xe_8h_a849c1342a2b7b4126c4a3b638c903c29}{USART6\+\_\+\+BASEADDR}}}
+
+\Hypertarget{stm32f401xe_8h_a849c1342a2b7b4126c4a3b638c903c29}\index{stm32f401xe.h@{stm32f401xe.h}!USART6\_BASEADDR@{USART6\_BASEADDR}}
+\index{USART6\_BASEADDR@{USART6\_BASEADDR}!stm32f401xe.h@{stm32f401xe.h}}
+\doxysubsubsection{\texorpdfstring{USART6\_BASEADDR}{USART6\_BASEADDR}}
+{\footnotesize\ttfamily \label{stm32f401xe_8h_a849c1342a2b7b4126c4a3b638c903c29} 
+\+\#define USART6\+\_\+\+BASEADDR~(\doxymbox{\hyperlink{stm32f401xe_8h_ad112f60d214d7991e93e7239ce7ff274}{APB2\+\_\+\+BASEADDR}} + 0\+X1400)}
+
+\Hypertarget{stm32f401xe_8h_a0b34ade86ce39c5af78c1cbbdfb22ece}\index{stm32f401xe.h@{stm32f401xe.h}!USART6\_PCLK\_DI@{USART6\_PCLK\_DI}}
+\index{USART6\_PCLK\_DI@{USART6\_PCLK\_DI}!stm32f401xe.h@{stm32f401xe.h}}
+\doxysubsubsection{\texorpdfstring{USART6\_PCLK\_DI}{USART6\_PCLK\_DI}}
+{\footnotesize\ttfamily \label{stm32f401xe_8h_a0b34ade86ce39c5af78c1cbbdfb22ece} 
+\+\#define USART6\+\_\+\+PCLK\+\_\+\+DI(\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+{\bfseries Value:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{(\doxymbox{\hyperlink{stm32f401xe_8h_a74944438a086975793d26ae48d5882d4}{RCC}}-\/>APB2ENR\ \&=\ \string~(1\ <<\ 5))}
+
+\end{DoxyCode}
+\Hypertarget{stm32f401xe_8h_ab95e3976500c683ba5745f22579994cf}\index{stm32f401xe.h@{stm32f401xe.h}!USART6\_PCLK\_EN@{USART6\_PCLK\_EN}}
+\index{USART6\_PCLK\_EN@{USART6\_PCLK\_EN}!stm32f401xe.h@{stm32f401xe.h}}
+\doxysubsubsection{\texorpdfstring{USART6\_PCLK\_EN}{USART6\_PCLK\_EN}}
+{\footnotesize\ttfamily \label{stm32f401xe_8h_ab95e3976500c683ba5745f22579994cf} 
+\+\#define USART6\+\_\+\+PCLK\+\_\+\+EN(\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+{\bfseries Value:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{(\doxymbox{\hyperlink{stm32f401xe_8h_a74944438a086975793d26ae48d5882d4}{RCC}}-\/>APB2ENR\ |=\ (1<<5))}
+
+\end{DoxyCode}
+\Hypertarget{stm32f401xe_8h_ac92028c6442d66d7d88892a289b27c61}\index{stm32f401xe.h@{stm32f401xe.h}!USB\_BASEADDR@{USB\_BASEADDR}}
+\index{USB\_BASEADDR@{USB\_BASEADDR}!stm32f401xe.h@{stm32f401xe.h}}
+\doxysubsubsection{\texorpdfstring{USB\_BASEADDR}{USB\_BASEADDR}}
+{\footnotesize\ttfamily \label{stm32f401xe_8h_ac92028c6442d66d7d88892a289b27c61} 
+\+\#define USB\+\_\+\+BASEADDR~\doxymbox{\hyperlink{stm32f401xe_8h_a8cb6b2b80ddbb84295ad81af3681f4ec}{AHB2\+\_\+\+BASEADDR}}}
+

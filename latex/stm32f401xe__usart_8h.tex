@@ -1,0 +1,454 @@
+\doxysection{Drivers/\+inc/\+stm32f401xe\+\_\+usart.h File Reference}
+\hypertarget{stm32f401xe__usart_8h}{}\label{stm32f401xe__usart_8h}\index{Drivers/inc/stm32f401xe\_usart.h@{Drivers/inc/stm32f401xe\_usart.h}}
+{\ttfamily \+\#include "{}stm32f401xe.\+h"{}}\newline
+\doxysubsubsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \doxymbox{\hyperlink{struct_u_s_a_r_t___config__t}{USART\+\_\+\+Config\+\_\+t}}
+\begin{DoxyCompactList}\small\item\em Configuration structure for USART This structure contains all the parameters required to configure the USART peripheral. \end{DoxyCompactList}\item 
+struct \doxymbox{\hyperlink{struct_u_s_a_r_t___handle__t}{USART\+\_\+\+Handle\+\_\+t}}
+\begin{DoxyCompactList}\small\item\em Handle structure for USART This structure contains the configuration settings and runtime information for the USART peripheral. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\+\#define \doxymbox{\hyperlink{stm32f401xe__usart_8h_a0303ce72118a71ce5fd070d38af3ca65}{USART\+\_\+\+MODE\+\_\+\+ONLY\+\_\+\+TX}}~0
+\begin{DoxyCompactList}\small\item\em USART Mode(CR1 register-\/\+Bits 3-\/Transmit Enable:2-\/Receive Enable). \end{DoxyCompactList}\item 
+\+\#define \doxymbox{\hyperlink{stm32f401xe__usart_8h_afd533b27aba8ad29a61ec452b3459f3c}{USART\+\_\+\+MODE\+\_\+\+ONLY\+\_\+\+RX}}~1
+\item 
+\+\#define \doxymbox{\hyperlink{stm32f401xe__usart_8h_a9d314d0bcf88b329eebbd12e674f468a}{USART\+\_\+\+MODE\+\_\+\+TXRX}}~2
+\item 
+\+\#define \doxymbox{\hyperlink{stm32f401xe__usart_8h_a052070f6cd27d6e127afd7248e1c1a4b}{USART\+\_\+\+STD\+\_\+\+BAUD\+\_\+1200}}~1200
+\item 
+\+\#define \doxymbox{\hyperlink{stm32f401xe__usart_8h_ae4ffd631b77a06362c673babf7735a0b}{USART\+\_\+\+STD\+\_\+\+BAUD\+\_\+2400}}~2400
+\item 
+\+\#define \doxymbox{\hyperlink{stm32f401xe__usart_8h_ae7d579839e4c1a1ee3e311fa92870cb2}{USART\+\_\+\+STD\+\_\+\+BAUD\+\_\+9600}}~9600
+\item 
+\+\#define \doxymbox{\hyperlink{stm32f401xe__usart_8h_a5ef839391f23f7907b477bc35e37775b}{USART\+\_\+\+STD\+\_\+\+BAUD\+\_\+19200}}~19200
+\item 
+\+\#define \doxymbox{\hyperlink{stm32f401xe__usart_8h_adc4c3e2244c10c5b9bda231f8e5e8793}{USART\+\_\+\+STD\+\_\+\+BAUD\+\_\+38400}}~38400
+\item 
+\+\#define \doxymbox{\hyperlink{stm32f401xe__usart_8h_a1e2fa0874cd9479b0befb52610c1734d}{USART\+\_\+\+STD\+\_\+\+BAUD\+\_\+57600}}~57600
+\item 
+\+\#define \doxymbox{\hyperlink{stm32f401xe__usart_8h_a80eae0da33021a3d66a8cfa37dcd6074}{USART\+\_\+\+STD\+\_\+\+BAUD\+\_\+115200}}~115200
+\item 
+\+\#define \doxymbox{\hyperlink{stm32f401xe__usart_8h_a0d2b7b99331a26b4c23676a639a02170}{USART\+\_\+\+STD\+\_\+\+BAUD\+\_\+230400}}~230400
+\item 
+\+\#define \doxymbox{\hyperlink{stm32f401xe__usart_8h_a54573651e80aa55ec62bb6c01f1c35c4}{USART\+\_\+\+STD\+\_\+\+BAUD\+\_\+460800}}~460800
+\item 
+\+\#define \doxymbox{\hyperlink{stm32f401xe__usart_8h_ad9b98b1611f6dd5a042f9a092d0dad1c}{USART\+\_\+\+STD\+\_\+\+BAUD\+\_\+921600}}~921600
+\item 
+\+\#define \doxymbox{\hyperlink{stm32f401xe__usart_8h_a4569ab183845329a50b5e4e00a7c3b09}{USART\+\_\+\+PARITY\+\_\+\+DISABLE}}~0
+\begin{DoxyCompactList}\small\item\em Parity Control(CR1 register-\/\+Bit 10(Parity Enable):Bit 9(Parity Selection). \end{DoxyCompactList}\item 
+\+\#define \doxymbox{\hyperlink{stm32f401xe__usart_8h_ac071bac034b3fc09565301455e8dc9a8}{USART\+\_\+\+PARITY\+\_\+\+EN\+\_\+\+EVEN}}~1
+\item 
+\+\#define \doxymbox{\hyperlink{stm32f401xe__usart_8h_a227062506b7481c03ea8ef5810efd370}{USART\+\_\+\+PARITY\+\_\+\+EN\+\_\+\+ODD}}~2
+\item 
+\+\#define \doxymbox{\hyperlink{stm32f401xe__usart_8h_a8b47f5a727122fcc90691041f6972144}{USART\+\_\+\+WORDLEN\+\_\+8\+BITS}}~0
+\begin{DoxyCompactList}\small\item\em Word Length(CRI register-\/\+Bit 12-\/Word Length). \end{DoxyCompactList}\item 
+\+\#define \doxymbox{\hyperlink{stm32f401xe__usart_8h_a9bd391ebe305cd1e82527d6d5586dd38}{USART\+\_\+\+WORDLEN\+\_\+9\+BITS}}~1
+\item 
+\+\#define \doxymbox{\hyperlink{stm32f401xe__usart_8h_a82aae3118e9cd59bb270c028e21c23b4}{USART\+\_\+\+STOPBITS\+\_\+1}}~0
+\begin{DoxyCompactList}\small\item\em Number of Stop Bits(CR2 register-\/\+Bits 13:12). \end{DoxyCompactList}\item 
+\+\#define \doxymbox{\hyperlink{stm32f401xe__usart_8h_aa6e5782774150ff935df3fc06d9ec0c4}{USART\+\_\+\+STOPBITS\+\_\+0\+\_\+5}}~1
+\item 
+\+\#define \doxymbox{\hyperlink{stm32f401xe__usart_8h_af8d022e62f55ceb7b5e03eea336b5c45}{USART\+\_\+\+STOPBITS\+\_\+2}}~2
+\item 
+\+\#define \doxymbox{\hyperlink{stm32f401xe__usart_8h_a5b799017a5d9ab7de71a49c625f87532}{USART\+\_\+\+STOPBITS\+\_\+1\+\_\+5}}~3
+\item 
+\+\#define \doxymbox{\hyperlink{stm32f401xe__usart_8h_a640ba00e2cf03e7a741008265d4ff53e}{USART\+\_\+\+HW\+\_\+\+FLOW\+\_\+\+CTRL\+\_\+\+NONE}}~0
+\begin{DoxyCompactList}\small\item\em Hardware Flow Control(CR3 register-\/\+Bits 9(CTS Enable):8(RTS Enable)). \end{DoxyCompactList}\item 
+\+\#define \doxymbox{\hyperlink{stm32f401xe__usart_8h_a4f2287dce5feadd18c81ebcb0f3a5d3d}{USART\+\_\+\+HW\+\_\+\+FLOW\+\_\+\+CTRL\+\_\+\+CTS}}~1
+\item 
+\+\#define \doxymbox{\hyperlink{stm32f401xe__usart_8h_ae00662abe4a30399a43ee5b5b43cf246}{USART\+\_\+\+HW\+\_\+\+FLOW\+\_\+\+CTRL\+\_\+\+RTS}}~2
+\item 
+\+\#define \doxymbox{\hyperlink{stm32f401xe__usart_8h_a7b8def65813778ad11de843b3e990a05}{USART\+\_\+\+HW\+\_\+\+FLOW\+\_\+\+CTRL\+\_\+\+CTS\+\_\+\+RTS}}~3
+\item 
+\+\#define \doxymbox{\hyperlink{stm32f401xe__usart_8h_a7129f13333f2a7218838cc32fe507bfa}{USART\+\_\+\+FLAG\+\_\+\+TXE}}~( 1 $<$$<$ USART\+\_\+\+SR\+\_\+\+TXE)
+\item 
+\+\#define \doxymbox{\hyperlink{stm32f401xe__usart_8h_a11d6b70c8f00216b6d8a43790dfdcf2f}{USART\+\_\+\+FLAG\+\_\+\+RXNE}}~( 1 $<$$<$ USART\+\_\+\+SR\+\_\+\+RXNE)
+\item 
+\+\#define \doxymbox{\hyperlink{stm32f401xe__usart_8h_ae7b85c9e2cc86af5bbc8b8d8b854410f}{USART\+\_\+\+FLAG\+\_\+\+TC}}~( 1 $<$$<$ USART\+\_\+\+SR\+\_\+\+TC)
+\item 
+\+\#define \doxymbox{\hyperlink{stm32f401xe__usart_8h_a220d0d6c2f4affe2499fe7ea7b19c8ac}{USART\+\_\+\+BUSY\+\_\+\+IN\+\_\+\+RX}}~1
+\item 
+\+\#define \doxymbox{\hyperlink{stm32f401xe__usart_8h_a2139632c25eb8dcaa5b79de6fa2bf423}{USART\+\_\+\+BUSY\+\_\+\+IN\+\_\+\+TX}}~2
+\item 
+\+\#define \doxymbox{\hyperlink{stm32f401xe__usart_8h_a5ddbfa997d07cf95e21fad632e8e0961}{USART\+\_\+\+READY}}~0
+\item 
+\+\#define \doxymbox{\hyperlink{stm32f401xe__usart_8h_ae82899846b808101133e9a14d26f5354}{USART\+\_\+\+EVENT\+\_\+\+TX\+\_\+\+CMPLT}}~0
+\item 
+\+\#define \doxymbox{\hyperlink{stm32f401xe__usart_8h_a1afa7c5d2c57d587df8b6e5d00693613}{USART\+\_\+\+EVENT\+\_\+\+RX\+\_\+\+CMPLT}}~1
+\item 
+\+\#define \doxymbox{\hyperlink{stm32f401xe__usart_8h_a574a5b3fe76dabc45effbbac62aa004e}{USART\+\_\+\+EVENT\+\_\+\+IDLE}}~2
+\item 
+\+\#define \doxymbox{\hyperlink{stm32f401xe__usart_8h_a4783df2ed90e194263932d708c55b13e}{USART\+\_\+\+EVENT\+\_\+\+CTS}}~3
+\item 
+\+\#define \doxymbox{\hyperlink{stm32f401xe__usart_8h_a37c7f494c13f291e79237f43bc62ceff}{USART\+\_\+\+EVENT\+\_\+\+PE}}~4
+\item 
+\+\#define \doxymbox{\hyperlink{stm32f401xe__usart_8h_aaa16d45481e6c85d784c63c56a848809}{USART\+\_\+\+ERR\+\_\+\+FE}}~5
+\item 
+\+\#define \doxymbox{\hyperlink{stm32f401xe__usart_8h_af45eeb98577829f5f4dfe452d5fa67d9}{USART\+\_\+\+ERR\+\_\+\+NE}}~6
+\item 
+\+\#define \doxymbox{\hyperlink{stm32f401xe__usart_8h_a6e8d3e8f423bd07056be31c7991317e6}{USART\+\_\+\+ERR\+\_\+\+ORE}}~7
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \doxymbox{\hyperlink{stm32f401xe__usart_8h_a95763c53bf080c50d4d2150536b9f996}{USART\+\_\+\+Peri\+Clock\+Control}} (\doxymbox{\hyperlink{struct_u_s_a_r_t___reg_def__t}{USART\+\_\+\+Reg\+Def\+\_\+t}} \texorpdfstring{$\ast$}{*}p\+USARTx, uint8\+\_\+t En\+Or\+Di)
+\item 
+void \doxymbox{\hyperlink{stm32f401xe__usart_8h_a9f8081684bf9bf4f54f5a54e97a86f90}{USART\+\_\+\+Init}} (\doxymbox{\hyperlink{struct_u_s_a_r_t___handle__t}{USART\+\_\+\+Handle\+\_\+t}} \texorpdfstring{$\ast$}{*}p\+USARTHandle)
+\item 
+void \doxymbox{\hyperlink{stm32f401xe__usart_8h_af8004b63126c5814f98d296df0aa56b3}{USART\+\_\+\+De\+Init}} (\doxymbox{\hyperlink{struct_u_s_a_r_t___handle__t}{USART\+\_\+\+Handle\+\_\+t}} \texorpdfstring{$\ast$}{*}p\+USARTHandle)
+\item 
+void \doxymbox{\hyperlink{stm32f401xe__usart_8h_ac07c40fd91c832c49bc0aa649b85acfb}{USART\+\_\+\+Send\+Data}} (\doxymbox{\hyperlink{struct_u_s_a_r_t___handle__t}{USART\+\_\+\+Handle\+\_\+t}} \texorpdfstring{$\ast$}{*}p\+USARTHandle, uint8\+\_\+t \texorpdfstring{$\ast$}{*}p\+Tx\+Buffer, uint32\+\_\+t Len)
+\item 
+void \doxymbox{\hyperlink{stm32f401xe__usart_8h_aafcc74a54eb7f0a12a36487b452da59c}{USART\+\_\+\+Receive\+Data}} (\doxymbox{\hyperlink{struct_u_s_a_r_t___handle__t}{USART\+\_\+\+Handle\+\_\+t}} \texorpdfstring{$\ast$}{*}p\+USARTHandle, uint8\+\_\+t \texorpdfstring{$\ast$}{*}p\+Rx\+Buffer, uint32\+\_\+t Len)
+\item 
+uint8\+\_\+t \doxymbox{\hyperlink{stm32f401xe__usart_8h_a50fdac2af4a69887bceb1dec2a16ebaf}{USART\+\_\+\+Send\+Data\+IT}} (\doxymbox{\hyperlink{struct_u_s_a_r_t___handle__t}{USART\+\_\+\+Handle\+\_\+t}} \texorpdfstring{$\ast$}{*}p\+USARTHandle, uint8\+\_\+t \texorpdfstring{$\ast$}{*}p\+Tx\+Buffer, uint32\+\_\+t Len)
+\item 
+uint8\+\_\+t \doxymbox{\hyperlink{stm32f401xe__usart_8h_a6c7db552dd2c1f90e8743216a2788b3b}{USART\+\_\+\+Receive\+Data\+IT}} (\doxymbox{\hyperlink{struct_u_s_a_r_t___handle__t}{USART\+\_\+\+Handle\+\_\+t}} \texorpdfstring{$\ast$}{*}p\+USARTHandle, uint8\+\_\+t \texorpdfstring{$\ast$}{*}p\+Rx\+Buffer, uint32\+\_\+t Len)
+\item 
+uint8\+\_\+t \doxymbox{\hyperlink{stm32f401xe__usart_8h_aca4307df359080982360f4ba4370d7b4}{USART\+\_\+\+Get\+Flag\+Status}} (\doxymbox{\hyperlink{struct_u_s_a_r_t___reg_def__t}{USART\+\_\+\+Reg\+Def\+\_\+t}} \texorpdfstring{$\ast$}{*}p\+USARTx, uint8\+\_\+t Status\+Flag\+Name)
+\item 
+void \doxymbox{\hyperlink{stm32f401xe__usart_8h_a4ed196b59ec990af5533e0f608e2f559}{USART\+\_\+\+Clear\+Flag}} (\doxymbox{\hyperlink{struct_u_s_a_r_t___reg_def__t}{USART\+\_\+\+Reg\+Def\+\_\+t}} \texorpdfstring{$\ast$}{*}p\+USARTx, uint16\+\_\+t Status\+Flag\+Name)
+\item 
+void \doxymbox{\hyperlink{stm32f401xe__usart_8h_a65f7987aa8e2c477c82375f13e2af75a}{USART\+\_\+\+Peripheral\+Control}} (\doxymbox{\hyperlink{struct_u_s_a_r_t___reg_def__t}{USART\+\_\+\+Reg\+Def\+\_\+t}} \texorpdfstring{$\ast$}{*}p\+USARTx, uint8\+\_\+t En\+Or\+Di)
+\item 
+void \doxymbox{\hyperlink{stm32f401xe__usart_8h_aa95f8910a4887083ee310f38dd04e1af}{USART\+\_\+\+Set\+Baud\+Rate}} (\doxymbox{\hyperlink{struct_u_s_a_r_t___reg_def__t}{USART\+\_\+\+Reg\+Def\+\_\+t}} \texorpdfstring{$\ast$}{*}p\+USARTx, uint32\+\_\+t Baud\+Rate)
+\end{DoxyCompactItemize}
+
+
+\label{stm32f401xe__usart_8h_doc-define-members}
+\Hypertarget{stm32f401xe__usart_8h_doc-define-members}
+\doxysubsection{Macro Definition Documentation}
+\Hypertarget{stm32f401xe__usart_8h_a220d0d6c2f4affe2499fe7ea7b19c8ac}\index{stm32f401xe\_usart.h@{stm32f401xe\_usart.h}!USART\_BUSY\_IN\_RX@{USART\_BUSY\_IN\_RX}}
+\index{USART\_BUSY\_IN\_RX@{USART\_BUSY\_IN\_RX}!stm32f401xe\_usart.h@{stm32f401xe\_usart.h}}
+\doxysubsubsection{\texorpdfstring{USART\_BUSY\_IN\_RX}{USART\_BUSY\_IN\_RX}}
+{\footnotesize\ttfamily \label{stm32f401xe__usart_8h_a220d0d6c2f4affe2499fe7ea7b19c8ac} 
+\+\#define USART\+\_\+\+BUSY\+\_\+\+IN\+\_\+\+RX~1}
+
+\Hypertarget{stm32f401xe__usart_8h_a2139632c25eb8dcaa5b79de6fa2bf423}\index{stm32f401xe\_usart.h@{stm32f401xe\_usart.h}!USART\_BUSY\_IN\_TX@{USART\_BUSY\_IN\_TX}}
+\index{USART\_BUSY\_IN\_TX@{USART\_BUSY\_IN\_TX}!stm32f401xe\_usart.h@{stm32f401xe\_usart.h}}
+\doxysubsubsection{\texorpdfstring{USART\_BUSY\_IN\_TX}{USART\_BUSY\_IN\_TX}}
+{\footnotesize\ttfamily \label{stm32f401xe__usart_8h_a2139632c25eb8dcaa5b79de6fa2bf423} 
+\+\#define USART\+\_\+\+BUSY\+\_\+\+IN\+\_\+\+TX~2}
+
+\Hypertarget{stm32f401xe__usart_8h_aaa16d45481e6c85d784c63c56a848809}\index{stm32f401xe\_usart.h@{stm32f401xe\_usart.h}!USART\_ERR\_FE@{USART\_ERR\_FE}}
+\index{USART\_ERR\_FE@{USART\_ERR\_FE}!stm32f401xe\_usart.h@{stm32f401xe\_usart.h}}
+\doxysubsubsection{\texorpdfstring{USART\_ERR\_FE}{USART\_ERR\_FE}}
+{\footnotesize\ttfamily \label{stm32f401xe__usart_8h_aaa16d45481e6c85d784c63c56a848809} 
+\+\#define USART\+\_\+\+ERR\+\_\+\+FE~5}
+
+\Hypertarget{stm32f401xe__usart_8h_af45eeb98577829f5f4dfe452d5fa67d9}\index{stm32f401xe\_usart.h@{stm32f401xe\_usart.h}!USART\_ERR\_NE@{USART\_ERR\_NE}}
+\index{USART\_ERR\_NE@{USART\_ERR\_NE}!stm32f401xe\_usart.h@{stm32f401xe\_usart.h}}
+\doxysubsubsection{\texorpdfstring{USART\_ERR\_NE}{USART\_ERR\_NE}}
+{\footnotesize\ttfamily \label{stm32f401xe__usart_8h_af45eeb98577829f5f4dfe452d5fa67d9} 
+\+\#define USART\+\_\+\+ERR\+\_\+\+NE~6}
+
+\Hypertarget{stm32f401xe__usart_8h_a6e8d3e8f423bd07056be31c7991317e6}\index{stm32f401xe\_usart.h@{stm32f401xe\_usart.h}!USART\_ERR\_ORE@{USART\_ERR\_ORE}}
+\index{USART\_ERR\_ORE@{USART\_ERR\_ORE}!stm32f401xe\_usart.h@{stm32f401xe\_usart.h}}
+\doxysubsubsection{\texorpdfstring{USART\_ERR\_ORE}{USART\_ERR\_ORE}}
+{\footnotesize\ttfamily \label{stm32f401xe__usart_8h_a6e8d3e8f423bd07056be31c7991317e6} 
+\+\#define USART\+\_\+\+ERR\+\_\+\+ORE~7}
+
+\Hypertarget{stm32f401xe__usart_8h_a4783df2ed90e194263932d708c55b13e}\index{stm32f401xe\_usart.h@{stm32f401xe\_usart.h}!USART\_EVENT\_CTS@{USART\_EVENT\_CTS}}
+\index{USART\_EVENT\_CTS@{USART\_EVENT\_CTS}!stm32f401xe\_usart.h@{stm32f401xe\_usart.h}}
+\doxysubsubsection{\texorpdfstring{USART\_EVENT\_CTS}{USART\_EVENT\_CTS}}
+{\footnotesize\ttfamily \label{stm32f401xe__usart_8h_a4783df2ed90e194263932d708c55b13e} 
+\+\#define USART\+\_\+\+EVENT\+\_\+\+CTS~3}
+
+\Hypertarget{stm32f401xe__usart_8h_a574a5b3fe76dabc45effbbac62aa004e}\index{stm32f401xe\_usart.h@{stm32f401xe\_usart.h}!USART\_EVENT\_IDLE@{USART\_EVENT\_IDLE}}
+\index{USART\_EVENT\_IDLE@{USART\_EVENT\_IDLE}!stm32f401xe\_usart.h@{stm32f401xe\_usart.h}}
+\doxysubsubsection{\texorpdfstring{USART\_EVENT\_IDLE}{USART\_EVENT\_IDLE}}
+{\footnotesize\ttfamily \label{stm32f401xe__usart_8h_a574a5b3fe76dabc45effbbac62aa004e} 
+\+\#define USART\+\_\+\+EVENT\+\_\+\+IDLE~2}
+
+\Hypertarget{stm32f401xe__usart_8h_a37c7f494c13f291e79237f43bc62ceff}\index{stm32f401xe\_usart.h@{stm32f401xe\_usart.h}!USART\_EVENT\_PE@{USART\_EVENT\_PE}}
+\index{USART\_EVENT\_PE@{USART\_EVENT\_PE}!stm32f401xe\_usart.h@{stm32f401xe\_usart.h}}
+\doxysubsubsection{\texorpdfstring{USART\_EVENT\_PE}{USART\_EVENT\_PE}}
+{\footnotesize\ttfamily \label{stm32f401xe__usart_8h_a37c7f494c13f291e79237f43bc62ceff} 
+\+\#define USART\+\_\+\+EVENT\+\_\+\+PE~4}
+
+\Hypertarget{stm32f401xe__usart_8h_a1afa7c5d2c57d587df8b6e5d00693613}\index{stm32f401xe\_usart.h@{stm32f401xe\_usart.h}!USART\_EVENT\_RX\_CMPLT@{USART\_EVENT\_RX\_CMPLT}}
+\index{USART\_EVENT\_RX\_CMPLT@{USART\_EVENT\_RX\_CMPLT}!stm32f401xe\_usart.h@{stm32f401xe\_usart.h}}
+\doxysubsubsection{\texorpdfstring{USART\_EVENT\_RX\_CMPLT}{USART\_EVENT\_RX\_CMPLT}}
+{\footnotesize\ttfamily \label{stm32f401xe__usart_8h_a1afa7c5d2c57d587df8b6e5d00693613} 
+\+\#define USART\+\_\+\+EVENT\+\_\+\+RX\+\_\+\+CMPLT~1}
+
+\Hypertarget{stm32f401xe__usart_8h_ae82899846b808101133e9a14d26f5354}\index{stm32f401xe\_usart.h@{stm32f401xe\_usart.h}!USART\_EVENT\_TX\_CMPLT@{USART\_EVENT\_TX\_CMPLT}}
+\index{USART\_EVENT\_TX\_CMPLT@{USART\_EVENT\_TX\_CMPLT}!stm32f401xe\_usart.h@{stm32f401xe\_usart.h}}
+\doxysubsubsection{\texorpdfstring{USART\_EVENT\_TX\_CMPLT}{USART\_EVENT\_TX\_CMPLT}}
+{\footnotesize\ttfamily \label{stm32f401xe__usart_8h_ae82899846b808101133e9a14d26f5354} 
+\+\#define USART\+\_\+\+EVENT\+\_\+\+TX\+\_\+\+CMPLT~0}
+
+\Hypertarget{stm32f401xe__usart_8h_a11d6b70c8f00216b6d8a43790dfdcf2f}\index{stm32f401xe\_usart.h@{stm32f401xe\_usart.h}!USART\_FLAG\_RXNE@{USART\_FLAG\_RXNE}}
+\index{USART\_FLAG\_RXNE@{USART\_FLAG\_RXNE}!stm32f401xe\_usart.h@{stm32f401xe\_usart.h}}
+\doxysubsubsection{\texorpdfstring{USART\_FLAG\_RXNE}{USART\_FLAG\_RXNE}}
+{\footnotesize\ttfamily \label{stm32f401xe__usart_8h_a11d6b70c8f00216b6d8a43790dfdcf2f} 
+\+\#define USART\+\_\+\+FLAG\+\_\+\+RXNE~( 1 $<$$<$ USART\+\_\+\+SR\+\_\+\+RXNE)}
+
+\Hypertarget{stm32f401xe__usart_8h_ae7b85c9e2cc86af5bbc8b8d8b854410f}\index{stm32f401xe\_usart.h@{stm32f401xe\_usart.h}!USART\_FLAG\_TC@{USART\_FLAG\_TC}}
+\index{USART\_FLAG\_TC@{USART\_FLAG\_TC}!stm32f401xe\_usart.h@{stm32f401xe\_usart.h}}
+\doxysubsubsection{\texorpdfstring{USART\_FLAG\_TC}{USART\_FLAG\_TC}}
+{\footnotesize\ttfamily \label{stm32f401xe__usart_8h_ae7b85c9e2cc86af5bbc8b8d8b854410f} 
+\+\#define USART\+\_\+\+FLAG\+\_\+\+TC~( 1 $<$$<$ USART\+\_\+\+SR\+\_\+\+TC)}
+
+\Hypertarget{stm32f401xe__usart_8h_a7129f13333f2a7218838cc32fe507bfa}\index{stm32f401xe\_usart.h@{stm32f401xe\_usart.h}!USART\_FLAG\_TXE@{USART\_FLAG\_TXE}}
+\index{USART\_FLAG\_TXE@{USART\_FLAG\_TXE}!stm32f401xe\_usart.h@{stm32f401xe\_usart.h}}
+\doxysubsubsection{\texorpdfstring{USART\_FLAG\_TXE}{USART\_FLAG\_TXE}}
+{\footnotesize\ttfamily \label{stm32f401xe__usart_8h_a7129f13333f2a7218838cc32fe507bfa} 
+\+\#define USART\+\_\+\+FLAG\+\_\+\+TXE~( 1 $<$$<$ USART\+\_\+\+SR\+\_\+\+TXE)}
+
+\Hypertarget{stm32f401xe__usart_8h_a4f2287dce5feadd18c81ebcb0f3a5d3d}\index{stm32f401xe\_usart.h@{stm32f401xe\_usart.h}!USART\_HW\_FLOW\_CTRL\_CTS@{USART\_HW\_FLOW\_CTRL\_CTS}}
+\index{USART\_HW\_FLOW\_CTRL\_CTS@{USART\_HW\_FLOW\_CTRL\_CTS}!stm32f401xe\_usart.h@{stm32f401xe\_usart.h}}
+\doxysubsubsection{\texorpdfstring{USART\_HW\_FLOW\_CTRL\_CTS}{USART\_HW\_FLOW\_CTRL\_CTS}}
+{\footnotesize\ttfamily \label{stm32f401xe__usart_8h_a4f2287dce5feadd18c81ebcb0f3a5d3d} 
+\+\#define USART\+\_\+\+HW\+\_\+\+FLOW\+\_\+\+CTRL\+\_\+\+CTS~1}
+
+\Hypertarget{stm32f401xe__usart_8h_a7b8def65813778ad11de843b3e990a05}\index{stm32f401xe\_usart.h@{stm32f401xe\_usart.h}!USART\_HW\_FLOW\_CTRL\_CTS\_RTS@{USART\_HW\_FLOW\_CTRL\_CTS\_RTS}}
+\index{USART\_HW\_FLOW\_CTRL\_CTS\_RTS@{USART\_HW\_FLOW\_CTRL\_CTS\_RTS}!stm32f401xe\_usart.h@{stm32f401xe\_usart.h}}
+\doxysubsubsection{\texorpdfstring{USART\_HW\_FLOW\_CTRL\_CTS\_RTS}{USART\_HW\_FLOW\_CTRL\_CTS\_RTS}}
+{\footnotesize\ttfamily \label{stm32f401xe__usart_8h_a7b8def65813778ad11de843b3e990a05} 
+\+\#define USART\+\_\+\+HW\+\_\+\+FLOW\+\_\+\+CTRL\+\_\+\+CTS\+\_\+\+RTS~3}
+
+\Hypertarget{stm32f401xe__usart_8h_a640ba00e2cf03e7a741008265d4ff53e}\index{stm32f401xe\_usart.h@{stm32f401xe\_usart.h}!USART\_HW\_FLOW\_CTRL\_NONE@{USART\_HW\_FLOW\_CTRL\_NONE}}
+\index{USART\_HW\_FLOW\_CTRL\_NONE@{USART\_HW\_FLOW\_CTRL\_NONE}!stm32f401xe\_usart.h@{stm32f401xe\_usart.h}}
+\doxysubsubsection{\texorpdfstring{USART\_HW\_FLOW\_CTRL\_NONE}{USART\_HW\_FLOW\_CTRL\_NONE}}
+{\footnotesize\ttfamily \label{stm32f401xe__usart_8h_a640ba00e2cf03e7a741008265d4ff53e} 
+\+\#define USART\+\_\+\+HW\+\_\+\+FLOW\+\_\+\+CTRL\+\_\+\+NONE~0}
+
+
+
+Hardware Flow Control(CR3 register-\/\+Bits 9(CTS Enable):8(RTS Enable)). 
+
+\Hypertarget{stm32f401xe__usart_8h_ae00662abe4a30399a43ee5b5b43cf246}\index{stm32f401xe\_usart.h@{stm32f401xe\_usart.h}!USART\_HW\_FLOW\_CTRL\_RTS@{USART\_HW\_FLOW\_CTRL\_RTS}}
+\index{USART\_HW\_FLOW\_CTRL\_RTS@{USART\_HW\_FLOW\_CTRL\_RTS}!stm32f401xe\_usart.h@{stm32f401xe\_usart.h}}
+\doxysubsubsection{\texorpdfstring{USART\_HW\_FLOW\_CTRL\_RTS}{USART\_HW\_FLOW\_CTRL\_RTS}}
+{\footnotesize\ttfamily \label{stm32f401xe__usart_8h_ae00662abe4a30399a43ee5b5b43cf246} 
+\+\#define USART\+\_\+\+HW\+\_\+\+FLOW\+\_\+\+CTRL\+\_\+\+RTS~2}
+
+\Hypertarget{stm32f401xe__usart_8h_afd533b27aba8ad29a61ec452b3459f3c}\index{stm32f401xe\_usart.h@{stm32f401xe\_usart.h}!USART\_MODE\_ONLY\_RX@{USART\_MODE\_ONLY\_RX}}
+\index{USART\_MODE\_ONLY\_RX@{USART\_MODE\_ONLY\_RX}!stm32f401xe\_usart.h@{stm32f401xe\_usart.h}}
+\doxysubsubsection{\texorpdfstring{USART\_MODE\_ONLY\_RX}{USART\_MODE\_ONLY\_RX}}
+{\footnotesize\ttfamily \label{stm32f401xe__usart_8h_afd533b27aba8ad29a61ec452b3459f3c} 
+\+\#define USART\+\_\+\+MODE\+\_\+\+ONLY\+\_\+\+RX~1}
+
+\Hypertarget{stm32f401xe__usart_8h_a0303ce72118a71ce5fd070d38af3ca65}\index{stm32f401xe\_usart.h@{stm32f401xe\_usart.h}!USART\_MODE\_ONLY\_TX@{USART\_MODE\_ONLY\_TX}}
+\index{USART\_MODE\_ONLY\_TX@{USART\_MODE\_ONLY\_TX}!stm32f401xe\_usart.h@{stm32f401xe\_usart.h}}
+\doxysubsubsection{\texorpdfstring{USART\_MODE\_ONLY\_TX}{USART\_MODE\_ONLY\_TX}}
+{\footnotesize\ttfamily \label{stm32f401xe__usart_8h_a0303ce72118a71ce5fd070d38af3ca65} 
+\+\#define USART\+\_\+\+MODE\+\_\+\+ONLY\+\_\+\+TX~0}
+
+
+
+USART Mode(CR1 register-\/\+Bits 3-\/Transmit Enable:2-\/Receive Enable). 
+
+\Hypertarget{stm32f401xe__usart_8h_a9d314d0bcf88b329eebbd12e674f468a}\index{stm32f401xe\_usart.h@{stm32f401xe\_usart.h}!USART\_MODE\_TXRX@{USART\_MODE\_TXRX}}
+\index{USART\_MODE\_TXRX@{USART\_MODE\_TXRX}!stm32f401xe\_usart.h@{stm32f401xe\_usart.h}}
+\doxysubsubsection{\texorpdfstring{USART\_MODE\_TXRX}{USART\_MODE\_TXRX}}
+{\footnotesize\ttfamily \label{stm32f401xe__usart_8h_a9d314d0bcf88b329eebbd12e674f468a} 
+\+\#define USART\+\_\+\+MODE\+\_\+\+TXRX~2}
+
+\Hypertarget{stm32f401xe__usart_8h_a4569ab183845329a50b5e4e00a7c3b09}\index{stm32f401xe\_usart.h@{stm32f401xe\_usart.h}!USART\_PARITY\_DISABLE@{USART\_PARITY\_DISABLE}}
+\index{USART\_PARITY\_DISABLE@{USART\_PARITY\_DISABLE}!stm32f401xe\_usart.h@{stm32f401xe\_usart.h}}
+\doxysubsubsection{\texorpdfstring{USART\_PARITY\_DISABLE}{USART\_PARITY\_DISABLE}}
+{\footnotesize\ttfamily \label{stm32f401xe__usart_8h_a4569ab183845329a50b5e4e00a7c3b09} 
+\+\#define USART\+\_\+\+PARITY\+\_\+\+DISABLE~0}
+
+
+
+Parity Control(CR1 register-\/\+Bit 10(Parity Enable):Bit 9(Parity Selection). 
+
+\Hypertarget{stm32f401xe__usart_8h_ac071bac034b3fc09565301455e8dc9a8}\index{stm32f401xe\_usart.h@{stm32f401xe\_usart.h}!USART\_PARITY\_EN\_EVEN@{USART\_PARITY\_EN\_EVEN}}
+\index{USART\_PARITY\_EN\_EVEN@{USART\_PARITY\_EN\_EVEN}!stm32f401xe\_usart.h@{stm32f401xe\_usart.h}}
+\doxysubsubsection{\texorpdfstring{USART\_PARITY\_EN\_EVEN}{USART\_PARITY\_EN\_EVEN}}
+{\footnotesize\ttfamily \label{stm32f401xe__usart_8h_ac071bac034b3fc09565301455e8dc9a8} 
+\+\#define USART\+\_\+\+PARITY\+\_\+\+EN\+\_\+\+EVEN~1}
+
+\Hypertarget{stm32f401xe__usart_8h_a227062506b7481c03ea8ef5810efd370}\index{stm32f401xe\_usart.h@{stm32f401xe\_usart.h}!USART\_PARITY\_EN\_ODD@{USART\_PARITY\_EN\_ODD}}
+\index{USART\_PARITY\_EN\_ODD@{USART\_PARITY\_EN\_ODD}!stm32f401xe\_usart.h@{stm32f401xe\_usart.h}}
+\doxysubsubsection{\texorpdfstring{USART\_PARITY\_EN\_ODD}{USART\_PARITY\_EN\_ODD}}
+{\footnotesize\ttfamily \label{stm32f401xe__usart_8h_a227062506b7481c03ea8ef5810efd370} 
+\+\#define USART\+\_\+\+PARITY\+\_\+\+EN\+\_\+\+ODD~2}
+
+\Hypertarget{stm32f401xe__usart_8h_a5ddbfa997d07cf95e21fad632e8e0961}\index{stm32f401xe\_usart.h@{stm32f401xe\_usart.h}!USART\_READY@{USART\_READY}}
+\index{USART\_READY@{USART\_READY}!stm32f401xe\_usart.h@{stm32f401xe\_usart.h}}
+\doxysubsubsection{\texorpdfstring{USART\_READY}{USART\_READY}}
+{\footnotesize\ttfamily \label{stm32f401xe__usart_8h_a5ddbfa997d07cf95e21fad632e8e0961} 
+\+\#define USART\+\_\+\+READY~0}
+
+\Hypertarget{stm32f401xe__usart_8h_a80eae0da33021a3d66a8cfa37dcd6074}\index{stm32f401xe\_usart.h@{stm32f401xe\_usart.h}!USART\_STD\_BAUD\_115200@{USART\_STD\_BAUD\_115200}}
+\index{USART\_STD\_BAUD\_115200@{USART\_STD\_BAUD\_115200}!stm32f401xe\_usart.h@{stm32f401xe\_usart.h}}
+\doxysubsubsection{\texorpdfstring{USART\_STD\_BAUD\_115200}{USART\_STD\_BAUD\_115200}}
+{\footnotesize\ttfamily \label{stm32f401xe__usart_8h_a80eae0da33021a3d66a8cfa37dcd6074} 
+\+\#define USART\+\_\+\+STD\+\_\+\+BAUD\+\_\+115200~115200}
+
+\Hypertarget{stm32f401xe__usart_8h_a052070f6cd27d6e127afd7248e1c1a4b}\index{stm32f401xe\_usart.h@{stm32f401xe\_usart.h}!USART\_STD\_BAUD\_1200@{USART\_STD\_BAUD\_1200}}
+\index{USART\_STD\_BAUD\_1200@{USART\_STD\_BAUD\_1200}!stm32f401xe\_usart.h@{stm32f401xe\_usart.h}}
+\doxysubsubsection{\texorpdfstring{USART\_STD\_BAUD\_1200}{USART\_STD\_BAUD\_1200}}
+{\footnotesize\ttfamily \label{stm32f401xe__usart_8h_a052070f6cd27d6e127afd7248e1c1a4b} 
+\+\#define USART\+\_\+\+STD\+\_\+\+BAUD\+\_\+1200~1200}
+
+\Hypertarget{stm32f401xe__usart_8h_a5ef839391f23f7907b477bc35e37775b}\index{stm32f401xe\_usart.h@{stm32f401xe\_usart.h}!USART\_STD\_BAUD\_19200@{USART\_STD\_BAUD\_19200}}
+\index{USART\_STD\_BAUD\_19200@{USART\_STD\_BAUD\_19200}!stm32f401xe\_usart.h@{stm32f401xe\_usart.h}}
+\doxysubsubsection{\texorpdfstring{USART\_STD\_BAUD\_19200}{USART\_STD\_BAUD\_19200}}
+{\footnotesize\ttfamily \label{stm32f401xe__usart_8h_a5ef839391f23f7907b477bc35e37775b} 
+\+\#define USART\+\_\+\+STD\+\_\+\+BAUD\+\_\+19200~19200}
+
+\Hypertarget{stm32f401xe__usart_8h_a0d2b7b99331a26b4c23676a639a02170}\index{stm32f401xe\_usart.h@{stm32f401xe\_usart.h}!USART\_STD\_BAUD\_230400@{USART\_STD\_BAUD\_230400}}
+\index{USART\_STD\_BAUD\_230400@{USART\_STD\_BAUD\_230400}!stm32f401xe\_usart.h@{stm32f401xe\_usart.h}}
+\doxysubsubsection{\texorpdfstring{USART\_STD\_BAUD\_230400}{USART\_STD\_BAUD\_230400}}
+{\footnotesize\ttfamily \label{stm32f401xe__usart_8h_a0d2b7b99331a26b4c23676a639a02170} 
+\+\#define USART\+\_\+\+STD\+\_\+\+BAUD\+\_\+230400~230400}
+
+\Hypertarget{stm32f401xe__usart_8h_ae4ffd631b77a06362c673babf7735a0b}\index{stm32f401xe\_usart.h@{stm32f401xe\_usart.h}!USART\_STD\_BAUD\_2400@{USART\_STD\_BAUD\_2400}}
+\index{USART\_STD\_BAUD\_2400@{USART\_STD\_BAUD\_2400}!stm32f401xe\_usart.h@{stm32f401xe\_usart.h}}
+\doxysubsubsection{\texorpdfstring{USART\_STD\_BAUD\_2400}{USART\_STD\_BAUD\_2400}}
+{\footnotesize\ttfamily \label{stm32f401xe__usart_8h_ae4ffd631b77a06362c673babf7735a0b} 
+\+\#define USART\+\_\+\+STD\+\_\+\+BAUD\+\_\+2400~2400}
+
+\Hypertarget{stm32f401xe__usart_8h_adc4c3e2244c10c5b9bda231f8e5e8793}\index{stm32f401xe\_usart.h@{stm32f401xe\_usart.h}!USART\_STD\_BAUD\_38400@{USART\_STD\_BAUD\_38400}}
+\index{USART\_STD\_BAUD\_38400@{USART\_STD\_BAUD\_38400}!stm32f401xe\_usart.h@{stm32f401xe\_usart.h}}
+\doxysubsubsection{\texorpdfstring{USART\_STD\_BAUD\_38400}{USART\_STD\_BAUD\_38400}}
+{\footnotesize\ttfamily \label{stm32f401xe__usart_8h_adc4c3e2244c10c5b9bda231f8e5e8793} 
+\+\#define USART\+\_\+\+STD\+\_\+\+BAUD\+\_\+38400~38400}
+
+\Hypertarget{stm32f401xe__usart_8h_a54573651e80aa55ec62bb6c01f1c35c4}\index{stm32f401xe\_usart.h@{stm32f401xe\_usart.h}!USART\_STD\_BAUD\_460800@{USART\_STD\_BAUD\_460800}}
+\index{USART\_STD\_BAUD\_460800@{USART\_STD\_BAUD\_460800}!stm32f401xe\_usart.h@{stm32f401xe\_usart.h}}
+\doxysubsubsection{\texorpdfstring{USART\_STD\_BAUD\_460800}{USART\_STD\_BAUD\_460800}}
+{\footnotesize\ttfamily \label{stm32f401xe__usart_8h_a54573651e80aa55ec62bb6c01f1c35c4} 
+\+\#define USART\+\_\+\+STD\+\_\+\+BAUD\+\_\+460800~460800}
+
+\Hypertarget{stm32f401xe__usart_8h_a1e2fa0874cd9479b0befb52610c1734d}\index{stm32f401xe\_usart.h@{stm32f401xe\_usart.h}!USART\_STD\_BAUD\_57600@{USART\_STD\_BAUD\_57600}}
+\index{USART\_STD\_BAUD\_57600@{USART\_STD\_BAUD\_57600}!stm32f401xe\_usart.h@{stm32f401xe\_usart.h}}
+\doxysubsubsection{\texorpdfstring{USART\_STD\_BAUD\_57600}{USART\_STD\_BAUD\_57600}}
+{\footnotesize\ttfamily \label{stm32f401xe__usart_8h_a1e2fa0874cd9479b0befb52610c1734d} 
+\+\#define USART\+\_\+\+STD\+\_\+\+BAUD\+\_\+57600~57600}
+
+\Hypertarget{stm32f401xe__usart_8h_ad9b98b1611f6dd5a042f9a092d0dad1c}\index{stm32f401xe\_usart.h@{stm32f401xe\_usart.h}!USART\_STD\_BAUD\_921600@{USART\_STD\_BAUD\_921600}}
+\index{USART\_STD\_BAUD\_921600@{USART\_STD\_BAUD\_921600}!stm32f401xe\_usart.h@{stm32f401xe\_usart.h}}
+\doxysubsubsection{\texorpdfstring{USART\_STD\_BAUD\_921600}{USART\_STD\_BAUD\_921600}}
+{\footnotesize\ttfamily \label{stm32f401xe__usart_8h_ad9b98b1611f6dd5a042f9a092d0dad1c} 
+\+\#define USART\+\_\+\+STD\+\_\+\+BAUD\+\_\+921600~921600}
+
+\Hypertarget{stm32f401xe__usart_8h_ae7d579839e4c1a1ee3e311fa92870cb2}\index{stm32f401xe\_usart.h@{stm32f401xe\_usart.h}!USART\_STD\_BAUD\_9600@{USART\_STD\_BAUD\_9600}}
+\index{USART\_STD\_BAUD\_9600@{USART\_STD\_BAUD\_9600}!stm32f401xe\_usart.h@{stm32f401xe\_usart.h}}
+\doxysubsubsection{\texorpdfstring{USART\_STD\_BAUD\_9600}{USART\_STD\_BAUD\_9600}}
+{\footnotesize\ttfamily \label{stm32f401xe__usart_8h_ae7d579839e4c1a1ee3e311fa92870cb2} 
+\+\#define USART\+\_\+\+STD\+\_\+\+BAUD\+\_\+9600~9600}
+
+\Hypertarget{stm32f401xe__usart_8h_aa6e5782774150ff935df3fc06d9ec0c4}\index{stm32f401xe\_usart.h@{stm32f401xe\_usart.h}!USART\_STOPBITS\_0\_5@{USART\_STOPBITS\_0\_5}}
+\index{USART\_STOPBITS\_0\_5@{USART\_STOPBITS\_0\_5}!stm32f401xe\_usart.h@{stm32f401xe\_usart.h}}
+\doxysubsubsection{\texorpdfstring{USART\_STOPBITS\_0\_5}{USART\_STOPBITS\_0\_5}}
+{\footnotesize\ttfamily \label{stm32f401xe__usart_8h_aa6e5782774150ff935df3fc06d9ec0c4} 
+\+\#define USART\+\_\+\+STOPBITS\+\_\+0\+\_\+5~1}
+
+\Hypertarget{stm32f401xe__usart_8h_a82aae3118e9cd59bb270c028e21c23b4}\index{stm32f401xe\_usart.h@{stm32f401xe\_usart.h}!USART\_STOPBITS\_1@{USART\_STOPBITS\_1}}
+\index{USART\_STOPBITS\_1@{USART\_STOPBITS\_1}!stm32f401xe\_usart.h@{stm32f401xe\_usart.h}}
+\doxysubsubsection{\texorpdfstring{USART\_STOPBITS\_1}{USART\_STOPBITS\_1}}
+{\footnotesize\ttfamily \label{stm32f401xe__usart_8h_a82aae3118e9cd59bb270c028e21c23b4} 
+\+\#define USART\+\_\+\+STOPBITS\+\_\+1~0}
+
+
+
+Number of Stop Bits(CR2 register-\/\+Bits 13:12). 
+
+\Hypertarget{stm32f401xe__usart_8h_a5b799017a5d9ab7de71a49c625f87532}\index{stm32f401xe\_usart.h@{stm32f401xe\_usart.h}!USART\_STOPBITS\_1\_5@{USART\_STOPBITS\_1\_5}}
+\index{USART\_STOPBITS\_1\_5@{USART\_STOPBITS\_1\_5}!stm32f401xe\_usart.h@{stm32f401xe\_usart.h}}
+\doxysubsubsection{\texorpdfstring{USART\_STOPBITS\_1\_5}{USART\_STOPBITS\_1\_5}}
+{\footnotesize\ttfamily \label{stm32f401xe__usart_8h_a5b799017a5d9ab7de71a49c625f87532} 
+\+\#define USART\+\_\+\+STOPBITS\+\_\+1\+\_\+5~3}
+
+\Hypertarget{stm32f401xe__usart_8h_af8d022e62f55ceb7b5e03eea336b5c45}\index{stm32f401xe\_usart.h@{stm32f401xe\_usart.h}!USART\_STOPBITS\_2@{USART\_STOPBITS\_2}}
+\index{USART\_STOPBITS\_2@{USART\_STOPBITS\_2}!stm32f401xe\_usart.h@{stm32f401xe\_usart.h}}
+\doxysubsubsection{\texorpdfstring{USART\_STOPBITS\_2}{USART\_STOPBITS\_2}}
+{\footnotesize\ttfamily \label{stm32f401xe__usart_8h_af8d022e62f55ceb7b5e03eea336b5c45} 
+\+\#define USART\+\_\+\+STOPBITS\+\_\+2~2}
+
+\Hypertarget{stm32f401xe__usart_8h_a8b47f5a727122fcc90691041f6972144}\index{stm32f401xe\_usart.h@{stm32f401xe\_usart.h}!USART\_WORDLEN\_8BITS@{USART\_WORDLEN\_8BITS}}
+\index{USART\_WORDLEN\_8BITS@{USART\_WORDLEN\_8BITS}!stm32f401xe\_usart.h@{stm32f401xe\_usart.h}}
+\doxysubsubsection{\texorpdfstring{USART\_WORDLEN\_8BITS}{USART\_WORDLEN\_8BITS}}
+{\footnotesize\ttfamily \label{stm32f401xe__usart_8h_a8b47f5a727122fcc90691041f6972144} 
+\+\#define USART\+\_\+\+WORDLEN\+\_\+8\+BITS~0}
+
+
+
+Word Length(CRI register-\/\+Bit 12-\/Word Length). 
+
+\Hypertarget{stm32f401xe__usart_8h_a9bd391ebe305cd1e82527d6d5586dd38}\index{stm32f401xe\_usart.h@{stm32f401xe\_usart.h}!USART\_WORDLEN\_9BITS@{USART\_WORDLEN\_9BITS}}
+\index{USART\_WORDLEN\_9BITS@{USART\_WORDLEN\_9BITS}!stm32f401xe\_usart.h@{stm32f401xe\_usart.h}}
+\doxysubsubsection{\texorpdfstring{USART\_WORDLEN\_9BITS}{USART\_WORDLEN\_9BITS}}
+{\footnotesize\ttfamily \label{stm32f401xe__usart_8h_a9bd391ebe305cd1e82527d6d5586dd38} 
+\+\#define USART\+\_\+\+WORDLEN\+\_\+9\+BITS~1}
+
+
+
+\label{stm32f401xe__usart_8h_doc-func-members}
+\Hypertarget{stm32f401xe__usart_8h_doc-func-members}
+\doxysubsection{Function Documentation}
+\Hypertarget{stm32f401xe__usart_8h_a4ed196b59ec990af5533e0f608e2f559}\index{stm32f401xe\_usart.h@{stm32f401xe\_usart.h}!USART\_ClearFlag@{USART\_ClearFlag}}
+\index{USART\_ClearFlag@{USART\_ClearFlag}!stm32f401xe\_usart.h@{stm32f401xe\_usart.h}}
+\doxysubsubsection{\texorpdfstring{USART\_ClearFlag()}{USART\_ClearFlag()}}
+{\footnotesize\ttfamily \label{stm32f401xe__usart_8h_a4ed196b59ec990af5533e0f608e2f559} 
+void USART\+\_\+\+Clear\+Flag (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{struct_u_s_a_r_t___reg_def__t}{USART\+\_\+\+Reg\+Def\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{p\+USARTx}{, }\item[{uint16\+\_\+t}]{Status\+Flag\+Name}{}\end{DoxyParamCaption})}
+
+\Hypertarget{stm32f401xe__usart_8h_af8004b63126c5814f98d296df0aa56b3}\index{stm32f401xe\_usart.h@{stm32f401xe\_usart.h}!USART\_DeInit@{USART\_DeInit}}
+\index{USART\_DeInit@{USART\_DeInit}!stm32f401xe\_usart.h@{stm32f401xe\_usart.h}}
+\doxysubsubsection{\texorpdfstring{USART\_DeInit()}{USART\_DeInit()}}
+{\footnotesize\ttfamily \label{stm32f401xe__usart_8h_af8004b63126c5814f98d296df0aa56b3} 
+void USART\+\_\+\+De\+Init (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{struct_u_s_a_r_t___handle__t}{USART\+\_\+\+Handle\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{p\+USARTHandle}{}\end{DoxyParamCaption})}
+
+\Hypertarget{stm32f401xe__usart_8h_aca4307df359080982360f4ba4370d7b4}\index{stm32f401xe\_usart.h@{stm32f401xe\_usart.h}!USART\_GetFlagStatus@{USART\_GetFlagStatus}}
+\index{USART\_GetFlagStatus@{USART\_GetFlagStatus}!stm32f401xe\_usart.h@{stm32f401xe\_usart.h}}
+\doxysubsubsection{\texorpdfstring{USART\_GetFlagStatus()}{USART\_GetFlagStatus()}}
+{\footnotesize\ttfamily \label{stm32f401xe__usart_8h_aca4307df359080982360f4ba4370d7b4} 
+uint8\+\_\+t USART\+\_\+\+Get\+Flag\+Status (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{struct_u_s_a_r_t___reg_def__t}{USART\+\_\+\+Reg\+Def\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{p\+USARTx}{, }\item[{uint8\+\_\+t}]{Status\+Flag\+Name}{}\end{DoxyParamCaption})}
+
+\Hypertarget{stm32f401xe__usart_8h_a9f8081684bf9bf4f54f5a54e97a86f90}\index{stm32f401xe\_usart.h@{stm32f401xe\_usart.h}!USART\_Init@{USART\_Init}}
+\index{USART\_Init@{USART\_Init}!stm32f401xe\_usart.h@{stm32f401xe\_usart.h}}
+\doxysubsubsection{\texorpdfstring{USART\_Init()}{USART\_Init()}}
+{\footnotesize\ttfamily \label{stm32f401xe__usart_8h_a9f8081684bf9bf4f54f5a54e97a86f90} 
+void USART\+\_\+\+Init (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{struct_u_s_a_r_t___handle__t}{USART\+\_\+\+Handle\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{p\+USARTHandle}{}\end{DoxyParamCaption})}
+
+\Hypertarget{stm32f401xe__usart_8h_a95763c53bf080c50d4d2150536b9f996}\index{stm32f401xe\_usart.h@{stm32f401xe\_usart.h}!USART\_PeriClockControl@{USART\_PeriClockControl}}
+\index{USART\_PeriClockControl@{USART\_PeriClockControl}!stm32f401xe\_usart.h@{stm32f401xe\_usart.h}}
+\doxysubsubsection{\texorpdfstring{USART\_PeriClockControl()}{USART\_PeriClockControl()}}
+{\footnotesize\ttfamily \label{stm32f401xe__usart_8h_a95763c53bf080c50d4d2150536b9f996} 
+void USART\+\_\+\+Peri\+Clock\+Control (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{struct_u_s_a_r_t___reg_def__t}{USART\+\_\+\+Reg\+Def\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{p\+USARTx}{, }\item[{uint8\+\_\+t}]{En\+Or\+Di}{}\end{DoxyParamCaption})}
+
+\Hypertarget{stm32f401xe__usart_8h_a65f7987aa8e2c477c82375f13e2af75a}\index{stm32f401xe\_usart.h@{stm32f401xe\_usart.h}!USART\_PeripheralControl@{USART\_PeripheralControl}}
+\index{USART\_PeripheralControl@{USART\_PeripheralControl}!stm32f401xe\_usart.h@{stm32f401xe\_usart.h}}
+\doxysubsubsection{\texorpdfstring{USART\_PeripheralControl()}{USART\_PeripheralControl()}}
+{\footnotesize\ttfamily \label{stm32f401xe__usart_8h_a65f7987aa8e2c477c82375f13e2af75a} 
+void USART\+\_\+\+Peripheral\+Control (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{struct_u_s_a_r_t___reg_def__t}{USART\+\_\+\+Reg\+Def\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{p\+USARTx}{, }\item[{uint8\+\_\+t}]{En\+Or\+Di}{}\end{DoxyParamCaption})}
+
+\Hypertarget{stm32f401xe__usart_8h_aafcc74a54eb7f0a12a36487b452da59c}\index{stm32f401xe\_usart.h@{stm32f401xe\_usart.h}!USART\_ReceiveData@{USART\_ReceiveData}}
+\index{USART\_ReceiveData@{USART\_ReceiveData}!stm32f401xe\_usart.h@{stm32f401xe\_usart.h}}
+\doxysubsubsection{\texorpdfstring{USART\_ReceiveData()}{USART\_ReceiveData()}}
+{\footnotesize\ttfamily \label{stm32f401xe__usart_8h_aafcc74a54eb7f0a12a36487b452da59c} 
+void USART\+\_\+\+Receive\+Data (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{struct_u_s_a_r_t___handle__t}{USART\+\_\+\+Handle\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{p\+USARTHandle}{, }\item[{uint8\+\_\+t \texorpdfstring{$\ast$}{*}}]{p\+Rx\+Buffer}{, }\item[{uint32\+\_\+t}]{Len}{}\end{DoxyParamCaption})}
+
+\Hypertarget{stm32f401xe__usart_8h_a6c7db552dd2c1f90e8743216a2788b3b}\index{stm32f401xe\_usart.h@{stm32f401xe\_usart.h}!USART\_ReceiveDataIT@{USART\_ReceiveDataIT}}
+\index{USART\_ReceiveDataIT@{USART\_ReceiveDataIT}!stm32f401xe\_usart.h@{stm32f401xe\_usart.h}}
+\doxysubsubsection{\texorpdfstring{USART\_ReceiveDataIT()}{USART\_ReceiveDataIT()}}
+{\footnotesize\ttfamily \label{stm32f401xe__usart_8h_a6c7db552dd2c1f90e8743216a2788b3b} 
+uint8\+\_\+t USART\+\_\+\+Receive\+Data\+IT (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{struct_u_s_a_r_t___handle__t}{USART\+\_\+\+Handle\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{p\+USARTHandle}{, }\item[{uint8\+\_\+t \texorpdfstring{$\ast$}{*}}]{p\+Rx\+Buffer}{, }\item[{uint32\+\_\+t}]{Len}{}\end{DoxyParamCaption})}
+
+\Hypertarget{stm32f401xe__usart_8h_ac07c40fd91c832c49bc0aa649b85acfb}\index{stm32f401xe\_usart.h@{stm32f401xe\_usart.h}!USART\_SendData@{USART\_SendData}}
+\index{USART\_SendData@{USART\_SendData}!stm32f401xe\_usart.h@{stm32f401xe\_usart.h}}
+\doxysubsubsection{\texorpdfstring{USART\_SendData()}{USART\_SendData()}}
+{\footnotesize\ttfamily \label{stm32f401xe__usart_8h_ac07c40fd91c832c49bc0aa649b85acfb} 
+void USART\+\_\+\+Send\+Data (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{struct_u_s_a_r_t___handle__t}{USART\+\_\+\+Handle\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{p\+USARTHandle}{, }\item[{uint8\+\_\+t \texorpdfstring{$\ast$}{*}}]{p\+Tx\+Buffer}{, }\item[{uint32\+\_\+t}]{Len}{}\end{DoxyParamCaption})}
+
+\Hypertarget{stm32f401xe__usart_8h_a50fdac2af4a69887bceb1dec2a16ebaf}\index{stm32f401xe\_usart.h@{stm32f401xe\_usart.h}!USART\_SendDataIT@{USART\_SendDataIT}}
+\index{USART\_SendDataIT@{USART\_SendDataIT}!stm32f401xe\_usart.h@{stm32f401xe\_usart.h}}
+\doxysubsubsection{\texorpdfstring{USART\_SendDataIT()}{USART\_SendDataIT()}}
+{\footnotesize\ttfamily \label{stm32f401xe__usart_8h_a50fdac2af4a69887bceb1dec2a16ebaf} 
+uint8\+\_\+t USART\+\_\+\+Send\+Data\+IT (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{struct_u_s_a_r_t___handle__t}{USART\+\_\+\+Handle\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{p\+USARTHandle}{, }\item[{uint8\+\_\+t \texorpdfstring{$\ast$}{*}}]{p\+Tx\+Buffer}{, }\item[{uint32\+\_\+t}]{Len}{}\end{DoxyParamCaption})}
+
+\Hypertarget{stm32f401xe__usart_8h_aa95f8910a4887083ee310f38dd04e1af}\index{stm32f401xe\_usart.h@{stm32f401xe\_usart.h}!USART\_SetBaudRate@{USART\_SetBaudRate}}
+\index{USART\_SetBaudRate@{USART\_SetBaudRate}!stm32f401xe\_usart.h@{stm32f401xe\_usart.h}}
+\doxysubsubsection{\texorpdfstring{USART\_SetBaudRate()}{USART\_SetBaudRate()}}
+{\footnotesize\ttfamily \label{stm32f401xe__usart_8h_aa95f8910a4887083ee310f38dd04e1af} 
+void USART\+\_\+\+Set\+Baud\+Rate (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{struct_u_s_a_r_t___reg_def__t}{USART\+\_\+\+Reg\+Def\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{p\+USARTx}{, }\item[{uint32\+\_\+t}]{Baud\+Rate}{}\end{DoxyParamCaption})}
+

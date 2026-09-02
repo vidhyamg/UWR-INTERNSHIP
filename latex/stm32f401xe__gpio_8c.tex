@@ -1,0 +1,75 @@
+\doxysection{Drivers/\+src/\+stm32f401xe\+\_\+gpio.c File Reference}
+\hypertarget{stm32f401xe__gpio_8c}{}\label{stm32f401xe__gpio_8c}\index{Drivers/src/stm32f401xe\_gpio.c@{Drivers/src/stm32f401xe\_gpio.c}}
+{\ttfamily \+\#include "{}stm32f401xe\+\_\+gpio.\+h"{}}\newline
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \doxymbox{\hyperlink{stm32f401xe__gpio_8c_a2f38e48d2bdf72a21f73cdc55495537a}{GPIO\+\_\+\+Peri\+Clock\+Control}} (\doxymbox{\hyperlink{struct_g_p_i_o___reg_def__t}{GPIO\+\_\+\+Reg\+Def\+\_\+t}} \texorpdfstring{$\ast$}{*}p\+GPIOx, uint8\+\_\+t Enor\+Di)
+\item 
+void \doxymbox{\hyperlink{stm32f401xe__gpio_8c_a214003040f1f142c43080ef8ced72b00}{GPIO\+\_\+\+Init}} (\doxymbox{\hyperlink{struct_g_p_i_o___handle__t}{GPIO\+\_\+\+Handle\+\_\+t}} \texorpdfstring{$\ast$}{*}p\+GPIOHandle)
+\item 
+void \doxymbox{\hyperlink{stm32f401xe__gpio_8c_aa8078ad1f2c37770d4320b770488a3ce}{GPIO\+\_\+\+De\+Init}} (\doxymbox{\hyperlink{struct_g_p_i_o___reg_def__t}{GPIO\+\_\+\+Reg\+Def\+\_\+t}} \texorpdfstring{$\ast$}{*}p\+GPIOx)
+\item 
+uint8\+\_\+t \doxymbox{\hyperlink{stm32f401xe__gpio_8c_a70498dd4c12c767e30ec68df25a2ccc5}{GPIO\+\_\+\+Read\+From\+Input\+Pin}} (\doxymbox{\hyperlink{struct_g_p_i_o___reg_def__t}{GPIO\+\_\+\+Reg\+Def\+\_\+t}} \texorpdfstring{$\ast$}{*}p\+GPIOx, uint8\+\_\+t Pin\+Number)
+\item 
+void \doxymbox{\hyperlink{stm32f401xe__gpio_8c_ae977b9e4162e6d6b82c577580b030902}{GPIO\+\_\+\+Write\+To\+Output\+Pin}} (\doxymbox{\hyperlink{struct_g_p_i_o___reg_def__t}{GPIO\+\_\+\+Reg\+Def\+\_\+t}} \texorpdfstring{$\ast$}{*}p\+GPIOx, uint8\+\_\+t Pin\+Number, uint8\+\_\+t value)
+\item 
+uint16\+\_\+t \doxymbox{\hyperlink{stm32f401xe__gpio_8c_ac91034f21aa1ba1726e8c2a62c02b086}{GPIO\+\_\+\+Read\+From\+Input\+Port}} (\doxymbox{\hyperlink{struct_g_p_i_o___reg_def__t}{GPIO\+\_\+\+Reg\+Def\+\_\+t}} \texorpdfstring{$\ast$}{*}p\+GPIOx)
+\item 
+void \doxymbox{\hyperlink{stm32f401xe__gpio_8c_a9909cae10c340c2415e6c6e35fdc5c16}{GPIO\+\_\+\+Write\+To\+Output\+Port}} (\doxymbox{\hyperlink{struct_g_p_i_o___reg_def__t}{GPIO\+\_\+\+Reg\+Def\+\_\+t}} \texorpdfstring{$\ast$}{*}p\+GPIOx, uint16\+\_\+t value)
+\item 
+void \doxymbox{\hyperlink{stm32f401xe__gpio_8c_a932049160029c25a7142c3c6e0742056}{GPIO\+\_\+\+Toggle\+Output\+Pin}} (\doxymbox{\hyperlink{struct_g_p_i_o___reg_def__t}{GPIO\+\_\+\+Reg\+Def\+\_\+t}} \texorpdfstring{$\ast$}{*}p\+GPIOx, uint8\+\_\+t Pin\+Number)
+\end{DoxyCompactItemize}
+
+
+\label{stm32f401xe__gpio_8c_doc-func-members}
+\Hypertarget{stm32f401xe__gpio_8c_doc-func-members}
+\doxysubsection{Function Documentation}
+\Hypertarget{stm32f401xe__gpio_8c_aa8078ad1f2c37770d4320b770488a3ce}\index{stm32f401xe\_gpio.c@{stm32f401xe\_gpio.c}!GPIO\_DeInit@{GPIO\_DeInit}}
+\index{GPIO\_DeInit@{GPIO\_DeInit}!stm32f401xe\_gpio.c@{stm32f401xe\_gpio.c}}
+\doxysubsubsection{\texorpdfstring{GPIO\_DeInit()}{GPIO\_DeInit()}}
+{\footnotesize\ttfamily \label{stm32f401xe__gpio_8c_aa8078ad1f2c37770d4320b770488a3ce} 
+void GPIO\+\_\+\+De\+Init (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{struct_g_p_i_o___reg_def__t}{GPIO\+\_\+\+Reg\+Def\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{p\+GPIOx}{}\end{DoxyParamCaption})}
+
+\Hypertarget{stm32f401xe__gpio_8c_a214003040f1f142c43080ef8ced72b00}\index{stm32f401xe\_gpio.c@{stm32f401xe\_gpio.c}!GPIO\_Init@{GPIO\_Init}}
+\index{GPIO\_Init@{GPIO\_Init}!stm32f401xe\_gpio.c@{stm32f401xe\_gpio.c}}
+\doxysubsubsection{\texorpdfstring{GPIO\_Init()}{GPIO\_Init()}}
+{\footnotesize\ttfamily \label{stm32f401xe__gpio_8c_a214003040f1f142c43080ef8ced72b00} 
+void GPIO\+\_\+\+Init (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{struct_g_p_i_o___handle__t}{GPIO\+\_\+\+Handle\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{p\+GPIOHandle}{}\end{DoxyParamCaption})}
+
+\Hypertarget{stm32f401xe__gpio_8c_a2f38e48d2bdf72a21f73cdc55495537a}\index{stm32f401xe\_gpio.c@{stm32f401xe\_gpio.c}!GPIO\_PeriClockControl@{GPIO\_PeriClockControl}}
+\index{GPIO\_PeriClockControl@{GPIO\_PeriClockControl}!stm32f401xe\_gpio.c@{stm32f401xe\_gpio.c}}
+\doxysubsubsection{\texorpdfstring{GPIO\_PeriClockControl()}{GPIO\_PeriClockControl()}}
+{\footnotesize\ttfamily \label{stm32f401xe__gpio_8c_a2f38e48d2bdf72a21f73cdc55495537a} 
+void GPIO\+\_\+\+Peri\+Clock\+Control (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{struct_g_p_i_o___reg_def__t}{GPIO\+\_\+\+Reg\+Def\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{p\+GPIOx}{, }\item[{uint8\+\_\+t}]{Enor\+Di}{}\end{DoxyParamCaption})}
+
+\Hypertarget{stm32f401xe__gpio_8c_a70498dd4c12c767e30ec68df25a2ccc5}\index{stm32f401xe\_gpio.c@{stm32f401xe\_gpio.c}!GPIO\_ReadFromInputPin@{GPIO\_ReadFromInputPin}}
+\index{GPIO\_ReadFromInputPin@{GPIO\_ReadFromInputPin}!stm32f401xe\_gpio.c@{stm32f401xe\_gpio.c}}
+\doxysubsubsection{\texorpdfstring{GPIO\_ReadFromInputPin()}{GPIO\_ReadFromInputPin()}}
+{\footnotesize\ttfamily \label{stm32f401xe__gpio_8c_a70498dd4c12c767e30ec68df25a2ccc5} 
+uint8\+\_\+t GPIO\+\_\+\+Read\+From\+Input\+Pin (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{struct_g_p_i_o___reg_def__t}{GPIO\+\_\+\+Reg\+Def\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{p\+GPIOx}{, }\item[{uint8\+\_\+t}]{Pin\+Number}{}\end{DoxyParamCaption})}
+
+\Hypertarget{stm32f401xe__gpio_8c_ac91034f21aa1ba1726e8c2a62c02b086}\index{stm32f401xe\_gpio.c@{stm32f401xe\_gpio.c}!GPIO\_ReadFromInputPort@{GPIO\_ReadFromInputPort}}
+\index{GPIO\_ReadFromInputPort@{GPIO\_ReadFromInputPort}!stm32f401xe\_gpio.c@{stm32f401xe\_gpio.c}}
+\doxysubsubsection{\texorpdfstring{GPIO\_ReadFromInputPort()}{GPIO\_ReadFromInputPort()}}
+{\footnotesize\ttfamily \label{stm32f401xe__gpio_8c_ac91034f21aa1ba1726e8c2a62c02b086} 
+uint16\+\_\+t GPIO\+\_\+\+Read\+From\+Input\+Port (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{struct_g_p_i_o___reg_def__t}{GPIO\+\_\+\+Reg\+Def\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{p\+GPIOx}{}\end{DoxyParamCaption})}
+
+\Hypertarget{stm32f401xe__gpio_8c_a932049160029c25a7142c3c6e0742056}\index{stm32f401xe\_gpio.c@{stm32f401xe\_gpio.c}!GPIO\_ToggleOutputPin@{GPIO\_ToggleOutputPin}}
+\index{GPIO\_ToggleOutputPin@{GPIO\_ToggleOutputPin}!stm32f401xe\_gpio.c@{stm32f401xe\_gpio.c}}
+\doxysubsubsection{\texorpdfstring{GPIO\_ToggleOutputPin()}{GPIO\_ToggleOutputPin()}}
+{\footnotesize\ttfamily \label{stm32f401xe__gpio_8c_a932049160029c25a7142c3c6e0742056} 
+void GPIO\+\_\+\+Toggle\+Output\+Pin (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{struct_g_p_i_o___reg_def__t}{GPIO\+\_\+\+Reg\+Def\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{p\+GPIOx}{, }\item[{uint8\+\_\+t}]{Pin\+Number}{}\end{DoxyParamCaption})}
+
+\Hypertarget{stm32f401xe__gpio_8c_ae977b9e4162e6d6b82c577580b030902}\index{stm32f401xe\_gpio.c@{stm32f401xe\_gpio.c}!GPIO\_WriteToOutputPin@{GPIO\_WriteToOutputPin}}
+\index{GPIO\_WriteToOutputPin@{GPIO\_WriteToOutputPin}!stm32f401xe\_gpio.c@{stm32f401xe\_gpio.c}}
+\doxysubsubsection{\texorpdfstring{GPIO\_WriteToOutputPin()}{GPIO\_WriteToOutputPin()}}
+{\footnotesize\ttfamily \label{stm32f401xe__gpio_8c_ae977b9e4162e6d6b82c577580b030902} 
+void GPIO\+\_\+\+Write\+To\+Output\+Pin (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{struct_g_p_i_o___reg_def__t}{GPIO\+\_\+\+Reg\+Def\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{p\+GPIOx}{, }\item[{uint8\+\_\+t}]{Pin\+Number}{, }\item[{uint8\+\_\+t}]{value}{}\end{DoxyParamCaption})}
+
+\Hypertarget{stm32f401xe__gpio_8c_a9909cae10c340c2415e6c6e35fdc5c16}\index{stm32f401xe\_gpio.c@{stm32f401xe\_gpio.c}!GPIO\_WriteToOutputPort@{GPIO\_WriteToOutputPort}}
+\index{GPIO\_WriteToOutputPort@{GPIO\_WriteToOutputPort}!stm32f401xe\_gpio.c@{stm32f401xe\_gpio.c}}
+\doxysubsubsection{\texorpdfstring{GPIO\_WriteToOutputPort()}{GPIO\_WriteToOutputPort()}}
+{\footnotesize\ttfamily \label{stm32f401xe__gpio_8c_a9909cae10c340c2415e6c6e35fdc5c16} 
+void GPIO\+\_\+\+Write\+To\+Output\+Port (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{struct_g_p_i_o___reg_def__t}{GPIO\+\_\+\+Reg\+Def\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{p\+GPIOx}{, }\item[{uint16\+\_\+t}]{value}{}\end{DoxyParamCaption})}
+

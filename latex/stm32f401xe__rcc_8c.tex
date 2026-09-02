@@ -1,0 +1,59 @@
+\doxysection{Drivers/\+src/\+stm32f401xe\+\_\+rcc.c File Reference}
+\hypertarget{stm32f401xe__rcc_8c}{}\label{stm32f401xe__rcc_8c}\index{Drivers/src/stm32f401xe\_rcc.c@{Drivers/src/stm32f401xe\_rcc.c}}
+{\ttfamily \+\#include "{}stm32f401xe\+\_\+rcc.\+h"{}}\newline
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+uint32\+\_\+t \doxymbox{\hyperlink{stm32f401xe__rcc_8c_a085a3a0940c3993a61618f10816f38cd}{RCC\+\_\+\+Get\+PCLK1\+Value}} (void)
+\item 
+uint32\+\_\+t \doxymbox{\hyperlink{stm32f401xe__rcc_8c_ad7e2b4f75bc4da78507c6f7f5ff32154}{RCC\+\_\+\+Get\+PCLK2\+Value}} (void)
+\item 
+uint32\+\_\+t \doxymbox{\hyperlink{stm32f401xe__rcc_8c_a7084da3ca60dc21076b733ff33f3dd6d}{RCC\+\_\+\+Get\+PLLOutput\+Clock}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+uint16\+\_\+t \doxymbox{\hyperlink{stm32f401xe__rcc_8c_a3bd02b76aade4a8eafd4c85cf6f2047c}{AHB\+\_\+\+Pre\+Scaler}} \+[8] = \{2,4,8,16,64,128,256,512\}
+\item 
+uint8\+\_\+t \doxymbox{\hyperlink{stm32f401xe__rcc_8c_a45bc8e78e3a7f3cf13100ca0588ed6f8}{APB1\+\_\+\+Pre\+Scaler}} \+[4] = \{ 2, 4 , 8, 16\}
+\end{DoxyCompactItemize}
+
+
+\label{stm32f401xe__rcc_8c_doc-func-members}
+\Hypertarget{stm32f401xe__rcc_8c_doc-func-members}
+\doxysubsection{Function Documentation}
+\Hypertarget{stm32f401xe__rcc_8c_a085a3a0940c3993a61618f10816f38cd}\index{stm32f401xe\_rcc.c@{stm32f401xe\_rcc.c}!RCC\_GetPCLK1Value@{RCC\_GetPCLK1Value}}
+\index{RCC\_GetPCLK1Value@{RCC\_GetPCLK1Value}!stm32f401xe\_rcc.c@{stm32f401xe\_rcc.c}}
+\doxysubsubsection{\texorpdfstring{RCC\_GetPCLK1Value()}{RCC\_GetPCLK1Value()}}
+{\footnotesize\ttfamily \label{stm32f401xe__rcc_8c_a085a3a0940c3993a61618f10816f38cd} 
+uint32\+\_\+t RCC\+\_\+\+Get\+PCLK1\+Value (\begin{DoxyParamCaption}\item[{void}]{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{stm32f401xe__rcc_8c_ad7e2b4f75bc4da78507c6f7f5ff32154}\index{stm32f401xe\_rcc.c@{stm32f401xe\_rcc.c}!RCC\_GetPCLK2Value@{RCC\_GetPCLK2Value}}
+\index{RCC\_GetPCLK2Value@{RCC\_GetPCLK2Value}!stm32f401xe\_rcc.c@{stm32f401xe\_rcc.c}}
+\doxysubsubsection{\texorpdfstring{RCC\_GetPCLK2Value()}{RCC\_GetPCLK2Value()}}
+{\footnotesize\ttfamily \label{stm32f401xe__rcc_8c_ad7e2b4f75bc4da78507c6f7f5ff32154} 
+uint32\+\_\+t RCC\+\_\+\+Get\+PCLK2\+Value (\begin{DoxyParamCaption}\item[{void}]{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{stm32f401xe__rcc_8c_a7084da3ca60dc21076b733ff33f3dd6d}\index{stm32f401xe\_rcc.c@{stm32f401xe\_rcc.c}!RCC\_GetPLLOutputClock@{RCC\_GetPLLOutputClock}}
+\index{RCC\_GetPLLOutputClock@{RCC\_GetPLLOutputClock}!stm32f401xe\_rcc.c@{stm32f401xe\_rcc.c}}
+\doxysubsubsection{\texorpdfstring{RCC\_GetPLLOutputClock()}{RCC\_GetPLLOutputClock()}}
+{\footnotesize\ttfamily \label{stm32f401xe__rcc_8c_a7084da3ca60dc21076b733ff33f3dd6d} 
+uint32\+\_\+t RCC\+\_\+\+Get\+PLLOutput\+Clock (\begin{DoxyParamCaption}\item[{void}]{}{}\end{DoxyParamCaption})}
+
+
+
+\label{stm32f401xe__rcc_8c_doc-var-members}
+\Hypertarget{stm32f401xe__rcc_8c_doc-var-members}
+\doxysubsection{Variable Documentation}
+\Hypertarget{stm32f401xe__rcc_8c_a3bd02b76aade4a8eafd4c85cf6f2047c}\index{stm32f401xe\_rcc.c@{stm32f401xe\_rcc.c}!AHB\_PreScaler@{AHB\_PreScaler}}
+\index{AHB\_PreScaler@{AHB\_PreScaler}!stm32f401xe\_rcc.c@{stm32f401xe\_rcc.c}}
+\doxysubsubsection{\texorpdfstring{AHB\_PreScaler}{AHB\_PreScaler}}
+{\footnotesize\ttfamily \label{stm32f401xe__rcc_8c_a3bd02b76aade4a8eafd4c85cf6f2047c} 
+uint16\+\_\+t AHB\+\_\+\+Pre\+Scaler\+[8] = \{2,4,8,16,64,128,256,512\}}
+
+\Hypertarget{stm32f401xe__rcc_8c_a45bc8e78e3a7f3cf13100ca0588ed6f8}\index{stm32f401xe\_rcc.c@{stm32f401xe\_rcc.c}!APB1\_PreScaler@{APB1\_PreScaler}}
+\index{APB1\_PreScaler@{APB1\_PreScaler}!stm32f401xe\_rcc.c@{stm32f401xe\_rcc.c}}
+\doxysubsubsection{\texorpdfstring{APB1\_PreScaler}{APB1\_PreScaler}}
+{\footnotesize\ttfamily \label{stm32f401xe__rcc_8c_a45bc8e78e3a7f3cf13100ca0588ed6f8} 
+uint8\+\_\+t APB1\+\_\+\+Pre\+Scaler\+[4] = \{ 2, 4 , 8, 16\}}
+

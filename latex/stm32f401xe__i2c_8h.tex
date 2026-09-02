@@ -1,0 +1,106 @@
+\doxysection{Drivers/\+inc/\+stm32f401xe\+\_\+i2c.h File Reference}
+\hypertarget{stm32f401xe__i2c_8h}{}\label{stm32f401xe__i2c_8h}\index{Drivers/inc/stm32f401xe\_i2c.h@{Drivers/inc/stm32f401xe\_i2c.h}}
+{\ttfamily \+\#include "{}stm32f401xe.\+h"{}}\newline
+\doxysubsubsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \doxymbox{\hyperlink{struct_i2_c___config__t}{I2\+C\+\_\+\+Config\+\_\+t}}
+\item 
+struct \doxymbox{\hyperlink{struct_i2_c___handle__t}{I2\+C\+\_\+\+Handle\+\_\+t}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\+\#define \doxymbox{\hyperlink{stm32f401xe__i2c_8h_a5a940df4437466e727061c2c3142d00c}{I2\+C\+\_\+\+SCL\+\_\+\+SPEED\+\_\+\+SM}}~100000
+\item 
+\+\#define \doxymbox{\hyperlink{stm32f401xe__i2c_8h_a0c0c08d370da5fc129c22434bdb97481}{I2\+C\+\_\+\+SCL\+\_\+\+SPEED\+\_\+\+FM4K}}~400000
+\item 
+\+\#define \doxymbox{\hyperlink{stm32f401xe__i2c_8h_a5441a741ac26cff1c89bc2eac55f0376}{I2\+C\+\_\+\+SCL\+\_\+\+SPEED\+\_\+\+FM2K}}~200000
+\item 
+\+\#define \doxymbox{\hyperlink{stm32f401xe__i2c_8h_a10fc5ad18d20e904fd65d00808438d46}{I2\+C\+\_\+\+ACK\+\_\+\+ENABLE}}~1
+\item 
+\+\#define \doxymbox{\hyperlink{stm32f401xe__i2c_8h_a468ef77366cf5396d2d918ef9e4c7d41}{I2\+C\+\_\+\+ACK\+\_\+\+DISABLE}}~0
+\item 
+\+\#define \doxymbox{\hyperlink{stm32f401xe__i2c_8h_a2d9457f7d4d452bb369cd6ded2e5ff77}{I2\+C\+\_\+\+FM\+\_\+\+DUTY\+\_\+2}}~0
+\item 
+\+\#define \doxymbox{\hyperlink{stm32f401xe__i2c_8h_a46a9e3120a5d0cf59bee8ae61c80c87f}{I2\+C\+\_\+\+FM\+\_\+\+DUTY\+\_\+16\+\_\+9}}~1
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \doxymbox{\hyperlink{stm32f401xe__i2c_8h_a08267d82acca332799ec1b49be4527bd}{I2\+C\+\_\+\+Peri\+Clock\+Control}} (\doxymbox{\hyperlink{struct_i2_c___reg_def__t}{I2\+C\+\_\+\+Reg\+Def\+\_\+t}} \texorpdfstring{$\ast$}{*}p\+I2\+Cx, uint8\+\_\+t Enor\+Di)
+\item 
+void \doxymbox{\hyperlink{stm32f401xe__i2c_8h_af63c91db39ea9e0317d4f341569f479c}{I2\+C\+\_\+\+Init}} (\doxymbox{\hyperlink{struct_i2_c___handle__t}{I2\+C\+\_\+\+Handle\+\_\+t}} \texorpdfstring{$\ast$}{*}p\+I2\+CHandle)
+\item 
+void \doxymbox{\hyperlink{stm32f401xe__i2c_8h_ad7b45b712f04f3c333ed5f6e621e805c}{I2\+C\+\_\+\+De\+Init}} (\doxymbox{\hyperlink{struct_i2_c___reg_def__t}{I2\+C\+\_\+\+Reg\+Def\+\_\+t}} \texorpdfstring{$\ast$}{*}p\+I2\+Cx)
+\end{DoxyCompactItemize}
+
+
+\label{stm32f401xe__i2c_8h_doc-define-members}
+\Hypertarget{stm32f401xe__i2c_8h_doc-define-members}
+\doxysubsection{Macro Definition Documentation}
+\Hypertarget{stm32f401xe__i2c_8h_a468ef77366cf5396d2d918ef9e4c7d41}\index{stm32f401xe\_i2c.h@{stm32f401xe\_i2c.h}!I2C\_ACK\_DISABLE@{I2C\_ACK\_DISABLE}}
+\index{I2C\_ACK\_DISABLE@{I2C\_ACK\_DISABLE}!stm32f401xe\_i2c.h@{stm32f401xe\_i2c.h}}
+\doxysubsubsection{\texorpdfstring{I2C\_ACK\_DISABLE}{I2C\_ACK\_DISABLE}}
+{\footnotesize\ttfamily \label{stm32f401xe__i2c_8h_a468ef77366cf5396d2d918ef9e4c7d41} 
+\+\#define I2\+C\+\_\+\+ACK\+\_\+\+DISABLE~0}
+
+\Hypertarget{stm32f401xe__i2c_8h_a10fc5ad18d20e904fd65d00808438d46}\index{stm32f401xe\_i2c.h@{stm32f401xe\_i2c.h}!I2C\_ACK\_ENABLE@{I2C\_ACK\_ENABLE}}
+\index{I2C\_ACK\_ENABLE@{I2C\_ACK\_ENABLE}!stm32f401xe\_i2c.h@{stm32f401xe\_i2c.h}}
+\doxysubsubsection{\texorpdfstring{I2C\_ACK\_ENABLE}{I2C\_ACK\_ENABLE}}
+{\footnotesize\ttfamily \label{stm32f401xe__i2c_8h_a10fc5ad18d20e904fd65d00808438d46} 
+\+\#define I2\+C\+\_\+\+ACK\+\_\+\+ENABLE~1}
+
+\Hypertarget{stm32f401xe__i2c_8h_a46a9e3120a5d0cf59bee8ae61c80c87f}\index{stm32f401xe\_i2c.h@{stm32f401xe\_i2c.h}!I2C\_FM\_DUTY\_16\_9@{I2C\_FM\_DUTY\_16\_9}}
+\index{I2C\_FM\_DUTY\_16\_9@{I2C\_FM\_DUTY\_16\_9}!stm32f401xe\_i2c.h@{stm32f401xe\_i2c.h}}
+\doxysubsubsection{\texorpdfstring{I2C\_FM\_DUTY\_16\_9}{I2C\_FM\_DUTY\_16\_9}}
+{\footnotesize\ttfamily \label{stm32f401xe__i2c_8h_a46a9e3120a5d0cf59bee8ae61c80c87f} 
+\+\#define I2\+C\+\_\+\+FM\+\_\+\+DUTY\+\_\+16\+\_\+9~1}
+
+\Hypertarget{stm32f401xe__i2c_8h_a2d9457f7d4d452bb369cd6ded2e5ff77}\index{stm32f401xe\_i2c.h@{stm32f401xe\_i2c.h}!I2C\_FM\_DUTY\_2@{I2C\_FM\_DUTY\_2}}
+\index{I2C\_FM\_DUTY\_2@{I2C\_FM\_DUTY\_2}!stm32f401xe\_i2c.h@{stm32f401xe\_i2c.h}}
+\doxysubsubsection{\texorpdfstring{I2C\_FM\_DUTY\_2}{I2C\_FM\_DUTY\_2}}
+{\footnotesize\ttfamily \label{stm32f401xe__i2c_8h_a2d9457f7d4d452bb369cd6ded2e5ff77} 
+\+\#define I2\+C\+\_\+\+FM\+\_\+\+DUTY\+\_\+2~0}
+
+\Hypertarget{stm32f401xe__i2c_8h_a5441a741ac26cff1c89bc2eac55f0376}\index{stm32f401xe\_i2c.h@{stm32f401xe\_i2c.h}!I2C\_SCL\_SPEED\_FM2K@{I2C\_SCL\_SPEED\_FM2K}}
+\index{I2C\_SCL\_SPEED\_FM2K@{I2C\_SCL\_SPEED\_FM2K}!stm32f401xe\_i2c.h@{stm32f401xe\_i2c.h}}
+\doxysubsubsection{\texorpdfstring{I2C\_SCL\_SPEED\_FM2K}{I2C\_SCL\_SPEED\_FM2K}}
+{\footnotesize\ttfamily \label{stm32f401xe__i2c_8h_a5441a741ac26cff1c89bc2eac55f0376} 
+\+\#define I2\+C\+\_\+\+SCL\+\_\+\+SPEED\+\_\+\+FM2K~200000}
+
+\Hypertarget{stm32f401xe__i2c_8h_a0c0c08d370da5fc129c22434bdb97481}\index{stm32f401xe\_i2c.h@{stm32f401xe\_i2c.h}!I2C\_SCL\_SPEED\_FM4K@{I2C\_SCL\_SPEED\_FM4K}}
+\index{I2C\_SCL\_SPEED\_FM4K@{I2C\_SCL\_SPEED\_FM4K}!stm32f401xe\_i2c.h@{stm32f401xe\_i2c.h}}
+\doxysubsubsection{\texorpdfstring{I2C\_SCL\_SPEED\_FM4K}{I2C\_SCL\_SPEED\_FM4K}}
+{\footnotesize\ttfamily \label{stm32f401xe__i2c_8h_a0c0c08d370da5fc129c22434bdb97481} 
+\+\#define I2\+C\+\_\+\+SCL\+\_\+\+SPEED\+\_\+\+FM4K~400000}
+
+\Hypertarget{stm32f401xe__i2c_8h_a5a940df4437466e727061c2c3142d00c}\index{stm32f401xe\_i2c.h@{stm32f401xe\_i2c.h}!I2C\_SCL\_SPEED\_SM@{I2C\_SCL\_SPEED\_SM}}
+\index{I2C\_SCL\_SPEED\_SM@{I2C\_SCL\_SPEED\_SM}!stm32f401xe\_i2c.h@{stm32f401xe\_i2c.h}}
+\doxysubsubsection{\texorpdfstring{I2C\_SCL\_SPEED\_SM}{I2C\_SCL\_SPEED\_SM}}
+{\footnotesize\ttfamily \label{stm32f401xe__i2c_8h_a5a940df4437466e727061c2c3142d00c} 
+\+\#define I2\+C\+\_\+\+SCL\+\_\+\+SPEED\+\_\+\+SM~100000}
+
+
+
+\label{stm32f401xe__i2c_8h_doc-func-members}
+\Hypertarget{stm32f401xe__i2c_8h_doc-func-members}
+\doxysubsection{Function Documentation}
+\Hypertarget{stm32f401xe__i2c_8h_ad7b45b712f04f3c333ed5f6e621e805c}\index{stm32f401xe\_i2c.h@{stm32f401xe\_i2c.h}!I2C\_DeInit@{I2C\_DeInit}}
+\index{I2C\_DeInit@{I2C\_DeInit}!stm32f401xe\_i2c.h@{stm32f401xe\_i2c.h}}
+\doxysubsubsection{\texorpdfstring{I2C\_DeInit()}{I2C\_DeInit()}}
+{\footnotesize\ttfamily \label{stm32f401xe__i2c_8h_ad7b45b712f04f3c333ed5f6e621e805c} 
+void I2\+C\+\_\+\+De\+Init (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{struct_i2_c___reg_def__t}{I2\+C\+\_\+\+Reg\+Def\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{p\+I2\+Cx}{}\end{DoxyParamCaption})}
+
+\Hypertarget{stm32f401xe__i2c_8h_af63c91db39ea9e0317d4f341569f479c}\index{stm32f401xe\_i2c.h@{stm32f401xe\_i2c.h}!I2C\_Init@{I2C\_Init}}
+\index{I2C\_Init@{I2C\_Init}!stm32f401xe\_i2c.h@{stm32f401xe\_i2c.h}}
+\doxysubsubsection{\texorpdfstring{I2C\_Init()}{I2C\_Init()}}
+{\footnotesize\ttfamily \label{stm32f401xe__i2c_8h_af63c91db39ea9e0317d4f341569f479c} 
+void I2\+C\+\_\+\+Init (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{struct_i2_c___handle__t}{I2\+C\+\_\+\+Handle\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{p\+I2\+CHandle}{}\end{DoxyParamCaption})}
+
+\Hypertarget{stm32f401xe__i2c_8h_a08267d82acca332799ec1b49be4527bd}\index{stm32f401xe\_i2c.h@{stm32f401xe\_i2c.h}!I2C\_PeriClockControl@{I2C\_PeriClockControl}}
+\index{I2C\_PeriClockControl@{I2C\_PeriClockControl}!stm32f401xe\_i2c.h@{stm32f401xe\_i2c.h}}
+\doxysubsubsection{\texorpdfstring{I2C\_PeriClockControl()}{I2C\_PeriClockControl()}}
+{\footnotesize\ttfamily \label{stm32f401xe__i2c_8h_a08267d82acca332799ec1b49be4527bd} 
+void I2\+C\+\_\+\+Peri\+Clock\+Control (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{struct_i2_c___reg_def__t}{I2\+C\+\_\+\+Reg\+Def\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{p\+I2\+Cx}{, }\item[{uint8\+\_\+t}]{Enor\+Di}{}\end{DoxyParamCaption})}
+

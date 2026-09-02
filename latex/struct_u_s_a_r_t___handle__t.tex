@@ -1,0 +1,91 @@
+\doxysection{USART\+\_\+\+Handle\+\_\+t Struct Reference}
+\hypertarget{struct_u_s_a_r_t___handle__t}{}\label{struct_u_s_a_r_t___handle__t}\index{USART\_Handle\_t@{USART\_Handle\_t}}
+
+
+Handle structure for USART This structure contains the configuration settings and runtime information for the USART peripheral.  
+
+
+
+
+{\ttfamily \+\#include $<$stm32f401xe\+\_\+usart.\+h$>$}
+
+\doxysubsubsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{struct_u_s_a_r_t___reg_def__t}{USART\+\_\+\+Reg\+Def\+\_\+t}} \texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{struct_u_s_a_r_t___handle__t_ae1dc601fcd17ba314ce1a7b8dc379420}{p\+USARTx}}
+\item 
+\doxymbox{\hyperlink{struct_u_s_a_r_t___config__t}{USART\+\_\+\+Config\+\_\+t}} \doxymbox{\hyperlink{struct_u_s_a_r_t___handle__t_a8f87bf394a5c1e8e3067e0e91450f8aa}{USART\+\_\+\+Config}}
+\item 
+uint8\+\_\+t \texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{struct_u_s_a_r_t___handle__t_ac07fc756fc2084d9e79d98f590d47a2f}{p\+Tx\+Buffer}}
+\item 
+uint8\+\_\+t \texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{struct_u_s_a_r_t___handle__t_a6f1958a20f5b80d5e41150a2f4c7d8a7}{p\+Rx\+Buffer}}
+\item 
+uint32\+\_\+t \doxymbox{\hyperlink{struct_u_s_a_r_t___handle__t_a57c237de8d2c1323f2879cd1ab8ee41c}{Tx\+Len}}
+\item 
+uint32\+\_\+t \doxymbox{\hyperlink{struct_u_s_a_r_t___handle__t_a1b12bbceca8b5af61b5408684ac187d7}{Rx\+Len}}
+\item 
+uint8\+\_\+t \doxymbox{\hyperlink{struct_u_s_a_r_t___handle__t_a256257bcbd0fd24ab29928fc20898b19}{Tx\+Busy\+State}}
+\item 
+uint8\+\_\+t \doxymbox{\hyperlink{struct_u_s_a_r_t___handle__t_a3cd807707ebf4690576eb7548f5d450c}{Rx\+Busy\+State}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Handle structure for USART This structure contains the configuration settings and runtime information for the USART peripheral. 
+
+\label{struct_u_s_a_r_t___handle__t_doc-variable-members}
+\Hypertarget{struct_u_s_a_r_t___handle__t_doc-variable-members}
+\doxysubsection{Field Documentation}
+\Hypertarget{struct_u_s_a_r_t___handle__t_a6f1958a20f5b80d5e41150a2f4c7d8a7}\index{USART\_Handle\_t@{USART\_Handle\_t}!pRxBuffer@{pRxBuffer}}
+\index{pRxBuffer@{pRxBuffer}!USART\_Handle\_t@{USART\_Handle\_t}}
+\doxysubsubsection{\texorpdfstring{pRxBuffer}{pRxBuffer}}
+{\footnotesize\ttfamily \label{struct_u_s_a_r_t___handle__t_a6f1958a20f5b80d5e41150a2f4c7d8a7} 
+uint8\+\_\+t\texorpdfstring{$\ast$}{*} p\+Rx\+Buffer}
+
+\Hypertarget{struct_u_s_a_r_t___handle__t_ac07fc756fc2084d9e79d98f590d47a2f}\index{USART\_Handle\_t@{USART\_Handle\_t}!pTxBuffer@{pTxBuffer}}
+\index{pTxBuffer@{pTxBuffer}!USART\_Handle\_t@{USART\_Handle\_t}}
+\doxysubsubsection{\texorpdfstring{pTxBuffer}{pTxBuffer}}
+{\footnotesize\ttfamily \label{struct_u_s_a_r_t___handle__t_ac07fc756fc2084d9e79d98f590d47a2f} 
+uint8\+\_\+t\texorpdfstring{$\ast$}{*} p\+Tx\+Buffer}
+
+\Hypertarget{struct_u_s_a_r_t___handle__t_ae1dc601fcd17ba314ce1a7b8dc379420}\index{USART\_Handle\_t@{USART\_Handle\_t}!pUSARTx@{pUSARTx}}
+\index{pUSARTx@{pUSARTx}!USART\_Handle\_t@{USART\_Handle\_t}}
+\doxysubsubsection{\texorpdfstring{pUSARTx}{pUSARTx}}
+{\footnotesize\ttfamily \label{struct_u_s_a_r_t___handle__t_ae1dc601fcd17ba314ce1a7b8dc379420} 
+\doxymbox{\hyperlink{struct_u_s_a_r_t___reg_def__t}{USART\+\_\+\+Reg\+Def\+\_\+t}}\texorpdfstring{$\ast$}{*} p\+USARTx}
+
+\Hypertarget{struct_u_s_a_r_t___handle__t_a3cd807707ebf4690576eb7548f5d450c}\index{USART\_Handle\_t@{USART\_Handle\_t}!RxBusyState@{RxBusyState}}
+\index{RxBusyState@{RxBusyState}!USART\_Handle\_t@{USART\_Handle\_t}}
+\doxysubsubsection{\texorpdfstring{RxBusyState}{RxBusyState}}
+{\footnotesize\ttfamily \label{struct_u_s_a_r_t___handle__t_a3cd807707ebf4690576eb7548f5d450c} 
+uint8\+\_\+t Rx\+Busy\+State}
+
+\Hypertarget{struct_u_s_a_r_t___handle__t_a1b12bbceca8b5af61b5408684ac187d7}\index{USART\_Handle\_t@{USART\_Handle\_t}!RxLen@{RxLen}}
+\index{RxLen@{RxLen}!USART\_Handle\_t@{USART\_Handle\_t}}
+\doxysubsubsection{\texorpdfstring{RxLen}{RxLen}}
+{\footnotesize\ttfamily \label{struct_u_s_a_r_t___handle__t_a1b12bbceca8b5af61b5408684ac187d7} 
+uint32\+\_\+t Rx\+Len}
+
+\Hypertarget{struct_u_s_a_r_t___handle__t_a256257bcbd0fd24ab29928fc20898b19}\index{USART\_Handle\_t@{USART\_Handle\_t}!TxBusyState@{TxBusyState}}
+\index{TxBusyState@{TxBusyState}!USART\_Handle\_t@{USART\_Handle\_t}}
+\doxysubsubsection{\texorpdfstring{TxBusyState}{TxBusyState}}
+{\footnotesize\ttfamily \label{struct_u_s_a_r_t___handle__t_a256257bcbd0fd24ab29928fc20898b19} 
+uint8\+\_\+t Tx\+Busy\+State}
+
+\Hypertarget{struct_u_s_a_r_t___handle__t_a57c237de8d2c1323f2879cd1ab8ee41c}\index{USART\_Handle\_t@{USART\_Handle\_t}!TxLen@{TxLen}}
+\index{TxLen@{TxLen}!USART\_Handle\_t@{USART\_Handle\_t}}
+\doxysubsubsection{\texorpdfstring{TxLen}{TxLen}}
+{\footnotesize\ttfamily \label{struct_u_s_a_r_t___handle__t_a57c237de8d2c1323f2879cd1ab8ee41c} 
+uint32\+\_\+t Tx\+Len}
+
+\Hypertarget{struct_u_s_a_r_t___handle__t_a8f87bf394a5c1e8e3067e0e91450f8aa}\index{USART\_Handle\_t@{USART\_Handle\_t}!USART\_Config@{USART\_Config}}
+\index{USART\_Config@{USART\_Config}!USART\_Handle\_t@{USART\_Handle\_t}}
+\doxysubsubsection{\texorpdfstring{USART\_Config}{USART\_Config}}
+{\footnotesize\ttfamily \label{struct_u_s_a_r_t___handle__t_a8f87bf394a5c1e8e3067e0e91450f8aa} 
+\doxymbox{\hyperlink{struct_u_s_a_r_t___config__t}{USART\+\_\+\+Config\+\_\+t}} USART\+\_\+\+Config}
+
+
+
+The documentation for this struct was generated from the following file:\begin{DoxyCompactItemize}
+\item 
+Drivers/\+inc/\doxymbox{\hyperlink{stm32f401xe__usart_8h}{stm32f401xe\+\_\+usart.\+h}}\end{DoxyCompactItemize}
